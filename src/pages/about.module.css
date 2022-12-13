@@ -1,0 +1,76 @@
+.container {
+    margin-top: -4%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    margin-bottom: 3%;
+}
+
+.goalContainer{
+   background-color: rgb(233, 229, 229);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 60vh;
+    border-radius: 40px;
+}
+
+.groupGoalPic, .groupMissionPic{
+    width: 50%;
+    height: 40vh;
+}
+
+.groupMissionPic{
+    height: 45vh;
+}
+.goalDescription, .missionDescription{
+    width: 35%;
+    height: 40vh;
+    margin-right: 3%;
+}
+
+.goalImage{
+    width: 45%;
+    height: 20vh;
+}
+
+.missionTitle{
+    margin-top: 5%;
+    
+}
+.missionContainer{
+    margin-top: 2%;
+    background-color: rgb(233, 229, 229);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 65vh;
+    border-radius: 40px;
+
+}
+
+/*
+.missionImage{
+    margin-top: -5%;
+    width: 40%;
+    height: 30vh;
+}*/
+
+.missionImage{
+    width: 40%;
+    margin-top: -5%;
+     height: 30vh;
+    object-fit: contain;
+
+}
+.missionDescription{
+    margin-top: -8%;
+}
