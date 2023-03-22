@@ -18,11 +18,10 @@ const ContactPage = ({ data: { wpPage: { contactfield: item } } }) => {
       <div className={contactContainer}>
         <h2>{item.title}</h2>
         <address className={adressContainer}>
-
-          <div className={address}>{item.address}</div>
-          <div className={city}>{item.city}</div>
-          <div  className={phone}> <a href="tel:+4733378901">{item.phoneNumber}</a></div>
-          <div className={mail}><a href="mailto:webmaster@example.com">{item.email}</a></div>
+          <div className={address}><a href="https://www.google.com/maps?t=m&hl=nl&gl=BE&cid=12030728999397251863" target="_blank">{item.address}</a></div>
+          <div className={city}><a href="https://www.google.com/maps?t=m&hl=nl&gl=BE&cid=12030728999397251863" target="_blank">{item.city}</a></div>
+          <div  className={phone}> <a href="tel:+4733378901" >{item.phoneNumber}</a></div>
+          <div className={mail}><a href="mailto:webmaster@example.com" >{item.email}</a></div>
         </address>
       </div>
     </Layout>
