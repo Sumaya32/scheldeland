@@ -1,18 +1,18 @@
 * {
   box-sizing: border-box;
   margin: 0;
+  font-family: sans-serif, georgia, serif;
 }
 
 .container {
-  font-family: sans-serif;
   width: 100%;
-  margin-bottom: 10%;
+  margin-bottom: 5%;
 }
 
 html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
-  font: 112.5%/1.45em sans-serif, georgia, serif;
+  font: 112.5%/1.45em ;
   box-sizing: border-box;
   overflow-y: scroll;
 }
@@ -29,7 +29,7 @@ main {
   padding-bottom: 5%;
 }
 
-
+/* 
 @media only screen and (max-width: 540px){
 
   .container {
@@ -37,4 +37,15 @@ main {
   }
   
 }
+ */
 
+ @media (max-width: 768px) {
+  .container {
+    margin-bottom: 40%;
+    flex-direction: column;
+  }
+
+	main {
+		flex-basis: 100%;
+	}
+}

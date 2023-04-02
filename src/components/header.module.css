@@ -1,13 +1,12 @@
-
 nav {
-background-color: white;
+  background-color: white;
   display: flex;
   width: 100%;
- /* margin-top: 2%;*/
   position: fixed;
   top: 0;
   z-index: 1;
-  padding: 20px;
+  padding-top: 15px;
+
 }
 
 /*
@@ -20,7 +19,7 @@ background-color: white;
   list-style: none;
 }*/
 
-.nav-link-item {
+.navLinkItem {
   padding-right: 1rem;
   height: 50px;
   display: inline-block;
@@ -32,7 +31,7 @@ background-color: white;
 
 
 
-.nav-link-text {
+.navinkText {
   color: black;
   text-transform: uppercase;
   text-decoration: none;
@@ -40,11 +39,11 @@ background-color: white;
   transition: color 0.2s ease;
 }
 
-.nav-link-text:hover {
+.navLinkText:hover {
   color: #74b4d1;
 }
 
-.nav-link-item {
+.navLinkItem {
   padding-left: 2rem;
 }
 
@@ -59,6 +58,10 @@ input {
   right: 20px; 
 }*/
 
+.active {
+
+  color: #74b4d1;
+}
 
 
 @media only screen and (max-width: 540px) {
@@ -69,27 +72,23 @@ input {
   }
 */
   .menuToggle {
-
     display: block;
     position: relative;
-    top: 2px;
     left: 20px;
+    bottom: 0.5rem;
     /*position: absolute;
     right: 5px;*/
     z-index: 1;
     -webkit-user-select: none;
     user-select: none;
+    width: 100%;
   }
 
-  .menuToggle .nav-link-item {
+  .menuToggle .navLinkItem {
     text-decoration: none;
-   /* color: #232323;*/
+    /* color: #232323;*/
     transition: color 0.3s ease;
 
-  }
-
-  .menuToggle .nav-link-item:hover {
-    color: tomato;
   }
 
   .menuToggle input {
@@ -124,7 +123,7 @@ input {
     transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
       /*background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),*/
       opacity 0.55s ease;
-    top: 3px;
+    top: 40%;
 
   }
 
@@ -168,7 +167,7 @@ input {
    */
   .menu {
     position: absolute;
-    width: 300px;
+    width: 110%;
     margin: -100px 0 0 -50px;
     padding: 20px;
     padding-top: 125px;
@@ -197,18 +196,13 @@ input {
     transform: none;
   }
 
-
-
-  .nav-link-item {
+  .navLinkItem {
     display: flex;
     justify-content: center;
 
   }
 
-
-
   span {
-    border: 2px solid rgb(95, 99, 100);  
+    border: 2px solid rgb(95, 99, 100);
   }
 }
-

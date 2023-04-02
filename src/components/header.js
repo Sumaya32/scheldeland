@@ -1,14 +1,7 @@
 import * as React from "react"
 import PropTypes from "prop-types"
-import { Link } from "gatsby"
-import {
-  navLinkItem,
-  navLinkText,
-  logo,
-  menu,
-  menuToggle,
-  hamburgerSpan
-} from './header.module.css'
+import { NavLink } from "react-router-dom" 
+import style from './header.module.css'
 //import { slide as Menu } from 'react-burger-menu'
 
 const Header = () => {
@@ -17,34 +10,34 @@ const Header = () => {
     <header>
       <nav>  
 
-      <div className={menuToggle}>       
+      <div className={style.menuToggle}>       
         <input type="checkbox" />
-        <span className={hamburgerSpan}></span>
-        <span className={hamburgerSpan}></span>
-        <span className={hamburgerSpan}></span>
+        <span className={style.hamburgerSpan}></span>
+        <span className={style.hamburgerSpan}></span>
+        <span className={style.hamburgerSpan}></span>
 
-        <ul className={menu}>
-          <li className={navLinkItem}> <Link href="/" className={logo}>Logo</Link></li>
+        <ul className={style.menu}>
+          <li className={style.navLinkItem}> <NavLink to="/" className={style.logo}>Logo</NavLink></li>
 
-          <li className={navLinkItem}>
-            <Link to="/" className={navLinkText} activeStyle={{ color: "#74b4d1" }}>
+          <li className={style.navLinkItem}>
+            <NavLink to="/" className={({ isActive }) => (isActive ? `${style.active} ${style.navlink}` :  `${style.inactive}`)}>
               Home
-            </Link>
+            </NavLink>
           </li>
-          <li className={navLinkItem}>
-            <Link to="/about" className={navLinkText} activeStyle={{ color: "#74b4d1" }}>
+          <li className={style.navLinkItem}>
+            <NavLink to="/about" className={({ isActive }) => (isActive ? `${style.active} ${style.navlink}` :  `${style.inactive}`)}>
               Over ons
-            </Link>
+            </NavLink>
           </li>
-          <li className={navLinkItem}>
-            <Link to="/contact" className={navLinkText} activeStyle={{ color: "#74b4d1" }}>
+          <li className={style.navLinkItem}>
+            <NavLink to="/contact" className={({ isActive }) => (isActive ? `${style.active} ${style.navlink}` :  `${style.inactive}`)} >
               Contact
-            </Link>
+            </NavLink>
           </li>
-          <li className={navLinkItem}>
-            <Link to="/gerechten" className={navLinkText} activeStyle={{ color: "#74b4d1" }}>
+          <li className={style.navLinkItem}>
+            <NavLink to="/menu" className={({ isActive }) => (isActive ? `${style.active} ${style.navlink}` :  `${style.inactive}`)}>
               Menu
-            </Link>
+            </NavLink>
           </li>
         </ul>
         </div>
