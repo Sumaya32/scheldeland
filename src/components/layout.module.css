@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: sans-serif, georgia, serif;
+}
+
+.container {
+  width: 100%;
+  margin-bottom: 5%;
+}
+
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  font: 112.5%/1.45em ;
+  box-sizing: border-box;
+  overflow-y: scroll;
+}
+
+body {
+  width: 100%;
+  position: relative;
+  margin: 0;
+  padding-bottom: 6rem;
+  min-height: 100%;
+}
+
+main {
+  padding-bottom: 5%;
+}
+
+/* 
+@media only screen and (max-width: 540px){
+
+  .container {
+    margin-bottom: 40%;
+  }
+  
+}
+ */
+
+ @media (max-width: 768px) {
+  .container {
+    margin-bottom: 40%;
+    flex-direction: column;
+  }
+
+	main {
+		flex-basis: 100%;
+	}
+}
