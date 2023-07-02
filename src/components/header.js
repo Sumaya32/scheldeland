@@ -21,22 +21,22 @@ const Header = () => {
 
           <li className={style.navLinkItem}>
             <NavLink to="/" className={({ isActive }) => (isActive ? `${style.active} ${style.navlink}` :  `${style.inactive}`)}>
-              Home
+              <div>Home</div>
             </NavLink>
           </li>
           <li className={style.navLinkItem}>
             <NavLink to="/about" className={({ isActive }) => (isActive ? `${style.active} ${style.navlink}` :  `${style.inactive}`)}>
-              Over ons
+           <div>Over ons</div>
             </NavLink>
           </li>
           <li className={style.navLinkItem}>
             <NavLink to="/contact" className={({ isActive }) => (isActive ? `${style.active} ${style.navlink}` :  `${style.inactive}`)} >
-              Contact
+             <div>Contact</div>
             </NavLink>
           </li>
           <li className={style.navLinkItem}>
             <NavLink to="/menu" className={({ isActive }) => (isActive ? `${style.active} ${style.navlink}` :  `${style.inactive}`)}>
-              Menu
+              <div>Menu</div>
             </NavLink>
           </li>
         </ul>

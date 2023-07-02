@@ -1,9 +1,5 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-  }
-  
 .container {
+    width: 100vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -11,19 +7,34 @@
     color: rgba(9, 15, 15, 1);
     margin-top: 5rem;
 }
+
 .headTitle{
-    border-bottom: 2px solid rgb(175, 177, 177);
+    border-bottom: 3px solid rgba(43, 41, 41, 0.2);
 }
+.desertTitle{
+    margin-top: 2%;
+
+}
+.smallContainer{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
 .miniContainer {
     color: rgb(96, 112, 112);
-    width: 50%;
+    width: 60%;
     display: grid;
     grid-template-columns: 300px 300px;
-    row-gap: 30px;
-   column-gap: 40px;
-    justify-items: center;
-    margin-left: 2%;
+    row-gap: 20px;
+   column-gap: 20px;
+   justify-content:center;
+   column-count: 2;
+    align-items: center;
     font-family: serif;
+ 
 }
 
 .hoofdGerecht, .desserth4 {
@@ -36,15 +47,20 @@
 }
 .titleMenu {
     margin-top: -2%;
+ 
 }
 
 .allMenus {
-    width: 85%;
-   /* background-color: rgb(211, 187, 235);*/
+    width: 100%;
+    min-height: 8rem;
     text-align: center;
     font-size: 15px;
     line-height: 1.2;
-    -webkit-font-smoothing: antialiased;
+    /* border: 1px dashed blue;
+    box-sizing: border-box; */
+    /* flex-basis: 50%; */
+ 
+   
 }
 
 .gerechtTitle {
@@ -54,26 +70,24 @@
 }
 
 .price {
-    margin-top: 5%;
+    margin-top: 1%;
     font-size: 18px;
 }
 
-.menuLine {
-    /* border-top: 5px solid rgb(137, 137, 138); */
+/* .menuLine {
+    border-top: 5px solid rgb(137, 137, 138);
     width: 110%;
     height: 8vh;
-    /* border-radius: 60px; */
-    /* margin-top: 2%; */
+    border-radius: 60px;
+    margin-top: 2%;
     display: flex;
     justify-content: center;
-    align-items: center;
- 
+    align-items: center; 
     margin: 3% 0 ;
-}
+} */
 
 
 @media only screen and (max-width: 540px) {
-
 .miniContainer {
     display: flex;
     flex-direction: column;
@@ -82,10 +96,7 @@
     text-align: center;
  
 }
-
-
 .menuLine{
     margin-bottom: 5%;
 }
-
  }

@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import Modal from 'react-modal';
 import { useGetAbout } from './_query'
 import Layout from '../components/layout'
 import { Spinner } from '../shared/Spinner'

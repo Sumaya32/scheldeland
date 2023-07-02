@@ -15,7 +15,7 @@ export const Home = () => {
     <div className={styles.container}>
      <div className={styles.mainImageContainer}> <img src={data?.mainimage?.sourceUrl} alt={data?.mainimage?.altText} className={styles.mainImage}/></div>
 
-      <div className={styles.miniContainer}>
+      <div className={styles.descriptionContainer}>
         <h2>{data?.title}</h2>
         <div>{data?.description}</div>
       </div>
@@ -24,7 +24,7 @@ export const Home = () => {
       <div className={styles.gerechtenContainer}>
         {data?.gerechten?.map((item) =>
           <div  key={item.slug} className={styles.gerechtenMiniContainer}>
-            <NavLink to={`/gerecht/${item.slug}`} className={styles.link}>
+            <NavLink to={`/menu/${item.slug}`} className={styles.link}>
               <img src={item.gerechtmeta.profilePicture?.sourceUrl} className={styles.gerechtenImage} />
               <div className={styles.gerechtTitle}>{item.gerechtmeta.title}</div>
             </NavLink>

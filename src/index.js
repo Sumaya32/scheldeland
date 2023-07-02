@@ -5,16 +5,12 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { ApolloClient, InMemoryCache, ApolloProvider  } from "@apollo/client";
-
-const client = new ApolloClient({
-  uri: `http://scheldeland.local/graphql`,
-  cache: new InMemoryCache(),
-});
+import { Config } from './config';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
 <BrowserRouter>
-  <ApolloProvider client={client}>
+  <ApolloProvider client={Config.ApolloClient}>
     <App/>
   </ApolloProvider>
   </BrowserRouter>
