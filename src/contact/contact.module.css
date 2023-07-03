@@ -6,9 +6,11 @@
     margin-top: 3%;
     text-align: center;    
 }
+
 .smallContainer{
     width: 100vw;
 }
+
 .adressContainer {
         width: 100%;
         display: flex;

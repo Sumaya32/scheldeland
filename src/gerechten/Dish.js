@@ -21,7 +21,7 @@ export const Dish = () => {
               <p className={styles.description}>{data?.description}</p>
               <div className={styles.origin}><span style={{ fontWeight: "bold"}} >origin: </span> {data?.origin}</div>
               <a className={styles.aAsBtn} href='http://localhost:3000/menu'>
-              <img style={{ width: "37%"}} src='/hand.png' />
+              <img className={styles.pointingFinger} src='/pointing_finger.png' />
               <div style={{ marginLeft: "1%" }}>Back</div>
             </a>
             </div>
@@ -35,12 +35,6 @@ export const Dish = () => {
             </a> */}
 
             {/* </button> */}
-
-
-
-
-
-
           </div>
         </div>
       </div>

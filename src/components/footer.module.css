@@ -69,6 +69,26 @@ a:hover {
   color: rgb(96, 98, 99);
 }
 
+.FooterLinkText{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fbIconText{
+  padding-right: 10px;
+}
+.fbIcon{
+  width: 10%;
+  background-color: white;
+  border-top-left-radius: 32px;
+  border-top-right-radius: 32px;
+  border-bottom-left-radius: 32px;
+  border-bottom-right-radius: 32px;
+}
+.fbIcon:hover{
+background-color: rgb(240, 123, 123);;
+}
+
 
 @media only screen and (max-width: 540px) {
   /* .footerUnderline {

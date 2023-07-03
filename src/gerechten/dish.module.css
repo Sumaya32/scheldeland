@@ -1,8 +1,9 @@
-body{
+body {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .container {
     display: flex;
     justify-content: center;
@@ -39,10 +40,13 @@ body{
 }
 
 .descriptionContainer {
-    color: rgb(97, 109, 109);
     color: black;
     margin: 1%;
     margin-top: 2%;
+}
+
+.description {
+    margin-bottom: 1%;
 }
 
 .origin {
@@ -58,30 +62,46 @@ body{
     cursor: pointer;
 }
 
-.modalBtn p {
+.aAsBtn div {
     font-weight: bold;
-    font-size: 1rem;
-    color: rgb(68, 67, 67);
-    color: black;
-    color: white;
+    font-size: 1.5rem;
 }
+
+.aAsBtn:hover {
+    color: rgb(240, 123, 123);
+}
+
+.pointingFinger {
+    width: 40%;
+}
+
+.pointingFinger:hover {
+    filter: invert(85%) sepia(44%) saturate(5203%) hue-rotate(309deg) brightness(97%) contrast(93%);
+}
+
+
+
+
+
 
 
 /*Media queries*/
 
-@media  (max-width: 912px) and (min-width: 812px) {
+@media (max-width: 912px) and (min-width: 812px) {
     .container {
 
         margin: 14rem 0 0rem 0;
     }
+
     .miniContainer {
         width: 70%;
     }
+
     .pic {
         width: 100%;
         height: 25rem;
     }
-    
+
 }
 
 
@@ -101,12 +121,13 @@ body{
 
         margin: 2rem 0 2rem 0;
     }
+
     .miniContainer {
         width: 80%;
     }
 }
 
-@media (max-width: 414px) and (min-width: 412px){
+@media (max-width: 414px) and (min-width: 412px) {
     .container {
 
         margin: 5rem 0 2rem 0;
@@ -115,4 +136,4 @@ body{
     /* .miniContainer {
         width: 80%;
     } */
-} 
+}
