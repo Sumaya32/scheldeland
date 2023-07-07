@@ -42,9 +42,13 @@ nav a:hover {
     color: rgb(240, 123, 123);
 }
 
-nav a:active {
-    color: var(--secondaryColor);
-}
+
+
+.active {
+    color: red;
+  }
+  
+
 
 header .nav_btn {
     padding: 5px;

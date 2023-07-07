@@ -35,9 +35,9 @@ footer {
   color: white;
 }
 
-a:hover {
+/* a:hover {
   color: rgb(240, 123, 123);
-}
+} */
 
 
 
@@ -74,9 +74,15 @@ a:hover {
   justify-content: center;
   align-items: center;
 }
+
 .fbIconText{
   padding-right: 10px;
 }
+
+.fbIconText:hover{
+  color: rgb(240, 123, 123);
+}
+
 .fbIcon{
   width: 10%;
   background-color: white;
@@ -85,8 +91,15 @@ a:hover {
   border-bottom-left-radius: 32px;
   border-bottom-right-radius: 32px;
 }
+
 .fbIcon:hover{
-background-color: rgb(240, 123, 123);;
+background-color: rgb(240, 123, 123);
+}
+
+.FooterLinkText:hover{
+  /* filter: invert(85%) sepia(44%) saturate(5203%) hue-rotate(309deg) brightness(97%) contrast(93%); */
+  /* filter: invert(26%) sepia(76%) saturate(7402%) hue-rotate(355deg) brightness(92%) contrast(126%); */
+
 }
 
 

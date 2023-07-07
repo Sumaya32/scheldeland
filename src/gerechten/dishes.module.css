@@ -55,12 +55,7 @@
     min-height: 8rem;
     text-align: center;
     font-size: 15px;
-    line-height: 1.2;
-    /* border: 1px dashed blue;
-    box-sizing: border-box; */
-    /* flex-basis: 50%; */
- 
-   
+    line-height: 1.2;   
 }
 
 .gerechtTitle {
@@ -69,8 +64,12 @@
     margin-bottom: 1%;
 }
 
+.allMenus:hover{
+    color: rgb(240, 123, 123);
+
+}
 .price {
-    margin-top: 1%;
+    margin-top: 4%;
     font-size: 18px;
 }
 

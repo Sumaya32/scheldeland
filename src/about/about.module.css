@@ -1,3 +1,8 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
 .container {
     display: flex;
     flex-direction: column;
@@ -11,6 +16,7 @@
 }
 
 .goalContainer {
+    /* background-color: rgb(233, 229, 229); */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -34,12 +40,16 @@
 }
 
 .groupGoalPic {
-    width: 80%;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 250px 250px;
+    row-gap: 10px;
+   column-gap: 10px;
+   justify-content:center;
 }
 
 .clickableImages {
-    width: 50%;
-    display: inline-block;
+    display: flex;
 }
 
 .goalImage {
@@ -104,14 +114,16 @@
 }
 
 .groupMissionPic {
-    width: 80%;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 250px 250px;
+    row-gap: 10px;
+   column-gap: 10px;
+   justify-content:center;
 }
 
 .toughableImage {
-    width: 50%;
-    display: inline-block;
-    /* margin-left: 1px; */
-    cursor: "pointer"
+    display: flex;    
 }
 
 .missionImage {
