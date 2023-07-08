@@ -9,25 +9,22 @@
 
 .smallContainer {
     display: flex;
-    /* flex-direction: column; */
     justify-content: center;
     align-items: center;
     width: 100vw;
 }
 
 .adressContainer {
-    /* background-color: red; */
     min-height: 330px;
     width: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-left: 15%;
 }
 
-.adressMiniContainer{
-display: flex;
-align-items: center;
+.adressMiniContainer {
+    display: flex;
+    align-items: center;
 }
 
 .address {
@@ -40,10 +37,6 @@ align-items: center;
 
 }
 
-/* .address:hover{
-    color: #74b4d1;
-} */
-
 .phone {
     display: flex;
     flex-direction: column;
@@ -51,7 +44,6 @@ align-items: center;
     align-items: center;
     padding: 2%;
     margin-bottom: 2%;
-
 }
 
 .email {
@@ -62,11 +54,11 @@ align-items: center;
     padding: 2%;
 }
 
-.email:hover, .phone:hover, .address:hover {
+.email:hover,
+.phone:hover,
+.address:hover {
     filter: invert(85%) sepia(44%) saturate(5203%) hue-rotate(309deg) brightness(97%) contrast(93%);
 }
-
-
 
 a {
     list-style: none;
@@ -77,7 +69,6 @@ a {
 
 h2 {
     font-weight: bolder;
-    margin-bottom: 1%;
     margin-bottom: 5%;
 }
 
@@ -86,37 +77,28 @@ h2 {
     justify-self: center;
     flex-direction: column;
     align-items: center;
-    /* background-color: aqua; */
     width: 50%;
     min-height: 330px;
-    padding-right: 20%;
 }
 
 .daysAndHours {
-    width: 80%;
-    /* background-color: violet; */
+    width: 50%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
 
 }
 
 .days {
-    /* background-color: yellow; */
     width: 30%;
-   /* text-align:calc(100% - 40%) */
-   /* padding-left: 30%; */
-   text-align: right;
-   padding: 0 3% 2% 0%;   
+    text-align: right;
+    padding: 0 0% 2% 25%;
 }
 
 .hours {
-    /* background-color: red; */
     width: 70%;
-    text-align: left;
     overflow-wrap: break-word;
-    padding: 0 0 2% 3%;
+    padding: 0 0 2% 5%;
 }
-
 
 @media only screen and (max-width: 540px) {
     .smallContainer {
@@ -132,6 +114,9 @@ h2 {
     }
 
 
+    .adressMiniContainer {
+        flex-direction: column;
+    }
 
     h2 {
         font-size: small;
@@ -143,4 +128,22 @@ h2 {
         padding-right: 0;
     }
 
+    .daysAndHours {
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+
+    }
+
+    .days {
+        text-align: center;
+       width: auto;
+        padding:0px
+    }
+    
+    .hours {
+        text-align: center;
+       width: auto;
+        padding:0px
+    }
 }

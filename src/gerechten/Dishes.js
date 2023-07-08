@@ -26,9 +26,9 @@ if(isLoading) return <Spinner/>
           const gerecht = item.node.gerechtmeta;
           const slug = item.node.slug;
           return <div key={item.node.slug} className={style.allMenus}>
-            <NavLink to={`/menu/${slug}`}>
-              <div className={style.gerechtTitle} key={item.node.id}>{gerecht.title}</div>
-              <div key={item.node.id}>{gerecht.menudescription}</div>
+            <NavLink className={style.menuNavLink} to={`/menu/${slug}`} >
+              <div className={style.dishTitle} key={item.node.id}>{gerecht.title}</div>
+              <div className={style.dishDescription} key={item.node.id}>{gerecht.menudescription}</div>
             </NavLink>
 
             <div className={style.price} key={item.node.id}>{gerecht.price}</div>
@@ -36,9 +36,6 @@ if(isLoading) return <Spinner/>
         })}
       </div>
 
-      {/* <hr className={style.menuLine}></hr> */}
-      {/* <div className={style.menuLine}>   <img src='./line3.png' style={{width: "50%", height: '150px', }}/></div> */}
-      {/* <img src='./line3.png' style={{width: "50%", height: '150px', }}/> */}
       <h2 className={`${style.headTitle} ${style.desertTitle}`} >Dessert</h2>
 
       <div className={style.miniContainer}>
@@ -46,9 +43,9 @@ if(isLoading) return <Spinner/>
           const item2 = item.node.dessertmeta;
           const slug = item.node.slug;
           return <div className={style.allMenus}>
-            <NavLink to={`/menu/${id}`}>
-            <div className={`${style.gerechtTitle}`}  key={item.node.id}>{item2.title}</div>
-              <div key={item.node.id}>{item2. minidescription}</div>
+            <NavLink className={style.menuNavLink} to={`/menu/${id}`}>
+            <div className={`${style.dishTitle}`}  key={item.node.id}>{item2.title}</div>
+              <div className={style.dishDescription} key={item.node.id}>{item2. minidescription}</div>
             </NavLink>
             <div className={style.price} key={item.node.id}>{item2.price}</div>
          
