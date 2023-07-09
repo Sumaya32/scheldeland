@@ -1,25 +1,44 @@
 import {gql} from "@apollo/client"
 
+// export const GetDishes = gql`
+// query {
+//   array: 
+//    gerechten {
+//      edges {
+//        node {
+//          gerechtmeta {
+//            title
+//            origin
+//            price
+//            menudescription
+//          }
+//          id
+//          slug
+//        }
+//      }
+//    }
+// }
+// `
+
+
 export const GetDishes = gql`
 query {
-  array: 
-   gerechten {
-     edges {
-       node {
-         gerechtmeta {
-           title
-           origin
-           price
-           menudescription
-         }
-         id
-         slug
-       }
-     }
-   }
+  hoofdgerechten {
+    edges {
+      node {
+        gerechtmeta {
+          title
+          origin
+          price
+          menudescription
+        }
+        id
+        slug
+      }
+    }
+  }
 }
 `
-
 
 // query NewQuery {
 //   page(id: "gerechten", idType: URI) {

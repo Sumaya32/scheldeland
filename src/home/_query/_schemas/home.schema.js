@@ -10,7 +10,7 @@ query {
         sourceUrl
       }
       gerechten {
-        ... on Gerecht {
+        ... on Hoofdgerecht {
           id
           slug
           gerechtmeta {
