@@ -1,0 +1,89 @@
+.container {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: rgba(9, 15, 15, 1);
+    margin-top: 5rem;
+}
+
+.headTitle{
+    border-bottom: 3px solid rgba(43, 41, 41, 0.2);
+}
+
+.desertTitle{
+    margin-top: 2%;
+
+}
+.smallContainer{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+.miniContainer {
+    color: rgb(96, 112, 112);
+    width: 60%;
+    display: grid;
+    grid-template-columns: 300px 300px;
+    row-gap: 20px;
+   column-gap: 20px;
+   justify-content:center;
+   column-count: 2;
+    align-items: center;
+    font-family: serif;
+ 
+}
+
+.hoofdGerecht, .desserth4 {
+    margin-bottom: 2%;
+    margin-top: 0%;
+    font-size: 20px;
+}
+.desserth4{
+    margin-top: 2%;
+}
+.titleMenu {
+    margin-top: -2%;
+ 
+}
+
+.allMenus {
+    width: 100%;
+    min-height: 8rem;
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.2;   
+}
+
+.menuNavLink:hover{
+    color: rgb(240, 123, 123);
+}
+
+.dishTitle{
+    line-height: 1.5;
+    font-size: 1.5rem;
+    margin-bottom: 1%;
+}
+
+.price {
+    margin-top: 4%;
+}
+
+
+@media only screen and (max-width: 540px) {
+.miniContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+ 
+}
+.menuLine{
+    margin-bottom: 5%;
+}
+ }

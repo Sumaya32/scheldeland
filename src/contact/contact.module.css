@@ -1,0 +1,149 @@
+.contactContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+    text-align: center;
+}
+
+.smallContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+
+.adressContainer {
+    min-height: 330px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.adressMiniContainer {
+    display: flex;
+    align-items: center;
+}
+
+.address {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+    margin-bottom: 2%;
+
+}
+
+.phone {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+    margin-bottom: 2%;
+}
+
+.email {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+}
+
+.email:hover,
+.phone:hover,
+.address:hover {
+    filter: invert(85%) sepia(44%) saturate(5203%) hue-rotate(309deg) brightness(97%) contrast(93%);
+}
+
+a {
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+}
+
+h2 {
+    font-weight: bolder;
+    margin-bottom: 5%;
+}
+
+.openingHours {
+    display: flex;
+    justify-self: center;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    min-height: 330px;
+}
+
+.daysAndHours {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.days {
+    width: 30%;
+    text-align: right;
+    padding: 0 0% 2% 25%;
+}
+
+.hours {
+    width: 70%;
+    overflow-wrap: break-word;
+    padding: 0 0 2% 5%;
+}
+
+@media only screen and (max-width: 540px) {
+    .smallContainer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .adressContainer {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        padding-left: 0;
+    }
+
+
+    .adressMiniContainer {
+        flex-direction: column;
+    }
+
+    h2 {
+        font-size: small;
+        overflow-wrap: break-word;
+    }
+
+    .openingHours {
+        width: auto;
+        padding-right: 0;
+    }
+
+    .daysAndHours {
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+
+    }
+
+    .days {
+        text-align: center;
+       width: auto;
+        padding:0px
+    }
+    
+    .hours {
+        text-align: center;
+       width: auto;
+        padding:0px
+    }
+}
