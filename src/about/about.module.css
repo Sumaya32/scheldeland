@@ -1,5 +1,4 @@
 .container {
-    background-color:greenyellow;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -8,10 +7,7 @@
 }
 
 .miniContainer {
-    background-color: red;
     width: 100vw;
-
-    
 }
 
 .title {
@@ -19,13 +15,11 @@
 }
 
 .goalContainer {
-    /* background-color: rgb(233, 229, 229); */
     display: flex;
     justify-content: center;
     align-items: center;
     width: 90%;
     height: 65vh;
-    /* border-radius: 40px; */
 }
 
 .groupGoalPicContainer {
@@ -60,11 +54,9 @@
     height: 22vh;
     border: 2px solid black;
     border-radius: 5px;
-    /* margin-left: 20px; */
 }
 
 .goalDescription {
-    /* background-color: rgb(233, 229, 229); */
     width: 50%;
     height: 55vh;
     margin-right: 3%;
