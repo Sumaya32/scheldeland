@@ -1,5 +1,5 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, NavLink, Link } from 'react-router-dom'
 import { useGetDish } from './_query';
 import Layout from '../components/layout'
 import styles from "./dish.module.css"
@@ -9,6 +9,10 @@ export const Dish = () => {
   const { data, isLoading } = useGetDish()
   const navigate = useNavigate();
 
+  const goBack = ()=>{
+    navigate(-1)
+  }
+  
   if (isLoading) return <Spinner />
   return (
     <Layout>
@@ -20,21 +24,12 @@ export const Dish = () => {
             <div className={styles.descriptionContainer}>
               <p className={styles.description}>{data?.description}</p>
               <div className={styles.origin}><span style={{ fontWeight: "bold"}} >origin: </span> {data?.origin}</div>
-              <a className={styles.aAsBtn} href='http://localhost:3000/menu'>
+              <NavLink className={styles.aAsBtn} 
+               onClick={goBack}>
               <img className={styles.pointingFinger} src='/pointing_finger.png' />
-              <div style={{ marginLeft: "1%" }}>Back</div>
-            </a>
+              {/* <div style={{ marginLeft: "1%" }}>Back</div> */}
+              </NavLink>
             </div>
-            {/* <button className={styles.modalBtn} onClick={() => navigate(-1)}> */}
-            {/* <div className={styles.leftArrow}></div> */}
-
-
-            {/* <a className={styles.aAsBtn} href='http://localhost:3000/menu'>
-              <img style={{ width: "35%", marginLeft: "10%" }} src='/hand.png' />
-              <div style={{ marginLeft: "5%" }}>Back</div>
-            </a> */}
-
-            {/* </button> */}
           </div>
         </div>
       </div>

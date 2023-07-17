@@ -161,7 +161,7 @@
 }
 
 @media only screen and (width: 280px) {
-    .groupGoalPicContainer {
+    /* .groupGoalPicContainer {
         margin-top: 25%;
     }
 
@@ -172,7 +172,7 @@
 
     .title {
         margin-top: 5%;
-    }
+    } */
 
 }
 
@@ -180,29 +180,37 @@
     .container {
         flex-direction: column;
         align-items: center;
+        justify-content: center;
 
     }
-
+    .miniContainer {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    }
     .goalContainer {
         height: auto;
         flex-direction: column;
+        justify-content: center;
     }
-
-    .goalDescription {
-        width: 100%;
-        margin-right: 0%;
-        margin-bottom: 5%;
-
-    }
-
     .groupGoalPicContainer {
-        /* margin-bottom: 15rem; */
-        width: 100%;
-
+        width: 80%;
+        height: auto;
+        margin-bottom: 10%;
+        margin-right: 0%;
     }
+        .groupGoalPic {
+         display: flex;
+         flex-direction: column;
+         width: 90%;    
+        }
 
-
-
+        
+    .goalDescription {
+        width: 80%;
+        margin-bottom: 3%;
+        margin-right: 0%;
+    }
 
     .missionContainer {
         height: auto;
@@ -213,12 +221,26 @@
     .missionDescription {
         width: 100%;
         margin-right: 0%;
-        margin-bottom: 50%;
+        /* margin-bottom: 50%; */
     }
 
-    .groupMissionPicContainer {
+    /* .groupMissionPicContainer {
         flex-direction: column;
         width: 100%;
+
+    } */
+
+    
+.groupMissionPicContainer {
+    width: 80%;
+    height: auto;
+    margin-bottom: 2%;
+    margin-right: 0%;
+}
+    .groupMissionPic {
+     display: flex;
+     flex-direction: column;
+     width: 90%;
 
     }
 

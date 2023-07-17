@@ -1,5 +1,5 @@
-import React from 'react';
-import { NavLink } from 'react-router-dom';
+import React, { useState } from 'react';
+import { NavLink, Link} from 'react-router-dom';
 
 import { useGetHome } from './_query';
 import Layout from '../components/layout';
@@ -9,6 +9,7 @@ import styles from "./index.module.css";
 
 export const Home = () => {
   const { data, isLoading } = useGetHome()
+
   if(isLoading) return <Spinner/>
   return (
     <Layout>
@@ -24,10 +25,11 @@ export const Home = () => {
       <div className={styles.gerechtenContainer}>
         {data?.gerechten?.map((item) =>
           <div  key={item.slug} className={styles.gerechtenMiniContainer}>
-            <NavLink to={`/menu/${item.slug}`} className={styles.link}>
-              <img src={item.gerechtmeta.profilePicture?.sourceUrl} className={styles.gerechtenImage} />
-              <div className={styles.gerechtTitle}>{item.gerechtmeta.title}</div>
-            </NavLink>
+            <Link to={`${"menu"}/${item.slug}`} className={styles.link}>
+            <img src={item.gerechtmeta.profilePicture?.sourceUrl} className={styles.gerechtenImage} />
+            <div className={styles.gerechtTitle}>{item.gerechtmeta.title}</div>
+          </Link>
+
           </div>
         )}
       </div>

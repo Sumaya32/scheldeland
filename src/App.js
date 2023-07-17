@@ -9,7 +9,7 @@ import { Contact } from './contact/Contact'
 function App() {
   return (
     <Routes>
-      <Route exact element={<Dish />} path="/menu/:id" />
+      <Route exact element={<Dish />} path="menu/:id" />
       <Route element={<Home />} path="/" />
       <Route element={<Dishes />} path="/menu" />
       <Route element={<About />} path="/about" />
