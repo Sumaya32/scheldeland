@@ -3,7 +3,7 @@ import { Navigate, Route, Routes, useLocation } from 'react-router-dom'
 import './App.css';
 import { Dishes, Dish } from './gerechten/';
 import { About } from './about/About'
-import { Home } from './home/Home'
+import { Home } from './home/Index'
 import { Contact } from './contact/Contact'
 
 function App() {

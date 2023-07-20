@@ -1,8 +1,4 @@
 .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     margin-top: 5rem;
 }
 
@@ -14,83 +10,71 @@
     margin-bottom: 3%;
 }
 
-.goalContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 90%;
-    height: 65vh;
+.discriptionParagraph {
+    width: 80%;
 }
 
-.groupGoalPicContainer {
+/*Group A*/
+.groupAContainer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+.groupAImageContainer {
     background-color: rgb(248, 243, 243);
-    width: 50%;
+    width: 45%;
     height: 55vh;
-    margin-right: 3%;
     display: flex;
     align-items: center;
     justify-content: center;
     box-shadow: 50px 50px 18px rgb(151, 152, 156);
     border-radius: 5px;
-    min-height: max-content !important;
-
+    /* min-height: max-content !important; */
 }
 
-.groupGoalPic {
-    width: 90%;
+.groupASmallImageContainer {
+    width: 100%;
     display: grid;
-    grid-template-columns: 250px 250px;
+    grid-template-columns: 48% 48%;
     row-gap: 10px;
     column-gap: 10px;
     justify-content: center;
+    align-items: center;
 }
 
-.clickableImages {
-    display: flex;
-}
-
-.goalImage {
+.grouAImage {
     width: 100%;
     height: 22vh;
     border: 2px solid black;
     border-radius: 5px;
 }
 
-.goalDescription {
-    width: 50%;
+.groupADescription {
+    width: 45%;
     height: 55vh;
-    margin-right: 3%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* box-shadow: 5px 10px 18px rgb(151, 152, 156);
-   border-radius: 10px */
 }
 
-.discriptionParagraph {
-    width: 80%;
-}
-
-.missionContainer {
+/*Group B*/
+.groupBContainer {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    width: 90%;
-    height: 65vh;
-    border-radius: 40px;
+    width: 100%;
+    height: auto;
+    margin-top: 1%;
 }
 
-.missionDescriptionParagrapgh {
-    width: 80%;
-}
-
-.groupMissionPicContainer {
+.groupBImageContainer {
     background-color: rgb(248, 243, 243);
-    width: 50%;
+    width: 45%;
     height: 55vh;
-    margin-right: 3%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -98,47 +82,33 @@
     border-radius: 5px
 }
 
-.missionDescription {
-    width: 50%;
+.groupBSmallImageContainer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 48% 48%;
+    row-gap: 10px;
+    column-gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.groupBImage {
+    width: 100%;
+    height: 22vh;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.groupBDescription {
+    width: 45%;
     height: 55vh;
-    margin-right: 3%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.groupMissionPic {
-    width: 90%;
-    display: grid;
-    grid-template-columns: 250px 250px;
-    row-gap: 10px;
-    column-gap: 10px;
-    justify-content: center;
-}
-
-.toughableImage {
-    display: flex;
-}
-
-.missionImage {
-    width: 100%;
-    height: 22vh;
-    border: 2px solid black;
-    border-radius: 5px;
-
-}
-
-.missionTitle {
-    margin-top: 5%;
-}
-
-
-.miniImage {
-    width: 550px;
-    height: 450px;
-}
-
+/*Modal*/
 .modalBtn {
     width: 120px;
     height: 25px;
@@ -155,93 +125,88 @@
     flex-direction: column;
 }
 
-.modalPic {
+.modalImage {
     width: 90%;
     height: 80%;
 }
 
-@media only screen and (width: 280px) {
-    /* .groupGoalPicContainer {
-        margin-top: 25%;
-    }
 
-    .groupMissionPicContainer {
-        margin-bottom: 25%;
-
-    }
-
-    .title {
-        margin-top: 5%;
-    } */
-
-}
-
-@media only screen and (max-width: 540px) {
+@media only screen and (max-width: 541px) {
     .container {
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        margin-top: 3rem;
+    }
 
-    }
     .miniContainer {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
-    .goalContainer {
+
+    .imageMiniContainer{
+        text-align: center;
+        width: 100%;
+     }
+    
+    /*Group A*/
+    .groupAContainer {
         height: auto;
         flex-direction: column;
         justify-content: center;
     }
-    .groupGoalPicContainer {
+
+    .groupAImageContainer {
         width: 80%;
         height: auto;
-        margin-bottom: 10%;
+        margin-bottom: 5%;
         margin-right: 0%;
     }
-        .groupGoalPic {
-         display: flex;
-         flex-direction: column;
-         width: 90%;    
-        }
 
-        
-    .goalDescription {
+    .groupASmallImageContainer {
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+    }
+
+    .groupADescription {
         width: 80%;
         margin-bottom: 3%;
         margin-right: 0%;
+        height: auto;
+        margin-bottom: 10%;
     }
 
-    .missionContainer {
+    /*Group B*/
+    .groupBContainer {
         height: auto;
         flex-direction: column;
-        margin-top: 2rem;
+        justify-content: center;
     }
 
-    .missionDescription {
-        width: 100%;
+    .groupBImageContainer {
+        width: 80%;
+        height: auto;
+        margin-bottom: 2%;
         margin-right: 0%;
-        /* margin-bottom: 50%; */
+        margin-bottom: 10%;
     }
 
-    /* .groupMissionPicContainer {
+    .groupBSmallImageContainer {
+        display: flex;
         flex-direction: column;
-        width: 100%;
-
-    } */
-
-    
-.groupMissionPicContainer {
-    width: 80%;
-    height: auto;
-    margin-bottom: 2%;
-    margin-right: 0%;
-}
-    .groupMissionPic {
-     display: flex;
-     flex-direction: column;
-     width: 90%;
-
+        width: 95%;
     }
 
+    .groupBDescription {
+        width: 80%;
+        margin-bottom: 3%;
+        margin-right: 0%;
+        height: auto;
+    }
+
+    .groupBImage{
+        width: 100%;
+     }    
 }

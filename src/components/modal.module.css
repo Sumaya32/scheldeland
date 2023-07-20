@@ -42,9 +42,9 @@ background-color: rgb(240, 123, 123);
 }
 
 @media only screen and (max-width: 540px) {
-    .miniContainer {
+    /* .miniContainer {
         width: 80%;
         height: 40%;
         right: 10%;
-    }     
+    }      */
  }

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useGetAbout } from './_query'
 import Layout from '../components/layout'
 import { Spinner } from '../shared/Spinner'
-import styles from './about.module.css'
+import style from './about.module.css'
 import { Modal2 } from '../components/Modal'
 
 export const About = () => {
@@ -28,20 +28,20 @@ export const About = () => {
   if (isLoading) return <Spinner />
   return (
     <Layout>
-      <div className={styles.container}>
-        <div className={styles.miniContainer}>
-          <div className={styles.goalContainer}>
-            <div key={data?.goalDescription} className={styles.goalDescription}>
-              <h2 className={styles.title}>{data?.goalTitle}</h2>
-              <p className={styles.discriptionParagraph}>
+      <div className={style.container}>
+        <div className={style.miniContainer}>
+          <div className={style.groupAContainer}>
+            <div key={data?.goalDescription} className={style.groupADescription}>
+              <h2 className={style.title}>{data?.goalTitle}</h2>
+              <p className={style.discriptionParagraph}>
                 {data?.goalDescription}
               </p>
             </div>
-            <div className={styles.groupGoalPicContainer}>
-              <div className={styles.groupGoalPic}>
+            <div className={style.groupAImageContainer}>
+              <div className={style.groupASmallImageContainer}>
                 {employeePictures && employeePictures?.map((item) =>
-                  <div key={item.altText} onClick={() => { setIsOpen(true); setVisiblePicture((prev) => ({ ...prev, picture: item.picture, altText: item.altText })) }} style={{ cursor: "pointer" }} className={styles.clickableImages}>
-                    <img key={item?.altText} src={item?.picture} alt={item?.altText} className={styles.goalImage} />
+                  <div key={item.altText} onClick={() => { setIsOpen(true); setVisiblePicture((prev) => ({ ...prev, picture: item.picture, altText: item.altText })) }} style={{ cursor: "pointer" }} className={style.imageMiniContainer}>
+                    <img key={item?.altText} src={item?.picture} alt={item?.altText} className={style.grouAImage} />
                   </div>
                 )}
               </div>
@@ -49,25 +49,24 @@ export const About = () => {
           </div>
 
 
-          <div className={styles.missionContainer}>
-            <div className={styles.groupMissionPicContainer}>
-              <div className={styles.groupMissionPic}>
+          <div className={style.groupBContainer}>
+            <div className={style.groupBImageContainer}>
+              <div className={style.groupBSmallImageContainer}>
                 {atmospherePictures && atmospherePictures?.map((item) =>
-                  <div key={item.altText} onClick={() => { setIsOpen(true); setVisiblePicture((prev) => ({ ...prev, picture: item.picture, altText: item.altText })) }} style={{ cursor: "pointer" }} className={styles.toughableImage}>
-                    <img key={item.altText} src={item.picture} alt={item.altText} className={styles.missionImage} />
+                  <div key={item.altText} onClick={() => { setIsOpen(true); setVisiblePicture((prev) => ({ ...prev, picture: item.picture, altText: item.altText })) }} style={{ cursor: "pointer" }} className={style.imageMiniContainer}>
+                    <img key={item.altText} src={item.picture} alt={item.altText} className={style.groupBImage} />
                   </div>
                 )}
               </div>
             </div>
-            <div className={styles.missionDescription}>
-              <h2 className={styles.missionTitle}>{data?.missionTitle}</h2>
-              <p className={styles.missionDescriptionParagrapgh}>{data?.missionDescription}</p>
+            <div className={style.groupBDescription}>
+              <h2 className={style.title}>{data?.missionTitle}</h2>
+              <p className={style.descriptionParagrapgh}>{data?.missionDescription}</p>
             </div>
-
 
           </div>
           {modalIsOpen && <Modal2 handelclick={handleChild}>
-            <img src={visiblePicture?.picture} alt={visiblePicture?.altText} className={styles.modalPic} />
+            <img src={visiblePicture?.picture} alt={visiblePicture?.altText} className={style.modalImage} />
           </Modal2>}
         </div>
       </div>
