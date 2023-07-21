@@ -8,7 +8,6 @@
 }
 
 :root {
-    /* --mainColor: #29335c; */
     --mainColor: #000;
     --mainColorLighter: #5767aa;
     --secondaryColor: #db2b39;
@@ -42,13 +41,9 @@ nav a:hover {
     color: rgb(240, 123, 123);
 }
 
-
-
 .active {
     color: red;
-  }
-  
-
+}
 
 header .nav_btn {
     padding: 5px;
@@ -66,6 +61,7 @@ header .nav_btn:hover {
     color: var(--secondaryColor);
 }
 
+/*Media queries*/
 @media only screen and (max-width: 768px) {
     header .nav_btn {
         visibility: visible;
@@ -88,7 +84,6 @@ header .nav_btn:hover {
         transform: translateY(-100vh);
         z-index: 1;
         flex-direction: column;
-
     }
 
     header .responsive_nav {

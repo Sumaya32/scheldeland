@@ -8,6 +8,7 @@
 body{
   width: 100vw;
 }
+
 .container{
   display: flex;
   flex-direction: column;
@@ -18,17 +19,20 @@ main{
   margin: 7% 0 5% 0;
 }
 
-
+/*Media queries*/
 @media only screen and (min-width: 1279px){
   main {
     margin-top: 5%;
   }
+
+  
 }
 @media only screen and (max-width: 769px){
   main {
     margin-top: 11%;
   }
 }
+
 
 @media only screen and (max-width: 541px){
 
@@ -39,14 +43,11 @@ main{
 }
 
 
-
 @media only screen and (max-width: 415px){
 
   main {
     margin-top: 20%;
   }
- 
-  
 }
 
 
@@ -55,15 +56,12 @@ main{
   main {
     margin-top: 23%;
   }
-  
-  
 }
+
 
 @media only screen and (max-width: 281px){
 
   main {
     margin-top: 31%;
-  }
-  
-  
+  }  
 }
