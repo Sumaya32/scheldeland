@@ -52,6 +52,10 @@
     border-radius: 5px;
 }
 
+.grouAImage:hover{
+cursor: pointer;
+}
+
 .groupADescription {
     width: 45%;
     height: 55vh;
@@ -98,6 +102,10 @@
     border: 2px solid black;
     border-radius: 5px;
 }
+
+.groupBImage:hover{
+    cursor: pointer;
+    }
 
 .groupBDescription {
     width: 45%;
