@@ -14,7 +14,7 @@ const Header2 = () => {
     }
     return (
         <header>
-            <a href="/" className={style.logo}>Logo</a>
+            <a href="/" className={style.logoContainer}><img src="/logo.png" className={style.logo}/></a>
             <nav ref={navRef} className={toggled ? style.responsive_nav : ""}>
                 <NavLink to="/" className={({ isActive }) => (isActive ? `${style.active} ${style.navlink}` : `${style.inactive}`)} >
                     Home

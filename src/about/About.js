@@ -8,15 +8,18 @@ import { Modal2 } from '../components/Modal'
 export const About = () => {
   const { data, isLoading } = useGetAbout()
   const [employeePictures] = useState([
-    { picture: data?.personeel1.sourceUrl, altText: data?.personeel1.altText },
-    { picture: data?.personeel2.sourceUrl, altText: data?.personeel2.altText },
-    { picture: data?.personeel3.sourceUrl, altText: data?.personeel3.altText }
+    { picture: data?.groupaImage1.sourceUrl, altText: data?.groupaImage1.altText },
+    { picture: data?.groupaImage2.sourceUrl, altText: data?.groupaImage2.altText },
+    { picture: data?.groupaImage3.sourceUrl, altText: data?.groupaImage3.altText },
+    { picture: data?.groupaImage4.sourceUrl, altText: data?.groupaImage4.altText }
   ])
-  const [atmospherePictures] = useState([
-    { picture: data?.sfeer1.sourceUrl, altText: data?.sfeer1.altText },
-    { picture: data?.sfeer2.sourceUrl, altText: data?.sfeer2.altText },
-    { picture: data?.sfeer3.sourceUrl, altText: data?.sfeer3.altText },
-    { picture: data?.sfeer4.sourceUrl, altText: data?.sfeer4.altText }
+  const [customersPictures] = useState([
+    { picture: data?.groupbImage1.sourceUrl, altText: data?.groupbImage1.altText },
+    { picture: data?.groupbImage2.sourceUrl, altText: data?.groupbImage2.altText },
+    { picture: data?.groupbImage3.sourceUrl, altText: data?.groupbImage3.altText },
+    { picture: data?.groupbImage4.sourceUrl, altText: data?.groupbImage4.altText },
+    { picture: data?.groupbImage5.sourceUrl, altText: data?.groupbImage5.altText }
+
   ])
   const [visiblePicture, setVisiblePicture] = useState([])
   const [modalIsOpen, setIsOpen] = React.useState(false)
@@ -32,9 +35,9 @@ export const About = () => {
         <div className={styles.miniContainer}>
           <div className={styles.groupAContainer}>
             <div key={data?.goalDescription} className={styles.groupADescription}>
-              <h2 className={styles.title}>{data?.goalTitle}</h2>
+              <h2 className={styles.title}>{data?.groupaTitle}</h2>
               <p className={styles.discriptionParagraph}>
-                {data?.goalDescription}
+                {data?.groupaDescription}
               </p>
             </div>
             <div className={styles.groupAImageContainer}>
@@ -52,7 +55,7 @@ export const About = () => {
           <div className={styles.groupBContainer}>
             <div className={styles.groupBImageContainer}>
               <div className={styles.groupBSmallImageContainer}>
-                {atmospherePictures && atmospherePictures?.map((item) =>
+                {customersPictures && customersPictures?.map((item) =>
                   <div key={item.altText} onClick={() => { setIsOpen(true); setVisiblePicture((prev) => ({ ...prev, picture: item.picture, altText: item.altText })) }} styles={{ cursor: "pointer" }} className={styles.imageMiniContainer}>
                     <img key={item.altText} src={item.picture} alt={item.altText} className={styles.groupBImage} />
                   </div>
@@ -60,8 +63,8 @@ export const About = () => {
               </div>
             </div>
             <div className={styles.groupBDescription}>
-              <h2 className={styles.title}>{data?.missionTitle}</h2>
-              <p className={styles.descriptionParagrapgh}>{data?.missionDescription}</p>
+              <h2 className={styles.title}>{data?.groupbTitle}</h2>
+              <p className={styles.descriptionParagrapgh}>{data?.groupbDescription}</p>
             </div>
 
           </div>

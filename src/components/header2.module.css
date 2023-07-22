@@ -14,8 +14,14 @@
     --textColor: white
 }
 
-.logo {
-    color: var(--textColor);
+.logoContainer {
+    width: 4%;
+    height: 50%;
+}
+
+.logo{
+    width: 100%;
+    height: 100%;
 }
 
 header {

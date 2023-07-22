@@ -1,50 +1,50 @@
-import {gql} from "@apollo/client"
+import { gql } from "@apollo/client"
 
 export const GetAbout = gql`
 query {
   page(id: "cG9zdDozOA==") {
     aboutusfields {
-      goalTitle
-      goalPicture {
-        altText
+      groupaTitle
+      groupaDescription
+      groupaImage1 {
         sourceUrl
-      }
-      goalDescription
-      missionTitle
-      sfeer1 {
         altText
-        sourceUrl
       }
-      missionDescription
-      personeel1 {
+      groupaImage2 {
+        sourceUrl
         altText
-        sourceUrl
       }
-      personeel2 {
+      groupaImage3 {
+        sourceUrl
         altText
-        sourceUrl
       }
-      personeel3 {
+      groupaImage4 {
+        sourceUrl
         altText
-        sourceUrl
       }
-      personeel4 {
+      groupbTitle
+      groupbDescription
+      groupbImage1 {
+        sourceUrl
         altText
-        sourceUrl
       }
-      sfeer2 {
+      groupbImage2 {
+        sourceUrl
         altText
-        sourceUrl
       }
-      sfeer3 {
+      groupbImage3 {
+        sourceUrl
         altText
-        sourceUrl
       }
-      sfeer4 {
+      groupbImage4 {
+        sourceUrl
         altText
-        sourceUrl
       }
-    }
+      groupbImage5 {
+        sourceUrl
+        altText
+      }
+    }   
   }
 }
 `
