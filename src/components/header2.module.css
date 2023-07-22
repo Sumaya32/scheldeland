@@ -15,8 +15,9 @@
 }
 
 .logoContainer {
-    width: 4%;
-    height: 50%;
+    margin: 1%  0 0 3%;
+    width: 5%;
+    height: 40%;
 }
 
 .logo{
@@ -104,5 +105,9 @@ header .nav_btn:hover {
 
     nav a {
         font-size: 1.5rem;
+    }
+    .logoContainer {
+        width: 10%;
+        height: 30%;
     }
 }
