@@ -23,6 +23,7 @@ export const Home = () => {
 
         <h1>Top 10 gerechten</h1>
         <div className={styles.dishesContainer}>
+          
           {data?.gerechten?.map((item) =>
             <div key={item.slug} className={styles.dishesMiniContainer}>
               <Link to={`${"menu"}/${item.slug}`} className={styles.link}>

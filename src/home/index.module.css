@@ -32,7 +32,8 @@ h1 {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    height: 300px;
+    flex-wrap: wrap;
+    height: auto;
 }
 
 .dishesMiniContainer {
@@ -44,7 +45,7 @@ h1 {
     justify-content: center;
     align-items: center;
     width: 16%;
-    margin-right: 2%;
+    margin: 1% 2% 0 0 ;
     height: 13rem;
     box-shadow: 0px 1px 5px;
     border-bottom-left-radius: 20px;

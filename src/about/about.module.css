@@ -1,5 +1,6 @@
 .container {
     margin: 4rem 0 3rem 0;
+
 }
 
 .miniContainer {
@@ -19,7 +20,7 @@
 .groupAContainer {
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: start;
     width: 100%;
     height: auto;
 }
@@ -64,14 +65,13 @@ cursor: pointer;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
 }
+
 
 /*Group B*/
 .groupBContainer {
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
     width: 100%;
     height: auto;
     margin-top: 1%;
@@ -113,10 +113,10 @@ cursor: pointer;
 .groupBDescription {
     width: 45%;
     height: auto;
-    padding: 0.5rem 0rem 0.5rem 0rem;    display: flex;
+    padding: 0.5rem 0rem 0.5rem 0rem;
+    display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
 }
 
 /*Modal*/
@@ -143,17 +143,11 @@ cursor: pointer;
 
 /*Media queris*/
 @media only screen and (max-width: 541px) {
-    .container {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        /* margin-top: 3rem; */
-    }
-
     .miniContainer {
+        display: flex;
         flex-direction: column;
-        align-items: center;
         justify-content: center;
+        align-items: center;        
     }
 
     .imageMiniContainer{
@@ -164,15 +158,17 @@ cursor: pointer;
     /*Group A*/
     .groupAContainer {
         height: auto;
+        display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
     }
 
     .groupAImageContainer {
         width: 80%;
         height: auto;
         margin-bottom: 5%;
-        margin-right: 0%;
+        margin-right: 0;
     }
 
     .groupASmallImageContainer {
@@ -183,8 +179,7 @@ cursor: pointer;
 
     .groupADescription {
         width: 80%;
-        margin-bottom: 3%;
-        margin-right: 0%;
+        margin-right: 0;
         height: auto;
         margin-bottom: 10%;
     }
@@ -192,15 +187,17 @@ cursor: pointer;
     /*Group B*/
     .groupBContainer {
         height: auto;
+        display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
     }
 
     .groupBImageContainer {
         width: 80%;
         height: auto;
         margin-bottom: 2%;
-        margin-right: 0%;
+        margin-right: 0;
         margin-bottom: 10%;
     }
 
@@ -213,7 +210,7 @@ cursor: pointer;
     .groupBDescription {
         width: 80%;
         margin-bottom: 3%;
-        margin-right: 0%;
+        margin-right: 0;
         height: auto;
     }
 
@@ -230,6 +227,6 @@ cursor: pointer;
 
 @media only screen and (min-width: 820px) and (max-width: 1024px) {
     .container {
-        margin-top: 8rem;
+        margin-top: 9rem;
     }
 }

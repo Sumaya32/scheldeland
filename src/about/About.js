@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useGetAbout } from './_query'
 import Layout from '../components/layout'
 import { Spinner } from '../shared/Spinner'
@@ -7,26 +7,31 @@ import { Modal2 } from '../components/Modal'
 
 export const About = () => {
   const { data, isLoading } = useGetAbout()
-  const [employeePictures] = useState([
-    { picture: data?.groupaImage1.sourceUrl, altText: data?.groupaImage1.altText },
-    { picture: data?.groupaImage2.sourceUrl, altText: data?.groupaImage2.altText },
-    { picture: data?.groupaImage3.sourceUrl, altText: data?.groupaImage3.altText },
-    { picture: data?.groupaImage4.sourceUrl, altText: data?.groupaImage4.altText }
-  ])
-  const [customersPictures] = useState([
-    { picture: data?.groupbImage1.sourceUrl, altText: data?.groupbImage1.altText },
-    { picture: data?.groupbImage2.sourceUrl, altText: data?.groupbImage2.altText },
-    { picture: data?.groupbImage3.sourceUrl, altText: data?.groupbImage3.altText },
-    { picture: data?.groupbImage4.sourceUrl, altText: data?.groupbImage4.altText },
-    { picture: data?.groupbImage5.sourceUrl, altText: data?.groupbImage5.altText }
-
-  ])
+  const [employeePictures, setEmployeePicture] = useState([])
+  const [customersPictures, setCustomersPictures] = useState([])
   const [visiblePicture, setVisiblePicture] = useState([])
   const [modalIsOpen, setIsOpen] = React.useState(false)
 
   const handleChild = () => {
     setIsOpen(false)
   };
+
+  useEffect(()=>{
+    setEmployeePicture([
+      { picture: data?.groupaImage1?.sourceUrl, altText: data?.groupaImage1.altText },
+      { picture: data?.groupaImage2?.sourceUrl, altText: data?.groupaImage2.altText },
+      { picture: data?.groupaImage3?.sourceUrl, altText: data?.groupaImage3.altText },
+      { picture: data?.groupaImage4?.sourceUrl, altText: data?.groupaImage4.altText }
+    ])
+    
+    setCustomersPictures([
+      { picture: data?.groupbImage1.sourceUrl, altText: data?.groupbImage1.altText },
+      { picture: data?.groupbImage2.sourceUrl, altText: data?.groupbImage2.altText },
+      { picture: data?.groupbImage3.sourceUrl, altText: data?.groupbImage3.altText },
+      { picture: data?.groupbImage4.sourceUrl, altText: data?.groupbImage4.altText },
+      { picture: data?.groupbImage5.sourceUrl, altText: data?.groupbImage5.altText }
+    ])
+  },[data]);
 
   if (isLoading) return <Spinner />
   return (

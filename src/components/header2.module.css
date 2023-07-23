@@ -31,7 +31,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 100px;
+    height: 10%;
     padding: 0 2rem;
     background-color: var(--mainColor);
     color: var(--textColor);
@@ -110,4 +110,11 @@ header .nav_btn:hover {
         width: 10%;
         height: 30%;
     }
+}
+
+
+@media only screen and (max-width: 540px) {
+header {
+    height: 7%;
+}
 }
