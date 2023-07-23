@@ -1,5 +1,5 @@
 .container {
-    margin-top: 5rem;
+    margin: 4rem 0 3rem 0;
 }
 
 .miniContainer {
@@ -8,6 +8,7 @@
 
 .title {
     margin-bottom: 3%;
+    font-size: 1.8rem
 }
 
 .discriptionParagraph {
@@ -140,13 +141,13 @@ cursor: pointer;
     height: 80%;
 }
 
-
+/*Media queris*/
 @media only screen and (max-width: 541px) {
     .container {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        margin-top: 3rem;
+        /* margin-top: 3rem; */
     }
 
     .miniContainer {
@@ -224,5 +225,11 @@ cursor: pointer;
      .modalImageContainer {
         background-color: #5a9fbe;
         width: 100%;
+    }
+}
+
+@media only screen and (min-width: 820px) and (max-width: 1024px) {
+    .container {
+        margin-top: 8rem;
     }
 }

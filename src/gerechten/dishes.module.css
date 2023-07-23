@@ -5,7 +5,8 @@
     align-items: center;
     justify-content: center;
     color: rgba(9, 15, 15, 1);
-    margin-top: 5rem;
+    /* margin-top: 5rem; */
+    margin: 3rem 0 3rem 0;
 }
 
 .headTitle{
@@ -38,10 +39,10 @@
  
 }
 
-.hoofdGerecht, .desserth4 {
+.headTitle {
     margin-bottom: 2%;
     margin-top: 0%;
-    font-size: 20px;
+    font-size: 1.8rem
 }
 .desserth4{
     margin-top: 2%;

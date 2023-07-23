@@ -1,15 +1,12 @@
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .container {
-    /* background-color: rgba(0,0,0,0.7); */
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 2rem;
+    background-image: url("/public/food-background3.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+   height: 100vh;
 }
 
 .miniContainer {
@@ -19,7 +16,7 @@ body {
     align-items: center;
     width: 40%;
     box-shadow: 10px 10px 20px 10px;
-    margin-top: 1rem;
+    margin-top: -4rem;
 }
 
 .imageContainer {
@@ -87,54 +84,20 @@ body {
 
 
 /*Media queries*/
-
-@media (max-width: 912px) and (min-width: 812px) {
-    .container {
-
-        margin: 14rem 0 0rem 0;
-    }
-
-    .miniContainer {
-        width: 70%;
-    }
-
-    .pic {
-        width: 100%;
-        height: 25rem;
-    }
-
-}
-
-
-@media only screen and (width: 768px) {
-    .container {
-
-        margin: 8rem 0 2rem 0;
-    }
-
+@media only screen and (max-width: 768px) {
     .miniContainer {
         width: 80%;
     }
 }
 
-@media only screen and (max-width: 540px) {
-    .container {
-
-        margin: 2rem 0 2rem 0;
-    }
-
+@media only screen and (min-width: 820px) and (max-width: 1280px){
     .miniContainer {
-        width: 80%;
+        width: 60%;
     }
 }
 
-@media (max-width: 414px) and (min-width: 412px) {
-    .container {
-
-        margin: 5rem 0 2rem 0;
+@media (width: 1024px) {
+    .miniContainer {
+        margin-top: 5rem;
     }
-
-    /* .miniContainer {
-        width: 80%;
-    } */
 }
