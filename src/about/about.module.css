@@ -219,4 +219,10 @@ cursor: pointer;
     .groupBImage{
         width: 100%;
      }    
+    
+     /*Modal*/
+     .modalImageContainer {
+        background-color: #5a9fbe;
+        width: 100%;
+    }
 }

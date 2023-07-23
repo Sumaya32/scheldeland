@@ -9,7 +9,6 @@ const Header2 = () => {
     const [toggled, setToggled] = useState(false);
     const navRef = useRef();
     const showNavbar = () => {
-        // navRef.current.transform("none")
         setToggled(!toggled)
     }
     return (

@@ -4,14 +4,14 @@ import styles from './modal.module.css'
 export const Modal2 = ({ handelclick, children }) => {
     const [modalIsOpen, setIsOpen] = useState(false)
 
-    const fun = () => {
+    const modalFunction = () => {
         setIsOpen(false)
     }
     return (
         <div className={styles.container}>
-        <div onClick={() => handelclick(fun)} className={styles.miniContainer} >
+        <div onClick={() => handelclick(modalFunction)} className={styles.miniContainer} >
             {children}
-            <button onClick={() => handelclick(fun)} className={styles.modalBtn}>Close</button>
+            <button onClick={() => handelclick(modalFunction)} className={styles.modalBtn}>Close</button>
         </div>
         </div>
     )
