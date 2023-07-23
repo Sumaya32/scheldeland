@@ -5,18 +5,15 @@
     align-items: center;
     justify-content: center;
     color: rgba(9, 15, 15, 1);
-    /* margin-top: 5rem; */
     margin: 3rem 0 3rem 0;
 }
 
 .headTitle{
-    border-bottom: 3px solid rgba(43, 41, 41, 0.2);
+    /* border-bottom: 5px solid rgba(43, 41, 41, 0.2); */
+    border-bottom: 5px solid black;
+    border-radius: 10px;
 }
 
-.desertTitle{
-    margin-top: 2%;
-
-}
 .smallContainer{
     width: 100vw;
     display: flex;
@@ -36,6 +33,7 @@
    column-count: 2;
     align-items: center;
     font-family: serif;
+    margin: 1rem 0 1rem 0;
  
 }
 
@@ -43,13 +41,6 @@
     margin-bottom: 2%;
     margin-top: 0%;
     font-size: 1.8rem
-}
-.desserth4{
-    margin-top: 2%;
-}
-.titleMenu {
-    margin-top: -2%;
- 
 }
 
 .allMenus {
@@ -84,6 +75,7 @@
     text-align: center;
  
 }
+
 .menuLine{
     margin-bottom: 5%;
 }
