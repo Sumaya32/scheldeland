@@ -1,9 +1,19 @@
 import React from 'react';
-import styles from './spinner.module.css'
+import styles from './spinner.module.css';
+
 export const Spinner = () => {
     return (
-        <body>
-         <div className={styles.spinContainer}>   <div className={styles.spin}></div></div>
-        </body>
+        <div className={styles.center}>
+            <div className={styles.wave}></div>
+            <div className={styles.wave}></div>
+            <div className={styles.wave}></div>
+            <div className={styles.wave}></div>
+            <div className={styles.wave}></div>
+            <div className={styles.wave}></div>
+            <div className={styles.wave}></div>
+            <div className={styles.wave}></div>
+            <div className={styles.wave}></div>
+            <div className={styles.wave}></div>
+        </div>
     )
 }

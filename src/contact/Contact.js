@@ -14,10 +14,7 @@ export const Contact = () => {
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2977.8498601498263!2d4.285960943380119!3d51.12574092945093!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3f2ed903fa9b9%3A0xa6f5bc488e105b17!2sScheldeland!5e0!3m2!1snl!2sbe!4v1670838055770!5m2!1snl!2sbe" style={{ width: "100%", height: "38vh" }} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" className={styles.iframe}></iframe>
 
         <div className={styles.smallContainer}>
-
-          {/* <h2>{data?.title}</h2> */}
-
-
+          
           <div className={styles.adressContainer}>
             <h2>Contacteer ons</h2>
             <div className={styles.adressMiniContainer}>
