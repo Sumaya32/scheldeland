@@ -17,7 +17,7 @@ export const Dish = () => {
   
   useEffect(()=>{
     setStateBackgroungImage(backgroungImage)
-  },[backgroungImage]);
+  },[backgroungImage, data]);
 
   if (isLoading) return <Spinner />
   return (
