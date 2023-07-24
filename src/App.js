@@ -1,7 +1,7 @@
 import React from 'react';
 import { Navigate, Route, Routes, useLocation } from 'react-router-dom'
 import './App.css';
-import { Dishes, Dish } from './gerechten/';
+import { Dishes, Dish } from './dishes/';
 import { About } from './about/About'
 import { Home } from './home/Index'
 import { Contact } from './contact/Contact'
