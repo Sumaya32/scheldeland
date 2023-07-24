@@ -2,7 +2,6 @@
     display: flex;
     justify-content: center;
     align-items: start;
-    background-image: url("/public/food-background3.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -16,7 +15,7 @@
     align-items: center;
     width: 40%;
     box-shadow: 10px 10px 20px 10px;
-    margin-top: 4%;
+    margin-top: 2%;
 }
 
 .imageContainer {
@@ -88,12 +87,6 @@
 }
 
 
-@media only screen and (width: 280px) {
-    .container {
-        margin-top: -13%;
-    }
-}
-
 @media only screen and (max-width: 768px) {
     .miniContainer {
         margin-top: 20%;
@@ -101,6 +94,16 @@
     } 
 }
 
+
+@media only screen and (width: 280px) {
+    .container {
+        margin-top: -13%;
+    }
+    .miniContainer {
+        margin-top: 20%;
+        width: 95%;
+    }
+}
 
 @media only screen and (min-width: 820px) and (max-width: 1280px) {
     .miniContainer {
@@ -113,7 +116,7 @@
 
 @media (width: 1024px) {
     .miniContainer {
-        margin-top: 7rem;
+        margin-top: 5.5rem;
     }
 }
 
