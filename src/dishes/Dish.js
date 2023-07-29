@@ -25,7 +25,9 @@ export const Dish = () => {
       <div className={styles.container} style={{backgroundImage: `url(${stateBackgroungImage})`  }}>
         <div className={styles.miniContainer}>
           <h2 className={styles.title}>{data?.title}</h2>
-          <div className={styles.imageContainer}><img src={data?.profilePicture.sourceUrl} alt={data?.profilePicture.altText} className={styles.pic} /></div>
+          <div className={styles.imageContainer}>
+            <img src={data?.profilePicture.sourceUrl} alt={data?.profilePicture.altText} className={styles.pic} />
+            </div>
           <div className={styles.underContainer}>
             <div className={styles.descriptionContainer}>
               <p className={styles.description}>{data?.description}</p>
