@@ -1,7 +1,7 @@
 .container {
     display: flex;
     justify-content: center;
-    align-items: start;
+    align-items: flex-start;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
