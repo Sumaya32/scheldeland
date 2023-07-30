@@ -84,7 +84,8 @@ h2 {
 }
 
 .daysAndHours {
-    width: 50%;
+    background-color: red;
+    width: 60%;
     display: flex;
     justify-content: center;
 
@@ -93,7 +94,8 @@ h2 {
 .days {
     width: 30%;
     text-align: right;
-    padding: 0 0% 2% 25%;
+    /* padding: 0 0% 2% 0%; */
+    padding-right: 5%;
 }
 
 .hours {
@@ -149,7 +151,7 @@ h2 {
     .openingHours {
         width: auto;
         padding-right: 0;
-        margin-top: -5%;
+        /* margin-top: -5%; */
     }
 
     .daysAndHours {

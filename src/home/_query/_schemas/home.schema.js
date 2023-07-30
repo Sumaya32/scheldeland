@@ -1,4 +1,4 @@
-import {gql} from "@apollo/client"
+import { gql } from "@apollo/client"
 
 export const GetHome = gql`
 query {
@@ -11,15 +11,29 @@ query {
       }
       gerechten {
         ... on Hoofdgerecht {
-          id
-          slug
           gerechtmeta {
-            profilePicture {
-              sourceUrl
-              altText
-            }
-            origin
             title
+            description
+            price
+            origin
+            menuimage {
+              sourceUrl
+            }
+          }
+          id
+        }
+      }
+      
+      sharingfood {
+        ... on Sharing_food {
+          sharingFoodmeta {
+            title
+            description
+            price
+            menuimage {
+              altText
+              sourceUrl
+            }
           }
         }
       }

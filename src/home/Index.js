@@ -8,7 +8,11 @@ import { Spinner } from '../shared/Spinner';
 import styles from "./index.module.css";
 
 export const Home = () => {
-  const { data, isLoading } = useGetHome()
+  const { data, isLoading } = useGetHome();
+
+  console.log("data2 ", data && data)
+  console.log("data2 ", data && data?.gerechten?.gerechtmeta?.title)
+
 
   if (isLoading) return <Spinner />
   return (
@@ -21,14 +25,28 @@ export const Home = () => {
           <div>{data?.description}</div>
         </div>
 
-        <h1>Top 10 gerechten</h1>
+        <h1>Top 3 gerechten</h1>
         <div className={styles.dishesContainer}>
-          
+
           {data?.gerechten?.map((item) =>
+              <div key={item.slug} className={styles.dishesMiniContainer}>
+                <Link to={`${"menu"}/${item.slug}`} className={styles.link}>
+                  <img src={item.gerechtmeta?.menuimage?.sourceUrl} className={styles.dishesImage} />
+                  <div className={styles.dishesTitle}>{item.gerechtmeta?.title}</div>
+                  <p className={styles.price}>{item.gerechtmeta?.price}</p>
+                </Link>
+              </div>
+            )}
+        </div>
+
+        <h1 className={styles.sharingTopTitle}>Top 3 Sharing food</h1>
+        <div className={styles.dishesContainer}>          
+          {data?.sharingfood?.map((item) =>
             <div key={item.slug} className={styles.dishesMiniContainer}>
               <Link to={`${"menu"}/${item.slug}`} className={styles.link}>
-                <img src={item.gerechtmeta.profilePicture?.sourceUrl} className={styles.dishesImage} />
-                <div className={styles.dishesTitle}>{item.gerechtmeta.title}</div>
+                <img src={item?.sharingFoodmeta?.menuimage?.sourceUrl} className={styles.dishesImage} />
+                <div className={styles.dishesTitle}>{item.sharingFoodmeta?.title}</div>
+                <p className={styles.price}>{item.sharingFoodmeta?.price}</p>
               </Link>
 
             </div>

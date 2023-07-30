@@ -32,7 +32,7 @@ export const Contact = () => {
 
               <div className={styles.phone}>
                 <img style={{ width: "15%", height: "15%" }} src='./gsm3.png' />
-                <a href="tel:+4733378901" >{data?.phoneNumber}</a>
+                <a href="tel:+476989330" >Reserveren via<br/>{data?.phoneNumber}</a>
               </div>
 
               <div className={styles.email}>
