@@ -19,7 +19,7 @@ export const Contact = () => {
             <h2>Contacteer ons</h2>
             <div className={styles.adressMiniContainer}>
               <div className={styles.address}>
-                <img style={{ width: "15%", height: "15%" }} src='./location2.png' />
+                <img style={{ width: "25px", height: "30px" }} src='./location2.png' />
                 <a href="https://www.google.com/maps?t=m&hl=nl&gl=BE&cid=12030728999397251863" target="_blank">
                   <div> {data?.address}</div>
                   <div> {data?.city}</div>
@@ -31,13 +31,14 @@ export const Contact = () => {
               </div>
 
               <div className={styles.phone}>
-                <img style={{ width: "15%", height: "15%" }} src='./gsm3.png' />
+                <img style={{ width: "25px", height: "30px" }} src='./gsm3.png' />
                 <a href="tel:+476989330" >Reserveren via<br/>{data?.phoneNumber}</a>
               </div>
 
               <div className={styles.email}>
-                <img style={{ width: "15%", height: "15%" }} src='./email2.png' />
+                <img style={{ width: "25px", height: "30px" }} src='./email2.png' />
                 <a href="mailto:info@tavernescheldeland.be" >{data?.email}</a>
+                <span></span>
               </div>
             </div>
 

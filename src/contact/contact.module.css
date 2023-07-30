@@ -26,33 +26,45 @@
 .adressMiniContainer {
     display: flex;
     align-items: center;
+    justify-content: flex-start;
+    height: 30%;
+    width: 100%;
 }
 
 .address {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: flex-start; */
     align-items: center;
+    width: 50%;
+    height: 25vh;
     padding: 2%;
-    margin-bottom: 2%;
+    /* margin-bottom: 2%; */
 
 }
 
 .phone {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
+    width: 60%;
+    height: 25vh;
     padding: 2%;
-    margin-bottom: 2%;
+    /* margin-bottom: 2%; */
 }
 
 .email {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
+    width: 50%;
+    height: 25vh;
     padding: 2%;
+    overflow-wrap: break-word;
+    /* margin-bottom: 5%; */
+    /* margin-top: 10%; */
 }
 
 .email:hover,
@@ -79,12 +91,12 @@ h2 {
     justify-self: center;
     flex-direction: column;
     align-items: center;
-    width: 50%;
+    width: 45%;
     min-height: 330px;
 }
 
 .daysAndHours {
-    width: 60%;
+    width: 35%;
     display: flex;
     justify-content: center;
 
@@ -92,14 +104,13 @@ h2 {
 
 .days {
     width: 30%;
-    text-align: right;
-    padding-right: 5%;
+    text-align: left;
 }
 
 .hours {
     width: 70%;
     overflow-wrap: break-word;
-    padding: 0 0 2% 5%;
+    text-align: right;
 }
 
 /*Media queries*/
@@ -109,19 +120,38 @@ h2 {
     }
 }
 
+@media only screen and (min-width: 769px)and (max-width: 912px) {
+    .daysAndHours {
+        width: 60%;    
+    }
+
+}
+
+@media only screen and (min-width: 913px) and (max-width: 1280px){
+    .daysAndHours {
+        width: 45%;    
+    }
+
+}
+
 @media only screen and (width: 1024px) {
     .iframe{
         margin-top: 6%;
     }
+    /* .daysAndHours {
+        width: 50%;    
+    } */
+ 
+
 }
 
 @media only screen and (width: 768px){
     .iframe{
         margin-top: -1%;
-    }
+    }    
 }
 
-@media only screen and (max-width: 540px) {
+@media only screen and (max-width: 768px) {
     .iframe{
         margin-top: -7%;
     }
@@ -149,6 +179,7 @@ h2 {
     .openingHours {
         width: auto;
         padding-right: 0;
+        /* margin-top: -5%; */
     }
 
     .daysAndHours {
@@ -161,13 +192,24 @@ h2 {
     .days {
         text-align: center;
        width: auto;
-        padding:0px
+        /* padding:0px */
     }
     
     .hours {
         text-align: center;
        width: auto;
-        padding:0px
+        /* padding:0px */
+        padding-bottom: 2%;
+
+    }
+    .email {
+        margin-bottom: 0;
+    }
+    .phone {
+        margin-bottom: 2%;
+    }
+    .address {
+        margin-bottom: 2%;
     }
 }
 
