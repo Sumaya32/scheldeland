@@ -40,7 +40,8 @@
     /* margin-bottom: 2%; */
     margin: 0;
     padding: 0;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
+    font-weight: bolder;
 }
 
 .forkAndKnife{
@@ -59,7 +60,7 @@
 }
 
 .menuNavLink:hover {
-    color: rgb(240, 123, 123);
+    color:#FFA07A;
 }
 
 .dishTitle {
@@ -67,6 +68,11 @@
     font-size: 1.2rem;
     margin-bottom: 1%;
     font-weight: bold;
+}
+
+.dishDescription{
+font-size: 0.5;
+font-weight: lighter;
 }
 
 .price {

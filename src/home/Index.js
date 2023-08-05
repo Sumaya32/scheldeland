@@ -25,22 +25,24 @@ export const Home = () => {
           <div>{data?.description}</div>
         </div>
 
-        <h1>Top 3 gerechten</h1>
+        <div className={styles.containerImage}><h1 className={styles.topTitle}>Top 3 gerechten</h1></div>
         <div className={styles.dishesContainer}>
 
           {data?.gerechten?.map((item) =>
-              <div key={item.slug} className={styles.dishesMiniContainer}>
-                <Link to={`${"menu"}/${item.slug}`} className={styles.link}>
-                  <img src={item.gerechtmeta?.menuimage?.sourceUrl} className={styles.dishesImage} />
-                  <div className={styles.dishesTitle}>{item.gerechtmeta?.title}</div>
-                  <p className={styles.price}>{item.gerechtmeta?.price}</p>
-                </Link>
-              </div>
-            )}
+            <div key={item.slug} className={styles.dishesMiniContainer}>
+              <Link to={`${"menu"}/${item.slug}`} className={styles.link}>
+                <img src={item.gerechtmeta?.menuimage?.sourceUrl} className={styles.dishesImage} />
+                <div className={styles.dishesTitle}>{item.gerechtmeta?.title}</div>
+                <p className={styles.price}>{item.gerechtmeta?.price}</p>
+              </Link>
+            </div>
+          )}
         </div>
 
-        <h1 className={styles.sharingTopTitle}>Top 3 Sharing food</h1>
-        <div className={styles.dishesContainer}>          
+        <div className={styles.containerSharingFoodImage}>
+          <h1 className={styles.sharingTopTitle}>Top 3 Sharing food</h1>
+
+        </div>        <div className={styles.dishesContainer}>
           {data?.sharingfood?.map((item) =>
             <div key={item.slug} className={styles.dishesMiniContainer}>
               <Link to={`${"menu"}/${item.slug}`} className={styles.link}>

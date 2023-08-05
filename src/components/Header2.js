@@ -39,15 +39,10 @@ const Header2 = () => {
             </nav>
 
             <button className={style.nav_btn} onClick={showNavbar}>
-                <FaBars />
+                <FaBars className={style.faBars}/>
             </button>
         </header>
     )
-
-
 }
-
-
-
 
 export default Header2

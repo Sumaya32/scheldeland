@@ -16,7 +16,7 @@
 
 .logoContainer {
     margin: 1%  0 0 3%;
-    width: 4%;
+    width: 3rem;
     height: 40%;
 }
 
@@ -46,13 +46,12 @@ nav a {
 }
 
 nav a:hover {
-    color: rgb(243, 138, 138);
+    color: #FFA07A;
     /* color: #FFB6C1; */
 }
 
 .active {
-    color: red;
-    color: #e3b1b8;
+    color: #f8b297;
 }
 
 header .nav_btn {
@@ -70,6 +69,22 @@ header .nav_btn {
 header .nav_btn:hover {
     color: var(--secondaryColor);
 }
+
+
+.faTimes, .faBars{
+    color: #FFA07A;
+    margin-bottom: -5px;
+  }
+
+.faTimes{
+    /* margin-bottom: 20px; */
+}
+
+.faBars{
+height: 1.8rem;
+/* margin-bottom: -5px; */
+}
+
 
 /*Media queries*/
 @media only screen and (max-width: 768px) {
@@ -101,7 +116,7 @@ header .nav_btn:hover {
 
     header .nav_close_btn {
         position: absolute;
-        top: 2rem;
+        top: 0.8rem;
         right: 2rem
     }
 
@@ -109,8 +124,7 @@ header .nav_btn:hover {
         font-size: 1.5rem;
     }
     .logoContainer {
-        width: 10%;
-        height: 30%;
+        width: 3rem
     }
 }
 

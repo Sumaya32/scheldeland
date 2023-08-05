@@ -52,12 +52,13 @@ footer {
   align-items: center;
 }
 
+
 .fbIconText{
   padding-right: 10px;
 }
 
 .fbIconText:hover{
-  color: rgb(240, 123, 123);
+  color: #FFA07A;
 }
 
 .fbIcon{
@@ -70,5 +71,5 @@ footer {
 }
 
 .fbIcon:hover{
-background-color: rgb(240, 123, 123);
+background-color: #FFA07A;
 }
