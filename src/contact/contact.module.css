@@ -34,37 +34,23 @@
 .address {
     display: flex;
     flex-direction: column;
-    /* justify-content: flex-start; */
     align-items: center;
-    width: 50%;
-    height: 25vh;
-    padding: 2%;
-    /* margin-bottom: 2%; */
-
+    width: 60%;
 }
 
 .phone {
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
     width: 60%;
-    height: 25vh;
-    padding: 2%;
-    /* margin-bottom: 2%; */
 }
 
 .email {
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
     width: 50%;
-    height: 25vh;
-    padding: 2%;
     overflow-wrap: break-word;
-    /* margin-bottom: 5%; */
-    /* margin-top: 10%; */
 }
 
 .email:hover,
@@ -96,21 +82,18 @@ h2 {
 }
 
 .daysAndHours {
-    width: 35%;
+    width: 50%;
     display: flex;
-    justify-content: center;
-
+    justify-content: space-between;
 }
 
 .days {
-    width: 30%;
-    text-align: left;
+    width: 40%;
+    margin-right: 2%;
 }
 
 .hours {
-    width: 70%;
-    overflow-wrap: break-word;
-    text-align: right;
+    width: 60%;
 }
 
 /*Media queries*/
@@ -120,30 +103,13 @@ h2 {
     }
 }
 
-@media only screen and (min-width: 769px)and (max-width: 912px) {
-    .daysAndHours {
-        width: 60%;    
-    }
-
-}
-
-@media only screen and (min-width: 913px) and (max-width: 1280px){
-    .daysAndHours {
-        width: 45%;    
-    }
-
-}
 
 @media only screen and (width: 1024px) {
     .iframe{
         margin-top: 6%;
     }
-    /* .daysAndHours {
-        width: 50%;    
-    } */
- 
-
 }
+
 
 @media only screen and (width: 768px){
     .iframe{
@@ -151,10 +117,12 @@ h2 {
     }    
 }
 
+
 @media only screen and (max-width: 768px) {
     .iframe{
         margin-top: -7%;
     }
+
     .smallContainer {
         margin-top: 5%;
         display: flex;
@@ -176,40 +144,36 @@ h2 {
         overflow-wrap: break-word;
     }
 
-    .openingHours {
-        width: auto;
-        padding-right: 0;
-        /* margin-top: -5%; */
+    .openingHours{
+        margin-bottom: 5%;
     }
 
     .daysAndHours {
         flex-direction: column;
-        justify-content: center;
-        width: 100%;
-
+        align-items: center;
     }
 
     .days {
-        text-align: center;
-       width: auto;
-        /* padding:0px */
+       margin-right: 0;
     }
     
-    .hours {
-        text-align: center;
-       width: auto;
-        /* padding:0px */
-        padding-bottom: 2%;
+    .hours{
+        padding-bottom: 5%;
+    }
+
+    .email {
+    padding: 2% 2% 20% 2%;
 
     }
-    .email {
-        margin-bottom: 0;
-    }
+    
     .phone {
-        margin-bottom: 2%;
+    padding: 2% 2% 10% 2%;
+
     }
+
     .address {
-        margin-bottom: 2%;
+    padding: 10% 2% 10% 2%;
+
     }
 }
 

@@ -18,6 +18,7 @@ export const Dishes = () => {
       <div className={styles.container}>
 
         <h2 className={styles.headTitle}>Hoofdgerechten</h2>
+        <img className={styles.forkAndKnife} src={'/fork-knife3.png'}/>
         <div className={styles.smallContainer}>
 
           <div className={styles.miniContainer}>
@@ -36,6 +37,7 @@ export const Dishes = () => {
           </div>
 
           <h2 className={`${styles.headTitle} ${styles.desertTitle}`} >Dessert</h2>
+        <img className={styles.forkAndKnife} src={'/fork-knife3.png'}/>
 
           <div className={styles.miniContainer}>
             {dessert?.map((item) => {

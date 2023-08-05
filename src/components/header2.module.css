@@ -42,16 +42,17 @@ nav a {
     margin: 0 2rem;
     color: var(--textColor);
     text-decoration: none;
+    font-size: 1.2rem;    
 }
 
 nav a:hover {
-    color: rgb(240, 123, 123);
-    color: #5cb49c;
+    color: rgb(243, 138, 138);
+    /* color: #FFB6C1; */
 }
 
 .active {
     color: red;
-    color: #158063;
+    color: #e3b1b8;
 }
 
 header .nav_btn {

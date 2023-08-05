@@ -5,14 +5,14 @@
     align-items: center;
     justify-content: center;
     color: rgba(9, 15, 15, 1);
-    margin: 3rem 0 3rem 0;
+    /* margin: 8rem 0 3rem 0; */
+    margin-top: 4rem;
 }
 
-.headTitle {
+/* .headTitle {
     border-bottom: 5px solid black;
     border-radius: 10px;
-    margin-bottom: 51rem;
-}
+} */
 
 .smallContainer {
     width: 100vw;
@@ -24,22 +24,30 @@
 
 .miniContainer {
     color: rgb(96, 112, 112);
-    width: 60%;
+    width: auto;
     display: grid;
     grid-template-columns: 300px 300px;
     row-gap: 20px;
     column-gap: 20px;
     justify-content: center;
     column-count: 2;
-    align-items: center;
+    align-items: flex-start;
     font-family: serif;
-    margin: 1rem 0 1rem 0;
+    margin: 1rem 0 2rem 0;
 }
 
 .headTitle {
-    margin-bottom: 2%;
-    margin-top: 0%;
-    font-size: 1.8rem
+    /* margin-bottom: 2%; */
+    margin: 0;
+    padding: 0;
+    font-size: 1.5rem;
+}
+
+.forkAndKnife{
+    width: 200px;
+    height: 60px;
+    margin: 0 0 5% 0;
+    padding: 0;
 }
 
 .allMenus {
@@ -56,8 +64,9 @@
 
 .dishTitle {
     line-height: 1.5;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin-bottom: 1%;
+    font-weight: bold;
 }
 
 .price {
@@ -65,7 +74,21 @@
 }
 
 
-@media only screen and (max-width: 540px) {
+@media only screen and (min-width: 820px) and (max-width: 1024px) {
+    .headTitle {
+        margin-top: 8%;
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    .container {
+        margin-top: 0;
+    }
+
+    .headTitle {
+        margin-top: 0;
+    }
+
     .miniContainer {
         display: flex;
         flex-direction: column;
@@ -73,9 +96,5 @@
         align-items: center;
         text-align: center;
 
-    }
-
-    .menuLine {
-        margin-bottom: 5%;
     }
 }

@@ -38,7 +38,6 @@ export const Contact = () => {
               <div className={styles.email}>
                 <img style={{ width: "25px", height: "30px" }} src='./email2.png' />
                 <a href="mailto:info@tavernescheldeland.be" >{data?.email}</a>
-                <span></span>
               </div>
             </div>
 
