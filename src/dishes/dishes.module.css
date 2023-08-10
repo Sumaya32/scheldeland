@@ -9,7 +9,9 @@
     color: rgba(9, 15, 15, 1);
     margin-top: 10%;
     /* font-family: 'Bradley Hand'; */
-    font-family: "Lucida Handwriting";
+    font-family: "Snell Roundhand", "URW Chancery L", Trattatello, cursive ;
+    /* font-style: italic; */
+    /*"Lucida Handwriting",*/
     /* font-family: "Bradley Hand ITC TT", "Handwriting-Dakota"; */
 }
 

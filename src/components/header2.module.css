@@ -7,7 +7,7 @@
 
 .logoContainer {
     margin: 1% 0 0 5%;
-    width: 3rem;
+    width: 2.8rem;
     height: 40%;
 }
 
@@ -38,12 +38,12 @@ nav a {
 }
 
 nav a:hover {
-    color: #FFA07A;
+    color: #f9baa1;
     /* color: #FFB6C1; */
 }
 
 .active {
-    color: #f8b297;
+    color: #fbc1ab;
 }
 
 header .nav_btn {
