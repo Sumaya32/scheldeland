@@ -23,7 +23,7 @@ export const Dish = () => {
   if (isLoading) return <Spinner />
   return (
     <Layout>
-      <div className={styles.container} style={{backgroundImage: `url(${stateBackgroungImage})`  }}>
+      <div className={styles.container} style={{backgroundImage: `url(${stateBackgroungImage})`}}>
         <div className={styles.miniContainer}>
           <h2 className={styles.title}>{data?.title}</h2>
           <div className={styles.imageContainer}>
