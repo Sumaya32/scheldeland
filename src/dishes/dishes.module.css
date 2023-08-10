@@ -1,4 +1,6 @@
 /* @import url('https://fonts.cdnfonts.com/css/bradley-hand-2'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 
 .container {
     width: 100vw;
@@ -9,8 +11,8 @@
     color: rgba(9, 15, 15, 1);
     margin-top: 10%;
     /* font-family: 'Bradley Hand'; */
-    font-family: "Snell Roundhand", "URW Chancery L", Trattatello, cursive ;
-    /* font-style: italic; */
+    font-family: 'Dancing Script', cursive;
+    /*'Great Vibes', cursive;*/
     /*"Lucida Handwriting",*/
     /* font-family: "Bradley Hand ITC TT", "Handwriting-Dakota"; */
 }
@@ -45,7 +47,7 @@
 .headTitle {
     margin: 0;
     padding: 0;
-    font-size: 1.8rem;
+    font-size: 2.7rem;
     font-weight: bolder;
 }
 
@@ -69,12 +71,15 @@
 .dishTitle {
     font-weight: bold;
     font-size: 1.2rem;
+    font-size: 2rem;
+
     font-weight: 600;
 
 }
 
 .dishDescription {
     font-size: 0.5;
+    font-size: 1.5rem;
     font-weight: lighter;
 }
 
@@ -85,6 +90,7 @@
 .kisdMenuTitle {
     margin: 0 0 1.5rem 0;
     font-size: 1.5rem;
+    font-size: 2rem;
     border-bottom: solid rgb(159, 158, 158) 3px;
     border-radius: 10px;
     text-align: center;
@@ -100,12 +106,18 @@ gap: 1rem;
 
 .supplementMiniContainer{
 margin-top: 1rem;
+font-size: 1.6rem;
+
 }
 
+.supplementHeadTitle{
+    font-size: 2.2rem;
+}
 .extraInfo{
     margin-bottom: 2rem;
    text-align: center;
     overflow-wrap: break-word;
+    font-size: 1.7rem;
 }
 
 /*Medi queries*/
