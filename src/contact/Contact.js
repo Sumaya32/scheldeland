@@ -31,12 +31,12 @@ export const Contact = () => {
               </div>
 
               <div className={styles.phone}>
-                <img style={{ width: "25px", height: "30px" }} src='./gsm3.png' />
+                <img style={{ width: "25px", height: "30px" }} src='./mobile.png' />
                 <a href="tel:+476989330" >Reserveren via<br/>{data?.phoneNumber}</a>
               </div>
 
               <div className={styles.email}>
-                <img style={{ width: "25px", height: "30px" }} src='./email2.png' />
+                <img style={{ width: "25px", height: "30px" }} src='./email.png' />
                 <a href="mailto:info@tavernescheldeland.be" >{data?.email}</a>
               </div>
             </div>

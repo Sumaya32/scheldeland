@@ -11,7 +11,7 @@ const Footer = () => {
                 <li className={style.footerNavLinkItem}>
                     <a href="https://m.facebook.com/profile.php?id=1555690324520158&__tn__=C-R" className={style.FooterLinkText} target="_blank" >
               <p className={style.fbIconText}> Volg ons op </p>
-              <img className={style.fbIcon} src='/fb2.png' />
+              <img className={style.fbIcon} src='/facebook.png' />
                        
                     </a>
                 </li>
