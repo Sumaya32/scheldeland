@@ -17,6 +17,7 @@ export const Dish = () => {
   
   useEffect(()=>{
     setStateBackgroungImage(backgroungImage)
+    window.scrollTo(0, 0)
   },[backgroungImage, data]);
 
   if (isLoading) return <Spinner />
@@ -26,18 +27,19 @@ export const Dish = () => {
         <div className={styles.miniContainer}>
           <h2 className={styles.title}>{data?.title}</h2>
           <div className={styles.imageContainer}>
-            <img src={data?.profilePicture.sourceUrl} alt={data?.profilePicture.altText} className={styles.pic} />
+            <img src={data?.menuimage?.sourceUrl} alt={data?.menuimage?.altText} className={styles.pic} />
             </div>
-          <div className={styles.underContainer}>
+          <div className={styles.secondContainer}>
             <div className={styles.descriptionContainer}>
               <p className={styles.description}>{data?.description}</p>
-              <div className={styles.origin}><span style={{ fontWeight: "bold"}} >origin: </span> {data?.origin}</div>
-              <NavLink className={styles.aAsBtn} 
-               onClick={goBack}>
-              <img className={styles.pointingFinger} src='/pointing_finger.png' />
+              {/* <div className={styles.origin}><span style={{ fontWeight: "bold"}} >origin: </span> {data?.origin}</div> */}
+        
+            </div>
+         
+            <NavLink className={styles.aAsBtn} 
+               onClick={goBack}>   <img className={styles.pointingFinger} src='/hand.png' />
               {/* <div style={{ marginLeft: "1%" }}>Back</div> */}
               </NavLink>
-            </div>
           </div>
         </div>
       </div>

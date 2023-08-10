@@ -1,12 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,300;0,400;1,200&display=swap');
-
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Titillium Web', sans-serif;
-}
-
 :root {
     --mainColor: #000;
     --mainColorLighter: #5767aa;
@@ -15,12 +6,12 @@
 }
 
 .logoContainer {
-    margin: 1%  0 0 3%;
+    margin: 1% 0 0 5%;
     width: 3rem;
     height: 40%;
 }
 
-.logo{
+.logo {
     width: 100%;
     height: 100%;
 }
@@ -31,18 +22,19 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 100px;
+    height: 70px;
     padding: 0 2rem;
     background-color: var(--mainColor);
     color: var(--textColor);
     z-index: 1;
+    font-family: 'Titillium Web', sans-serif;
 }
 
 nav a {
     margin: 0 2rem;
     color: var(--textColor);
     text-decoration: none;
-    font-size: 1.2rem;    
+    font-size: 1.2rem;
 }
 
 nav a:hover {
@@ -71,18 +63,19 @@ header .nav_btn:hover {
 }
 
 
-.faTimes, .faBars{
+.faTimes,
+.faBars {
     color: #FFA07A;
     margin-bottom: -5px;
-  }
+}
 
-.faTimes{
+.faTimes {
     /* margin-bottom: 20px; */
 }
 
-.faBars{
-height: 1.8rem;
-/* margin-bottom: -5px; */
+.faBars {
+    height: 1.8rem;
+    /* margin-bottom: -5px; */
 }
 
 
@@ -97,21 +90,22 @@ height: 1.8rem;
         position: fixed;
         top: 0;
         left: 0;
-        height: 100%;
+        height: 100vh;
         width: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
         gap: 1.5rem;
-        background-color: var(--mainColor);
+        /* background-color: var(--mainColor); */
         transition: 1s;
-        transform: translateY(-100vh);
+        transform: translateY(-110vh);
         z-index: 1;
         flex-direction: column;
     }
 
     header .responsive_nav {
         transform: none;
+        background-color: var(--mainColor);
     }
 
     header .nav_close_btn {
@@ -123,14 +117,9 @@ height: 1.8rem;
     nav a {
         font-size: 1.5rem;
     }
+
     .logoContainer {
-        width: 3rem
+        margin-left: 0;
     }
-}
 
-
-@media only screen and (max-width: 540px) {
-header {
-    height: 9%;
-}
 }

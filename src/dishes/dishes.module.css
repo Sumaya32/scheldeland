@@ -1,3 +1,5 @@
+/* @import url('https://fonts.cdnfonts.com/css/bradley-hand-2'); */
+
 .container {
     width: 100vw;
     display: flex;
@@ -5,14 +7,11 @@
     align-items: center;
     justify-content: center;
     color: rgba(9, 15, 15, 1);
-    /* margin: 8rem 0 3rem 0; */
-    margin-top: 4rem;
+    margin-top: 10%;
+    /* font-family: 'Bradley Hand'; */
+    font-family: "Lucida Handwriting", sans-serif;
+    /* font-family: "Bradley Hand ITC TT", "Handwriting-Dakota"; */
 }
-
-/* .headTitle {
-    border-bottom: 5px solid black;
-    border-radius: 10px;
-} */
 
 .smallContainer {
     width: 100vw;
@@ -23,28 +22,32 @@
 }
 
 .miniContainer {
-    color: rgb(96, 112, 112);
+    /* color: rgb(96, 112, 112); */
     width: auto;
     display: grid;
     grid-template-columns: 300px 300px;
-    row-gap: 20px;
+    row-gap: 17px;
     column-gap: 20px;
     justify-content: center;
     column-count: 2;
     align-items: flex-start;
-    font-family: serif;
-    margin: 1rem 0 2rem 0;
+    /* font-family: serif; */
+    margin-bottom: 7%;
+}
+
+.mainDishContainer{
+    margin-bottom: 4%;
+
 }
 
 .headTitle {
-    /* margin-bottom: 2%; */
     margin: 0;
     padding: 0;
     font-size: 1.8rem;
     font-weight: bolder;
 }
 
-.forkAndKnife{
+.forkAndKnife {
     width: 200px;
     height: 60px;
     margin: 0 0 5% 0;
@@ -53,54 +56,84 @@
 
 .allMenus {
     width: 100%;
-    min-height: 8rem;
+    min-height: 2rem;
     text-align: center;
-    font-size: 1rem;
-    line-height: 1.2;
 }
 
 .menuNavLink:hover {
-    color:#FFA07A;
+    color: #FFA07A;
 }
 
 .dishTitle {
-    line-height: 1.5;
-    font-size: 1.2rem;
-    margin-bottom: 1%;
     font-weight: bold;
+    font-size: 1.2rem;
+    font-weight: 600;
+
 }
 
-.dishDescription{
-font-size: 0.5;
-font-weight: lighter;
+.dishDescription {
+    font-size: 0.5;
+    font-weight: lighter;
 }
 
 .price {
     margin-top: 4%;
 }
 
-
-@media only screen and (min-width: 820px) and (max-width: 1024px) {
-    .headTitle {
-        margin-top: 8%;
-    }
+.kisdMenuTitle {
+    margin: 0 0 1.5rem 0;
+    font-size: 1.5rem;
+    border-bottom: solid rgb(159, 158, 158) 3px;
+    border-radius: 10px;
+    text-align: center;
 }
 
-@media only screen and (max-width: 720px) {
-    .container {
-        margin-top: 0;
-    }
+.supplementContainer{
+margin-bottom: 2rem;
+display: flex;
+flex-direction: row;
+gap: 1rem;
 
-    .headTitle {
-        margin-top: 0;
+}
+
+.supplementMiniContainer{
+margin-top: 1rem;
+}
+
+.extraInfo{
+    margin-bottom: 2rem;
+   text-align: center;
+    overflow-wrap: break-word;
+}
+
+/*Medi queries*/
+@media only screen and (max-width: 721px) {
+    .container {
+        margin-top: 30%;
     }
 
     .miniContainer {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
+        margin-bottom: 20%;
+    }
 
+    .forkAndKnife {
+        margin-bottom: 2.5rem;
+    }
+
+    .allMenus {
+        /* background-color: red; */
+        width: 100%;
+        min-height: 2rem;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+}
+
+@media only screen and (min-width: 722px) and (max-width: 1280px) {
+    .container {
+        margin-top: 15%;
     }
 }

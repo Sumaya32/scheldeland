@@ -10,10 +10,6 @@ import styles from "./index.module.css";
 export const Home = () => {
   const { data, isLoading } = useGetHome();
 
-  console.log("data2 ", data && data)
-  console.log("data2 ", data && data?.gerechten?.gerechtmeta?.title)
-
-
   if (isLoading) return <Spinner />
   return (
     <Layout>

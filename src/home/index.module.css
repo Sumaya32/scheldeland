@@ -1,15 +1,17 @@
-body{
+/* body{
     overflow-x: hidden;
     font-family: Helvitica en bradley Hand;
-    /* color: #00563f; */
-}
+    color: #00563f;
+} */
 
 .container {
+    font-family: 'Titillium Web', sans-serif;
+    font-family: Helvetica, Arial, Georgia, 'Tahoma and Roboto';
     height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0 0 3rem 0;
+    margin: 3rem 0 3rem 0;
 }
 
 .mainImage {
@@ -77,10 +79,11 @@ h1 {
 .dishesImage {
     width: 100%;
     height: 160px;
+    margin-bottom: 1.5rem;
 }
 
 .dishesTitle {
-    margin-top: 3%;
+    /* margin-top: 3%; */
     text-align: center;
     text-decoration: none;
     list-style: none;
@@ -109,6 +112,7 @@ color: lightslategray
     color: rgb(81, 87, 93);
     font-size: 5rem;
   font-family: 'Bungee', cursive;
+  font-family: "Lucida Handwriting", sans-serif;
 }
 
 .containerImage, .containerSharingFoodImage {
@@ -117,6 +121,7 @@ color: lightslategray
     -webkit-background-clip: text;
     color:  #FFFFFF;
     padding-top: 20px;
+    text-align: center;
   }
 
   .containerSharingFoodImage{
@@ -124,7 +129,7 @@ color: lightslategray
   }
 
 /*Media queries*/
-@media only screen and (min-width: 820px) and (max-width: 1280px){
+ @media only screen and (min-width: 820px) and (max-width: 1280px){
     .dishesContainer {
         width: 90%;
     }
@@ -136,7 +141,7 @@ color: lightslategray
 
 @media only screen and (max-width: 768px) {
     .container {
-        margin-top: -10%;
+        /* margin-top: -10%; */
     }
 
     .dishesContainer {
@@ -155,12 +160,16 @@ color: lightslategray
     .descriptionContainer {
         text-align: center;
     }
-}
+
+    .sharingTopTitle, .topTitle{
+        font-size: 3rem;;
+    }
+} 
 
 
 @media only screen and (max-width: 280px) {
     .container {
-        margin-top: -12%;
+        /* margin-top: -12%; */
     }
 }
 

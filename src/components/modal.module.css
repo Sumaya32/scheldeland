@@ -34,16 +34,16 @@
     width: 50%;
     height: 8%;
     margin-top: 2%;
-    background-color: rgb(64, 68, 71);
+    background-color: #f5956f;
     border-radius: 30px;
     border: 5px;
-    font-weight: bolder;
+    font-weight: 900;
     cursor: pointer;
-    font-size: 1.1em;
+    font-size: 1.2em;
 }
 
 .modalBtn:hover {
-    background-color: rgb(240, 123, 123);
+    background-color: #f55d22;
 }
 
 /*Media queris*/

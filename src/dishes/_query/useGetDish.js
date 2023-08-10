@@ -7,5 +7,5 @@ export const useGetDish = ()=> {
     const {data, loading} = useQuery(GetDish, {
         variables: {slug: id}
     })
-    return{data: data?.hoofdgerecht.gerechtmeta, isLoading: loading}
+    return{data: data?.hoofdgerecht?.gerechtmeta, isLoading: loading}
 }
