@@ -2,11 +2,12 @@
     --mainColor: #000;
     --mainColorLighter: #5767aa;
     --secondaryColor: #db2b39;
-    --textColor: white
+    --textColor: white;
+    --header-font-family: HelveticaNeue, Helvetica, Sans-ns-Serif;
 }
 
 .logoContainer {
-    margin: 1% 0 0 5%;
+    margin: 0.4rem 0 0 4rem;
     width: 2.5rem;
     height: 50%;
 }
@@ -28,22 +29,28 @@ header {
     color: var(--textColor);
     z-index: 1;
     font-family: 'Titillium Web', sans-serif;
+    font-family :header-font-family;
 }
 
 nav a {
-    margin: 0 2rem;
+    /* background-color: red; */
+    margin: 0 1rem;
     color: var(--textColor);
     text-decoration: none;
     font-size: 1.2rem;
+    border: 0.1rem solid white;
+    border-radius: 100px;
+    padding: 0.3rem 1.5rem 0.3rem 1.5rem;
 }
 
 nav a:hover {
-    color: #f9baa1;
-    /* color: #FFB6C1; */
+    background-color: #f9baa1;
+    color: #000;
 }
 
 .active {
     color: #fbc1ab;
+    pointer-events: inherit;
 }
 
 header .nav_btn {
@@ -69,17 +76,20 @@ header .nav_btn:hover {
     margin-bottom: -5px;
 }
 
-.faTimes {
-    /* margin-bottom: 20px; */
-}
-
 .faBars {
     height: 1.8rem;
-    /* margin-bottom: -5px; */
 }
 
 
 /*Media queries*/
+@media only screen and (width: 820px){
+    .logoContainer {
+        margin: 0.4rem 3rem 0 1rem;
+
+    }
+}
+
+
 @media only screen and (max-width: 768px) {
     header .nav_btn {
         visibility: visible;

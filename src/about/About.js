@@ -8,6 +8,7 @@ import { Modal2 } from '../components/Modal'
 export const About = () => {
   const { data, isLoading } = useGetAbout()
   const [employeePictures, setEmployeePicture] = useState([])
+  const [imagesIndex, setImagesIndex] = useState(data?.length)
   const [customersPictures, setCustomersPictures] = useState([])
   const [visiblePicture, setVisiblePicture] = useState([])
   const [modalIsOpen, setIsOpen] = React.useState(false)
@@ -17,11 +18,21 @@ export const About = () => {
   };
 
   useEffect(()=>{
+    // data && Object.entries(data)?.map(([item,index])=>{
+    //   setEmployeePicture([
+    //     {picture: `${item?.grouAImage}${index?.sourceUrl}`}
+    //   ])
+    // })
+
+    
+
     setEmployeePicture([
-      { picture: data?.groupaImage1?.sourceUrl, altText: data?.groupaImage1.altText },
+      { picture: data?.groupaImage5?.sourceUrl, altText: data?.groupaImage4.altText },
+      { picture: data?.groupaImage6?.sourceUrl, altText: data?.groupaImage4.altText },
+      // { picture: data?.groupaImage1?.sourceUrl, altText: data?.groupaImage1.altText },
       { picture: data?.groupaImage2?.sourceUrl, altText: data?.groupaImage2.altText },
       { picture: data?.groupaImage3?.sourceUrl, altText: data?.groupaImage3.altText },
-      { picture: data?.groupaImage4?.sourceUrl, altText: data?.groupaImage4.altText }
+      { picture: data?.groupaImage4?.sourceUrl, altText: data?.groupaImage4.altText },
     ])
     
     setCustomersPictures([

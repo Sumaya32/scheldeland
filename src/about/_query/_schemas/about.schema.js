@@ -22,6 +22,14 @@ query {
         sourceUrl
         altText
       }
+      groupaImage5 {
+        sourceUrl
+        altText
+      }
+      groupaImage6 {
+        sourceUrl
+        altText
+      }
       groupbTitle
       groupbDescription
       groupbImage1 {

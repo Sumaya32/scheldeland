@@ -37,7 +37,7 @@ footer {
   align-self: center;
   border-top: 3px solid #474545;
   width: 50%;
-  margin-top: 8px;
+  margin-top: 0.8rem;
 }
 
 
@@ -45,6 +45,7 @@ footer {
   text-align: center;
   list-style: none;
   color: rgb(96, 98, 99);
+  margin-top: 0.5rem;
 }
 
 .FooterLinkText{

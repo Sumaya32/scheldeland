@@ -19,7 +19,7 @@ const Footer = () => {
             </ul>
             <span className={style.footerUnderline}></span>
 
-            <li className={style.copyright}><div>© 2023 Sumaya MA</div></li>
+            <li className={style.copyright}><div>© 2023 SCHELDELAND CREATED BY SUMAYA MA</div></li>
           </div>
         </footer>
     )
