@@ -1,9 +1,3 @@
-/* body{
-    overflow-x: hidden;
-    font-family: Helvitica en bradley Hand;
-    color: #00563f;
-} */
-
 .container {
     font-family: 'Titillium Web', sans-serif;
     font-family: Helvetica, Arial, Georgia, 'Tahoma and Roboto';
@@ -12,6 +6,7 @@
     flex-direction: column;
     align-items: center;
     margin: 3rem 0 3rem 0;
+
 }
 
 .mainImage {
@@ -26,7 +21,7 @@
 }
 
 h1 {
-    margin-bottom: 2%;
+    margin-bottom: 1%;
     font-size: 2rem;
 }
 
@@ -56,6 +51,7 @@ h1 {
 }
 
 .dishesMiniContainer:hover{
+    background-color: red;
     transform: scale(1.2);
     z-index: 1;
 }
@@ -79,7 +75,7 @@ h1 {
 .dishesImage {
     width: 100%;
     height: 160px;
-    margin-bottom: 1.5rem;
+    /* margin-bottom: 1rem; */
 }
 
 .dishesTitle {
@@ -109,23 +105,23 @@ color: lightslategray
 }
 
 .topTitle, .sharingTopTitle{
-    color: rgb(81, 87, 93);
+    /* color: rgb(81, 87, 93); */
     font-size: 5rem;
   font-family: 'Bungee', cursive;
   font-family: "Lucida Handwriting", sans-serif;
 }
 
 .containerImage, .containerSharingFoodImage {
-    background-image:  url("/public/food.jpg");
+    background-image:  linear-gradient(rgb(234, 232, 232), rgb(0, 0, 0));
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
-    color:  #FFFFFF;
     padding-top: 20px;
     text-align: center;
+    
   }
 
   .containerSharingFoodImage{
-    background-image:  url("/public/sharingFood.jpg");
+    /* background-image:  url("/public/sharingFood.jpg"); */
   }
 
 /*Media queries*/
@@ -162,7 +158,7 @@ color: lightslategray
     }
 
     .sharingTopTitle, .topTitle{
-        font-size: 3rem;;
+        font-size: 3rem;
     }
 } 
 
