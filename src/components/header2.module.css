@@ -1,5 +1,5 @@
 :root {
-    --mainColor: #000;
+    --mainColor: rgba(0, 0, 0, 0.6);
     --mainColorLighter: #5767aa;
     --secondaryColor: #db2b39;
     --textColor: white;
@@ -23,9 +23,9 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 70px;
+    height: 80px;
     padding: 0 2rem;
-    background-color: var(--mainColor);
+    background-color: var(--mainColor);   
     color: var(--textColor);
     z-index: 1;
     font-family: 'Titillium Web', sans-serif;

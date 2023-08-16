@@ -82,7 +82,7 @@ export const About = () => {
             </div>
             <div className={styles.groupBDescription}>
               <h2 className={styles.title}>{data?.groupbTitle}</h2>
-              <p className={styles.descriptionParagrapgh}>{data?.groupbDescription}</p>
+              <p className={styles.discriptionParagraph}>{data?.groupbDescription}</p>
             </div>
 
           </div>

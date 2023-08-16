@@ -1,5 +1,7 @@
 footer {
   background-color: black;
+  /* background-color: rgba(0, 0, 0, 0.7); */
+
   margin-top: auto;
   display: flex;
   flex-direction: column;
@@ -31,15 +33,12 @@ footer {
   color: white;
 }
 
-
-
 .footerUnderline {
   align-self: center;
   border-top: 3px solid #474545;
   width: 50%;
   margin-top: 0.8rem;
 }
-
 
 .copyright {
   text-align: center;
@@ -53,7 +52,6 @@ footer {
   justify-content: center;
   align-items: center;
 }
-
 
 .fbIconText{
   padding-right: 10px;
@@ -79,7 +77,6 @@ background-color: #FFA07A;
 @media screen and (max-width: 768px) {
   .footerUnderline {
     margin-top: 0.6rem;
-  }
-  
+  }  
   
 }
