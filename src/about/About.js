@@ -4,14 +4,17 @@ import Layout from '../components/layout'
 import { Spinner } from '../shared/Spinner'
 import styles from './about.module.css'
 import { Modal2 } from '../components/Modal'
+import { Carousel } from '../components/Carousel'
+
 
 export const About = () => {
   const { data, isLoading } = useGetAbout()
   const [employeePictures, setEmployeePicture] = useState([])
-  const [imagesIndex, setImagesIndex] = useState(data?.length)
+  const [imagesIndex, setImagesIndex] = useState(data)
   const [customersPictures, setCustomersPictures] = useState([])
   const [visiblePicture, setVisiblePicture] = useState([])
   const [modalIsOpen, setIsOpen] = React.useState(false)
+  
 
   const handleChild = () => {
     setIsOpen(false)
@@ -29,7 +32,6 @@ export const About = () => {
     setEmployeePicture([
       { picture: data?.groupaImage5?.sourceUrl, altText: data?.groupaImage4.altText },
       { picture: data?.groupaImage6?.sourceUrl, altText: data?.groupaImage4.altText },
-      // { picture: data?.groupaImage1?.sourceUrl, altText: data?.groupaImage1.altText },
       { picture: data?.groupaImage2?.sourceUrl, altText: data?.groupaImage2.altText },
       { picture: data?.groupaImage3?.sourceUrl, altText: data?.groupaImage3.altText },
       { picture: data?.groupaImage4?.sourceUrl, altText: data?.groupaImage4.altText },

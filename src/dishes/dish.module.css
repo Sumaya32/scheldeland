@@ -23,7 +23,7 @@
     background-color: rgba(255,255,255,.1);
     box-shadow: 10px 10px 20px 10px;
     width: 40%;
-    /* height: 50%; */
+    max-height: 70%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -63,13 +63,13 @@
     /* background-color: red; */
     color: black;
     color: white;
-    margin: 1rem 0 0 1rem ;
+    margin: 0.2rem 0 0 2.5rem ;
     text-align: center;
     align-self: flex-start;
 }
 
 .description {
-    margin: 0 0 10% 2% ;
+    text-align: left;
 
 }
 
@@ -91,17 +91,14 @@
     font-size: 1.5rem;
 }
 
-.aAsBtn:hover {
-    /* color: rgb(240, 123, 123); */
-}
 
 .pointingFinger {
-    width: 30%;
+    width: 5rem;
     margin-right: 95%;
 }
 
 .pointingFinger:hover {
-    filter: invert(85%) sepia(44%) saturate(5203%) hue-rotate(350deg) brightness(700%) contrast(93%);
+    filter: invert(60%) sepia(30%) saturate(648%) hue-rotate(319deg) brightness(120%) contrast(103%);
 }
 
 

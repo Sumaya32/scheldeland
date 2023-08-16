@@ -56,10 +56,20 @@ export const Dishes = () => {
               const appetizers = item.node.kleinehongermeta;
               const slug = item.node.slug;
               return <div key={item.node.slug} className={styles.allMenus}>
-                <NavLink className={styles.menuNavLink} to={`/menu/${slug}`} >
+                {/* <NavLink className={styles.menuNavLink} to={`/menu/${slug}`} > */}
+                <div className={styles.menuNavLink}>
                   <div className={styles.dishTitle} key={item.node.id}>{appetizers.title}</div>
                   <div className={styles.dishDescription} key={item.node.id}>{appetizers.menudescription}</div>
-                </NavLink>
+                {/* </NavLink> */}
+                </div>
+
+                {/* <NavLink to={`${"menu"}/${item.slug}`} className={styles.link}> */}
+                <div className={styles.link}>
+                <img src={item.gerechtmeta?.menuimage?.sourceUrl} className={styles.dishesImage} />
+                <div className={styles.dishesTitle}>{item.gerechtmeta?.title}</div>
+                <p className={styles.price}>{item.gerechtmeta?.price}</p>
+              {/* </NavLink> */}
+              </div>
               </div>
             })}
           </div>
@@ -72,10 +82,12 @@ export const Dishes = () => {
               const gerecht = item.node.gerechtmeta;
               const slug = item.node.slug;
               return <div key={item.node.slug} className={styles.allMenus}>
-                <NavLink className={styles.menuNavLink} to={`/menu/${slug}`} >
+                {/* <NavLink className={styles.menuNavLink} to={`/menu/${slug}`} > */}
+                <div className={styles.menuNavLink}>
                   <div className={styles.dishTitle} key={item.node.id}>{gerecht.title}</div>
                   <div className={styles.dishDescription} key={item.node.id}>{gerecht.menudescription}</div>
-                </NavLink>
+                {/* </NavLink> */}
+                </div>
               </div>
             })}
           </div>
@@ -105,10 +117,12 @@ export const Dishes = () => {
               const kisdMenus = item.node?.kindermenumeta;
               const slug = item?.node?.slug;
               return <div key={item.node.slug} className={styles.allMenus}>
-                <NavLink className={styles.menuNavLink} to={`/menu/${slug}`} >
+                {/* <NavLink className={styles.menuNavLink} to={`/menu/${slug}`} > */}
+                <div className={styles.menuNavLink}>
                   <div className={styles.dishTitle} key={item.node.id}>{kisdMenus?.title}</div>
                   <div className={styles.dishDescription} key={item.node.id}>{kisdMenus?.description}</div>
-                </NavLink>
+                {/* </NavLink> */}
+                </div>
               </div>
             })}
           </div>
@@ -122,10 +136,12 @@ export const Dishes = () => {
               const monthlyDishs = item.node.maandelijkseMenuMeta;
               const slug = item.node.slug;
               return <div className={styles.allMenus}>
-                <NavLink className={styles.menuNavLink} to={`/menu/${id}`}>
+                {/* <NavLink className={styles.menuNavLink} to={`/menu/${id}`}> */}
+                <div className={styles.menuNavLink}>
                   <div className={`${styles.dishTitle}`} key={item.node.id}>{monthlyDishs.title}</div>
                   <div className={styles.dishDescription} key={item.node.id}>{monthlyDishs.minidescription}</div>
-                </NavLink>
+                {/* </NavLink> */}
+                </div>
               </div>
 
             })}
@@ -140,10 +156,12 @@ export const Dishes = () => {
               const desserts = item.node.dessertmeta;
               const slug = item.node.slug;
               return <div className={styles.allMenus}>
-                <NavLink className={styles.menuNavLink} to={`/menu/${id}`}>
+                {/* <NavLink className={styles.menuNavLink} to={`/menu/${id}`}> */}
+                <div className={styles.menuNavLink} >
                   <div className={`${styles.dishTitle}`} key={item.node.id}>{desserts.title}</div>
                   <div className={styles.dishDescription} key={item.node.id}>{desserts.minidescription}</div>
-                </NavLink>
+                {/* </NavLink> */}
+                </div>
               </div>
 
             })}
@@ -157,10 +175,12 @@ export const Dishes = () => {
               const kidsDesserts = item.node?.kindeDessertMeta;
               const slug = item?.node?.slug;
               return <div key={item.node.slug} className={styles.allMenus}>
-                <NavLink className={styles.menuNavLink} to={`/menu/${slug}`} >
+                {/* <NavLink className={styles.menuNavLink} to={`/menu/${slug}`} > */}
+                <div className={styles.menuNavLink}>
                   <div className={styles.dishTitle} key={item.node.id}>{kidsDesserts?.title}</div>
                   <div className={styles.dishDescription} key={item.node.id}>{kidsDesserts?.description}</div>
-                </NavLink>
+                {/* </NavLink> */}
+                </div>
               </div>
             })}
           </div>

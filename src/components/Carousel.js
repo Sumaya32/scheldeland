@@ -7,17 +7,12 @@ export const Carousel = ({ items }) => {
     const [data] = useState(items)
 
     const nextSlide = () => {
-        // setSlide(slide === data?.length - 1 ? 0 : slide + 1);
         setSlide(slide !== data?.length - 1 ? slide + 1 :  0);
     }
 
     const prevSlide = () => {
         setSlide(slide === 0 ? data.length-1 : slide - 1);
     }
-
-    useEffect(()=>{
-        // items &&   useState([ items])
-    },[items])
 
     return (
         <div className={styles.carousel}>

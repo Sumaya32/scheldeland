@@ -21,7 +21,9 @@ query {
             }
           }
           id
+          slug
         }
+
       }
       
       sharingfood {

@@ -26,21 +26,22 @@ export const Home = () => {
 
          <div className={styles.dishesContainer}>
           {data?.gerechten?.map((item) =>
+          
             <div key={item.slug} className={styles.dishesMiniContainer}>
-              <Link to={`${"menu"}/${item.slug}`} className={styles.link}>
+              <NavLink to={`${"menu"}/${item.slug}`} className={styles.link}>
                 <img src={item.gerechtmeta?.menuimage?.sourceUrl} className={styles.dishesImage} />
                 <div className={styles.dishesTitle}>{item.gerechtmeta?.title}</div>
                 <p className={styles.price}>{item.gerechtmeta?.price}</p>
-              </Link>
+              </NavLink>
             </div>
           )}
         </div> 
    
 
 
-        <div className={styles.containerSharingFoodImage}><h1 className={styles.sharingTopTitle}>Top 3 Sharing food</h1></div>  
+        {/* <div className={styles.containerSharingFoodImage}><h1 className={styles.sharingTopTitle}>Top 3 Sharing food</h1></div>   */}
 
-        <Carousel items={data && data?.sharingfood?.map((item)=> item.sharingFoodmeta)}  />
+        {/* <Carousel items={data && data?.sharingfood?.map((item)=> item.sharingFoodmeta)}  /> */}
         
 
            {/* <div className={styles.dishesContainer}>

@@ -75,3 +75,11 @@ footer {
 .fbIcon:hover{
 background-color: #FFA07A;
 }
+
+@media screen and (max-width: 768px) {
+  .footerUnderline {
+    margin-top: 0.6rem;
+  }
+  
+  
+}

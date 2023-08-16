@@ -4,7 +4,7 @@ import { useGetDish } from './_query';
 import Layout from '../components/layout'
 import styles from "./dish.module.css"
 import { Spinner } from '../shared/Spinner'
-import backgroungImage from "./../images/food-background3.jpg" 
+import backgroungImage from "./../images/dish-Background-Image.jpg" 
 
 export const Dish = () => {
   const { data, isLoading } = useGetDish()
