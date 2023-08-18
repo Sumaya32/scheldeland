@@ -12,7 +12,8 @@
 .mainImage {
     width: 100vw;
     max-height: 60vh;
-    margin-bottom: 5%;
+    /* margin-bottom: 5%; */
+    margin-top: 5rem;
 }
 
 .descriptionContainer {

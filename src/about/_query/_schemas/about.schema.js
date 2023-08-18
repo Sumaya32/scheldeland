@@ -4,6 +4,7 @@ export const GetAbout = gql`
 query {
   page(id: "cG9zdDozOA==") {
     aboutusfields {
+      
       groupaTitle
       groupaDescription
       groupaImage1 {
@@ -30,6 +31,8 @@ query {
         sourceUrl
         altText
       }
+
+
       groupbTitle
       groupbDescription
       groupbImage1 {
@@ -49,6 +52,10 @@ query {
         altText
       }
       groupbImage5 {
+        sourceUrl
+        altText
+      }
+      groupbImage6 {
         sourceUrl
         altText
       }

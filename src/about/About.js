@@ -14,37 +14,43 @@ export const About = () => {
   const [customersPictures, setCustomersPictures] = useState([])
   const [visiblePicture, setVisiblePicture] = useState([])
   const [modalIsOpen, setIsOpen] = React.useState(false)
-  
+
 
   const handleChild = () => {
     setIsOpen(false)
   };
 
-  useEffect(()=>{
-    // data && Object.entries(data)?.map(([item,index])=>{
-    //   setEmployeePicture([
-    //     {picture: `${item?.grouAImage}${index?.sourceUrl}`}
-    //   ])
-    // })
+  useEffect(() => {
+    data && Object.entries(data)?.map(([item,index])=>{
+      setEmployeePicture([
+        {picture: `${item?.grouAImage}${index?.sourceUrl}`}
+      ])
+    })
 
-    
+
 
     setEmployeePicture([
-      { picture: data?.groupaImage5?.sourceUrl, altText: data?.groupaImage4.altText },
-      { picture: data?.groupaImage6?.sourceUrl, altText: data?.groupaImage4.altText },
-      { picture: data?.groupaImage2?.sourceUrl, altText: data?.groupaImage2.altText },
+      data !== null &&
+      // { picture: data?.groupaImage1?.sourceUrl, altText: data?.groupaImage1.altText },
+      { picture: data?.groupaImage5?.sourceUrl, altText: data?.groupaImage5.altText },
+      { picture: data?.groupaImage6?.sourceUrl, altText: data?.groupaImage6.altText },
+      // { picture: data?.groupaImage2?.sourceUrl, altText: data?.groupaImage2.altText },
       { picture: data?.groupaImage3?.sourceUrl, altText: data?.groupaImage3.altText },
       { picture: data?.groupaImage4?.sourceUrl, altText: data?.groupaImage4.altText },
     ])
-    
+
     setCustomersPictures([
       { picture: data?.groupbImage1.sourceUrl, altText: data?.groupbImage1.altText },
       { picture: data?.groupbImage2.sourceUrl, altText: data?.groupbImage2.altText },
       { picture: data?.groupbImage3.sourceUrl, altText: data?.groupbImage3.altText },
-      { picture: data?.groupbImage4.sourceUrl, altText: data?.groupbImage4.altText },
-      { picture: data?.groupbImage5.sourceUrl, altText: data?.groupbImage5.altText }
+      // { picture: data?.groupbImage4.sourceUrl, altText: data?.groupbImage4.altText },
+      // { picture: data?.groupbImage5.sourceUrl, altText: data?.groupbImage5.altText },
+      { picture: data?.groupbImage6.sourceUrl, altText: data?.groupbImage6.altText }
+
+
+
     ])
-  },[data]);
+  }, [data]);
 
   if (isLoading) return <Spinner />
   return (
@@ -65,6 +71,7 @@ export const About = () => {
                     <img key={item?.altText} src={item?.picture} alt={item?.altText} className={styles.grouAImage} />
                   </div>
                 )}
+
               </div>
             </div>
           </div>

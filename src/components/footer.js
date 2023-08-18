@@ -15,8 +15,9 @@ const Footer = () => {
                        
                     </a>
                 </li>
-
             </ul>
+
+            
             <span className={style.footerUnderline}></span>
 
             <li className={style.copyright}><div>© 2023 SCHELDELAND CREATED BY SUMAYA MA</div></li>
