@@ -134,6 +134,11 @@ h1 {
     .container {
         /* margin-top: -10%; */
     }
+    .mainImage {
+        width: 100vw;
+        height: 55vh;
+        margin-bottom: 5%;
+    }
 
     .dishesContainer {
         display: flex;

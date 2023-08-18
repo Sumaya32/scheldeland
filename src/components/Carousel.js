@@ -19,15 +19,15 @@ export const Carousel = ({ items }) => {
             <BsArrowLeftCircleFill className={`${styles.arrow}  ${styles.arrowLeft}`} onClick={nextSlide} />
             {data?.map((item, index) =>
                 <div  className={styles.contentContainer}>
-                    <div className={slide === index ? `${styles.title}` : `${styles.title} ${styles.titleHidden}`}><p>{item?.title}</p></div>
                     <img src={item?.menuimage?.sourceUrl} className={slide === index ? `${styles.slide}` : `${styles.slide} ${styles.slideHidden}`}/>
+                    <div className={slide === index ? `${styles.title}` : `${styles.title} ${styles.titleHidden}`}><p>{item?.title}</p></div>
                 </div>
 
             )}
             <BsArrowRightCircleFill className={`${styles.arrow} ${styles.arrowRight}`} onClick={prevSlide} />
             <span className={styles.indicators}>
                 {data?.map((_, index) => {
-                    return <div>
+                    return <div className={styles.slideAndTextContainer}>
                          <button className={slide === index ? `${styles.indicator}` : `${styles.indicator} ${styles.indicatorInactive}`} key={index} onClick={() => setSlide(index)}></button>
                     </div>
                 })}

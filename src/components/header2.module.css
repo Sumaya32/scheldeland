@@ -1,5 +1,5 @@
 :root {
-    --mainColor: rgba(0, 0, 0, 0.6);
+    --mainColor: rgba(0, 0, 0, 0.5);
     --mainColorLighter: #5767aa;
     --secondaryColor: #db2b39;
     --textColor: white;
@@ -9,7 +9,7 @@
 .logoContainer {
     margin: 0.4rem 0 0 4rem;
     width: 2.5rem;
-    height: 50%;
+    height: 48%;
 }
 
 .logo {
@@ -38,7 +38,8 @@ nav a {
     color: var(--textColor);
     text-decoration: none;
     font-size: 1.2rem;
-    border: 0.1rem solid white;
+    font-weight: bolder;
+    border: 2px solid white;
     border-radius: 100px;
     padding: 0.3rem 1.5rem 0.3rem 1.5rem;
 }
@@ -115,12 +116,12 @@ header .nav_btn:hover {
 
     header .responsive_nav {
         transform: none;
-        /* background-color: var(--mainColor); */
+        background-color: black
     }
 
     header .nav_close_btn {
         position: absolute;
-        top: 0.8rem;
+        top: 1rem;
         right: 2rem
     }
 

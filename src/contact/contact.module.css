@@ -1,34 +1,30 @@
 .contactContainer {
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
     /* margin-top: -2%; */
     /* margin-top: 4rem; */
     text-align: center;
-    position: relative;
 }
 
-.iframeContainer{
-width: 100%;
-overflow: hidden;
-height: 400px;
-position: "fixed";
-z-index: 0;
-margin: 0;
-
+.iframeContainer {
+    width: 100%;
+    overflow: hidden;
+    height: 300px;
+    /* margin-bottom: -1rem; */
 }
 
 .smallContainer {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
     width: 100vw;
-    margin-top: -1rem;
+    margin: 7rem 0 1rem 0;
 }
 
 .adressContainer {
-    min-height: 330px;
+    min-height: 185px;
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -41,6 +37,7 @@ margin: 0;
     justify-content: flex-start;
     height: 30%;
     width: 100%;
+    margin-top: 1.2rem;
 }
 
 .address {
@@ -85,12 +82,13 @@ h2 {
 }
 
 .openingHours {
+    min-height: 185px;
     display: flex;
     justify-self: center;
     flex-direction: column;
     align-items: center;
     width: 45%;
-    min-height: 330px;
+    /* min-height: 330px; */
 }
 
 .daysAndHours {
@@ -112,9 +110,109 @@ h2 {
 
 
 /*Media queries*/
-@media only screen and (min-width: 820px) and (max-width: 912px){
+@media only screen and (width: 1280px) {
+    .smallContainer {
+        margin-top: 8rem;
+        font-size: 1rem;
+        height: 250px;
+    }
+
     .adressContainer {
-        /* background-color: red; */
+        height: 250px;
+
+    }
+
+    .adressMiniContainer {
+        margin-top: 2rem;
+    }
+
+    .openingHours {
+    height: 250px;
+    }
+
+    .daysAndHours {
+ margin-top: 0.5rem;
+
+    }
+
+}
+
+
+@media only screen and (min-width: 820px) and (max-width: 912px) {
+    .smallContainer {
+        /* margin-top: 6rem; */
+        display: flex;
+        flex-direction: column;
+        margin-top: 7.5rem;
+        font-size: 1.5rem;
+    }
+
+    .adressContainer {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding-left: 0;
+        margin-bottom: 2rem;
+    }
+
+    .adressMiniContainer {
+        flex-direction: column;
+    }
+
+    h2 {
+        overflow-wrap: break-word;
+        font-size: 2rem;
+    }
+
+    .openingHours {
+        /* margin-bottom: 5%; */
+        width: 100%;
+    }
+
+    .daysAndHours {
+        flex-direction: column;
+        justify-content: center;
+        width: 90%;
+    }
+
+    .days {
+        text-align: center;
+        padding-right: 0;
+        width: 100%;
+    }
+
+    .hours {
+        padding-bottom: 5%;
+        width: 100%;
+        text-align: center;
+    }
+
+    .email {
+        padding: 2% 2% 5% 2%;
+
+    }
+
+    .phone {
+        padding: 2% 2% 5% 2%;
+
+    }
+
+    .address {
+        padding: 5% 2% 5% 2%;
+
+    }
+
+    .iframeContainer {
+        height: 500px;
+
+    }
+}
+
+
+/* @media only screen and (min-width: 820px) and (max-width: 1280px){
+ 
+    .adressContainer {
+        background-color: red;
         width: 50%;
         display: flex;
         flex-direction: column;
@@ -127,20 +225,22 @@ h2 {
 .email,.phone, .address {
     margin-bottom: 1.5rem;
 }
-}
-@media only screen and (max-width: 768px) {
+} */
 
+
+@media only screen and (max-width: 768px) {
     .smallContainer {
-        margin-top: 5%;
+        /* margin-top: 6rem; */
         display: flex;
         flex-direction: column;
     }
 
     .adressContainer {
-        width: auto;
+        width: 100%;
         display: flex;
         flex-direction: column;
         padding-left: 0;
+        margin-bottom: 1rem;
     }
 
     .adressMiniContainer {
@@ -152,7 +252,8 @@ h2 {
     }
 
     .openingHours {
-        margin-bottom: 5%;
+        /* margin-bottom: 5%; */
+        width: 100%;
     }
 
     .daysAndHours {
@@ -189,12 +290,13 @@ h2 {
         padding: 10% 2% 10% 2%;
 
     }
+
 }
 
 
 
-@media only screen and (min-width: 280px) and (max-width: 375px){
+/* @media only screen and (min-width: 280px) and (max-width: 375px){
     .iframe {
         margin-top: -0.5rem;
     }
-}
+} */
