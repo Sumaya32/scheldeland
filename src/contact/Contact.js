@@ -27,7 +27,7 @@ export const Contact = () => {
             <h2>Contacteer ons of kom langs</h2>
             <div className={styles.adressMiniContainer}>
               <div className={styles.address}>
-                <img style={{ width: "25px", height: "30px" }} src='./location2.png' />
+                <img style={{ width: "25px", height: "30px" }} src='./location.png' />
                 <a href="https://www.google.com/maps?t=m&hl=nl&gl=BE&cid=12030728999397251863" target="_blank">
                   <div> {data?.address}</div>
                   <div> {data?.city}</div>
