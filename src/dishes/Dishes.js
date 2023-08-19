@@ -33,7 +33,7 @@ export const Dishes = () => {
         <div className={styles.smallContainer}>
 
           <h2 className={styles.headTitle}>Sharing food</h2>
-          <img className={styles.forkAndKnife} src={'/fork-knife3.png'} />
+          <img className={styles.forkAndKnife} src={'/fork-knife.png'} />
 
           <div className={styles.contentContainer}>
             <div className={styles.miniContainer}>
@@ -57,7 +57,7 @@ export const Dishes = () => {
 
 
           <h2 className={styles.headTitle}>Kleine honger</h2>
-          <img className={styles.forkAndKnife} src={'/fork-knife3.png'} />
+          <img className={styles.forkAndKnife} src={'/fork-knife.png'} />
 
           <div className={styles.contentContainer}>
             <div className={styles.miniContainer}>
@@ -89,7 +89,7 @@ export const Dishes = () => {
 
 
           <h2 className={styles.headTitle}>Hoofdgerechten</h2>
-          <img className={styles.forkAndKnife} src={'/fork-knife3.png'} />
+          <img className={styles.forkAndKnife} src={'/fork-knife.png'} />
 
           <div className={styles.contentContainer}>
             <div className={`${styles.miniContainer} ` + `${styles.mainDishContainer}`}>
@@ -147,7 +147,7 @@ export const Dishes = () => {
 
 
           <h2 className={`${styles.headTitle} ${styles.desertTitle}`} >Maandelijkse Menus</h2>
-          <img className={styles.forkAndKnife} src={'/fork-knife3.png'} />
+          <img className={styles.forkAndKnife} src={'/fork-knife.png'} />
           <div className={styles.contentContainer}>
             <div className={styles.miniContainer}>
               {monthlyDish?.map((item) => {
@@ -170,7 +170,7 @@ export const Dishes = () => {
 
 
           <h2 className={`${styles.headTitle} ${styles.desertTitle}`} >Dessert</h2>
-          <img className={styles.forkAndKnife} src={'/fork-knife3.png'} />
+          <img className={styles.forkAndKnife} src={'/fork-knife.png'} />
           <div className={styles.miniContainer}>
             {dessert?.map((item) => {
               const desserts = item.node.dessertmeta;
