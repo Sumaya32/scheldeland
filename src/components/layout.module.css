@@ -1,11 +1,7 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,300;0,400;1,200&display=swap'); */
-
 * {
-    /* background-color: #5767aa; */
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    /* font-family: 'Titillium Web', sans-serif; */
     max-width: 100vw;
   }
 
@@ -20,53 +16,3 @@
     flex-direction: column;
     min-height: 100vh;
   }
-
-
-  /*Media queries*/
- /* @media only screen and (min-width: 1279px) {
-    main {
-      margin-top: 5%;
-    }
-
-
-  }
-
-
-  @media only screen and (max-width: 769px) {
-    main {
-      margin-top: 11%;
-    }
-  }
-
-
-  @media only screen and (max-width: 541px) {
-
-    main {
-      margin-top: 16%;
-    }
-
-  }
-
-
-  @media only screen and (max-width: 415px) {
-
-    main {
-      margin-top: 20%;
-    }
-  }
-
-
-  @media only screen and (max-width: 394px) {
-
-    main {
-      margin-top: 23%;
-    }
-  }
-
-
-  @media only screen and (max-width: 281px) {
-
-    main {
-      margin-top: 31%;
-    }
-  } */

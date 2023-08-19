@@ -1,6 +1,5 @@
 .container {
-    font-family: 'Titillium Web', sans-serif;
-    /* font-family: Helvetica, Arial, Georgia, 'Tahoma and Roboto'; */
+    font-family: "Helvitica en bradley Hand";
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -107,7 +106,6 @@ h1 {
 .topTitle,
 .sharingTopTitle {
     font-size: 3rem;
-    font-family: 'Bungee', cursive;
     font-family: "Lucida Handwriting", sans-serif;
 }
 

@@ -6,24 +6,24 @@ import styles from "./dish.module.css"
 import { Spinner } from '../shared/Spinner'
 import backgroungImage from "./../images/dish-Background-Image.jpg" 
 
-export const Dish = () => {
+export const Dish = ({image}) => {
   const { data, isLoading } = useGetDish()
   const navigate = useNavigate();
-  const  [stateBackgroungImage, setStateBackgroungImage]  = useState("");
+  // const  [stateBackgroungImage, setStateBackgroungImage]  = useState("");
 
   const goBack = ()=>{
     navigate(-1)
   }
   
   useEffect(()=>{
-    setStateBackgroungImage(backgroungImage)
+    // setStateBackgroungImage(backgroungImage)
     window.scrollTo(0, 0)
-  },[backgroungImage, data]);
+  },[data]);
 
   if (isLoading) return <Spinner />
   return (
     <Layout>
-      <div className={styles.container} style={{backgroundImage: `url(${stateBackgroungImage})`}}>
+      <div className={styles.container} style={{backgroundImage: `url(${image})`}}>
         <div className={styles.miniContainer}>
           <h2 className={styles.title}>{data?.title}</h2>
           <div className={styles.imageContainer}>

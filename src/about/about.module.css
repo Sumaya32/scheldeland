@@ -1,15 +1,21 @@
 .container {
     margin: 8rem 0 3rem 0;
-
+    font-family: "Helvitica en bradley Hand";
 }
 
 .miniContainer {
     width: 100vw;
 }
 
+.title{
+    border-bottom: 1px solid grey;
+    border-radius: 5px;
+}
 .discriptionParagraph {
     width: 80%;
     line-height: 1.8rem;
+    font-size: 1.2rem;
+
 }
 
 /*Group A*/
