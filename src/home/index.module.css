@@ -1,6 +1,6 @@
 .container {
     font-family: 'Titillium Web', sans-serif;
-    font-family: Helvetica, Arial, Georgia, 'Tahoma and Roboto';
+    /* font-family: Helvetica, Arial, Georgia, 'Tahoma and Roboto'; */
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -12,8 +12,7 @@
 .mainImage {
     width: 100vw;
     max-height: 60vh;
-    /* margin-bottom: 5%; */
-    margin-top: 5rem;
+    margin-bottom: 5%;
 }
 
 .descriptionContainer {
