@@ -8,14 +8,17 @@
 }
 
 .title{
-    border-bottom: 1px solid grey;
-    border-radius: 5px;
+    font-weight: bolder;
+    /* border-bottom: 1px solid grey;
+    border-radius: 5px; */
+    font-size: 1.8rem;
+
 }
 .discriptionParagraph {
     width: 80%;
     line-height: 1.8rem;
     font-size: 1.2rem;
-
+    font-weight: lighter;
 }
 
 /*Group A*/

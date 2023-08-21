@@ -1,6 +1,9 @@
-/* @import url('https://fonts.cdnfonts.com/css/bradley-hand-2'); */
-/* @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+:root {
+    --text-main-color:rgba(9, 15, 15, 1);
+    --text-font-family:   'Dancing Script', cursive;
+}
 
 .container {
     width: 100vw;
@@ -8,15 +11,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: rgba(9, 15, 15, 1);
-    /* margin-top: 10%; */
     margin: 7% 0 5% 0;
-
-    /* font-family: 'Bradley Hand'; */
-    font-family: 'Dancing Script', cursive;
-    /*'Great Vibes', cursive;*/
-    /*"Lucida Handwriting",*/
-    /* font-family: "Bradley Hand ITC TT", "Handwriting-Dakota"; */
+    font-family: var(--text-font-family)
 }
 
 .smallContainer {
@@ -31,7 +27,6 @@
     height: auto;
     width: 50vw;
     text-align: center;
-
 }
 
 .miniContainer {
@@ -43,24 +38,17 @@
     justify-content: center;
     column-count: 2;
     align-items: flex-start;
-    /* font-family: serif; */
-    /* margin-bottom: -7rem; */
     margin-bottom: 1rem;
-
 }
 
-
 .menuLineImage {
-    /* background-color: blue; */
     width: 100%;
     height: 70px;
     padding: 0;
-    /* margin-top: -6rem; */
 }
 
 .mainDishContainer {
     margin-bottom: 4%;
-
 }
 
 .headTitle {
@@ -85,18 +73,12 @@
     text-align: center;
 }
 
-.menuNavLink:hover {
-    /* color: #FFA07A; */
-}
-
 .dishTitle {
     font-weight: bold;
     font-size: 1.2rem;
     font-size: 2rem;
-
     font-weight: 600;
     padding: 0.2rem;
-
 }
 
 .dishDescription {
@@ -110,14 +92,11 @@
 }
 
 .kisdMenuTitle {
-    /* background-color: greenyellow; */
     margin: 5rem 0 1.5rem 0;
     font-size: 1.5rem;
     font-size: 2rem;
-    /* border-bottom: solid rgb(159, 158, 158) 3px; */
     border-radius: 10px;
     text-align: center;
-    /* width: 50%; */
     align-self: center;
 }
 
@@ -147,6 +126,7 @@
     font-size: 1.7rem;
 }
 
+
 /*Medi queries*/
 @media only screen and (max-width: 721px) {
     .container {
@@ -171,11 +151,8 @@
     }
 
     .allMenus {
-        /* background-color: red; */
         width: 100%;
         min-height: 2rem;
         text-align: center;
-        /* margin-bottom: 1rem; */
     }
-
 }

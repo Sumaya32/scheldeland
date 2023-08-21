@@ -9,7 +9,7 @@ export const Modal2 = ({ handelclick, children }) => {
     }
     return (
         <div className={styles.container}>
-        <div onClick={() => handelclick(modalFunction)} className={styles.miniContainer} >
+        <div className={styles.miniContainer} >
             {children}
             <button onClick={() => handelclick(modalFunction)} className={styles.modalBtn}>Close</button>
         </div>

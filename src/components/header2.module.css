@@ -25,15 +25,14 @@ header {
     justify-content: space-between;
     height: 80px;
     padding: 0 2rem;
-    background-color: var(--mainColor);   
+    background-color: var(--mainColor);
     color: var(--textColor);
     z-index: 1;
-    font-family: 'Titillium Web', sans-serif;
-    font-family :header-font-family;
+    /* font-family: 'Titillium Web', sans-serif; */
+    font-family: header-font-family;
 }
 
 nav a {
-    /* background-color: red; */
     margin: 0 1rem;
     color: var(--textColor);
     text-decoration: none;
@@ -83,7 +82,7 @@ header .nav_btn:hover {
 
 
 /*Media queries*/
-@media only screen and (width: 820px){
+@media only screen and (width: 820px) {
     .logoContainer {
         margin: 0.4rem 3rem 0 1rem;
 
@@ -92,10 +91,11 @@ header .nav_btn:hover {
 
 
 @media only screen and (max-width: 768px) {
-    header{
-    height: 55px;
+    header {
+        height: 55px;
 
     }
+
     header .nav_btn {
         visibility: visible;
         opacity: 1;

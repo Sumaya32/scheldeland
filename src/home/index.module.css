@@ -134,9 +134,8 @@ h1 {
     }
     .mainImage {
         width: 100vw;
-        height: 45vh;
+        height: 40vh;
         margin-bottom: 5%;
-        /* padding-top: 1rem; */
     }
 
     .dishesContainer {
