@@ -136,6 +136,7 @@ h1 {
         width: 100vw;
         height: 45vh;
         margin-bottom: 5%;
+        /* padding-top: 1rem; */
     }
 
     .dishesContainer {

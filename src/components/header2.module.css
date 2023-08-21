@@ -63,7 +63,7 @@ header .nav_btn {
     color: var(--textColor);
     visibility: hidden;
     opacity: 0;
-    font-size: 1.8rem
+    font-size: 1.8rem;
 }
 
 header .nav_btn:hover {
@@ -78,7 +78,7 @@ header .nav_btn:hover {
 }
 
 .faBars {
-    height: 1.8rem;
+    height: 1.5rem;
 }
 
 
@@ -92,6 +92,10 @@ header .nav_btn:hover {
 
 
 @media only screen and (max-width: 768px) {
+    header{
+    height: 55px;
+
+    }
     header .nav_btn {
         visibility: visible;
         opacity: 1;
@@ -131,6 +135,7 @@ header .nav_btn:hover {
 
     .logoContainer {
         margin-left: 0;
+        width: 2.2rem;
     }
 
 }

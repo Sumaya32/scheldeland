@@ -1,0 +1,30 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color:  rgba(0, 0, 0, 0.5);; */
+    height: 100vh;
+}
+
+.contenContainer{
+    /* background-color:  rgba(0, 0, 0, 0.5); */
+    background-color: black;
+    width: 50%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.notFound{
+    /* background-color: green; */
+    width: 20%;
+    height: 30%;
+    font-size: 5rem;
+    background-image: linear-gradient(to right,  #583020, #f7c2ad);
+    
+
+}
