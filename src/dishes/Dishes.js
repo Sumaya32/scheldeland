@@ -99,14 +99,14 @@ export const Dishes = () => {
             <div className={styles.extraInfo}><p>Alle steaks zijn te verkrijgen met Bearnaisesaus, pepersaus of Champignonsaus</p>  </div>
 
 
-            <h3 className={styles.supplementHeadTitle}>supplementen</h3>
+            <h3 className={styles.supplementHeadTitle}>Supplementen</h3>
             <div className={styles.supplementContainer}>
               {supplement?.map((item) => {
                 const supplements = item.node.SupplementMeta;
                 return  <div className={styles.supplementMiniContainer}>
                     {item !== supplement[supplement.length - 1] ?
                       <p className={styles.supplementTitle} key={item.node.id}>{supplements.title},</p>
-                      : <p className={styles.supplementTitle} key={item.node.id}>{supplements.title}</p>
+                      : <p className={styles.supplementTitle} key={item.node.id}>of {supplements.title}</p>
                     }
                   </div>
               })}
