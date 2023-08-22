@@ -1,10 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 
-:root {
-    --text-main-color:rgba(9, 15, 15, 1);
-    --text-font-family:   'Dancing Script', cursive;
-}
-
 .container {
     width: 100vw;
     display: flex;
@@ -12,7 +7,7 @@
     align-items: center;
     justify-content: center;
     margin: 7% 0 5% 0;
-    font-family: var(--text-font-family)
+    font-family:   Dancing Script, cursive;
 }
 
 .smallContainer {
@@ -43,7 +38,7 @@
 
 .menuLineImage {
     width: 100%;
-    height: 70px;
+    height: 50px;
     padding: 0;
 }
 
@@ -63,7 +58,7 @@
 .forkAndKnife {
     width: 200px;
     height: 60px;
-    margin: 0 0 5% 0;
+    margin: 0 0 3% 0;
     padding: 0;
 }
 
@@ -93,30 +88,25 @@
 
 .kisdMenuTitle {
     margin: 5rem 0 1.5rem 0;
-    font-size: 1.5rem;
-    font-size: 2rem;
+    font-size: 2.5rem;
     border-radius: 10px;
     text-align: center;
     align-self: center;
 }
 
 .supplementContainer {
-    margin: 0.5rem 0 3rem 0;
+    width: 100%;
     display: flex;
-    flex-direction: row;
     align-items: center;
-    gap: 1rem;
+    justify-content: center;
 }
 
-.supplementMiniContainer {
-    margin-top: 1rem;
-    font-size: 1.6rem;
-
+.supplementMiniContainer{
+   padding: 0.5rem;
 }
 
 .supplementHeadTitle {
     font-size: 2.2rem;
-    margin-top: 2rem;
 }
 
 .extraInfo {
@@ -147,7 +137,7 @@
     }
 
     .forkAndKnife {
-        margin-bottom: 2.5rem;
+        margin-bottom: 1.5rem;
     }
 
     .allMenus {

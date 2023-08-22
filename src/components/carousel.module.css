@@ -1,3 +1,11 @@
+:root {
+    --main-color: white;
+    --title-color: black;
+    --background-color: rgb(248, 243, 243);
+    --title-font-family:  "Lucida Handwriting", sans-serif;
+    --indicator-is-active: gray;
+}
+
 .carousel {
     /* background-color: #64da74; */
     position: relative;
@@ -42,7 +50,7 @@
     position: absolute;
     width: 2rem;
     height: 2rem;
-    color: white;
+    color: var(--main-color);
     filter: drop-shadow(0px 0px 5px #555555);
 }
 
@@ -65,7 +73,7 @@
 }
 
 .indicator {
-    background-color: white;
+    background-color: var(--main-color);
     width: 0.8rem;
     height: 0.8rem;
     border-radius: 100%;
@@ -82,11 +90,11 @@
 }
 
 .indicatorInactive {
-    background-color: grey;
+    background-color: var(--indicator-is-active);
 }
 
 .dishesTitle {
-    background-color: white;
+    background-color: var(--main-color);
 }
 
 .titleHidden {
@@ -94,14 +102,13 @@
 }
 
 .title {
-    color: white;
-    color: black;
+    color: var(--title-color);
     margin: 0 0 0.5rem 0;
     font-size: 1.5rem;
     font-weight: bolder;
     /* background-color: rgba(237, 228, 228, 0.5); */
     /* background-color: #fffbfb; */
-    font-family: "Lucida Handwriting", sans-serif;
+    font-family: var( --title-font-family);
     height: 15%;
     /* padding: 0.2rem; */
     border-radius: 10px;

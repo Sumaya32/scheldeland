@@ -1,8 +1,12 @@
 :root {
+    /* --mainColor: rgba(0, 0, 0, 0.5); */
     --mainColor: rgba(0, 0, 0, 0.5);
-    --mainColorLighter: #5767aa;
-    --secondaryColor: #db2b39;
-    --textColor: white;
+    --responsive-mainColor: rgba(0, 0, 0, 0.8);
+    --menubar-color: #fda58a;
+    --text-color: white;
+    --ancer-hover-color: #f9baa1;
+    --responsive-header-background-color: black;
+    --is-active-color: #fbc1ab;
     --header-font-family: HelveticaNeue, Helvetica, Sans-ns-Serif;
 }
 
@@ -26,7 +30,7 @@ header {
     height: 80px;
     padding: 0 2rem;
     background-color: var(--mainColor);
-    color: var(--textColor);
+    color: var(--text-color);
     z-index: 1;
     /* font-family: 'Titillium Web', sans-serif; */
     font-family: header-font-family;
@@ -44,12 +48,12 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #f9baa1;
+    background-color: var(--ancer-hover-color);
     color: #000;
 }
 
 .active {
-    color: #fbc1ab;
+    color: var(--is-active-color);
     pointer-events: inherit;
 }
 
@@ -59,20 +63,20 @@ header .nav_btn {
     background-color: transparent;
     border: none;
     outline: none;
-    color: var(--textColor);
+    color: var(--text-color);
     visibility: hidden;
     opacity: 0;
     font-size: 1.8rem;
 }
 
-header .nav_btn:hover {
+/* header .nav_btn:hover {
     color: var(--secondaryColor);
-}
+} */
 
 
 .faTimes,
 .faBars {
-    color: #fda58a;
+    color: var(--menubar-color);
     margin-bottom: -5px;
 }
 
@@ -92,8 +96,8 @@ header .nav_btn:hover {
 
 @media only screen and (max-width: 768px) {
     header {
+        background-color: var(--responsive-mainColor);
         height: 55px;
-
     }
 
     header .nav_btn {
@@ -120,7 +124,7 @@ header .nav_btn:hover {
 
     header .responsive_nav {
         transform: none;
-        background-color: black
+        background-color: var( --responsive-header-background-color)
     }
 
     header .nav_close_btn {

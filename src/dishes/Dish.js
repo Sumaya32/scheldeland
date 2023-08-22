@@ -4,19 +4,16 @@ import { useGetDish } from './_query';
 import Layout from '../components/layout'
 import styles from "./dish.module.css"
 import { Spinner } from '../shared/Spinner'
-import backgroungImage from "./../images/dish-Background-Image.jpg" 
 
 export const Dish = ({image}) => {
   const { data, isLoading } = useGetDish()
   const navigate = useNavigate();
-  // const  [stateBackgroungImage, setStateBackgroungImage]  = useState("");
 
   const goBack = ()=>{
     navigate(-1)
   }
   
   useEffect(()=>{
-    // setStateBackgroungImage(backgroungImage)
     window.scrollTo(0, 0)
   },[data]);
 

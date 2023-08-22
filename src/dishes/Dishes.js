@@ -65,19 +65,9 @@ export const Dishes = () => {
                 const appetizers = item.node.kleinehongermeta;
                 const slug = item.node.slug;
                 return <div key={item.node.slug} className={styles.allMenus}>
-                  {/* <NavLink className={styles.menuNavLink} to={`/menu/${slug}`} > */}
                   <div className={styles.menuNavLink}>
                     <div className={styles.dishTitle} key={item.node.id}>{appetizers.title}</div>
                     <div className={styles.dishDescription} key={item.node.id}>{appetizers.menudescription}</div>
-                    {/* </NavLink> */}
-                  </div>
-
-                  {/* <NavLink to={`${"menu"}/${item.slug}`} className={styles.link}> */}
-                  <div className={styles.link}>
-                    <img src={item.gerechtmeta?.menuimage?.sourceUrl} className={styles.dishesImage} />
-                    <div className={styles.dishesTitle}>{item.gerechtmeta?.title}</div>
-                    <p className={styles.price}>{item.gerechtmeta?.price}</p>
-                    {/* </NavLink> */}
                   </div>
                 </div>
               })}
@@ -113,14 +103,12 @@ export const Dishes = () => {
             <div className={styles.supplementContainer}>
               {supplement?.map((item) => {
                 const supplements = item.node.SupplementMeta;
-                return <div key={item.node.slug} className={styles.allMenus}>
-                  <div className={styles.supplementMiniContainer}>
+                return  <div className={styles.supplementMiniContainer}>
                     {item !== supplement[supplement.length - 1] ?
                       <p className={styles.supplementTitle} key={item.node.id}>{supplements.title},</p>
                       : <p className={styles.supplementTitle} key={item.node.id}>{supplements.title}</p>
                     }
                   </div>
-                </div>
               })}
 
             </div>
