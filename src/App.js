@@ -23,7 +23,7 @@ function App() {
       <Route element={<Home />} path="/" />
       <Route element={<Error />} path="/error" />
       <Route element={<Dishes />} path="/menu" />
-      <Route element={<About />} path="/about" />
+      <Route element={<About />} path={`/over`} />
       <Route element={<Contact />} path="/contact" />
     </Routes>
   );

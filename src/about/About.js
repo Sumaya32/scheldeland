@@ -4,7 +4,6 @@ import Layout from '../components/layout'
 import { Spinner } from '../shared/Spinner'
 import styles from './about.module.css'
 import { Modal2 } from '../components/Modal'
-import { Carousel } from '../components/Carousel'
 
 
 export const About = () => {
