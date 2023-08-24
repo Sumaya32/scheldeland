@@ -1,6 +1,5 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import { NavLink } from 'react-router-dom';
 import {
   useGetMainDish,
   useGetDessert,
@@ -16,6 +15,7 @@ import Layout from '../components/layout'
 import styles from "./dishes.module.css"
 
 export const Dishes = () => {
+  const  [stateSpinner]  = useState(Spinner);
   const { mainDish, isLoading } = useGetMainDish();
   const { dessert } = useGetDessert();
   const { appetizer } = useGetAppetizer();
@@ -27,6 +27,7 @@ export const Dishes = () => {
   const { id } = useParams
 
   if (isLoading) return <Spinner />
+  
   return (
     <Layout>
       <div className={styles.container}>

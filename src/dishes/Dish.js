@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import { useNavigate, NavLink, Link } from 'react-router-dom'
+import { useNavigate, NavLink, Link } from 'react-router-dom';
 import { useGetDish } from './_query';
-import Layout from '../components/layout'
-import styles from "./dish.module.css"
-import { Spinner } from '../shared/Spinner'
+import Layout from '../components/layout';
+import styles from "./dish.module.css";
+import { Spinner } from '../shared/Spinner';
 
 export const Dish = ({image}) => {
   const { data, isLoading } = useGetDish()
