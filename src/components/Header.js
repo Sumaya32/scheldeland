@@ -24,7 +24,7 @@ const Header2 = () => {
                 <NavLink to="/" className={({ isActive }) => (isActive ? `${style.active} ${style.navlink}` : `${style.inactive}`)} onClick={()=> {handleClick(); setToggled(false)}}>
                     Home
                 </NavLink>
-                <NavLink to={"/overons"} className={({ isActive }) => (isActive ? `${style.active} ${style.navlink}` : `${style.inactive}`)} onClick={()=> {handleClick(); setToggled(false)}}>
+                <NavLink to={"/over-ons"} className={({ isActive }) => (isActive ? `${style.active} ${style.navlink}` : `${style.inactive}`)} onClick={()=> {handleClick(); setToggled(false)}}>
                     Over ons
                 </NavLink>
                 <NavLink to="/contact" href='' className={({ isActive }) => (isActive ? `${style.active} ${style.navlink}` : `${style.inactive}`)} onClick={()=> {handleClick(); setToggled(false)}}>

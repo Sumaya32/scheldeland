@@ -14,17 +14,27 @@ export const Home = () => {
   return (
     <Layout>
       <div className={styles.container}>
-        <div className={styles.mainImageContainer}> <img src={data?.mainimage?.sourceUrl} alt={data?.mainimage?.altText} className={styles.mainImage} /></div>
+        <div className={`${styles.mainImageContainer} ${styles.parallax}`}>
+           {/* <img src={data?.mainimage?.sourceUrl} alt={data?.mainimage?.altText} className={styles.mainImage} /> */}
+        {/* </div> */}
 
-        <div className={styles.descriptionContainer}>
-          <h2>{data?.title}</h2>
-          <div>{data?.description}</div>
-        </div>
+        {/* <div className={`${styles.secondSectionContainer} ${styles.parallax}`}> */}
+       <div className={styles.descriptionContainer}>
+       <h2 className={`${styles.title} ${styles.text}`} >{data?.title }</h2>
+          <div className={styles.description}>{data?.description}</div>
+       </div>
+       {/* <div className={styles.secondSectionImageContainer}>
+       <img src='./taverne.jpg' className={styles.secondSectionImage}/>
 
-        <div className={styles.containerImage}> <h1 className={styles.topTitle}>Top 3 gerechten</h1>     </div>
+       </div> */}
+       
+       </div>
+        <div className={styles.containerImage}> <h1 className={`${styles.topTitle} ${styles.text}`}>Top 3 gerechten</h1>     </div>
+
             <Carousel items={data && data?.gerechten?.map((item)=> item.gerechtmeta)}  />
 
-         <div className={styles.dishesContainer}>
+         <div className={`${styles.dishesContainer} ${styles.section}`}>
+
           {data?.gerechten?.map((item) =>
           
             <div key={item.slug} className={styles.dishesMiniContainer}>
@@ -57,7 +67,7 @@ export const Home = () => {
           )}
         </div> */}
    
-
+ 
 
       </div>
     </Layout>
