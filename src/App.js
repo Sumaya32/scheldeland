@@ -7,6 +7,7 @@ import { About } from './about/About'
 import { Home } from './home/Index'
 import { Contact } from './contact/Contact'
 import { Error } from './components/Error'
+import { Maintaince } from './Maintaince';
 import { Spinner } from './shared/Spinner'
 import backgroungImage from "./images/dish-Background-Image.jpg" 
 
@@ -23,7 +24,8 @@ function App() {
   return (
     <Routes>
       <Route exact element={<Dish image={stateBackgroungImage}/>} path="menu/:id" />
-      <Route element={<Home />} path="/" />
+      <Route element={<Maintaince/>} path="/" />
+      <Route element={<Home />} path="/5" />
       <Route element={<Error />} path="/error" />
       <Route element={<Dishes />} path="/menu" />
       <Route element={<About />} path={`/${('over ons').replace(/\s+/g, '-')}`} />
