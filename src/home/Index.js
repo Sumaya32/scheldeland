@@ -1,20 +1,21 @@
-import React, { useState, useEffect } from 'react';
-import { NavLink, Link } from 'react-router-dom';
+import React, { useState } from 'react';
+import { NavLink } from 'react-router-dom';
 
 import { useGetHome } from './_query';
 import Layout from '../components/layout';
 import { Spinner } from '../shared/Spinner';
 import { Carousel } from '../components/Carousel'
+import image from "../images/zwarteVrouw.jpg"
 import styles from "./index.module.css";
 
 export const Home = () => {
   const { data, isLoading } = useGetHome();
 
-  if (isLoading) return <Spinner />
+  if (image && isLoading) return <Spinner />
   return (
     <Layout>
       <div className={styles.container}>
-        <div className={`${styles.mainImageContainer} ${styles.parallax}`}>
+        <div className={`${styles.mainImageContainer} ${styles.parallax}`} style={{backgroundImage: `url(${image && image})`}}>
            {/* <img src={data?.mainimage?.sourceUrl} alt={data?.mainimage?.altText} className={styles.mainImage} /> */}
         {/* </div> */}
 
@@ -29,11 +30,11 @@ export const Home = () => {
        </div> */}
        
        </div>
-        <div className={styles.containerImage}> <h1 className={`${styles.topTitle} ${styles.text}`}>Top 3 gerechten</h1>     </div>
+        <div className={styles.containerImage}> <h1 className={`${styles.topTitle}`}>Top 3 gerechten</h1>     </div>
 
             <Carousel items={data && data?.gerechten?.map((item)=> item.gerechtmeta)}  />
 
-         <div className={`${styles.dishesContainer} ${styles.section}`}>
+         <div className={`${styles.dishesContainer}`}>
 
           {data?.gerechten?.map((item) =>
           

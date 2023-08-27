@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import React from 'react';
 import {
   useGetMainDish,
   useGetDessert,
@@ -12,26 +11,32 @@ import {
 } from './_query';
 import { Spinner } from '../shared/Spinner'
 import Layout from '../components/layout'
+import image from '../images/oldPaperSheet.png'
 import styles from "./dishes.module.css"
 
 export const Dishes = () => {
-  const  [stateSpinner]  = useState(Spinner);
-  const { mainDish, isLoading } = useGetMainDish();
-  const { dessert } = useGetDessert();
-  const { appetizer } = useGetAppetizer();
-  const { monthlyDish } = useGetMonthlyDish();
-  const { sharingFood } = useGetSharingFood();
-  const { kidsMenu } = useGetKidsMenu();
-  const { kidsDessert } = useGetKidsDessert();
-  const { supplement } = useGetSupplement();
-  const { id } = useParams
+  const { mainDish, mainDishLoading } = useGetMainDish();
+  const { dessert, dessertLoading } = useGetDessert();
+  const { appetizer, appetizerLaoding } = useGetAppetizer();
+  const { monthlyDish, monthlyDishLoading } = useGetMonthlyDish();
+  const { sharingFood, sharingFoodLoading } = useGetSharingFood();
+  const { kidsMenu, kidsMenuLoading } = useGetKidsMenu();
+  const { kidsDessert, kidsDessertLoading } = useGetKidsDessert();
+  const { supplement, supplementLoading } = useGetSupplement();
 
-  if (isLoading) return <Spinner />
+  if (mainDishLoading && 
+    appetizerLaoding && 
+    dessertLoading &&
+    kidsDessertLoading &&
+    kidsMenuLoading &&
+    monthlyDishLoading &&
+    sharingFoodLoading &&
+    supplementLoading && image) return <Spinner />
   
   return (
     <Layout>
       <div className={styles.container}>
-        <div className={styles.smallContainer}>
+        <div className={styles.smallContainer} style={{backgroundImage: `url(${image && image})`, width: "70%"}}>
 
           <h2 className={styles.headTitle}>Sharing food</h2>
           <img className={styles.forkAndKnife} src={'/fork-knife.png'} />

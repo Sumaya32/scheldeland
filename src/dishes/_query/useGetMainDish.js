@@ -4,5 +4,5 @@ import { useQuery } from '@apollo/client'
 export const useGetMainDish = ()=> {
     const {data, loading} = useQuery(GetMainDish)
 
-    return{mainDish: data?.hoofdgerechten?.edges, isLoading: loading}
+    return{mainDish: data?.hoofdgerechten?.edges, mainDishLoading: loading}
 }
