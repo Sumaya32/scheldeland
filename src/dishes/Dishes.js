@@ -33,7 +33,7 @@ export const Dishes = ({image}) => {
     sharingFoodLoading &&
     supplementLoading && image) return <Spinner />
   
-   (
+  return (
     <Layout>
       <div className={styles.container}>
         <div className={styles.smallContainer} style={{backgroundImage: `url(${image && image})`, width: "70%", height: "100%"}}>
