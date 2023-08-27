@@ -20,16 +20,20 @@ export const Home = () => {
         {/* </div> */}
 
         {/* <div className={`${styles.secondSectionContainer} ${styles.parallax}`}> */}
-       <div className={styles.descriptionContainer}>
-       <h2 className={`${styles.title} ${styles.text}`} >{data?.title }</h2>
-          <div className={styles.description}>{data?.description}</div>
-       </div>
+
        {/* <div className={styles.secondSectionImageContainer}>
        <img src='./taverne.jpg' className={styles.secondSectionImage}/>
 
        </div> */}
-       
+          <div className={styles.descriptionContainer}>
+       <h2 className={`${styles.title} ${styles.text}`} >{data?.title }</h2>
+          <div className={styles.description}>{data?.description}</div>
        </div>
+
+       </div>
+
+    
+
         <div className={styles.containerImage}> <h1 className={`${styles.topTitle}`}>Top 3 gerechten</h1>     </div>
 
             <Carousel items={data && data?.gerechten?.map((item)=> item.gerechtmeta)}  />

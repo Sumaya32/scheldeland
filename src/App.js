@@ -10,7 +10,7 @@ import { Error } from './components/Error'
 import { Maintaince } from './Maintaince';
 import { Spinner } from './shared/Spinner'
 import backgroungImage from "./images/dish-Background-Image.jpg" 
-import image from './images/oldPaperSheet.png'
+import image from './images/oldPaperSheet2.png'
 
 function App() {
   const  [stateBackgroungImage, setStateBackgroungImage]  = useState("");
@@ -25,8 +25,8 @@ function App() {
   return  (
     <Routes>
       <Route exact element={<Dish image={stateBackgroungImage}/>} path="menu/:id" />
-      <Route element={<Maintaince/>} path="/" />
-      <Route element={<Home />} path="/5" />
+      {/* <Route element={<Maintaince/>} path="/" /> */}
+      <Route element={<Home />} path="/" />
       <Route element={<Error />} path="/error" />
       <Route element={<Dishes image={image} />} path="/menu" />
       <Route element={<About />} path={`/${('over ons').replace(/\s+/g, '-')}`} />
