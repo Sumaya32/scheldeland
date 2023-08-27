@@ -26,11 +26,11 @@ function App() {
     <Routes>
       <Route exact element={<Dish image={stateBackgroungImage}/>} path="menu/:id" />
       <Route element={<Maintaince/>} path="/" />
-      <Route element={<Home />} path="/5" />
+      {/* <Route element={<Home />} path="/5" />
       <Route element={<Error />} path="/error" />
       <Route element={<Dishes image={image} />} path="/menu" />
       <Route element={<About />} path={`/${('over ons').replace(/\s+/g, '-')}`} />
-      <Route element={<Contact />} path="/contact" />
+      <Route element={<Contact />} path="/contact" /> */}
     </Routes>
   );
 }
