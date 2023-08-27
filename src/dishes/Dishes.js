@@ -11,10 +11,10 @@ import {
 } from './_query';
 import { Spinner } from '../shared/Spinner'
 import Layout from '../components/layout'
-import image from '../images/oldPaperSheet.png'
+// import image from '../images/oldPaperSheet.png'
 import styles from "./dishes.module.css"
 
-export const Dishes = () => {
+export const Dishes = ({image}) => {
   const { mainDish, mainDishLoading } = useGetMainDish();
   const { dessert, dessertLoading } = useGetDessert();
   const { appetizer, appetizerLaoding } = useGetAppetizer();
@@ -36,7 +36,7 @@ export const Dishes = () => {
   return (
     <Layout>
       <div className={styles.container}>
-        <div className={styles.smallContainer} style={{backgroundImage: `url(${image && image})`, width: "70%"}}>
+        <div className={styles.smallContainer} style={{backgroundImage: `url(${image && image})`, width: "70%", height: "100%"}}>
 
           <h2 className={styles.headTitle}>Sharing food</h2>
           <img className={styles.forkAndKnife} src={'/fork-knife.png'} />

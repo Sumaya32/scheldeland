@@ -15,7 +15,7 @@ export const Home = () => {
   return (
     <Layout>
       <div className={styles.container}>
-        <div className={`${styles.mainImageContainer} ${styles.parallax}`} style={{backgroundImage: `url(${image && image})`}}>
+        <div className={`${styles.mainImageContainer} ${styles.parallax}`} style={{backgroundImage: `url(${data?.mainimage?.sourceUrl})`}}>
            {/* <img src={data?.mainimage?.sourceUrl} alt={data?.mainimage?.altText} className={styles.mainImage} /> */}
         {/* </div> */}
 
