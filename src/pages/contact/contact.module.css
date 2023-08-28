@@ -1,0 +1,275 @@
+.contactContainer{
+    font-family: Helvitica, "bradley Hand";
+}
+
+.iframeContainer {
+    background-color:  #D5D8DB;
+    width: 100%;
+    overflow: hidden;
+    height: 310px;
+    
+}
+
+.iframe{
+    width: 100vw;
+    height: 100%;
+    border: 0;
+    margin: 0;
+    padding-top: 5rem;
+}
+
+.smallContainer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100vw;
+    margin: 2rem 0 2rem 0;
+}
+
+.adressContainer {
+    min-height: 185px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.adressMiniContainer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 30%;
+    width: 100%;
+    margin-top: 1.2rem;
+    font-weight: lighter;
+}
+
+.address {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+}
+
+.phone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+}
+
+.email {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    overflow-wrap: break-word;
+}
+
+.email:hover,
+.phone:hover,
+.address:hover {
+    filter: invert(85%) sepia(44%) saturate(5203%) hue-rotate(309deg) brightness(97%) contrast(93%);
+}
+
+a {
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+}
+
+h2 {
+    font-size: 1.5rem;
+    /* font-weight: bolder; */
+    margin-bottom: 3%;
+}
+
+.openingHoursTitle{
+margin-bottom: 1rem;
+}
+
+.openingHours {
+    min-height: 185px;
+    display: flex;
+    justify-self: center;
+    flex-direction: column;
+    align-items: center;
+    width: 45%;
+}
+
+.daysAndHours {
+    width: 50%;
+    display: flex;
+    margin-bottom: 0.4rem;
+}
+
+.days {
+    width: 50%;
+    text-align: right;
+    padding-right: 1rem;
+}
+
+.hours {
+    width: 50%;
+}
+
+
+
+/*Media queries*/
+@media only screen and (width: 1280px) {
+    .smallContainer {
+        margin-top: 8rem;
+        font-size: 1rem;
+        height: 250px;
+    }
+
+    .adressContainer {
+        height: 250px;
+
+    }
+
+    .adressMiniContainer {
+        margin-top: 2rem;
+    }
+
+    .openingHours {
+        height: 250px;
+    }
+
+    .daysAndHours {
+        margin-top: 0.5rem;
+    }
+
+}
+
+
+@media only screen and (min-width: 820px) and (max-width: 912px) {
+    .smallContainer {
+        display: flex;
+        flex-direction: column;
+        margin-top: 7.5rem;
+        font-size: 1.5rem;
+    }
+
+    .adressContainer {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding-left: 0;
+        margin-bottom: 2rem;
+    }
+
+    .adressMiniContainer {
+        flex-direction: column;
+    }
+
+    h2 {
+        overflow-wrap: break-word;
+        font-size: 2rem;
+    }
+
+    .openingHours {
+        width: 100%;
+    }
+
+    .daysAndHours {
+        flex-direction: column;
+        justify-content: center;
+        width: 90%;
+    }
+
+    .days {
+        text-align: center;
+        padding-right: 0;
+        width: 100%;
+    }
+
+    .hours {
+        padding-bottom: 5%;
+        width: 100%;
+        text-align: center;
+    }
+
+    .email {
+        padding: 2% 2% 5% 2%;
+    }
+
+    .phone {
+        padding: 2% 2% 5% 2%;
+    }
+
+    .address {
+        padding: 5% 2% 5% 2%;
+    }
+
+    .iframeContainer {
+        height: 500px;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    .smallContainer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .adressContainer {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding-left: 0;
+        margin-bottom: 1rem;
+    }
+
+    .adressMiniContainer {
+        flex-direction: column;
+    }
+
+    h2 {
+        overflow-wrap: break-word;
+        /* margin-bottom: 0; */
+    }
+
+    .openingHours {
+        width: 100%;
+    }
+
+    .daysAndHours {
+        flex-direction: column;
+        justify-content: center;
+        width: 80%;
+        margin-bottom: 0;
+    }
+
+    .days {
+        text-align: center;
+        padding-right: 0;
+        width: 100%;
+    }
+
+    .hours {
+        padding-bottom: 5%;
+        width: 100%;
+        text-align: center;
+    }
+
+    .email {
+        padding: 2% 2% 7% 2%;
+    }
+
+    .phone {
+        padding: 0% 2% 7% 2%;
+    }
+
+    .address {
+        padding: 2% 2% 7% 2%;
+    }
+    
+    .iframe{
+        padding-top: 3.5rem;
+    }
+}
+
+

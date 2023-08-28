@@ -5,7 +5,7 @@ import style from './header.module.css'
 import { NavLink } from "react-router-dom"
 
 
-const Header2 = () => {
+const Header = () => {
     const [toggled, setToggled] = useState(false);
     const navRef = useRef();
 
@@ -45,4 +45,4 @@ const Header2 = () => {
     )
 }
 
-export default Header2
+export default Header
