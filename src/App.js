@@ -16,8 +16,8 @@ function App() {
     return (
       <Routes>
         <Route exact element={<Dish/>} path="menu/:id" />
-        <Route element={<Maintaince />} path="/" />
-        {/* <Route element={<Home />} path="/" /> */}
+        {/* <Route element={<Maintaince />} path="/" /> */}
+        <Route element={<Home />} path="/" />
         <Route element={<Error />} path="/error" />
         
         <Route element={ <Dishes/> } path="/menu" />
