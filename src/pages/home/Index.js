@@ -1,6 +1,5 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { NavLink } from 'react-router-dom';
-
 import { useGetHome } from './_query';
 import Layout from '../../components/layout';
 import { Spinner } from './../../components/shared/Spinner';
@@ -39,9 +38,7 @@ export const Home = () => {
             <Carousel items={data && data?.gerechten?.map((item)=> item.gerechtmeta)}  />
 
          <div className={`${styles.dishesContainer}`}>
-
           {data?.gerechten?.map((item) =>
-          
             <div key={item.slug} className={styles.card}>
               <NavLink to={`${"menu"}/${item.slug}`} className={styles.link}>
                 <img src={item.gerechtmeta?.menuimage?.sourceUrl} className={styles.dishesImage} />
@@ -72,7 +69,7 @@ export const Home = () => {
           )}
         </div> */}
    
- <div></div>
+
 
       </div>
     </Layout>

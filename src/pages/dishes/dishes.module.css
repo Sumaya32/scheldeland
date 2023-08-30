@@ -1,18 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 
 .container {
-    /* background-color: red; */
     width: 100vw;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin: 7% 0 5% 0;
-    font-family:   Dancing Script, cursive;
+    font-family: Dancing Script, cursive;
 }
 
-.smallContainer {
-    /* width: 100vw; */
+.backgroundImageContainer {
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-items: center;
@@ -21,17 +20,27 @@
     background-repeat: no-repeat;
     background-size: 100% 100%;
     align-items: center;
-    padding: 2rem 0 12rem 0;
+    padding: 1.3rem 0 3rem 0;
+    width: 60%;
+    height: 100%;
+    margin: 1rem 0 2.5rem 0;  
+    color: black;
+         /* background-color: #e9967a; */
+
+    filter: invert(0%) sepia(1%) saturate(100%) hue-rotate(345deg) brightness(100%) contrast(100%);
 }
 
 .contentContainer {
     height: auto;
-    width: 50vw;
-    text-align: center;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
 }
 
 .miniContainer {
-    width: auto;
+    width: 100%;
     display: grid;
     grid-template-columns: 300px 300px;
     row-gap: 17px;
@@ -72,6 +81,17 @@
     width: 100%;
     min-height: 2rem;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menuNavLink {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .dishTitle {
@@ -80,6 +100,10 @@
     font-size: 2rem;
     font-weight: 600;
     padding: 0.2rem;
+    word-wrap: break-word;
+    /* white-space: pre-line; */
+    width: 100%;
+    text-align: center;
 }
 
 .dishDescription {
@@ -107,8 +131,8 @@
     justify-content: center;
 }
 
-.supplementMiniContainer{
-   padding: 0.1rem;
+.supplementMiniContainer {
+    padding: 0.1rem;
 }
 
 .supplementHeadTitle {
@@ -124,13 +148,21 @@
 
 
 /*Medi queries*/
-@media only screen and (max-width: 721px) {
+@media only screen and (min-width: 820px) and (max-width: 1280px) {
     .container {
-        margin-top: 20%;
+        margin-top: 13%;
     }
 
-    .contentContainer {
-        width: 100vw;
+    .backgroundImageContainer {
+        padding-top: 2rem;
+        width: 85%;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    .container {
+        margin-top: 20%;
     }
 
     .miniContainer {
@@ -138,17 +170,16 @@
         flex-direction: column;
     }
 
+    .backgroundImageContainer {
+        padding-top: 2rem;
+        width: 95%;
+    }
+
     .menuLineImage {
-        width: 100%;
+        width: 90%;
     }
 
     .forkAndKnife {
         margin-bottom: 1.5rem;
-    }
-
-    .allMenus {
-        width: 100%;
-        min-height: 2rem;
-        text-align: center;
     }
 }
