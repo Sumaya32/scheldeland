@@ -140,14 +140,10 @@
         }
 
     .descriptionContainer {
-<<<<<<< HEAD:src/home/index.module.css
         /* text-align: center; */
         /* width: 100%; */
         margin-left: 10px;
         /* top: 50%; */
-=======
-        margin-left: 0;
->>>>>>> a45e4a174b836fc8b1169ce861bd1cced315e187:src/pages/home/index.module.css
         position: absolute;
         top: 57%;
      }
@@ -169,7 +165,6 @@
 
 
 @media only screen and (max-width: 768px) {
-<<<<<<< HEAD:src/home/index.module.css
     .container {
         /* margin-top: -10%; */
     }
@@ -177,8 +172,6 @@
     .parallax{
         min-height: 2800px; 
         }
-=======
->>>>>>> a45e4a174b836fc8b1169ce861bd1cced315e187:src/pages/home/index.module.css
     .dishesContainer {
         display: flex;
         flex-direction: column;
@@ -187,7 +180,6 @@
         height: auto;
     }
 
-<<<<<<< HEAD:src/home/index.module.css
     .descriptionContainer {
         text-align: center;
         margin-left: 0;
@@ -197,24 +189,11 @@
 
     .dishesMiniContainer {
         /* width: 55%; */
-=======
-    .card {
->>>>>>> a45e4a174b836fc8b1169ce861bd1cced315e187:src/pages/home/index.module.css
         width: 70%;
         display: inline-block;
         margin-top: 5%;
     }
 
-<<<<<<< HEAD:src/home/index.module.css
-=======
-    .descriptionContainer {
-        text-align: center;
-        margin-left: 0;
-        position: absolute;
-        top: 55%;
-     }
-
->>>>>>> a45e4a174b836fc8b1169ce861bd1cced315e187:src/pages/home/index.module.css
      .description{
         margin-left: 0;
      }
