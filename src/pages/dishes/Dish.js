@@ -3,7 +3,7 @@ import { useNavigate, NavLink, Link } from 'react-router-dom';
 import { useGetDish } from './_query';
 import Layout from '../../components/layout';
 import { Spinner } from './../../components/shared/Spinner';
-import image from "../../images/dish-Background-Image.jpg"
+import image from "../../assets/dish-Background-Image.jpg"
 import styles from "./dish.module.css";
 
 export const Dish = () => {

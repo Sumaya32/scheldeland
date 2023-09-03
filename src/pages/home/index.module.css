@@ -9,8 +9,8 @@
 
 
 /*Parallax*/
-.parallax{
-    min-height: 1880px; 
+.parallax {
+    min-height: 1880px;
     width: 100%;
     background-attachment: fixed;
     background-position: center;
@@ -20,7 +20,7 @@
     display: flex;
     margin-bottom: 1rem;
     transform-style: preserve-3d;
-  }
+}
 
 .descriptionContainer {
     width: 100%;
@@ -28,26 +28,26 @@
     line-height: 1.5rem;
     white-space: pre-line;
     color: white;
-    text-shadow: 2px 2px 5px rgba(0,0,0),
-    5px 5px 70px rgba(255,255,255,0.5);
-   font-size: 1.3rem;
-   position: absolute;
-   top: 35%;
-   background-color: rgba(0, 0 ,0, .2);
-   -webkit-backdrop-filter: blur(5px);
-   backdrop-filter: blur(3px);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0),
+        5px 5px 70px rgba(255, 255, 255, 0.5);
+    font-size: 1.3rem;
+    position: absolute;
+    top: 35%;
+    background-color: rgba(0, 0, 0, .2);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(3px);
 }
 
-.description{
+.description {
     margin-left: 2rem;
     width: 100%;
 }
 
-.title{
+.title {
     margin-left: 2rem;
 }
 
-.dishesContainer {
+.cardContainer {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -131,48 +131,55 @@
 
 
 /*Media queries*/
-@media only screen and (min-width: 820px) and (max-width: 1279px) {
-    .dishesContainer {
+@media only screen and (width: 820px){
+    .cardContainer {
         width: 100%;
     }
-    .parallax{
-        min-height: 2400px; 
-        }
+
+    .parallax {
+        /* min-height: 2400px; */
+        min-height: 2600px;
+
+    }
 
     .descriptionContainer {
-        /* text-align: center; */
-        /* width: 100%; */
-        margin-left: 10px;
-        /* top: 50%; */
         position: absolute;
-        top: 60%;
-     }
-
-
+        top: 46%;
+    }
 }
 
-@media only screen and (width: 1280px) {
-    .descriptionContainer {
-        margin-left: 0;
-        position: absolute;
-        top: 45%;
-     }
 
-     .parallax{
-        min-height: 1805px; 
-        }
+@media only screen and (width: 912px){
+ 
+    .parallax {
+        min-height: 2900px;
+    }
+
+    .descriptionContainer {
+        position: absolute;
+        top: 48%;
+    }
+}
+
+
+@media only screen and (min-width: 1024px) and (max-width: 1281px){
+    .parallax {
+        min-height: 1800px;
+    }
+
+    .descriptionContainer {
+        top: 47%;
+    }
+    
 }
 
 
 @media only screen and (max-width: 768px) {
-    .container {
-        /* margin-top: -10%; */
+    .parallax {
+        min-height: 2200px;
     }
 
-    .parallax{
-        min-height: 2800px; 
-        }
-    .dishesContainer {
+    .cardContainer {
         display: flex;
         flex-direction: column;
         text-align: center;
@@ -184,19 +191,21 @@
         text-align: center;
         margin-left: 0;
         position: absolute;
-        top: 35%;
-     }
+        /* top: 35%; */
+        top: 42%;
+    }
 
-    .dishesMiniContainer {
+    .card {
         /* width: 55%; */
         width: 70%;
         display: inline-block;
         margin-top: 5%;
+        overflow: hidden;
     }
 
-     .description{
+    .description {
         margin-left: 0;
-     }
+    }
 
     .sharingTopTitle,
     .topTitle {
@@ -207,19 +216,28 @@
 @media only screen and (width: 768px) {
     .descriptionContainer {
         position: absolute;
-        top: 37%;
-     }
+        top: 47%;
+    }
 }
 
 @media only screen and (max-width: 280px) {
-    .dishesTitle {
-        margin-top: 0.5rem;
+    .parallax {
+        min-height: 1600px;
     }
 
     .descriptionContainer {
         position: absolute;
-        top: 24%;
-     }
+        top: 29%;
+    }
+    
+    .dishesTitle {
+        margin-top: 0.5rem;
+    }
 }
 
 
+@media only screen and (min-width: 360px) and (max-width: 376px) {
+    .parallax {
+        min-height: 1900px;
+    }
+}
