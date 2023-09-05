@@ -4,7 +4,7 @@ import { useGetHome } from './_query';
 import Layout from '../../components/layout';
 import { Spinner } from './../../components/shared/Spinner';
 import { Carousel } from '../../components/Carousel'
-import image from "../../images/zwarteVrouw.jpg"
+import image from "../../assets/zwarteVrouw.jpg"
 import styles from "./index.module.css";
 
 export const Home = () => {
@@ -37,7 +37,7 @@ export const Home = () => {
 
             <Carousel items={data && data?.gerechten?.map((item)=> item.gerechtmeta)}  />
 
-         <div className={`${styles.dishesContainer}`}>
+         <div className={`${styles.cardContainer}`}>
           {data?.gerechten?.map((item) =>
             <div key={item.slug} className={styles.card}>
               <NavLink to={`${"menu"}/${item.slug}`} className={styles.link}>
@@ -56,7 +56,7 @@ export const Home = () => {
         {/* <Carousel items={data && data?.sharingfood?.map((item)=> item.sharingFoodmeta)}  /> */}
         
 
-           {/* <div className={styles.dishesContainer}>
+           {/* <div className={styles.cardContainer}>
           {data?.sharingfood?.map((item) =>
             <div key={item.slug} className={styles.card}>
               <Link to={`${"menu"}/${item.slug}`} className={styles.link}>

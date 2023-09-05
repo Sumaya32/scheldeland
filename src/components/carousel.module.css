@@ -7,7 +7,6 @@
 }
 
 .carousel {
-    /* background-color: #64da74; */
     position: relative;
     display: flex;
     justify-content: center;
@@ -25,25 +24,12 @@
 }
 
 .slide {
-    /* background-color: aqua; */
     border-radius: 0.5rem;
     box-shadow: 4px 4px 10px #666;
-    /* background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-position: center center; */
     text-align: center;
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* align-items: flex-start;
-    justify-content: center; */
-    /* max-width: 100%;
-    height: auto; */
     width: 630px;
-
     height: 70%;
-    /* margin:auto; */
     padding: 0;
-    /* position: relative; */
 }
 
 .arrow {
@@ -103,20 +89,21 @@
 
 .title {
     color: var(--title-color);
-    margin: 0 0 0.5rem 0;
     font-size: 1.5rem;
     font-weight: bolder;
-    /* background-color: rgba(237, 228, 228, 0.5); */
-    /* background-color: #fffbfb; */
     font-family: var( --title-font-family);
     height: 15%;
-    /* padding: 0.2rem; */
     border-radius: 10px;
     width: 100%;
     text-align: center;
     margin-top: 1rem;
 }
 
+.price{
+    font-size: 1.2rem;
+    color: #838282;
+
+}
 
 @media only screen and (max-width: 768px) {
     .title {

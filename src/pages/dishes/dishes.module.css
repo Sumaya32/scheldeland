@@ -7,7 +7,7 @@
     align-items: center;
     justify-content: center;
     margin: 7% 0 5% 0;
-    font-family: Dancing Script, cursive;
+    font-family: "Dancing Script", cursive;
 }
 
 .backgroundImageContainer {
@@ -21,13 +21,13 @@
     background-size: 100% 100%;
     align-items: center;
     padding: 1.3rem 0 3rem 0;
-    width: 60%;
+    width: 50%;
     height: 100%;
     margin: 1rem 0 2.5rem 0;  
     color: black;
          /* background-color: #e9967a; */
 
-    filter: invert(0%) sepia(1%) saturate(100%) hue-rotate(345deg) brightness(100%) contrast(100%);
+    filter: invert(0%) sepia(1%) saturate(100%) hue-rotate(345deg) brightness(100%) contrast(90%);
 }
 
 .contentContainer {

@@ -22,7 +22,7 @@
 .discriptionParagraph {
     width: 80%;
     line-height: 1.5rem;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-weight: lighter;
 }
 
@@ -34,8 +34,8 @@
     width: 100%;
     height: auto;
     /* white-space: pre-wrap; */
-    white-space: pre-line
-   
+    white-space: pre-line;
+   margin-bottom: 5rem;
 }
 
 .groupAImageContainer {
@@ -144,7 +144,42 @@ cursor: pointer;
 }
 
 /*Media queris*/
-@media only screen and (max-width: 541px) {
+@media only screen and (min-width: 769px) and (max-width: 1350px) {
+    .groupAContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 3rem;
+    }
+    .groupADescription {
+        width: 75%;
+        height: auto;
+        margin-bottom: 3%;
+    }
+    .groupAImageContainer {
+        width: 60%;
+    }
+    
+    .groupBContainer {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    .groupBDescription {
+        width: 75%;
+        height: auto;
+        margin-bottom: 3%;
+    }
+    .groupBImageContainer {
+        width: 60%;
+    }
+}
+
+
+
+@media only screen and (max-width: 768px) {
     .miniContainer {
         display: flex;
         flex-direction: column;
@@ -164,12 +199,14 @@ cursor: pointer;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+   margin-bottom: 0;
+
     }
 
     .groupAImageContainer {
-        width: 80%;
+        width: 65%;
         height: auto;
-        margin-bottom: 5%;
+        margin-bottom: 10%;
         margin-right: 0;
     }
 
@@ -184,24 +221,23 @@ cursor: pointer;
         width: 80%;
         margin-right: 0;
         height: auto;
-        margin-bottom: 10%;
+        margin-bottom: 5%;
     }
 
     /*Group B*/
     .groupBContainer {
         height: auto;
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
     }
 
     .groupBImageContainer {
-        width: 80%;
+        width: 65%;
         height: auto;
         margin-bottom: 2%;
         margin-right: 0;
-        margin-bottom: 10%;
     }
 
     .groupBSmallImageContainer {
@@ -216,6 +252,8 @@ cursor: pointer;
         margin-right: 0;
         height: auto;
         text-align: center;
+        margin-bottom: 5%;
+
     }
 
     .groupBImage{
@@ -223,6 +261,17 @@ cursor: pointer;
      }    
 }
 
+
+@media only screen and (width: 768px) {
+    .groupBImageContainer {
+        width: 70%;
+    }
+
+    .groupAImageContainer {
+        width: 70%;
+
+    }
+}
 
 @media only screen and (min-width: 820px) and (max-width: 1024px) {
     .container {

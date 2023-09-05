@@ -11,7 +11,7 @@ import {
 } from './_query';
 import Layout from '../../components/layout';
 import { Spinner } from './../../components/shared/Spinner';
-import image from '../../images/oldPaperSheet.png'
+import image from '../../assets/oldPaperSheet.png'
 
 
 
