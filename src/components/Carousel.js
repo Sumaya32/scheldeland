@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import styles from './carousel.module.css';
 import { BsArrowLeftCircleFill, BsArrowRightCircleFill } from 'react-icons/bs'
 
@@ -23,9 +23,7 @@ export const Carousel = ({ items }) => {
                     <div className={slide === index ? `${styles.title}` : `${styles.title} ${styles.titleHidden}`}>
                         <p>{item?.title}</p>
                         <p className={styles.price}>{item?.price}</p>
-                        </div>
-                    {/* <div className={slide === index ? `${styles.price}` : `${styles.price} ${styles.priceHidden}`}><p> <p className={styles.price}>{item?.price}</p></p></div> */}
-                   
+                        </div>                   
                 </div>
 
             )}
