@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
 .container {
     font-family: "Helvitica en bradley Hand";
     height: 100%;
@@ -10,7 +12,9 @@
 
 /*Parallax*/
 .parallax {
-    min-height: 1880px;
+    /* min-height: 1880px; */
+    min-height: 2200px;
+
     width: 100%;
     background-attachment: fixed;
     background-position: center;
@@ -32,10 +36,10 @@
         5px 5px 70px rgba(255, 255, 255, 0.5);
     font-size: 1.3rem;
     position: absolute;
-    top: 35%;
+    top: 45%;
     background-color: rgba(0, 0, 0, .2);
     -webkit-backdrop-filter: blur(5px);
-    backdrop-filter: blur(3px);
+    backdrop-filter: blur(4px);
 }
 
 .description {
@@ -64,10 +68,13 @@
     justify-content: center;
     align-items: center;
     margin: 0 2% 0 0;
-    width: 28%;
+    width: 30%;
     box-shadow: 0px 1px 5px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+    overflow-wrap: break-word;
+    max-height: fit-content;
+
 }
 
 .card:hover {
@@ -101,14 +108,15 @@
     text-align: center;
     text-decoration: none;
     list-style: none;
-    font-size: 1em;
-    font-family: "Lucida Handwriting", sans-serif;
-
+    font-size: 1.3rem;
+    font-family:  Dancing Script, cursive, "Lucida Handwriting", sans-serif;
 }
 
 .price {
     color: rgb(112, 115, 119);
     padding-top: 0.2rem;
+    font-size: 1.2rem;
+
 }
 
 .sharingTopTitle {
@@ -118,7 +126,7 @@
 .topTitle,
 .sharingTopTitle {
     font-size: 3rem;
-    font-family: "Lucida Handwriting", sans-serif;
+    font-family:  Dancing Script, cursive, "Lucida Handwriting", sans-serif;
 }
 
 .containerImage,
@@ -144,7 +152,7 @@
 
     .descriptionContainer {
         position: absolute;
-        top: 46%;
+        top: 48%;
     }
 }
 
@@ -157,7 +165,7 @@
 
     .descriptionContainer {
         position: absolute;
-        top: 48%;
+        top: 49%;
     }
 }
 
@@ -168,7 +176,9 @@
     }
 
     .descriptionContainer {
-        top: 47%;
+        /* top: 47%; */
+        top: 44%;
+
     }
     
 }
@@ -219,6 +229,19 @@
         top: 47%;
     }
 }
+
+@media only screen and (width: 540px){
+ 
+    .parallax {
+        min-height: 1800px;
+    }
+
+    .descriptionContainer {
+        top: 40%;
+    }
+
+}
+
 
 @media only screen and (max-width: 280px) {
     .parallax {

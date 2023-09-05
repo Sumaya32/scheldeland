@@ -18,11 +18,11 @@ export const Dish = () => {
     window.scrollTo(0, 0)
   }, [data]);
 
-  if ( isLoading ) return <Spinner />
+  if ( isLoading && image) return <Spinner />
   return (
     <Layout>
       {image && data?
-        <div className={styles.container} style={{ backgroundImage: `url(${data && image})` }}>
+        <div className={styles.container} style={{ backgroundImage: `url(${image})` }}>
           <div className={styles.miniContainer}>
             <h2 className={styles.title}>{data?.title}</h2>
             <div className={styles.imageContainer}>

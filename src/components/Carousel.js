@@ -20,8 +20,11 @@ export const Carousel = ({ items }) => {
             {data?.map((item, index) =>
                 <div  className={styles.contentContainer}>
                     <img src={item?.menuimage?.sourceUrl} className={slide === index ? `${styles.slide}` : `${styles.slide} ${styles.slideHidden}`}/>
-                    <div className={slide === index ? `${styles.title}` : `${styles.title} ${styles.titleHidden}`}><p>{item?.title}</p></div>
-                    {/* <div className={slide === index ? `${styles.title}` : `${styles.title} ${styles.titleHidden}`}><p> <p className={styles.price}>{item?.price}</p></p></div> */}
+                    <div className={slide === index ? `${styles.title}` : `${styles.title} ${styles.titleHidden}`}>
+                        <p>{item?.title}</p>
+                        <p className={styles.price}>{item?.price}</p>
+                        </div>
+                    {/* <div className={slide === index ? `${styles.price}` : `${styles.price} ${styles.priceHidden}`}><p> <p className={styles.price}>{item?.price}</p></p></div> */}
                    
                 </div>
 

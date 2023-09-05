@@ -103,7 +103,7 @@
 
 .title {
     color: var(--title-color);
-    margin: 0 0 0.5rem 0;
+    /* margin: 0 0 0.5rem 0; */
     font-size: 1.5rem;
     font-weight: bolder;
     /* background-color: rgba(237, 228, 228, 0.5); */
@@ -117,6 +117,16 @@
     margin-top: 1rem;
 }
 
+/* .priceHidden {
+    display: none;
+} */
+
+.price{
+    /* background-color: aqua; */
+    font-size: 1.2rem;
+    color: #838282;
+
+}
 
 @media only screen and (max-width: 768px) {
     .title {
