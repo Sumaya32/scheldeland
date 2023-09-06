@@ -3,7 +3,7 @@ import { useNavigate, NavLink, Link } from 'react-router-dom';
 import { useGetDish } from './_query';
 import Layout from '../../components/layout';
 import { Spinner } from './../../components/shared/Spinner';
-import image from "../../assets/dish-Background-Image.jpg"
+import image from "../../assets/dish-Background-Image1.jpg"
 import styles from "./dish.module.css";
 
 export const Dish = () => {
@@ -26,15 +26,15 @@ export const Dish = () => {
           <div className={styles.miniContainer}>
             <h2 className={styles.title}>{data?.title}</h2>
             <div className={styles.imageContainer}>
-              <img src={data?.menuimage?.sourceUrl} alt={data?.menuimage?.altText} className={styles.pic} />
-            </div>
-            <div className={styles.secondContainer}>
+             <div className={styles.imageAndDesContentContainer}>
+             <img src={data?.menuimage?.sourceUrl} alt={data?.menuimage?.altText} className={styles.image} />
               <div className={styles.descriptionContainer}>
                 <p className={styles.description}>{data?.description}</p>
                 {/* <div className={styles.origin}><span style={{ fontWeight: "bold"}} >origin: </span> {data?.origin}</div> */}
-
               </div>
-
+             </div>
+            </div>
+            <div className={styles.secondContainer}>
               <NavLink className={styles.aAsBtn}
                 onClick={goBack}>   <img className={styles.pointingFinger} src='/hand.png' />
               </NavLink>
