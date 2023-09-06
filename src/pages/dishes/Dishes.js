@@ -19,13 +19,13 @@ import styles from "./dishes.module.css"
 
 export const Dishes = () => {
   const { mainDish, mainDishLoading } = useGetMainDish();
-  const { dessert, dessertLoading } = useGetDessert();
-  const { appetizer, appetizerLaoding } = useGetAppetizer();
-  const { monthlyDish, monthlyDishLoading } = useGetMonthlyDish();
+  const { dessert } = useGetDessert();
+  const { appetizer } = useGetAppetizer();
+  const { monthlyDish } = useGetMonthlyDish();
   const { sharingFood, sharingFoodLoading } = useGetSharingFood();
-  const { kidsMenu, kidsMenuLoading } = useGetKidsMenu();
-  const { kidsDessert, kidsDessertLoading } = useGetKidsDessert();
-  const { supplement, supplementLoading } = useGetSupplement();
+  const { kidsMenu } = useGetKidsMenu();
+  const { kidsDessert } = useGetKidsDessert();
+  const { supplement } = useGetSupplement();
 
   if (mainDishLoading && sharingFoodLoading && image) return <Spinner />
 

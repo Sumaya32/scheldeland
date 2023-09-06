@@ -109,7 +109,12 @@
     .title {
     margin: 0.5rem 0 1.8rem 0;
 }
+
+.slide {
+    border-radius: 0;
 }
+}
+
 
 @media only screen and (width: 280px) {
     .title {

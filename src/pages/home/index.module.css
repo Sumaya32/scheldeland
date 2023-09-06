@@ -69,7 +69,7 @@
     align-items: center;
     margin: 0 2% 0 0;
     width: 30%;
-    box-shadow: 0px 1px 5px;
+    box-shadow: 0px 0px 3px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     overflow-wrap: break-word;
@@ -80,6 +80,7 @@
 .card:hover {
     transform: scale(1.1);
     z-index: 1;
+    box-shadow: -10px 20px 20px 5px rgba(10, 9, 9, 0.3); 
 }
 
 .link {
