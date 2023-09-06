@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react';
-import { useNavigate, NavLink, Link } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { useNavigate, NavLink } from 'react-router-dom';
 import { useGetDish } from './_query';
 import Layout from '../../components/layout';
 import { Spinner } from './../../components/shared/Spinner';
@@ -36,7 +36,7 @@ export const Dish = () => {
             </div>
             <div className={styles.secondContainer}>
               <NavLink className={styles.aAsBtn}
-                onClick={goBack}>   <img className={styles.pointingFinger} src='/hand.png' />
+                onClick={goBack}>   <img className={styles.pointingFinger} src='/hand.png' alt="A hand pointing to the left"/>
               </NavLink>
             </div>
           </div>
