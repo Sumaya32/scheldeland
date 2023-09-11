@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import {
   useGetMainDish,
   useGetDessert,
@@ -13,6 +13,8 @@ import Layout from '../../components/layout';
 import { Spinner } from './../../components/shared/Spinner';
 import image from '../../assets/oldPaperSheet.png'
 import styles from "./dishes.module.css"
+// import { makeVar } from '@apollo/client';
+
 
 export const Dishes = () => {
   const { mainDish, mainDishLoading } = useGetMainDish();
@@ -23,8 +25,29 @@ export const Dishes = () => {
   const { kidsMenu } = useGetKidsMenu();
   const { kidsDessert } = useGetKidsDessert();
   const { supplement } = useGetSupplement();
+  /*Usestates for the Desc arrays becouse we don't want to change the oraginal arrays*/
+  const [mainDishDescArray, setMainDishDescArray] = useState();
+  const [dessertDescArray, setDessertDescArray] = useState();
+  const [sharingFoodDescArray, setSharingFoodDescArray] = useState();
+  const [appetizerDescArray, setAppetizerDescArray] = useState();
+  const [monthlyDishDescArray, setMonthlyDishDescArray] = useState();
+  const [kidsMenuDescArray, setKidsMenuDescArray] = useState();
+  const [kidsDessertDescArray, setKidsDessertDescArray] = useState();
+  const [supplementDescArray, setSupplementDescArray] = useState();
 
-  if (mainDishLoading && sharingFoodLoading && image) return <Spinner />
+  useEffect(() => {
+    if (mainDish) { setMainDishDescArray([...mainDish]) }
+    if (dessert) { setDessertDescArray([...dessert]) }
+    if (sharingFood) { setSharingFoodDescArray([...sharingFood]) }
+    if (appetizer) { setAppetizerDescArray([...appetizer]) }
+    if (monthlyDish) { setMonthlyDishDescArray([...monthlyDish]) }
+    if (kidsMenu) { setKidsMenuDescArray([...kidsMenu]) }
+    if (kidsDessert) { setKidsDessertDescArray([...kidsDessert]) }
+    if(supplement){setSupplementDescArray([...supplement])}
+  }, [mainDish, mainDishLoading, sharingFood, dessert, appetizer,
+    monthlyDish, kidsMenu, kidsDessert, supplement])
+
+  if (sharingFoodLoading && image) return <Spinner />
   return (
     <Layout>
       <div className={styles.container}>
@@ -33,15 +56,15 @@ export const Dishes = () => {
             <div className={styles.backgroundImageContainer} style={{ backgroundImage: ` url(${image})` }}>
 
               <h2 className={styles.headTitle}>Sharing food</h2>
-              <img className={styles.forkAndKnife} src={'/fork-knife.png'} />
+              <img className={styles.forkAndKnife} src={'/fork-knife.png'} alt='fork-knife' />
 
               <div className={styles.contentContainer}>
                 <div className={styles.miniContainer}>
 
-                  {sharingFood?.sort((a,b)=> a?.node.gerechtmeta.title < b?.node.gerechtmeta.title ? -1 : 1).map((item) => {
+                  {sharingFoodDescArray?.sort((a, b) => a?.node.sharingFoodmeta.title < b?.node.sharingFoodmeta.title ? -1 : 1).map((item) => {
                     const sharingFoods = item.node.sharingFoodmeta;
                     const id = item.node.id;
-                    return <div  className={styles.allMenus}>
+                    return <div className={styles.allMenus}>
                       <div key={id} className={styles.menuNavLink}>
                         <div className={styles.dishTitle}>{sharingFoods.title}</div>
                         <div className={styles.dishDescription}>{sharingFoods.menudescription}</div>
@@ -50,37 +73,37 @@ export const Dishes = () => {
                   })}
 
                 </div>
-                <img src='./line.png' className={styles.menuLineImage} />
+                <img src='./line.png' className={styles.menuLineImage} alt='line under the menu' />
               </div>
             </div>
 
             <div className={styles.backgroundImageContainer} style={{ backgroundImage: ` url(${image})` }}>
               <h2 className={styles.headTitle}>Kleine honger</h2>
-              <img className={styles.forkAndKnife} src={'/fork-knife.png'} />
+              <img className={styles.forkAndKnife} src={'/fork-knife.png'} alt='fork and knife' />
               <div className={styles.contentContainer}>
                 <div className={styles.miniContainer}>
-                  {appetizer?.sort((a,b)=> a?.node.gerechtmeta.title < b?.node.gerechtmeta.title ? -1 : 1).map((item) => {
+                  {appetizerDescArray?.sort((a, b) => a?.node.kleinehongermeta.title < b?.node.kleinehongermeta.title ? -1 : 1).map((item) => {
                     const appetizers = item.node.kleinehongermeta;
                     const id = item.node.id;
                     return <div className={styles.allMenus}>
-                      <div  key={id} className={styles.menuNavLink}>
+                      <div key={id} className={styles.menuNavLink}>
                         <div className={styles.dishTitle}>{appetizers.title}</div>
                         <div className={styles.dishDescription}>{appetizers.menudescription}</div>
                       </div>
                     </div>
                   })}
                 </div>
-                <img src='./line.png' className={styles.menuLineImage} />
+                <img src='./line.png' className={styles.menuLineImage} alt='line under the menu' />
               </div>
             </div>
 
             <div className={styles.backgroundImageContainer} style={{ backgroundImage: ` url(${image})` }}>
               <h2 className={styles.headTitle}>Hoofdgerechten</h2>
-              <img className={styles.forkAndKnife} src={'/fork-knife.png'} />
+              <img className={styles.forkAndKnife} src={'/fork-knife.png'} alt='fork and knife' />
 
               <div className={styles.contentContainer}>
                 <div className={`${styles.miniContainer} ` + `${styles.mainDishContainer}`}>
-                  {mainDish?.sort((a,b)=> a?.node.gerechtmeta.title < b?.node.gerechtmeta.title ? -1 : 1).map((item) => {
+                  {mainDishDescArray?.sort((a, b) => a?.node.gerechtmeta.title < b?.node.gerechtmeta.title ? -1 : 1).map((item) => {
                     const gerecht = item.node.gerechtmeta;
                     const id = item.node.id;
                     return <div className={styles.allMenus}>
@@ -92,20 +115,20 @@ export const Dishes = () => {
                   })}
 
 
-           
+
                 </div>
                 <div className={styles.extraInfo}><p>Alle steaks zijn te verkrijgen met Bearnaisesaus, pepersaus of Champignonsaus</p>  </div>
 
 
                 <h3 className={styles.supplementHeadTitle}>Supplementen</h3>
                 <div className={styles.supplementContainer}>
-                  {supplement?.sort((a,b)=> a?.node.gerechtmeta.title < b?.node.gerechtmeta.title ? -1 : 1).map((item) => {
+                  {supplementDescArray?.sort((a,b)=> a?.node.SupplementMeta.title < b?.node.SupplementMeta.title ? -1 : 1).map((item) => {
                     const supplements = item?.node.SupplementMeta;
                     const id = item?.node.id;
 
                     return <div className={styles.supplementMiniContainer}>
                       {item !== supplement[supplement.length - 1] ?
-                        <p key={id}className={styles?.supplementTitle}>{supplements.title},</p>
+                        <p key={id} className={styles?.supplementTitle}>{supplements.title},</p>
                         : <p key={id} className={styles.supplementTitle} >of {supplements.title}</p>
                       }
                     </div>
@@ -114,7 +137,7 @@ export const Dishes = () => {
 
                 <h3 className={styles.kisdMenuTitle}>Voor de allerkleinsten</h3>
                 <div className={styles.miniContainer}>
-                  {kidsMenu?.sort((a,b)=> a?.node.gerechtmeta.title < b?.node.gerechtmeta.title ? -1 : 1).map((item) => {
+                  {kidsMenuDescArray?.sort((a, b) => a?.node.kindermenumeta.title < b?.node.kindermenumeta.title ? -1 : 1).map((item) => {
                     const kisdMenus = item.node?.kindermenumeta;
                     const id = item?.node.id;
                     return <div className={styles.allMenus}>
@@ -125,16 +148,16 @@ export const Dishes = () => {
                     </div>
                   })}
                 </div>
-                <img src='./line.png' className={styles.menuLineImage} />
+                <img src='./line.png' className={styles.menuLineImage} alt='line under the menu' />
               </div>
             </div>
 
             <div className={styles.backgroundImageContainer} style={{ backgroundImage: ` url(${image})` }}>
               <h2 className={`${styles.headTitle} ${styles.desertTitle}`} >Maandelijkse Menus</h2>
-              <img className={styles.forkAndKnife} src={'/fork-knife.png'} />
+              <img className={styles.forkAndKnife} src={'/fork-knife.png'} alt='fork and knife' />
               <div className={styles.contentContainer}>
                 <div className={styles.miniContainer}>
-                  {monthlyDish?.sort((a,b)=> a?.node.gerechtmeta.title < b?.node.gerechtmeta.title ? -1 : 1).map((item) => {
+                  {monthlyDishDescArray?.sort((a, b) => a?.node.maandelijkseMenuMeta.title < b?.node.maandelijkseMenuMeta.title ? -1 : 1).map((item) => {
                     const monthlyDishs = item.node.maandelijkseMenuMeta;
                     const id = item?.node.id;
                     return <div className={styles.allMenus}>
@@ -146,16 +169,16 @@ export const Dishes = () => {
 
                   })}
                 </div>
-                <img src='./line.png' className={styles.menuLineImage} />
+                <img src='./line.png' className={styles.menuLineImage} alt='line under the menu' />
               </div>
             </div>
 
             <div className={styles.backgroundImageContainer} style={{ backgroundImage: ` url(${image})` }}>
               <h2 className={`${styles.headTitle} ${styles.desertTitle}`} >Dessert</h2>
-              <img className={styles.forkAndKnife} src={'/fork-knife.png'} />
+              <img className={styles.forkAndKnife} src={'/fork-knife.png'} alt='fork and knife' />
               <div className={styles.contentContainer} >
                 <div className={styles.miniContainer}>
-                  {dessert?.sort((a,b)=> a?.node.gerechtmeta.title < b?.node.gerechtmeta.title ? -1 : 1).map((item) => {
+                  {dessertDescArray?.sort((a, b) => a?.node.dessertmeta.title < b?.node.dessertmeta.title ? -1 : 1).map((item) => {
                     const desserts = item.node.dessertmeta;
                     const id = item?.node.id;
                     return <div className={styles.allMenus}>
@@ -171,10 +194,11 @@ export const Dishes = () => {
               <h3 className={styles.kisdMenuTitle}>Voor de allerkleinsten</h3>
               <div className={styles.contentContainer} >
                 <div className={styles.miniContainer}>
-                  {kidsDessert?.sort((a,b)=> a?.node.gerechtmeta.title < b?.node.gerechtmeta.title ? -1 : 1).map((item) => {
+
+                  {kidsDessertDescArray?.sort((a, b) => a?.node.kindeDessertMeta.title < b?.node.kindeDessertMeta.title ? -1 : 1).map((item) => {
                     const kidsDesserts = item.node?.kindeDessertMeta;
                     const id = item?.node.id;
-                    return <div  className={styles.allMenus}>
+                    return <div className={styles.allMenus}>
                       <div key={id} className={styles.menuNavLink}>
                         <div className={styles.dishTitle}>{kidsDesserts?.title}</div>
                         <div className={styles.dishDescription}>{kidsDesserts?.description}</div>
@@ -182,7 +206,7 @@ export const Dishes = () => {
                     </div>
                   })}
                 </div>
-                <img src='./line.png' className={styles.menuLineImage} />
+                <img src='./line.png' className={styles.menuLineImage} alt='line under the the menu' />
               </div>
             </div>
           </>
