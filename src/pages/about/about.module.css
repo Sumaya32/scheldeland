@@ -12,13 +12,13 @@
     width: 100vw;
 }
 
-.title{
+.title {
     font-weight: bold;
-    /* border-bottom: 1px solid grey;
-    border-radius: 5px; */
     font-size: 1.8rem;
+    padding-bottom: 1rem;
 
 }
+
 .discriptionParagraph {
     width: 80%;
     line-height: 1.5rem;
@@ -35,7 +35,7 @@
     height: auto;
     /* white-space: pre-wrap; */
     white-space: pre-line;
-   margin-bottom: 5rem;
+    margin-bottom: 5rem;
 }
 
 .groupAImageContainer {
@@ -46,7 +46,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 2px 3px 3px  1px rgb(151, 152, 156), 2px 3px 3px 1px rgb(151, 152, 156),-2px 0 3px 1px rgb(151, 152, 156);
+    box-shadow: 2px 3px 3px 1px rgb(151, 152, 156), 2px 3px 3px 1px rgb(151, 152, 156), -2px 0 3px 1px rgb(151, 152, 156);
     border-radius: 5px;
 }
 
@@ -60,15 +60,15 @@
     align-items: center;
 }
 
-.grouAImage {
+.groupAImage {
     width: 100%;
     height: 25vh;
     border: 2px solid black;
     border-radius: 5px;
 }
 
-.grouAImage:hover{
-cursor: pointer;
+.groupAImage:hover {
+    cursor: pointer;
 }
 
 .groupADescription {
@@ -91,14 +91,14 @@ cursor: pointer;
 }
 
 .groupBImageContainer {
-    background-color:image-container-background-color;
+    background-color: image-container-background-color;
     width: 45%;
     height: auto;
     padding: 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 2px 3px 3px  1px rgb(151, 152, 156), 2px 3px 3px 1px rgb(151, 152, 156),-2px 0 3px 1px rgb(151, 152, 156);
+    box-shadow: 2px 3px 3px 1px rgb(151, 152, 156), 2px 3px 3px 1px rgb(151, 152, 156), -2px 0 3px 1px rgb(151, 152, 156);
     border-radius: 5px
 }
 
@@ -119,9 +119,9 @@ cursor: pointer;
     border-radius: 5px;
 }
 
-.groupBImage:hover{
+.groupBImage:hover {
     cursor: pointer;
-    }
+}
 
 .groupBDescription {
     width: 45%;
@@ -145,38 +145,68 @@ cursor: pointer;
 
 /*Media queris*/
 @media only screen and (min-width: 769px) and (max-width: 1350px) {
-    .groupAContainer {
+    .groupAContainer, .groupBContainer {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+
+    .groupAContainer{
         margin-bottom: 3rem;
     }
-    .groupADescription {
-        width: 75%;
-        height: auto;
-        margin-bottom: 3%;
-    }
-    .groupAImageContainer {
-        width: 60%;
-    }
-    
-    .groupBContainer {
-        display: flex;
+
+    .groupBContainer{
         flex-direction: column-reverse;
-        justify-content: center;
-        align-items: center;
     }
-    .groupBDescription {
-        width: 75%;
+
+    .groupADescription, .groupBDescription {
+        width: 70%;
         height: auto;
         margin-bottom: 3%;
     }
-    .groupBImageContainer {
-        width: 60%;
+
+    .groupBDescription{
+        margin-top: 2rem;
+    }
+
+    .discriptionParagraph {
+        width: 100%;
+    }
+
+    .groupAImageContainer, .groupBImageContainer {
+        width: 70%;
+    }
+
+    .groupAImage{
+        height: 35vh;
     }
 }
 
+
+@media only screen and (min-width: 820px) and (max-width: 1024px) {
+    .container {
+        margin-top: 9rem;
+    }
+}
+
+@media only screen and (width: 1024px) {
+    .groupAImageContainer, .groupBImageContainer {
+        width: 70%;
+    }
+
+    .groupBImage, .groupAImage {
+        height: 40vh;
+    }
+
+    .groupADescription, .groupBDescription{
+        width: 70%;
+    }
+
+    .discriptionParagraph{
+        width: 100%;
+    }
+}
 
 
 @media only screen and (max-width: 768px) {
@@ -184,14 +214,14 @@ cursor: pointer;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;        
+        align-items: center;
     }
 
-    .imageMiniContainer{
+    .imageMiniContainer {
         text-align: center;
         width: 100%;
-     }
-    
+    }
+
     /*Group A*/
     .groupAContainer {
         height: auto;
@@ -199,15 +229,19 @@ cursor: pointer;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-   margin-bottom: 0;
+        margin-bottom: 0;
 
     }
 
     .groupAImageContainer {
-        width: 65%;
+        width: 90%;
         height: auto;
         margin-bottom: 10%;
         margin-right: 0;
+    }
+
+    .groupAImage {
+        height: 30vh;
     }
 
     .groupASmallImageContainer {
@@ -218,10 +252,14 @@ cursor: pointer;
 
     .groupADescription {
         text-align: center;
-        width: 80%;
+        width: 90%;
         margin-right: 0;
         height: auto;
         margin-bottom: 5%;
+    }
+
+    .discriptionParagraph {
+        width: 100%;
     }
 
     /*Group B*/
@@ -234,10 +272,14 @@ cursor: pointer;
     }
 
     .groupBImageContainer {
-        width: 65%;
+        width: 90%;
         height: auto;
         margin-bottom: 2%;
         margin-right: 0;
+    }
+
+    .groupBImage {
+        height: 30vh;
     }
 
     .groupBSmallImageContainer {
@@ -247,7 +289,7 @@ cursor: pointer;
     }
 
     .groupBDescription {
-        width: 80%;
+        width: 90%;
         margin-bottom: 3%;
         margin-right: 0;
         height: auto;
@@ -256,25 +298,27 @@ cursor: pointer;
 
     }
 
-    .groupBImage{
+    .groupBImage {
         width: 100%;
-     }    
+    }
 }
 
 
 @media only screen and (width: 768px) {
-    .groupBImageContainer {
+    .groupBImageContainer, .groupAImageContainer {
         width: 70%;
     }
 
-    .groupAImageContainer {
+    .groupADescription, .groupBDescription{
         width: 70%;
-
     }
 }
 
-@media only screen and (min-width: 820px) and (max-width: 1024px) {
-    .container {
-        margin-top: 9rem;
+
+@media only screen and (width: 540px) {
+    .groupBImage, .groupAImage{
+        height: 36vh;
     }
 }
+
+

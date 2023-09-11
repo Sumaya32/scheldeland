@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
 .container {
     display: flex;
     justify-content: center;
@@ -7,6 +9,7 @@
     background-size: cover;
     height: 100vh;
     width: 100vw;
+    font-family: "Dancing Script", cursive;
 }
 
 .miniContainer {
@@ -52,11 +55,16 @@
     text-align: center;
     margin: 1rem 0 1.5rem 0;
     color: white;
+    font-size: 2rem;
 }
 
 .descriptionContainer {
     color: white;
     padding: 0.5rem;
+}
+
+.description{
+    font-size: 1.8rem;
 }
 
 .aAsBtn {
@@ -94,12 +102,20 @@
 
 @media only screen and (width: 1024px) {
     .miniContainer {
-        width: 40%;
-        top: 7rem;
+        width: 35%;
+        top: 6rem;
     }
 
     .image{
-        height: 9rem;
+        height: 8rem;
+    }
+
+    .title{
+        font-size: 1.5rem;
+    }
+
+    .description{
+        font-size: 1.2rem;
     }
 }
 
@@ -114,6 +130,12 @@
 @media only screen and (max-width: 768px) {
     .miniContainer {
         width: 80%;
+    }
+    .title{
+        font-size: 1.8rem;
+    }
+    .description{
+        font-size: 1.2rem;
     }
 }
 
@@ -137,5 +159,23 @@
 
     .image {
         height: 10rem;
+    }
+}
+
+@media only screen and (width: 280px) {
+    .miniContainer {
+        top: 5rem;
+        width: 90%;
+        font-size: 1rem;
+    }
+    .image {
+        height: 8rem;
+    }
+
+    .title{
+        font-size: 1.5rem;
+    }
+    .description{
+        font-size: 1rem;
     }
 }

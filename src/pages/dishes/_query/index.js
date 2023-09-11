@@ -7,3 +7,4 @@ export * from './useGetSharingFood';
 export * from './useGetKidsMenu';
 export * from './useGetKidsDessert';
 export * from './useGetSupplement';
+export * from './reactiveVariables'

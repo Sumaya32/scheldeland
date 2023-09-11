@@ -27,7 +27,7 @@
     color: black;
          /* background-color: #e9967a; */
 
-    filter: invert(0%) sepia(1%) saturate(100%) hue-rotate(345deg) brightness(100%) contrast(90%);
+    filter: invert(0%) sepia(1%) saturate(100%) hue-rotate(345deg) brightness(90%) contrast(90%);
 }
 
 .contentContainer {

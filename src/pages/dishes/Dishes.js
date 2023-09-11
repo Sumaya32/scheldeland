@@ -12,9 +12,6 @@ import {
 import Layout from '../../components/layout';
 import { Spinner } from './../../components/shared/Spinner';
 import image from '../../assets/oldPaperSheet.png'
-
-
-
 import styles from "./dishes.module.css"
 
 export const Dishes = () => {
@@ -28,8 +25,6 @@ export const Dishes = () => {
   const { supplement } = useGetSupplement();
 
   if (mainDishLoading && sharingFoodLoading && image) return <Spinner />
-
-
   return (
     <Layout>
       <div className={styles.container}>
@@ -45,11 +40,11 @@ export const Dishes = () => {
 
                   {sharingFood?.map((item) => {
                     const sharingFoods = item.node.sharingFoodmeta;
-                    const slug = item.node.slug;
-                    return <div key={item.node.slug} className={styles.allMenus}>
-                      <div className={styles.menuNavLink}>
-                        <div className={styles.dishTitle} key={item.node.id}>{sharingFoods.title}</div>
-                        <div className={styles.dishDescription} key={item.node.id}>{sharingFoods.menudescription}</div>
+                    const id = item.node.id;
+                    return <div  className={styles.allMenus}>
+                      <div key={id} className={styles.menuNavLink}>
+                        <div className={styles.dishTitle}>{sharingFoods.title}</div>
+                        <div className={styles.dishDescription}>{sharingFoods.menudescription}</div>
                       </div>
                     </div>
                   })}
@@ -66,11 +61,11 @@ export const Dishes = () => {
                 <div className={styles.miniContainer}>
                   {appetizer?.map((item) => {
                     const appetizers = item.node.kleinehongermeta;
-                    const slug = item.node.slug;
-                    return <div key={item.node.slug} className={styles.allMenus}>
-                      <div className={styles.menuNavLink}>
-                        <div className={styles.dishTitle} key={item.node.id}>{appetizers.title}</div>
-                        <div className={styles.dishDescription} key={item.node.id}>{appetizers.menudescription}</div>
+                    const id = item.node.id;
+                    return <div className={styles.allMenus}>
+                      <div  key={id} className={styles.menuNavLink}>
+                        <div className={styles.dishTitle}>{appetizers.title}</div>
+                        <div className={styles.dishDescription}>{appetizers.menudescription}</div>
                       </div>
                     </div>
                   })}
@@ -85,16 +80,19 @@ export const Dishes = () => {
 
               <div className={styles.contentContainer}>
                 <div className={`${styles.miniContainer} ` + `${styles.mainDishContainer}`}>
-                  {mainDish?.map((item) => {
+                  {mainDish?.sort((a,b)=> a?.node.gerechtmeta.title < b?.node.gerechtmeta.title ? -1 : 1).map((item) => {
                     const gerecht = item.node.gerechtmeta;
-                    const slug = item.node.slug;
-                    return <div key={item.node.slug} className={styles.allMenus}>
-                      <div className={styles.menuNavLink}>
-                        <div className={styles.dishTitle} key={item.node.id}>{gerecht.title}</div>
-                        <div className={styles.dishDescription} key={item.node.id}>{gerecht.menudescription}</div>
+                    const id = item.node.id;
+                    return <div className={styles.allMenus}>
+                      <div key={id} className={styles.menuNavLink}>
+                        <div className={styles.dishTitle}>{gerecht.title}</div>
+                        <div className={styles.dishDescription}>{gerecht.menudescription}</div>
                       </div>
                     </div>
                   })}
+
+
+           
                 </div>
                 <div className={styles.extraInfo}><p>Alle steaks zijn te verkrijgen met Bearnaisesaus, pepersaus of Champignonsaus</p>  </div>
 
@@ -102,11 +100,13 @@ export const Dishes = () => {
                 <h3 className={styles.supplementHeadTitle}>Supplementen</h3>
                 <div className={styles.supplementContainer}>
                   {supplement?.map((item) => {
-                    const supplements = item.node.SupplementMeta;
+                    const supplements = item?.node.SupplementMeta;
+                    const id = item?.node.id;
+
                     return <div className={styles.supplementMiniContainer}>
                       {item !== supplement[supplement.length - 1] ?
-                        <p className={styles.supplementTitle} key={item.node.id}>{supplements.title},</p>
-                        : <p className={styles.supplementTitle} key={item.node.id}>of {supplements.title}</p>
+                        <p key={id}className={styles?.supplementTitle}>{supplements.title},</p>
+                        : <p key={id} className={styles.supplementTitle} >of {supplements.title}</p>
                       }
                     </div>
                   })}
@@ -116,11 +116,11 @@ export const Dishes = () => {
                 <div className={styles.miniContainer}>
                   {kidsMenu?.map((item) => {
                     const kisdMenus = item.node?.kindermenumeta;
-                    const slug = item?.node?.slug;
-                    return <div key={item.node.slug} className={styles.allMenus}>
-                      <div className={styles.menuNavLink}>
-                        <div className={styles.dishTitle} key={item.node.id}>{kisdMenus?.title}</div>
-                        <div className={styles.dishDescription} key={item.node.id}>{kisdMenus?.description}</div>
+                    const id = item?.node.id;
+                    return <div className={styles.allMenus}>
+                      <div key={id} className={styles.menuNavLink}>
+                        <div className={styles.dishTitle}>{kisdMenus?.title}</div>
+                        <div className={styles.dishDescription} >{kisdMenus?.description}</div>
                       </div>
                     </div>
                   })}
@@ -136,11 +136,11 @@ export const Dishes = () => {
                 <div className={styles.miniContainer}>
                   {monthlyDish?.map((item) => {
                     const monthlyDishs = item.node.maandelijkseMenuMeta;
-                    const slug = item.node.slug;
+                    const id = item?.node.id;
                     return <div className={styles.allMenus}>
-                      <div className={styles.menuNavLink}>
-                        <div className={`${styles.dishTitle}`} key={item.node.id}>{monthlyDishs.title}</div>
-                        <div className={styles.dishDescription} key={item.node.id}>{monthlyDishs.minidescription}</div>
+                      <div key={id} className={styles.menuNavLink}>
+                        <div className={`${styles.dishTitle}`} >{monthlyDishs.title}</div>
+                        <div className={styles.dishDescription}>{monthlyDishs.minidescription}</div>
                       </div>
                     </div>
 
@@ -157,11 +157,11 @@ export const Dishes = () => {
                 <div className={styles.miniContainer}>
                   {dessert?.map((item) => {
                     const desserts = item.node.dessertmeta;
-                    const slug = item.node.slug;
+                    const id = item?.node.id;
                     return <div className={styles.allMenus}>
-                      <div className={styles.menuNavLink} >
-                        <div className={`${styles.dishTitle}`} key={item.node.id}>{desserts.title}</div>
-                        <div className={styles.dishDescription} key={item.node.id}>{desserts.minidescription}</div>
+                      <div key={id} className={styles.menuNavLink} >
+                        <div className={`${styles.dishTitle}`}>{desserts.title}</div>
+                        <div className={styles.dishDescription} >{desserts.minidescription}</div>
                       </div>
                     </div>
                   })}
@@ -173,11 +173,11 @@ export const Dishes = () => {
                 <div className={styles.miniContainer}>
                   {kidsDessert?.map((item) => {
                     const kidsDesserts = item.node?.kindeDessertMeta;
-                    const slug = item?.node?.slug;
-                    return <div key={item.node.slug} className={styles.allMenus}>
-                      <div className={styles.menuNavLink}>
-                        <div className={styles.dishTitle} key={item.node.id}>{kidsDesserts?.title}</div>
-                        <div className={styles.dishDescription} key={item.node.id}>{kidsDesserts?.description}</div>
+                    const id = item?.node.id;
+                    return <div  className={styles.allMenus}>
+                      <div key={id} className={styles.menuNavLink}>
+                        <div className={styles.dishTitle}>{kidsDesserts?.title}</div>
+                        <div className={styles.dishDescription}>{kidsDesserts?.description}</div>
                       </div>
                     </div>
                   })}
@@ -194,9 +194,8 @@ export const Dishes = () => {
   );
 }
 
-// export default Dishes;
 
 /*
-If we change our mainds and we want to add in the future a price in menu
+If we change our mainds and we want to add in the future a price in the menu
 <div className={styles.price} key={item.node.id}>{item2.price}</div>  
 */
