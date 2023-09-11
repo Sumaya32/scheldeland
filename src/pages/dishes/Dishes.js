@@ -38,7 +38,7 @@ export const Dishes = () => {
               <div className={styles.contentContainer}>
                 <div className={styles.miniContainer}>
 
-                  {sharingFood?.map((item) => {
+                  {sharingFood?.sort((a,b)=> a?.node.gerechtmeta.title < b?.node.gerechtmeta.title ? -1 : 1).map((item) => {
                     const sharingFoods = item.node.sharingFoodmeta;
                     const id = item.node.id;
                     return <div  className={styles.allMenus}>
@@ -59,7 +59,7 @@ export const Dishes = () => {
               <img className={styles.forkAndKnife} src={'/fork-knife.png'} />
               <div className={styles.contentContainer}>
                 <div className={styles.miniContainer}>
-                  {appetizer?.map((item) => {
+                  {appetizer?.sort((a,b)=> a?.node.gerechtmeta.title < b?.node.gerechtmeta.title ? -1 : 1).map((item) => {
                     const appetizers = item.node.kleinehongermeta;
                     const id = item.node.id;
                     return <div className={styles.allMenus}>
@@ -99,7 +99,7 @@ export const Dishes = () => {
 
                 <h3 className={styles.supplementHeadTitle}>Supplementen</h3>
                 <div className={styles.supplementContainer}>
-                  {supplement?.map((item) => {
+                  {supplement?.sort((a,b)=> a?.node.gerechtmeta.title < b?.node.gerechtmeta.title ? -1 : 1).map((item) => {
                     const supplements = item?.node.SupplementMeta;
                     const id = item?.node.id;
 
@@ -114,7 +114,7 @@ export const Dishes = () => {
 
                 <h3 className={styles.kisdMenuTitle}>Voor de allerkleinsten</h3>
                 <div className={styles.miniContainer}>
-                  {kidsMenu?.map((item) => {
+                  {kidsMenu?.sort((a,b)=> a?.node.gerechtmeta.title < b?.node.gerechtmeta.title ? -1 : 1).map((item) => {
                     const kisdMenus = item.node?.kindermenumeta;
                     const id = item?.node.id;
                     return <div className={styles.allMenus}>
@@ -134,7 +134,7 @@ export const Dishes = () => {
               <img className={styles.forkAndKnife} src={'/fork-knife.png'} />
               <div className={styles.contentContainer}>
                 <div className={styles.miniContainer}>
-                  {monthlyDish?.map((item) => {
+                  {monthlyDish?.sort((a,b)=> a?.node.gerechtmeta.title < b?.node.gerechtmeta.title ? -1 : 1).map((item) => {
                     const monthlyDishs = item.node.maandelijkseMenuMeta;
                     const id = item?.node.id;
                     return <div className={styles.allMenus}>
@@ -155,7 +155,7 @@ export const Dishes = () => {
               <img className={styles.forkAndKnife} src={'/fork-knife.png'} />
               <div className={styles.contentContainer} >
                 <div className={styles.miniContainer}>
-                  {dessert?.map((item) => {
+                  {dessert?.sort((a,b)=> a?.node.gerechtmeta.title < b?.node.gerechtmeta.title ? -1 : 1).map((item) => {
                     const desserts = item.node.dessertmeta;
                     const id = item?.node.id;
                     return <div className={styles.allMenus}>
@@ -171,7 +171,7 @@ export const Dishes = () => {
               <h3 className={styles.kisdMenuTitle}>Voor de allerkleinsten</h3>
               <div className={styles.contentContainer} >
                 <div className={styles.miniContainer}>
-                  {kidsDessert?.map((item) => {
+                  {kidsDessert?.sort((a,b)=> a?.node.gerechtmeta.title < b?.node.gerechtmeta.title ? -1 : 1).map((item) => {
                     const kidsDesserts = item.node?.kindeDessertMeta;
                     const id = item?.node.id;
                     return <div  className={styles.allMenus}>
