@@ -7,6 +7,11 @@
     flex-direction: column;
     align-items: center;
     width: 100vw;
+    -webkit-perspective: 1px;
+    perspective: 1px;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    transform-style: preserve-3d;
 }
 
 
@@ -21,11 +26,7 @@
     align-items: center;
     display: flex;
     /* margin-bottom: 1rem; */
-    -webkit-perspective: 1px;
-    perspective: 1px;
-    -webkit-transform-style: preserve-3d;
-    transform-style: preserve-3d;
-    transform-style: preserve-3d;
+
 }
 
 .descriptionContainer {
@@ -303,7 +304,7 @@
 
 
 /*Tweede*/
-
+/* 
 
 @media only screen and (min-width: 769px) and (max-width: 1200px) {
     .parallax {
@@ -311,7 +312,6 @@
     }
 
     .cardContainer {
-        /* background-color: green; */
         grid-template-columns: repeat(2, 20rem);
     }
 }
@@ -325,7 +325,7 @@
         position: absolute;
         top: 48%;
     }
-}
+} */
 
 
 @media only screen and (min-width: 1200px) {
@@ -335,7 +335,7 @@
 
     .cardContainer {
         /* background-color: rgb(191, 228, 191); */
-        grid-template-columns: repeat(3, 21rem);
+        /* grid-template-columns: repeat(3, 21rem); */
     }
 }
 
@@ -353,9 +353,9 @@
 
 
 @media only screen and (max-width: 768px) {
-    .parallax {
+    /* .parallax {
         min-height: 2200px;
-    }
+    } */
 
     .cardContainer {
         grid-template-columns: repeat(1, 65%);
@@ -365,7 +365,7 @@
         text-align: center;
         margin-left: 0;
         position: absolute;
-        top: 42%;
+        top: 20%;
     }
 
     .description {
@@ -384,7 +384,7 @@
 }
 
 
-
+/*
 @media only screen and (width: 768px) {
     .parallax {
         min-height: 2300px;
@@ -434,4 +434,4 @@
     .dishesTitle {
         font-size: 1rem;
     }
-}
+} */
