@@ -12,9 +12,7 @@
 
 /*Parallax*/
 .parallax {
-    /* min-height: 1880px; */
     min-height: 2200px;
-
     width: 100%;
     background-attachment: fixed;
     background-position: center;
@@ -51,14 +49,38 @@
     margin-left: 2rem;
 }
 
-.cardContainer {
+.middleContainer {
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+/* .cardContainer {
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
     flex-wrap: wrap;
     height: auto;
     margin: 2rem 0 5rem 0;
+    width: 90%;
+} */
+
+
+
+.cardContainer {
+    /* background-color: red; */
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 22%);
+    row-gap: 20px;
+    column-gap: 30px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5%;
 }
+
 
 .card {
     transition: transform .2s;
@@ -67,20 +89,19 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0 2% 0 0;
-    width: 30%;
+    /* margin: 2rem 2% 0 0; */
+    /* width: 50%; */
     box-shadow: 0px 0px 3px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     overflow-wrap: break-word;
     max-height: fit-content;
-
 }
 
 .card:hover {
     transform: scale(1.1);
     z-index: 1;
-    box-shadow: -10px 20px 20px 5px rgba(10, 9, 9, 0.3); 
+    box-shadow: -10px 20px 20px 5px rgba(10, 9, 9, 0.3);
 }
 
 .link {
@@ -109,8 +130,8 @@
     text-align: center;
     text-decoration: none;
     list-style: none;
-    font-size: 1.3rem;
-    font-family:  Dancing Script, cursive, "Lucida Handwriting", sans-serif;
+    font-size: 1.4rem;
+    font-family: Dancing Script, cursive, "Lucida Handwriting", sans-serif;
 }
 
 .price {
@@ -127,7 +148,7 @@
 .topTitle,
 .sharingTopTitle {
     font-size: 3rem;
-    font-family:  Dancing Script, cursive, "Lucida Handwriting", sans-serif;
+    font-family: Dancing Script, cursive, "Lucida Handwriting", sans-serif;
 }
 
 .containerImage,
@@ -140,13 +161,12 @@
 
 
 /*Media queries*/
-@media only screen and (width: 820px){
+/* @media only screen and (width: 820px){
     .cardContainer {
         width: 100%;
     }
 
     .parallax {
-        /* min-height: 2400px; */
         min-height: 2600px;
 
     }
@@ -177,7 +197,6 @@
     }
 
     .descriptionContainer {
-        /* top: 47%; */
         top: 44%;
 
     }
@@ -194,7 +213,6 @@
         display: flex;
         flex-direction: column;
         text-align: center;
-        width: 100%;
         height: auto;
     }
 
@@ -202,13 +220,11 @@
         text-align: center;
         margin-left: 0;
         position: absolute;
-        /* top: 35%; */
         top: 42%;
     }
 
     .card {
-        /* width: 55%; */
-        width: 70%;
+        width: 50%;
         display: inline-block;
         margin-top: 5%;
         overflow: hidden;
@@ -263,5 +279,155 @@
 @media only screen and (min-width: 360px) and (max-width: 376px) {
     .parallax {
         min-height: 1900px;
+    }
+}
+
+
+
+@media only screen and (min-width: 769px){
+ .card{
+    background-color: #FFA07A;
+    width: 35%;
+ }
+}
+    */
+
+
+
+
+
+
+
+/*Tweede*/
+
+
+@media only screen and (min-width: 769px) and (max-width: 1200px) {
+    .parallax {
+        min-height: 2800px;
+    }
+
+    .cardContainer {
+        /* background-color: green; */
+        grid-template-columns: repeat(2, 20rem);
+    }
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1200px) {
+    .parallax {
+        min-height: 2100px;
+    }
+
+    .descriptionContainer {
+        position: absolute;
+        top: 48%;
+    }
+}
+
+
+@media only screen and (min-width: 1200px) {
+    /* .parallax {
+            min-height: 2200px;
+        } */
+
+    .cardContainer {
+        /* background-color: rgb(191, 228, 191); */
+        grid-template-columns: repeat(3, 21rem);
+    }
+}
+
+
+
+
+/* @media only screen and (max-width: 768px) {
+
+    
+        .cardContainer {
+            grid-template-columns: repeat(1, 25%);
+        }
+   } */
+
+
+
+@media only screen and (max-width: 768px) {
+    .parallax {
+        min-height: 2200px;
+    }
+
+    .cardContainer {
+        grid-template-columns: repeat(1, 65%);
+    }
+
+    .descriptionContainer {
+        text-align: center;
+        margin-left: 0;
+        position: absolute;
+        top: 42%;
+    }
+
+    .description {
+        margin-left: 0;
+    }
+
+    .title {
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .sharingTopTitle,
+    .topTitle {
+        font-size: 3rem;
+    }
+}
+
+
+
+@media only screen and (width: 768px) {
+    .parallax {
+        min-height: 2300px;
+    }
+
+    .descriptionContainer {
+        position: absolute;
+        top: 45%;
+    }
+}
+
+
+@media only screen and (min-width: 280px) and (max-width: 500px) {
+    .cardContainer {
+        grid-template-columns: repeat(1, 100%);
+    }
+}
+
+
+
+@media only screen and (width: 540px) {
+    .parallax {
+            min-height: 1800px;
+        }
+
+        .descriptionContainer {
+            position: absolute;
+            top: 40%;
+        }
+}
+
+
+@media only screen and (min-width: 240px) and (max-width: 376px) {
+    .parallax {
+        min-height: 1800px;
+    }
+
+    .descriptionContainer {
+        position: absolute;
+        top: 40%;
+    }
+
+}
+
+
+@media only screen and (max-width: 280px) {
+    .dishesTitle {
+        font-size: 1rem;
     }
 }
