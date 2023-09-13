@@ -20,7 +20,11 @@
     background-size: cover;
     align-items: center;
     display: flex;
-    margin-bottom: 1rem;
+    /* margin-bottom: 1rem; */
+    -webkit-perspective: 1px;
+    perspective: 1px;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
     transform-style: preserve-3d;
 }
 
@@ -403,13 +407,13 @@
 
 @media only screen and (width: 540px) {
     .parallax {
-            min-height: 1800px;
-        }
+        min-height: 1800px;
+    }
 
-        .descriptionContainer {
-            position: absolute;
-            top: 40%;
-        }
+    .descriptionContainer {
+        position: absolute;
+        top: 40%;
+    }
 }
 
 
