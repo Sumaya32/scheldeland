@@ -22,18 +22,14 @@ html,body{
 
 /*Parallax*/
 .parallaxContainer{
-    font-family: "Helvitica en bradley Hand";
     height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     width: 100vw;
-
     -webkit-perspective: 1px;
     perspective: 1px;
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
-
+   
+    
 } 
 .parallax {
     min-height: 2200px;
@@ -48,7 +44,8 @@ html,body{
     
     /* display: flex; */
     /* margin-bottom: 1rem; */
-    position: relative;
+    /* position: relative; */
+
 }
 
 .descriptionContainer {
@@ -60,8 +57,9 @@ html,body{
     text-shadow: 2px 2px 5px rgba(0, 0, 0),
         5px 5px 70px rgba(255, 255, 255, 0.5);
     font-size: 1.3rem;
-    position: absolute;
-    top: 45%;
+    /* position: absolute;
+    top: 45%; */
+    transform: translate(0px, 1000px);
     background-color: rgba(0, 0, 0, .2);
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(4px);
@@ -72,15 +70,52 @@ html,body{
     width: 100%;
 }
 
+
+.parallax:hover
+{
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.parallaxContainer:hover .parallax {
+    /* opacity: 0.5; */
+  }
+
+  .imageInfoContainer {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top:300px;
+    right: 50px;
+    text-align: center;
+  }
+
+  .parallaxContainer:hover .imageInfoContainer {
+    opacity: 1;
+  }
+
+  .imageInfotext {
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 0.5;
+    color: white;
+    font-size: 20px;
+    padding: 0.5rem;
+    border-radius: 5px;
+  }
+
 .contentOuter{
     width: 100%;
-	/* background-color: rgb(83, 27, 27); */
 	perspective: 2px;
 	-webkit-perspective: 2px;
    display: flex;
    flex-direction: column;
    justify-content: center;
    align-items: center;
+
 }
 
 
@@ -350,6 +385,11 @@ html,body{
     .cardContainer {
         grid-template-columns: repeat(2, 20rem);
     }
+
+    .descriptionContainer{
+    transform: translate(0px, 1180px);
+
+    }
 }
 
 @media only screen and (min-width: 900px) and (max-width: 1200px) {
@@ -358,21 +398,24 @@ html,body{
     }
 
     .descriptionContainer {
-        position: absolute;
-        top: 48%;
+        /* position: absolute;
+        top: 48%; */
+    transform: translate(0px, 1355px);
+
     }
 }
 
 
-@media only screen and (min-width: 1200px) {
-    /* .parallax {
-            min-height: 2200px;
-        } */
+/* @media only screen and (min-width: 1200px) {
 
     .cardContainer {
         grid-template-columns: repeat(3, 21rem);
     }
-}
+
+    .descriptionContainer{
+        transform: translate(0px, 770px);
+    }
+} */
 
 
 
@@ -399,8 +442,11 @@ html,body{
     .descriptionContainer {
         text-align: center;
         margin-left: 0;
-        position: absolute;
-        top: 42%;
+        /* position: absolute;
+        top: 42%; */
+        transform: translate(0px, 920px);
+
+
     }
 
     .description {
@@ -426,8 +472,10 @@ html,body{
     }
 
     .descriptionContainer {
-        position: absolute;
-        top: 45%;
+        /* position: absolute;
+        top: 45%; */
+    transform: translate(0px, 1000px);
+
     }
 }
 
@@ -446,8 +494,10 @@ html,body{
     }
 
     .descriptionContainer {
-        position: absolute;
-        top: 40%;
+        /* position: absolute;
+        top: 40%; */
+    transform: translate(0px, 700px);
+
     }
 }
 
@@ -458,15 +508,31 @@ html,body{
     }
 
     .descriptionContainer {
-        position: absolute;
-        top: 41%;
+        /* position: absolute;
+        top: 41%; */
+    transform: translate(0px, 665px);
+
     }
 
 }
 
+@media only screen and (max-width: 360px) {
+    .descriptionContainer {
+        /* position: absolute;
+        top: 41%; */
+    transform: translate(0px, 750px);
+
+    }
+}
 
 @media only screen and (max-width: 280px) {
     .dishesTitle {
         font-size: 1rem;
+    }
+    .descriptionContainer {
+        /* position: absolute;
+        top: 41%; */
+    transform: translate(0px, 1300px);
+
     }
 }

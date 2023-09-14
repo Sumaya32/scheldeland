@@ -17,8 +17,10 @@ export const Home = () => {
 
         <div className={styles.parallaxContainer}>  
           <div className={`${styles.mainImageContainer} ${styles.parallax}`} style={{ backgroundImage: `url(${data?.mainimage?.sourceUrl})` }}>
+            <div className={styles.imageInfoContainer}> <div className={styles.imageInfotext}>Image rights - Krisje Vandegaer</div></div>
+
             <div className={styles.descriptionContainer}>
-              <h2 className={`${styles.title} ${styles.text}`} >{data?.title}</h2>
+              <h2 className={`${styles.title} ${styles.title}`} >{data?.title}</h2>
               <div className={styles.description}>{data?.description}</div>
             </div>
 
