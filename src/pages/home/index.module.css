@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 
+html,body{
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
 .container {
     font-family: "Helvitica en bradley Hand";
     height: 100%;
@@ -7,15 +13,28 @@
     flex-direction: column;
     align-items: center;
     width: 100vw;
-    -webkit-perspective: 1px;
+    /* -webkit-perspective: 1px;
     perspective: 1px;
     -webkit-transform-style: preserve-3d;
-    transform-style: preserve-3d;
-    transform-style: preserve-3d;
+    transform-style: preserve-3d; */
 }
 
 
 /*Parallax*/
+.parallaxContainer{
+    font-family: "Helvitica en bradley Hand";
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+
+    -webkit-perspective: 1px;
+    perspective: 1px;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+
+} 
 .parallax {
     min-height: 2200px;
     width: 100%;
@@ -23,10 +42,13 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    align-items: center;
-    display: flex;
+    /* align-items: center; */
+    transform-style: preserve-3d;
+	-webkit-transform-style: preserve-3d;
+    
+    /* display: flex; */
     /* margin-bottom: 1rem; */
-
+    position: relative;
 }
 
 .descriptionContainer {
@@ -49,6 +71,18 @@
     margin-left: 2rem;
     width: 100%;
 }
+
+.contentOuter{
+    width: 100%;
+	/* background-color: rgb(83, 27, 27); */
+	perspective: 2px;
+	-webkit-perspective: 2px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
 
 .title {
     margin-left: 2rem;
@@ -153,6 +187,8 @@
 .topTitle,
 .sharingTopTitle {
     font-size: 3rem;
+    /* background-color: red; */
+    padding: 10px;
     font-family: Dancing Script, cursive, "Lucida Handwriting", sans-serif;
 }
 
@@ -304,7 +340,7 @@
 
 
 /*Tweede*/
-/* 
+
 
 @media only screen and (min-width: 769px) and (max-width: 1200px) {
     .parallax {
@@ -325,7 +361,7 @@
         position: absolute;
         top: 48%;
     }
-} */
+}
 
 
 @media only screen and (min-width: 1200px) {
@@ -334,21 +370,20 @@
         } */
 
     .cardContainer {
-        /* background-color: rgb(191, 228, 191); */
-        /* grid-template-columns: repeat(3, 21rem); */
+        grid-template-columns: repeat(3, 21rem);
     }
 }
 
 
 
 
-/* @media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
 
     
         .cardContainer {
             grid-template-columns: repeat(1, 25%);
         }
-   } */
+   }
 
 
 
@@ -365,7 +400,7 @@
         text-align: center;
         margin-left: 0;
         position: absolute;
-        top: 20%;
+        top: 42%;
     }
 
     .description {
@@ -384,7 +419,7 @@
 }
 
 
-/*
+
 @media only screen and (width: 768px) {
     .parallax {
         min-height: 2300px;
@@ -424,7 +459,7 @@
 
     .descriptionContainer {
         position: absolute;
-        top: 40%;
+        top: 41%;
     }
 
 }
@@ -434,4 +469,4 @@
     .dishesTitle {
         font-size: 1rem;
     }
-} */
+}
