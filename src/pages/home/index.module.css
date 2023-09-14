@@ -24,8 +24,8 @@ html,body{
 .parallaxContainer{
     height: 100%;
     width: 100vw;
-    -webkit-perspective: 1px;
-    perspective: 1px;
+    /* -webkit-perspective: 1px; */
+    /* perspective: 1px; */
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
    
@@ -109,8 +109,8 @@ html,body{
 
 .contentOuter{
     width: 100%;
-	perspective: 2px;
-	-webkit-perspective: 2px;
+	/* perspective: 2px;
+	-webkit-perspective: 2px; */
    display: flex;
    flex-direction: column;
    justify-content: center;
