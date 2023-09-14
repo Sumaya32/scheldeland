@@ -39,8 +39,8 @@ html,body{
     background-repeat: no-repeat;
     background-size: cover;
     /* align-items: center; */
-    transform-style: preserve-3d;
-	-webkit-transform-style: preserve-3d;
+    /* transform-style: preserve-3d;
+	-webkit-transform-style: preserve-3d; */
     
     /* display: flex; */
     /* margin-bottom: 1rem; */
