@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { useGetHome } from './_query';
 import Layout from '../../components/layout';
@@ -9,32 +9,35 @@ import styles from "./index.module.css";
 
 export const Home = () => {
   const { data, isLoading } = useGetHome();
+  const [isImageText, setIsImageText] = useState(false)
 
   if (image && isLoading) return <Spinner />
   /*onclick function to show the image rights*/
+  const showImageText = ()=>{
+    setIsImageText(true)
+  }
   return (
     <Layout>
       <div className={styles.container}>
 
         <div className={styles.parallaxContainer}>  
-          <div className={`${styles.mainImageContainer} ${styles.parallax}`} style={{ backgroundImage: `url(${data?.mainimage?.sourceUrl})` }}>
-            <div className={styles.imageInfoContainer}> <div className={styles.imageInfotext}>Image rights - Krisje Vandegaer</div></div>
-
-            <div className={styles.descriptionContainer}>
+          <div className={`${styles.mainImageContainer} ${styles.parallax}`} style={{ backgroundImage: `url(${data?.mainimage?.sourceUrl})` }} onClick={showImageText}>
+            <div className={isImageText === true ? `${styles.imageInfoContainer}` :  `${styles.hiddenText}`}> <div className={styles.imageInfotext} >Image rights - Krisje Vandegaer</div></div>
+          </div> 
+          <div className={styles.descriptionContainer}>
               <h2 className={`${styles.title} ${styles.title}`} >{data?.title}</h2>
               <div className={styles.description}>{data?.description}</div>
-            </div>
-
-          </div>
+            </div>  
        </div>
    
 
         <div className={styles.contentOuter}>
-          <div className={styles.containerImage}> <h1 className={`${styles.topTitle}`}>Populaire gerechten</h1>     </div>
-
-          <Carousel items={data && data?.gerechten?.map((item) => item.gerechtmeta)} />
 
           <div className={styles.middleContainer}>
+          <div > <h1 className={`${styles.topTitle}`}>Populaire gerechten</h1>     </div>
+
+<Carousel items={data && data?.gerechten?.map((item) => item.gerechtmeta)} />
+
             <div className={`${styles.cardContainer}`}>
 
               {data?.gerechten?.map((item) =>
@@ -48,7 +51,13 @@ export const Home = () => {
               )}
             </div>
           </div>
+        </div>
 
+
+      </div>
+    </Layout>
+  );
+}
 
 
           {/* <div className={styles.containerSharingFoodImage}><h1 className={styles.sharingTopTitle}>Top 3 Sharing food</h1></div>   */}
@@ -72,13 +81,3 @@ export const Home = () => {
           )}
         </div> 
                 </div>*/}
-
-        </div>
-
-
-      </div>
-    </Layout>
-  );
-}
-
-

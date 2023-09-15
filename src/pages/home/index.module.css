@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 
-html,body{
+/* html,body{
     height: 100vh;
     width: 100%;
     margin: 0;
     padding: 0;
-}
+} */
 .container {
     font-family: "Helvitica en bradley Hand";
     height: 100%;
@@ -34,21 +34,17 @@ html,body{
     
 } 
 .parallax {
-    min-height: 2200px;
+    min-height: 3000px;
+    min-height: 100%;
     width: 100%;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
+    position: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    /* align-items: center; */
     /* transform-style: preserve-3d;
 	-webkit-transform-style: preserve-3d; */
     
-    /* display: flex; */
-    /* margin-bottom: 1rem; */
-    /* position: relative; */
-    -webkit-transform-style: preserve-3d;
-    transform-style: preserve-3d;
 
 }
 
@@ -58,15 +54,20 @@ html,body{
     line-height: 1.5rem;
     white-space: pre-line;
     color: white;
+    color: black;
     text-shadow: 2px 2px 5px rgba(0, 0, 0),
         5px 5px 70px rgba(255, 255, 255, 0.5);
     font-size: 1.3rem;
     /* position: absolute;
     top: 45%; */
-    transform: translate(0px, 1000px);
+    transform: translate(0px, 1100px);
     background-color: rgba(0, 0, 0, .2);
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(4px);
+
+    background-color: rgba(250, 243, 243, 0.6);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(1px);
 }
 
 .description {
@@ -99,19 +100,26 @@ html,body{
   }
 
   .parallaxContainer:hover .imageInfoContainer {
-    opacity: 1;
+    /* opacity: 1; */
   }
+
+  .hiddenText{
+    display: none; 
+}
 
   .imageInfotext {
     background-color: rgba(0, 0, 0, 0.7);
-    opacity: 0.5;
+    /* opacity: 0.5; */
     color: white;
     font-size: 20px;
     padding: 0.5rem;
     border-radius: 5px;
+    display: inline-block;
   }
 
+
 .contentOuter{
+    /* background-color: white; */
     width: 100%;
 	/* perspective: 2px;
 	-webkit-perspective: 2px; */
@@ -119,6 +127,12 @@ html,body{
    flex-direction: column;
    justify-content: center;
    align-items: center;
+   /* position: absolute;
+   top: 50%;
+   height: 50%; */
+   /* z-index: 1; */
+   /* z-index: 1; */
+   transform: translate(0px, 1500px);
 
 }
 
@@ -128,10 +142,20 @@ html,body{
 }
 
 .middleContainer {
+    background-color: white;
+   background-color: rgba(0, 0, 0, 0.9);
+   background-color: rgba(255, 255, 255, 0.6);
+   -webkit-backdrop-filter: blur(5px);
+   backdrop-filter: blur(6px);
+   /* color: white; */
     width: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-bottom: 100%
+
+
 }
 
 /* .cardContainer {
@@ -382,29 +406,29 @@ html,body{
 
 
 @media only screen and (min-width: 769px) and (max-width: 1200px) {
-    .parallax {
+    /* .parallax {
         min-height: 2800px;
-    }
+    } */
 
     .cardContainer {
         grid-template-columns: repeat(2, 20rem);
     }
 
     .descriptionContainer{
-    transform: translate(0px, 1180px);
+    /* transform: translate(0px, 1180px); */
 
     }
 }
 
 @media only screen and (min-width: 900px) and (max-width: 1200px) {
-    .parallax {
+    /* .parallax {
         min-height: 2100px;
-    }
+    } */
 
     .descriptionContainer {
         /* position: absolute;
         top: 48%; */
-    transform: translate(0px, 1355px);
+    /* transform: translate(0px, 1355px); */
 
     }
 }
@@ -424,13 +448,13 @@ html,body{
 
 
 
-@media only screen and (max-width: 768px) {
+/* @media only screen and (max-width: 768px) {
 
     
         .cardContainer {
             grid-template-columns: repeat(1, 25%);
         }
-   }
+   } */
 
 
 
@@ -438,9 +462,14 @@ html,body{
     /* .parallax {
         min-height: 2200px;
     } */
-
+    .middleContainer {
+        margin-bottom: 250%
+    
+    
+    }
+    
     .cardContainer {
-        grid-template-columns: repeat(1, 65%);
+        /* grid-template-columns: repeat(1, 65%); */
     }
 
     .imageInfoContainer {
@@ -457,7 +486,7 @@ html,body{
         margin-left: 0;
         /* position: absolute;
         top: 42%; */
-        transform: translate(0px, 920px);
+        /* transform: translate(0px, 920px); */
 
 
     }
@@ -480,14 +509,14 @@ html,body{
 
 
 @media only screen and (width: 768px) {
-    .parallax {
+    /* .parallax {
         min-height: 2300px;
-    }
+    } */
 
     .descriptionContainer {
         /* position: absolute;
         top: 45%; */
-    transform: translate(0px, 1000px);
+    /* transform: translate(0px, 1000px); */
 
     }
 }
@@ -502,28 +531,28 @@ html,body{
 
 
 @media only screen and (width: 540px) {
-    .parallax {
+    /* .parallax {
         min-height: 1800px;
-    }
+    } */
 
     .descriptionContainer {
         /* position: absolute;
         top: 40%; */
-    transform: translate(0px, 700px);
+    /* transform: translate(0px, 700px); */
 
     }
 }
 
 
 @media only screen and (min-width: 240px) and (max-width: 376px) {
-    .parallax {
+    /* .parallax {
         min-height: 1800px;
-    }
+    } */
 
     .descriptionContainer {
         /* position: absolute;
         top: 41%; */
-    transform: translate(0px, 665px);
+    /* transform: translate(0px, 665px); */
 
     }
 
@@ -533,7 +562,7 @@ html,body{
     .descriptionContainer {
         /* position: absolute;
         top: 41%; */
-    transform: translate(0px, 750px);
+    /* transform: translate(0px, 750px); */
 
     }
 }
@@ -545,7 +574,7 @@ html,body{
     .descriptionContainer {
         /* position: absolute;
         top: 41%; */
-    transform: translate(0px, 1300px);
+    /* transform: translate(0px, 1300px); */
 
     }
 }
