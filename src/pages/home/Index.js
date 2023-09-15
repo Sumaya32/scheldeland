@@ -11,6 +11,7 @@ export const Home = () => {
   const { data, isLoading } = useGetHome();
 
   if (image && isLoading) return <Spinner />
+  /*onclick function to show the image rights*/
   return (
     <Layout>
       <div className={styles.container}>
