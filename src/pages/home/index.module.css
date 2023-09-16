@@ -23,7 +23,7 @@ html,body{
 
 /*Parallax*/
 .parallaxContainer{
-    /* height: 100%; */
+    height: 100%;
     width: 100vw;
     /* -webkit-perspective: 1px; */
     /* perspective: 1px; */
@@ -83,15 +83,15 @@ html,body{
 }
 
 
-.parallax:hover
+/* .parallax:hover
 {
     opacity: 1;
     display: block;
     width: 100%;
     height: auto;
-    /* transition: .5s ease; */
+    transition: .5s ease;
     backface-visibility: hidden;
-}
+} */
 
 .parallaxContainer:hover .parallax {
     /* opacity: 0.5; */
@@ -104,10 +104,6 @@ html,body{
     top:150px;
     right: 44%;
     text-align: center;
-  }
-
-  .parallaxContainer:hover .imageInfoContainer {
-    /* opacity: 1; */
   }
 
   .hiddenText{
@@ -560,8 +556,7 @@ html,body{
     .descriptionContainer {
         /* position: absolute;
         top: 41%; */
-    transform: translate(0px, 660px);
-    margin-top: 0;
+
 
     }
 
