@@ -49,6 +49,8 @@ html,body{
     background-attachment: scroll;
     /* transform-style: preserve-3d;
 	-webkit-transform-style: preserve-3d; */
+    margin: 0;
+    padding: 0;
     
 
 }

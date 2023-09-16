@@ -97,7 +97,7 @@ header .nav_btn {
 @media only screen and (max-width: 768px) {
     header {
         background-color: var(--responsive-mainColor);
-        height: 55px;
+        height: 60px;
     }
 
     header .nav_btn {
