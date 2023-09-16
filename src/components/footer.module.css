@@ -79,6 +79,9 @@ background-color: #FFA07A;
 }
 
 @media screen and (max-width: 768px) {
+  footer{
+    z-index: 0;
+  }
   .footerUnderline {
     margin-top: 0.6rem;
   }  
