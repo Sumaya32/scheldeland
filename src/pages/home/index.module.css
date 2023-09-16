@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 
-/* html,body{
+html,body{
     height: 100vh;
     width: 100%;
     margin: 0;
     padding: 0;
-} */
+}
+
 .container {
     font-family: "Helvitica en bradley Hand";
     height: 100%;
@@ -60,14 +61,17 @@
     font-size: 1.3rem;
     /* position: absolute;
     top: 45%; */
-    transform: translate(0px, 1100px);
+    /* transform: translate(0px, 1100px); */
     /* background-color: rgba(0, 0, 0, .2);
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(4px); */
+    /* position: relative;
+    top: 1100px; */
 
     background-color: rgba(255, 255, 255, 0.6);
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(6px);
+    margin-top: 1100px;
 }
 
 .description {
@@ -132,7 +136,9 @@
    height: 50%; */
    /* z-index: 1; */
    /* z-index: 1; */
-   transform: translate(0px, 1500px);
+   /* transform: translate(0px, 1900px); */
+   margin-top: 600px;
+
 
 }
 
@@ -144,16 +150,16 @@
 .middleContainer {
     background-color: white;
    background-color: rgba(0, 0, 0, 0.9);
-   background-color: rgba(255, 255, 255, 0.6);
-   -webkit-backdrop-filter: blur(5px);
-   backdrop-filter: blur(6px);
+   background-color: rgba(255, 255, 255, 0.5);
+   -webkit-backdrop-filter: blur(4px);
+   backdrop-filter: blur(4px);
    /* color: white; */
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-bottom: 100%
+    margin-bottom:60%
 
 
 }
