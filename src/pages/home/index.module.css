@@ -35,7 +35,7 @@ html,body{
     
 } 
 .parallax {
-    min-height: 3000px;
+    /* min-height: 3000px; */
     min-height: 100%;
     width: 100%;
     /* background-attachment: fixed; */
@@ -46,6 +46,7 @@ html,body{
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
+    background-attachment: scroll;
     /* transform-style: preserve-3d;
 	-webkit-transform-style: preserve-3d; */
     
