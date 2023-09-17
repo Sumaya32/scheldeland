@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 
 html,body{
-    height: 100vh;
+    height: 100%;
     width: 100%;
     margin: 0;
     padding: 0;
@@ -77,7 +77,14 @@ html,body{
     background-color: rgba(255, 255, 255, 0.6);
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(6px);
-    margin-top: 970px;
+    /* margin-top: 970px; */
+    transform: translate(0,970px);
+
+    -webkit-transform:  translate(0,970px);
+    -moz-transform: translate(0,970px);
+    -o-transform:  translate(0,970px);
+    -ms-transform:  translate(0,970px);
+    margin-bottom: 55%;
 }
 
 .description {
@@ -139,7 +146,12 @@ html,body{
    /* z-index: 1; */
    /* z-index: 1; */
    /* transform: translate(0px, 1900px); */
-   margin-top: 600px;
+   /* margin-top: 600px; */
+   transform: translate(0,1600px);
+   -webkit-transform: translate(0,1600px);
+   -moz-transform:translate(0,1600px);
+   -o-transform: translate(0,1600px);
+   -ms-transform: translate(0,1600px);
 
 
 }
@@ -161,8 +173,12 @@ html,body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-bottom:60%
-
+    /* margin-bottom:60% */
+    transform: translateY(-100vh);
+    -webkit-transform: translateY(-100vh);
+    -moz-transform: translateY(-100vh);
+    -o-transform: translateY(-100vh);
+    -ms-transform: translateY(-100vh);
 
 }
 
@@ -423,8 +439,21 @@ html,body{
     }
 
     .descriptionContainer{
-    /* transform: translate(0px, 1180px); */
+    transform: translate(0,1220px);
+    -webkit-transform: translate(0,1220px);
+    -moz-transform:translate(0,1220px);
+    -o-transform: translate(0,1220px);
+    -ms-transform: translate(0,1220px);
+    margin-bottom: 1350px;
 
+    }
+
+    .contentOuter{
+        transform: translate(0,1800px);
+        /* -webkit-transform: translate(0,1220px);
+        -moz-transform:translate(0,1220px);
+        -o-transform: translate(0,1220px);
+        -ms-transform: translate(0,1220px); */
     }
 }
 
@@ -437,6 +466,7 @@ html,body{
         /* position: absolute;
         top: 48%; */
     /* transform: translate(0px, 1355px); */
+    margin-bottom: 1650px;
 
     }
 }
@@ -495,7 +525,15 @@ html,body{
         /* position: absolute;
         top: 42%; */
         /* transform: translate(0px, 920px); */
-        margin-top: 920px;
+        /* margin-top: 920px; */
+        transform: translate(0,920px);
+        -webkit-transform: translate(0,920px);
+        -moz-transform:translate(0,920px);
+        -o-transform: translate(0,920px);
+        -ms-transform: translate(0,920px);
+    margin-bottom: 750px;
+    /* transform: translateY(-100px); */
+     
     }
 
     .description {
@@ -546,6 +584,7 @@ html,body{
         /* position: absolute;
         top: 40%; */
     /* transform: translate(0px, 700px); */
+    margin-bottom: 470px;
 
     }
 }
@@ -559,6 +598,7 @@ html,body{
     .descriptionContainer {
         /* position: absolute;
         top: 41%; */
+        margin-bottom: 450px;
 
 
     }
@@ -582,6 +622,7 @@ html,body{
         /* position: absolute;
         top: 41%; */
     /* transform: translate(0px, 1300px); */
+    margin-bottom: 360px;
 
     }
 }
