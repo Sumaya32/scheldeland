@@ -12,17 +12,13 @@ export const Home = () => {
   const [isImageText, setIsImageText] = useState(false)
 
   if (image && isLoading) return <Spinner />
-  /*onclick function to show the image rights*/
-  const showImageText = ()=>{
-    setIsImageText(true)
-  }
   return (
     <Layout>
       <div className={styles.container}>
 
         <div className={styles.parallaxContainer}>  
-          <div className={`${styles.mainImageContainer} ${styles.parallax}`} style={{ backgroundImage: `url(${data?.mainimage?.sourceUrl})` }} onClick={showImageText}>
-            <div className={isImageText === true ? `${styles.imageInfoContainer}` :  `${styles.hiddenText}`}> <div className={styles.imageInfotext} >Image rights - Krisje Vandegaer</div></div>
+          <div className={`${styles.mainImageContainer} ${styles.parallax}`} style={{ backgroundImage: `url(${data?.mainimage?.sourceUrl})` }} onClick={()=>setIsImageText(isImageText => !isImageText)}>
+            <div className={isImageText === true ? `${styles.imageInfoContainer}` :  `${styles.hiddenText}`} > <div className={styles.imageInfotext} >Image rights - Krisje Vandegaer</div></div>
           </div> 
           <div className={styles.descriptionContainer}>
               <h2 className={`${styles.title} ${styles.title}`} >{data?.title}</h2>
