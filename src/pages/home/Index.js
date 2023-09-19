@@ -16,23 +16,23 @@ export const Home = () => {
     <Layout>
       <div className={styles.container}>
 
-        <div className={styles.parallaxContainer}>  
-          <div className={`${styles.mainImageContainer} ${styles.parallax}`} style={{ backgroundImage: `url(${data?.mainimage?.sourceUrl})` }} onClick={()=>setIsImageText(isImageText => !isImageText)}>
-            <div className={isImageText === true ? `${styles.imageInfoContainer}` :  `${styles.hiddenText}`} > <div className={styles.imageInfotext} >Image rights - Krisje Vandegaer</div></div>
-          </div> 
+        <div className={styles.mainFixedImageContainer}>
+          <div className={`${styles.mainImageContainer} ${styles.mainFixedImage}`} style={{ backgroundImage: `url(${data?.mainimage?.sourceUrl})` }} onClick={() => setIsImageText(isImageText => !isImageText)}>
+            <div className={isImageText === true ? `${styles.imageInfoContainer}` : `${styles.hiddenText}`} > <div className={styles.imageInfotext} >Image rights - Krisje Vandegaer</div></div>
+          </div>
           <div className={styles.descriptionContainer}>
-              <h2 className={`${styles.title} ${styles.title}`} >{data?.title}</h2>
-              <div className={styles.description}>{data?.description}</div>
-            </div>  
-       </div>
-   
+            <h2 className={`${styles.title} ${styles.title}`} >{data?.title}</h2>
+            <div className={styles.description}>{data?.description}</div>
+          </div>
+        </div>
+
 
         <div className={styles.contentOuter}>
 
           <div className={styles.middleContainer}>
-          <div > <h1 className={`${styles.topTitle}`}>Populaire gerechten</h1>     </div>
+            <div > <h1 className={`${styles.topTitle}`}>Populaire gerechten</h1>     </div>
 
-<Carousel items={data && data?.gerechten?.map((item) => item.gerechtmeta)} />
+            <Carousel items={data && data?.gerechten?.map((item) => item.gerechtmeta)} />
 
             <div className={`${styles.cardContainer}`}>
 
@@ -56,12 +56,12 @@ export const Home = () => {
 }
 
 
-          {/* <div className={styles.containerSharingFoodImage}><h1 className={styles.sharingTopTitle}>Top 3 Sharing food</h1></div>   */}
+{/* <div className={styles.containerSharingFoodImage}><h1 className={styles.sharingTopTitle}>Top 3 Sharing food</h1></div>   */ }
 
-          {/* <Carousel items={data && data?.sharingfood?.map((item)=> item.sharingFoodmeta)}  /> */}
+{/* <Carousel items={data && data?.sharingfood?.map((item)=> item.sharingFoodmeta)}  /> */ }
 
 
-          {/* 
+{/* 
         
         <div className={styles.middleContainer}>
         <div className={styles.cardContainer}>
