@@ -548,6 +548,17 @@ body {
     .topTitle {
         font-size: 3rem;
     }
+
+    
+.imageInfotext {
+
+    padding: 0.3rem;
+
+}
+
+    .imageInfotext{
+        font-size: 0.8rem;
+    }
 }
 
 
