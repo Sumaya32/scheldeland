@@ -91,6 +91,8 @@ body {
     -o-transform: translate(0, 970px);
     -ms-transform: translate(0, 970px);
     margin-bottom: 55%;
+
+    padding: 0.8rem 0 0.8rem 0
 }
 
 .description {
@@ -532,6 +534,7 @@ body {
         -ms-transform: translate(0, 920px);
         margin-bottom: 750px;
         /* transform: translateY(-100px); */
+ 
 
     }
 
