@@ -6,7 +6,7 @@
     background-color:  #D5D8DB;
     width: 100%;
     overflow: hidden;
-    height: 310px;
+    height: 500px;
     
 }
 
@@ -19,11 +19,12 @@
 }
 
 .smallContainer {
+    /* background-color: red; */
     display: flex;
     justify-content: center;
     align-items: flex-end;
     width: 100vw;
-    margin: 3rem 0 2rem 0;
+    margin: 5rem 0 2rem 0;
      font-size: 1.3rem;
      text-align: center;
 }
@@ -153,7 +154,7 @@ margin-bottom: 1rem;
     .smallContainer {
         display: flex;
         flex-direction: column;
-        margin-top: 7.5rem;
+        margin-top: 4rem;
         /* font-size: 1.5rem; */
     }
 
@@ -214,6 +215,17 @@ margin-bottom: 1rem;
 }
 
 
+
+@media only screen and (width: 1024px)  {
+ .iframeContainer{
+    height: 300px;
+ }
+ .smallContainer{
+    margin-top: 3rem;
+ }
+}
+
+
 @media only screen and (max-width: 768px) {
     .contactContainer{
         margin-bottom: 10rem;
@@ -221,6 +233,7 @@ margin-bottom: 1rem;
     .smallContainer {
         display: flex;
         flex-direction: column;
+        margin-top: 3rem;
     }
 
     .adressContainer {
