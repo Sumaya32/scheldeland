@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap'); */
 
 .container {
     display: flex;
@@ -9,7 +9,7 @@
     background-size: cover;
     height: 100vh;
     width: 100vw;
-    font-family: "Dancing Script", cursive;
+    /* font-family: "Dancing Script", cursive; */
 }
 
 .miniContainer {
@@ -87,8 +87,8 @@
     margin-right: 95%;
 }
 
-.pointingsFinger:hover {
-    filter: invert(60%) sepia(30%) saturate(648%) hue-rotate(319deg) brightness(120%) contrast(103%);
+.pointingFinger:hover {
+    filter: invert(60%) sepia(30%) saturate(648%) hue-rotate(319deg) brightness(100%) contrast(100%);
 }
 
 

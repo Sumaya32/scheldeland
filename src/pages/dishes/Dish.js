@@ -21,7 +21,7 @@ export const Dish = () => {
   if ( isLoading && image) return <Spinner />
   return (
     <Layout>
-      {image && data?
+      {image && data ?
         <div className={styles.container} style={{ backgroundImage: `url(${image})` }}>
           <div className={styles.miniContainer}>
             <h2 className={styles.title}>{data?.title}</h2>

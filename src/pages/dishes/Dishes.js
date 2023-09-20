@@ -12,8 +12,8 @@ import {
 import Layout from '../../components/layout';
 import { Spinner } from './../../components/shared/Spinner';
 import image from '../../assets/oldPaperSheet.png'
+import forkAndKnife from '../../assets/fork-knife.png'
 import styles from "./dishes.module.css"
-// import { makeVar } from '@apollo/client';
 
 
 export const Dishes = () => {
@@ -47,16 +47,17 @@ export const Dishes = () => {
   }, [mainDish, mainDishLoading, sharingFood, dessert, appetizer,
     monthlyDish, kidsMenu, kidsDessert, supplement])
 
-  if (sharingFoodLoading && image) return <Spinner />
+  // if (sharingFoodLoading && !image && !forkAndKnife) return <Spinner />
   return (
+    <>
+    {    
+    sharingFood && forkAndKnife && image ?
     <Layout>
       <div className={styles.container}>
-        {sharingFood && image ?
-          <>
             <div className={styles.backgroundImageContainer} style={{ backgroundImage: ` url(${image})` }}>
 
-              <h2 className={styles.headTitle}>Sharing food</h2>
-              <img className={styles.forkAndKnife} src={'/fork-knife.png'} alt='fork-knife' />
+              <h2 className={styles.headTitle} style={{fontFamily: "Dancing Script, cursive"}}>Sharing food</h2>
+              <img className={styles.forkAndKnife} src={forkAndKnife} alt='fork-knife' />
 
               <div className={styles.contentContainer}>
                 <div className={styles.miniContainer}>
@@ -79,7 +80,7 @@ export const Dishes = () => {
 
             <div className={styles.backgroundImageContainer} style={{ backgroundImage: ` url(${image})` }}>
               <h2 className={styles.headTitle}>Kleine honger</h2>
-              <img className={styles.forkAndKnife} src={'/fork-knife.png'} alt='fork and knife' />
+              <img className={styles.forkAndKnife} src={forkAndKnife} alt='fork and knife' />
               <div className={styles.contentContainer}>
                 <div className={styles.miniContainer}>
                   {appetizerDescArray?.sort((a, b) => a?.node.kleinehongermeta.title < b?.node.kleinehongermeta.title ? -1 : 1).map((item) => {
@@ -99,7 +100,7 @@ export const Dishes = () => {
 
             <div className={styles.backgroundImageContainer} style={{ backgroundImage: ` url(${image})` }}>
               <h2 className={styles.headTitle}>Hoofdgerechten</h2>
-              <img className={styles.forkAndKnife} src={'/fork-knife.png'} alt='fork and knife' />
+              <img className={styles.forkAndKnife} src={forkAndKnife} alt='fork and knife' />
 
               <div className={styles.contentContainer}>
                 <div className={`${styles.miniContainer} ` + `${styles.mainDishContainer}`}>
@@ -154,7 +155,7 @@ export const Dishes = () => {
 
             <div className={styles.backgroundImageContainer} style={{ backgroundImage: ` url(${image})` }}>
               <h2 className={`${styles.headTitle} ${styles.desertTitle}`} >Maandelijkse Menus</h2>
-              <img className={styles.forkAndKnife} src={'/fork-knife.png'} alt='fork and knife' />
+              <img className={styles.forkAndKnife} src={forkAndKnife} alt='fork and knife' />
               <div className={styles.contentContainer}>
                 <div className={styles.miniContainer}>
                   {monthlyDishDescArray?.sort((a, b) => a?.node.maandelijkseMenuMeta.title < b?.node.maandelijkseMenuMeta.title ? -1 : 1).map((item) => {
@@ -175,7 +176,7 @@ export const Dishes = () => {
 
             <div className={styles.backgroundImageContainer} style={{ backgroundImage: ` url(${image})` }}>
               <h2 className={`${styles.headTitle} ${styles.desertTitle}`} >Dessert</h2>
-              <img className={styles.forkAndKnife} src={'/fork-knife.png'} alt='fork and knife' />
+              <img className={styles.forkAndKnife} src={forkAndKnife} alt='fork and knife' />
               <div className={styles.contentContainer} >
                 <div className={styles.miniContainer}>
                   {dessertDescArray?.sort((a, b) => a?.node.dessertmeta.title < b?.node.dessertmeta.title ? -1 : 1).map((item) => {
@@ -208,13 +209,16 @@ export const Dishes = () => {
                 </div>
                 <img src='./line.png' className={styles.menuLineImage} alt='line under the the menu' />
               </div>
-            </div>
-          </>
-          :
-          <div style={{ backgroundColor: "black", width: "100%", height: "100%", position: "absolute", top: "0", zIndex: "1" }}><Spinner /> </div>}
-
+            </div>    
       </div>
     </Layout >
+           :
+          <div style={{ backgroundColor: "black", width: "100%", height: "100%", position: "absolute", top: "0", zIndex: "1" }}><Spinner /> </div>
+          
+          
+          } 
+
+        </>
   );
 }
 
