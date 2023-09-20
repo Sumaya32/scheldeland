@@ -154,7 +154,7 @@ export const Dishes = () => {
             </div>
 
             <div className={styles.backgroundImageContainer} style={{ backgroundImage: ` url(${image})` }}>
-              <h2 className={`${styles.headTitle} ${styles.desertTitle}`} >Maandelijkse Menus</h2>
+              <h2 className={`${styles.headTitle} ${styles.desertTitle}`} >Maandelijkse Menu's</h2>
               <img className={styles.forkAndKnife} src={forkAndKnife} alt='fork and knife' />
               <div className={styles.contentContainer}>
                 <div className={styles.miniContainer}>
