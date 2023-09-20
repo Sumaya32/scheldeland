@@ -78,17 +78,21 @@
 
 
 @media only screen and (max-width: 539px){
-    .miniContainer {
+    /* .miniContainer {
         margin-top: 35%;
         width: 90%;
+         } */
 
-         }
+         .miniContainer {
+            margin-top: 25%;
+            width: 90%;
+             }
 }
 
 
 @media only screen and (max-width: 280px){
     .miniContainer {
-        margin-top: 50%;
+        margin-top: 30%;
         width: 90%;
          }
 }

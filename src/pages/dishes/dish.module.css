@@ -171,13 +171,13 @@
 
 @media only screen and (min-width: 280px) and (max-width: 375px) {
     .miniContainer {
-        top: 7rem;
+        top: 5rem;
         width: 70%;
     }
 
     .image {
         /* height: 10rem; */
-        height: 6rem;
+        height: 7rem;
     }
 
     .title{
