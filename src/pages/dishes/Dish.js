@@ -18,7 +18,7 @@ export const Dish = () => {
     window.scrollTo(0, 0)
   }, [data]);
 
-  if ( isLoading && image) return <Spinner />
+  if ( isLoading && !image) return <Spinner />
   return (
     <Layout>
       {image && data ?
