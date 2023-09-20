@@ -172,13 +172,22 @@
 @media only screen and (min-width: 280px) and (max-width: 375px) {
     .miniContainer {
         top: 7rem;
-        width: 90%;
+        width: 70%;
     }
 
     .image {
         /* height: 10rem; */
-        height: 8rem;
+        height: 6rem;
     }
+
+    .title{
+        font-size: 1.5rem;
+    }
+
+    .description{
+        font-size: 1rem;
+    }
+
 }
 
 @media only screen and (width: 280px) {
