@@ -137,6 +137,7 @@
 @media only screen and (max-width: 768px) {
     .miniContainer {
         width: 80%;
+        top: 8rem
     }
     .title{
         font-size: 1.8rem;
@@ -171,7 +172,7 @@
 
 @media only screen and (min-width: 280px) and (max-width: 375px) {
     .miniContainer {
-        top: 10rem;
+        top: 5rem;
         width: 80%;
     }
 
