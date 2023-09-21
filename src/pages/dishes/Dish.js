@@ -41,7 +41,7 @@ export const Dish = () => {
             </div>
           </div>
         </div>
-        : <div style={{ backgroundColor: "black", width: "100%", height: "100%", position: "absolute", top: "0", zIndex: "1" }}><Spinner /> </div>}
+        : <div style={{ backgroundColor: "black", width: "100%", height: "100%", position: "absolute", top: "0", zIndex: "2" }}><Spinner /> </div>}
     </Layout>
   );
 }

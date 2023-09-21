@@ -12,7 +12,7 @@ import {
 import Layout from '../../components/layout';
 import { Spinner } from './../../components/shared/Spinner';
 import image from '../../assets/oldPaperSheet.png'
-import forkAndKnife from '../../assets/fork-knife.png'
+import forkAndKnife from '../../assets/forkAndKnife.png'
 import styles from "./dishes.module.css"
 
 
