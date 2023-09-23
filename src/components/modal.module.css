@@ -15,6 +15,8 @@
     right: 0;
     left: 0;
     bottom: 0;
+  font-family: HelveticaNeue, Helvetica, Sans-ns-Serif;
+    font-size: 1.2rem;
 }
 
 .miniContainer {
@@ -27,6 +29,7 @@
     justify-content: center;
     border-radius: 5px;
     margin-top: 10%;
+    padding-top: 0.5rem;
 }
 
 .modalBtn {
@@ -34,8 +37,6 @@
     width: 50%;
     height: 8%;
     margin-top: 2%;
-    /* background-color: #4098d3; */
-    /* background-color: rgb(140, 147, 155); */
     background-image: linear-gradient(to right,  #583020, #f7c2ad);
     border-radius: 30px;
     border: 5px;
@@ -55,37 +56,43 @@
 /*Media queris*/
 @media only screen and (min-width: 913px) and (max-width: 1280px) {
     .miniContainer {
-   margin-top: 11%;
-   width: 70%;
+   margin-top: 15%;
+   width: 60%;
     }
 }
 
 @media only screen and (min-width: 820px) and (max-width: 912px) {
     .miniContainer {
-   margin-top: 18%;
+   margin-top: 30%;
    width: 80%;
     }
 }
 
-@media only screen and (min-width: 540px) and (max-width: 768px){
+
+@media only screen and (min-width: 540px) and (max-width: 819px){
     .miniContainer {
         margin-top: 25%;
         width: 80%;
          }
 }
 
-@media only screen and (min-width: 360px) and (max-width: 414px){
-    .miniContainer {
-        margin-top: 35%;
-        width: 85%;
-    height: 50%;
 
-         }
+@media only screen and (max-width: 539px){
+    /* .miniContainer {
+        margin-top: 35%;
+        width: 90%;
+         } */
+
+         .miniContainer {
+            margin-top: 25%;
+            width: 90%;
+             }
 }
 
-@media only screen and (width: 280px){
+
+@media only screen and (max-width: 280px){
     .miniContainer {
-        margin-top: 45%;
-        width: 80%;
+        margin-top: 30%;
+        width: 90%;
          }
 }

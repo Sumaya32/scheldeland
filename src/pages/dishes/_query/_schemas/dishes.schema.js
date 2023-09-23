@@ -165,6 +165,7 @@ query {
         SupplementMeta {
           title
         }
+        id
       }
     }
   }

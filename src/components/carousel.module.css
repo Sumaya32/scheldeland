@@ -2,7 +2,7 @@
     --main-color: white;
     --title-color: black;
     --background-color: rgb(248, 243, 243);
-    --title-font-family:  "Lucida Handwriting", sans-serif;
+    --title-font-family:  "Dancing Script", cursive ;
     --indicator-is-active: gray;
 }
 
@@ -100,8 +100,9 @@
 }
 
 .price{
-    font-size: 1.2rem;
-    color: #838282;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #4f4e4e;
 
 }
 
@@ -109,7 +110,12 @@
     .title {
     margin: 0.5rem 0 1.8rem 0;
 }
+
+.slide {
+    border-radius: 0;
 }
+}
+
 
 @media only screen and (width: 280px) {
     .title {

@@ -22,7 +22,7 @@ export const About = () => {
   useEffect(() => {
     data && Object.entries(data)?.map(([item,index])=>{
       setEmployeePicture([
-        {picture: `${item?.grouAImage}${index?.sourceUrl}`}
+        {picture: `${item?.groupAImage}${index?.sourceUrl}`}
       ])
     })
 
@@ -67,7 +67,7 @@ export const About = () => {
               <div className={styles.groupASmallImageContainer}>
                 {employeePictures && employeePictures?.map((item) =>
                   <div key={item.altText} onClick={() => { setIsOpen(true); setVisiblePicture((prev) => ({ ...prev, picture: item.picture, altText: item.altText })) }} styles={{ cursor: "pointer" }} className={styles.imageMiniContainer}>
-                    <img key={item?.altText} src={item?.picture} alt={item?.altText} className={styles.grouAImage} />
+                    <img key={item?.altText} src={item?.picture} alt={item?.altText} className={styles.groupAImage} />
                   </div>
                 )}
 
