@@ -19,7 +19,7 @@ const Header = () => {
       
     return (
         <header>
-            <a href="/" className={style.logoContainer}><img src="/logo.png" className={style.logo}/></a>
+            <a href="/" className={style.logoContainer}><img src="/logo2.png" className={style.logo}/></a>
             <nav ref={navRef} className={toggled ? style.responsive_nav : ""} >
                 <NavLink to="/" className={({ isActive }) => (isActive ? `${style.active} ${style.navlink}` : `${style.inactive}`)} onClick={()=> {handleClick(); setToggled(false)}}>
                     Home

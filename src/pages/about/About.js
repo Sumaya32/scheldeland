@@ -4,6 +4,7 @@ import Layout from '../../components/layout';
 import { Spinner } from './../../components/shared/Spinner';
 import styles from './about.module.css'
 import { Modal2 } from '../../components/Modal'
+import image from "../../assets/bloemen5.jpg"
 
 
 export const About = () => {
@@ -55,6 +56,7 @@ export const About = () => {
   return (
     <Layout>
       <div className={styles.container}>
+      <div className={`${styles.mainImageContainer} ${styles.mainFixedImage}`} style={{ backgroundImage: `url(${image})` }}></div>
         <div className={styles.miniContainer}>
           <div className={styles.groupAContainer}>
             <div key={data?.goalDescription} className={styles.groupADescription}>

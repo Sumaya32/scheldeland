@@ -1,5 +1,15 @@
+html, body{
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to right, #572d1d, #d08060 ,  #f9b292 );
+
+}
 .contactContainer{
     font-family: Helvitica, "bradley Hand";
+    /* background-image: linear-gradient(40deg, #361f16, #ae7964 ,  #f9b292 ); */
+height: 100%;
 }
 
 .iframeContainer {
@@ -19,7 +29,6 @@
 }
 
 .smallContainer {
-    /* background-color: red; */
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -27,6 +36,7 @@
     margin: 5rem 0 2rem 0;
      font-size: 1.3rem;
      text-align: center;
+     height: 100%;
 }
 
 .adressContainer {
@@ -40,9 +50,9 @@
 .adressMiniContainer {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     height: 30%;
-    width: 100%;
+    width: 50%;
     margin-top: 1.2rem;
     font-weight: lighter;
 }
@@ -51,28 +61,31 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 60%;
+    width: 40%;
 }
 
 .phone {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 60%;
+    width: 40%;
 }
 
-.email {
+/* .email {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 50%;
     overflow-wrap: break-word;
-}
+} */
 
-.email:hover,
+/*Backround color have to be changed to dark orang*/
+
+/* .email:hover, */
 .phone:hover,
 .address:hover {
-    filter: invert(85%) sepia(44%) saturate(5203%) hue-rotate(309deg) brightness(97%) contrast(93%);
+       filter: invert(78%) sepia(61%) saturate(3923%) hue-rotate(324deg) brightness(99%) contrast(94%);
+    /* filter: invert(44%) sepia(72%) saturate(466%) hue-rotate(333deg) brightness(89%) contrast(92%); */
 }
 
 a {

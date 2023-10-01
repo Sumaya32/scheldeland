@@ -4,7 +4,7 @@ import { useGetHome } from './_query';
 import Layout from '../../components/layout';
 import { Spinner } from './../../components/shared/Spinner';
 import { Carousel } from '../../components/Carousel'
-import image from "../../assets/zwarteVrouw.jpg"
+import image from "../../assets/mainImage.jpg"
 import styles from "./index.module.css";
 
 export const Home = () => {
@@ -17,7 +17,7 @@ export const Home = () => {
       <div className={styles.container}>
 
         <div className={styles.mainFixedImageContainer}>
-          <div className={`${styles.mainImageContainer} ${styles.mainFixedImage}`} style={{ backgroundImage: `url(${data?.mainimage?.sourceUrl})` }} onClick={() => setIsImageText(isImageText => !isImageText)}>
+          <div className={`${styles.mainImageContainer} ${styles.mainFixedImage}`} style={{ backgroundImage: `url(${image})` }}>
             <div className={isImageText === true ? `${styles.imageInfoContainer}` : `${styles.hiddenText}`} > <div className={styles.imageInfotext} >Image rights - Krisje Vandegaer</div></div>
           </div>
           <div className={styles.descriptionContainer}>
@@ -34,7 +34,7 @@ export const Home = () => {
 
             <Carousel items={data && data?.gerechten?.map((item) => item.gerechtmeta)} />
 
-            <div className={`${styles.cardContainer}`}>
+            {/* <div className={`${styles.cardContainer}`}>
 
               {data?.gerechten?.map((item) =>
                 <div key={item.slug} className={styles.card}>
@@ -45,35 +45,26 @@ export const Home = () => {
                   </NavLink>
                 </div>
               )}
-            </div>
+            </div> */}
           </div>
         </div>
+
+
+
+
+
+
+        <div className={styles.contentOuter2}>
+
+          <div className={`${styles.middleContainer} ${styles.secondMiddleContainer}`}>
+          <div > <h1 className={`${styles.topTitle}`}>Populaire Sharing food</h1>     </div>
+          <Carousel items={data && data?.sharingfood?.map((item) => item.sharingFoodmeta)} />
+          </div>
+        </div>
+
 
 
       </div>
     </Layout>
   );
 }
-
-
-{/* <div className={styles.containerSharingFoodImage}><h1 className={styles.sharingTopTitle}>Top 3 Sharing food</h1></div>   */ }
-
-{/* <Carousel items={data && data?.sharingfood?.map((item)=> item.sharingFoodmeta)}  /> */ }
-
-
-{/* 
-        
-        <div className={styles.middleContainer}>
-        <div className={styles.cardContainer}>
-          {data?.sharingfood?.map((item) =>
-            <div key={item.slug} className={styles.card}>
-              <Link to={`${"menu"}/${item.slug}`} className={styles.link}>
-                <img src={item?.sharingFoodmeta?.menuimage?.sourceUrl} className={styles.dishesImage} />
-                <div className={styles.dishesTitle}>{item.sharingFoodmeta?.title}</div>
-                <p className={styles.price}>{item.sharingFoodmeta?.price}</p>
-              </Link>
-
-            </div>
-          )}
-        </div> 
-                </div>*/}
