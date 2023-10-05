@@ -262,7 +262,6 @@ body {
 
     .headTitle {
         font-size: 1.7rem;
-
     }
 
     .dishTitle {
@@ -293,4 +292,13 @@ body {
     .forkAndKnife {
         margin-bottom: 1.5rem;
     } */
+}
+
+
+
+
+@media only screen and (max-width: 361px) {
+    .headTitle {
+        font-size: 1.4rem;
+    }
 }

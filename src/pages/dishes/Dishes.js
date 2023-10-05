@@ -48,7 +48,7 @@ export const Dishes = () => {
   }, [mainDish, mainDishLoading, sharingFood, dessert, appetizer,
     monthlyDish, kidsMenu, kidsDessert, supplement])
 
-  // if (sharingFoodLoading && !image && !forkAndKnife) return <Spinner />
+  if (sharingFoodLoading && !image && !forkAndKnife) return <Spinner />
   //style={{ backgroundImage: ` url(${image})` }}
   return (
     //style={{ backgroundImage: `url(${image})` }}

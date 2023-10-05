@@ -52,7 +52,7 @@ export const About = () => {
     ])
   }, [data]);
 
-  if (isLoading) return <Spinner />
+  if (isLoading && !image) return <Spinner />
   return (
     <Layout>
       <div className={styles.container}>

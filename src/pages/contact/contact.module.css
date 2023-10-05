@@ -3,7 +3,8 @@ html, body{
     width: 100%;
     margin: 0;
     padding: 0;
-    background-image: linear-gradient(to right, #572d1d, #d08060 ,  #f9b292 );
+    /* background-image: linear-gradient(to right, #572d1d, #d08060 ,  #f9b292 ); */
+    background-color: rgb(242, 240, 237);
 
 }
 .contactContainer{
@@ -85,7 +86,7 @@ height: 100%;
 .phone:hover,
 .address:hover {
        filter: invert(78%) sepia(61%) saturate(3923%) hue-rotate(324deg) brightness(99%) contrast(94%);
-    /* filter: invert(44%) sepia(72%) saturate(466%) hue-rotate(333deg) brightness(89%) contrast(92%); */
+    filter: invert(44%) sepia(72%) saturate(466%) hue-rotate(333deg) brightness(89%) contrast(92%);
 }
 
 a {
