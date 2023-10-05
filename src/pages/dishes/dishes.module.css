@@ -32,10 +32,12 @@ body {
     position: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    -webkit-background-size: 100% 100%;
+
+    /* background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
-    -o-background-size: cover; 
+    -o-background-size: cover;  */
     margin: 0;
     padding: 0;
     top: 0;
