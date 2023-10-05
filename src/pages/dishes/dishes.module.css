@@ -33,7 +33,9 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     -webkit-background-size: 100% 100%;
-
+    background-size: 100% 100%;
+    -moz-background-size:100% 100%;
+    -o-background-size: 100% 100%;
     /* background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -48,25 +50,18 @@ body {
 
 
 .backgroundImageContainer {
-    /* width: 100%; */
     display: flex;
     flex-direction: column;
     justify-items: center;
     align-items: center;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
     align-items: center;
     padding: 1.3rem 0 3rem 0;
-    /* width: 50rem; */
     height: 100%;
     margin: 1rem 0 2.5rem 0;
     color: black;
     border-top-right-radius: 50%;
     border-top-left-radius: 50%;
-    /* min-width: fit-content; */
     padding: 0 5rem 0 5rem;
-    /* filter: invert(0%) sepia(1%) saturate(100%) hue-rotate(345deg) brightness(90%) contrast(90%); */
 }
 
 .sharingContainer {
@@ -261,7 +256,7 @@ body {
 
     }
 
-    .headTitle {
+    .headTitle, .kisdMenuTitle {
         font-size: 1.7rem;
     }
 

@@ -118,6 +118,7 @@ margin-bottom: 1rem;
     width: 50%;
     display: flex;
     margin-bottom: 0.4rem;
+
 }
 
 .days {
@@ -205,26 +206,27 @@ margin-bottom: 1rem;
     }
 
     .hours {
-        padding-bottom: 5%;
+        /* padding-bottom: 5%; */
         width: 100%;
         text-align: center;
     }
 
-    .email {
-        padding: 2% 2% 5% 2%;
-    }
-
     .phone {
-        padding: 2% 2% 5% 2%;
+        padding: 0% 2% 7% 2%;
+        padding: 1rem 2rem 2rem 2rem
+
     }
 
     .address {
-        padding: 2% 2% 5% 2%;
+        padding: 1rem 2rem 2rem 2rem
     }
+    
 
     .iframeContainer {
         height: 500px;
     }
+
+    
 }
 
 
@@ -289,25 +291,27 @@ margin-bottom: 1rem;
     }
 
     .hours {
-        padding-bottom: 5%;
+        padding-bottom: 2%;
         width: 100%;
         text-align: center;
     }
 
-    .email {
-        padding: 2% 2% 7% 2%;
-    }
-
     .phone {
         padding: 0% 2% 7% 2%;
+        padding: 1rem 2rem 2rem 2rem
+
     }
 
     .address {
-        padding: 2% 2% 7% 2%;
+        padding: 1rem 2rem 2rem 2rem
     }
     
     .iframe{
         padding-top: 3.5rem;
+    }
+
+    .openingHoursTitle{
+    margin-bottom: 0rem;
     }
 }
 

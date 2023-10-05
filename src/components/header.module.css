@@ -115,7 +115,7 @@ header .nav_btn {
         /* background-color: yellow; */
         position: absolute;
         top: 2rem;
-        right: 1rem
+        right: 1.5rem
 
 
     }
@@ -145,7 +145,7 @@ header .nav_btn {
     header .nav_close_btn {
         position: absolute;
         top: 2rem;
-        right: 1rem
+        right: 1.5rem
     }
 
     nav a {
