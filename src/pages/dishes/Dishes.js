@@ -11,7 +11,7 @@ import {
 } from './_query';
 import Layout from '../../components/layout';
 import { Spinner } from './../../components/shared/Spinner';
-import image from "../../assets/background6.jpg";
+import image from "../../assets/DishesBackgroundImage.jpg";
 // import image from "../../assets/background4.jpg"
 import forkAndKnife from '../../assets/forkAndKnife.png'
 import styles from "./dishes.module.css"
