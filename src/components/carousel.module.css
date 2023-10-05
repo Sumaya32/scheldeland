@@ -52,12 +52,12 @@
 }
 
 .arrowLeft {
-    left: 1.2rem;
+    left: 1.7rem;
     top: 40%
 }
 
 .arrowRight {
-    right: 1.2rem;
+    right: 1.7rem;
     top: 40%
 }
 
@@ -142,12 +142,12 @@
 }
 
 .arrowLeft {
-    left: 0.5rem;
+    left: 2rem;
     top: 35%
 }
 
 .arrowRight {
-    right: 0.5rem;
+    right: 2rem;
     top: 35%
 }
 
@@ -168,7 +168,9 @@
 
 .carousel {
 
-    height: 450px;
+    /* height: 450px; */
+    height: 400px;
+
     width: 500px;
 
 
@@ -194,19 +196,31 @@
 
 .indicators {
 
-  top: 50%; 
+  top: 45%; 
 }
 }
 
 
 @media only screen and (width: 768px) {
     .carousel {
-
-        /* width: 700px; */
-
         height: 600px;
-    
     }
+
+    .arrowLeft {
+        left: -7rem;
+        top: 35%
+    }
+    
+    .arrowRight {
+        right: -7rem;
+        top: 35%
+    }
+
+    .indicators {
+
+        top: 55%; 
+      }
+    
 }
 
 

@@ -4,7 +4,7 @@ html, body{
     margin: 0;
     padding: 0;
     /* background-image: linear-gradient(to right, #572d1d, #d08060 ,  #f9b292 ); */
-    background-color: rgb(242, 240, 237);
+    background-color: rgb(245, 236, 225);
 
 }
 .contactContainer{
@@ -14,7 +14,6 @@ height: 100%;
 }
 
 .iframeContainer {
-    background-color:  #D5D8DB;
     width: 100%;
     overflow: hidden;
     height: 500px;

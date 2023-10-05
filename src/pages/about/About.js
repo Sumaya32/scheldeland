@@ -55,6 +55,7 @@ export const About = () => {
   if (isLoading && !image) return <Spinner />
   return (
     <Layout>
+      { data && image ?
       <div className={styles.container}>
       <div className={`${styles.mainImageContainer} ${styles.mainFixedImage}`} style={{ backgroundImage: `url(${image})` }}></div>
         <div className={styles.miniContainer}>
@@ -99,6 +100,9 @@ export const About = () => {
           </Modal2>}
         </div>
       </div>
+
+      : <div style={{ backgroundColor: "black", width: "100%", height: "100%", position: "absolute", top: "0", zIndex: "2" }}><Spinner /> </div>}
+
     </Layout>
   );
 }

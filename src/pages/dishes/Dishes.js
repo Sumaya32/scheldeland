@@ -49,12 +49,10 @@ export const Dishes = () => {
     monthlyDish, kidsMenu, kidsDessert, supplement])
 
   if (sharingFoodLoading && !image && !forkAndKnife) return <Spinner />
-  //style={{ backgroundImage: ` url(${image})` }}
   return (
-    //style={{ backgroundImage: `url(${image})` }}
     <>
       {
-        sharingFood && forkAndKnife && image ?
+        sharingFood && image ?
           <Layout>
             <div className={styles.container} >
              
@@ -63,8 +61,6 @@ export const Dishes = () => {
                 <div className={styles.miniSContainer}>
                 <div className={`${styles.backgroundImageContainer} ${styles.sharingContainer}`} >
                   <h2 className={styles.headTitle} style={{ fontFamily: "Dancing Script, cursive" }}>Sharing food</h2>
-                  {/* <img className={styles.forkAndKnife} ssrc={forkAndKnife} alt='fork-knife' /> */}
-
                   <div className={styles.contentContainer}>
                     <div className={styles.miniContainer}>
 
@@ -80,7 +76,6 @@ export const Dishes = () => {
                       })}
 
                     </div>
-                    {/* <img src='./line.png' className={styles.menuLineImage} alt='line under the menu' /> */}
                   </div>
                 </div>
 
@@ -101,15 +96,6 @@ export const Dishes = () => {
                     </div>
                   </div>
                 </div>
-
-
-                {/* <div className={styles.backgroundImageContainer} style={{ backgroundImage: ` url(${image})` }}> */}
-
-
-
-                {/* <img className={styles.forkAndKnife} src={forkAndKnife} alt='fork and knife' /> */}
-
-
 
                 <div className={`${styles.backgroundImageContainer} ${styles.mainDishContainer}`}>
                   <h2 className={styles.headTitle}>Hoofdgerechten</h2>
@@ -172,14 +158,9 @@ export const Dishes = () => {
                   </div>
                 </div>
 
-
-
-                {/* <div className={styles.backgroundImageContainer} style={{ backgroundImage: ` url(${image})` }}> */}
-
                 <div className={`${styles.backgroundImageContainer} ${styles.test3}`}>
 
                   <h2 className={`${styles.headTitle} ${styles.desertTitle}`} >Maandelijkse Menu's</h2>
-                  {/* <img className={styles.forkAndKnife} src={forkAndKnife} alt='fork and knife' /> */}
                   <div className={styles.contentContainer}>
                     <div className={styles.miniContainer}>
                       {monthlyDishDescArray?.sort((a, b) => a?.node.maandelijkseMenuMeta.title < b?.node.maandelijkseMenuMeta.title ? -1 : 1).map((item) => {
@@ -197,11 +178,9 @@ export const Dishes = () => {
                   </div>
                 </div>
 
-                {/* <div className={styles.backgroundImageContainer} style={{ backgroundImage: ` url(${image})` }}> */}
                 <div className={`${styles.backgroundImageContainer} ${styles.appetizerContainer}`}>
 
                   <h2 className={`${styles.headTitle} ${styles.desertTitle}`} >Dessert</h2>
-                  {/* <img className={styles.forkAndKnife} src={forkAndKnife} alt='fork and knife' /> */}
                   <div className={styles.contentContainer} >
                     <div className={styles.miniContainer}>
                       {dessertDescArray?.sort((a, b) => a?.node.dessertmeta.title < b?.node.dessertmeta.title ? -1 : 1).map((item) => {
@@ -237,7 +216,6 @@ export const Dishes = () => {
                         </div>
                       })}
                     </div>
-                    {/* <img src='./line.png' className={styles.menuLineImage} alt='line under the the menu' /> */}
                   </div>
 
                 </div>

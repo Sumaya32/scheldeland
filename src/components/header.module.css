@@ -14,6 +14,10 @@
     margin: 0.4rem 0 0 4rem;
     width: 6rem;
     height: 60%;
+    background-color: rgba(255, 255, 255, 0.5);
+    -webkit-backdrop-filter: blur(5px);
+backdrop-filter: blur(5px);
+border-radius: 10px;
 }
 
 .logo {
@@ -81,11 +85,11 @@ header .nav_btn {
 .faTimes,
 .faBars {
     color: var(--menubar-color);
-    margin-bottom: -5px;
+    /* margin-bottom: -5px; */
 }
 
 .faBars {
-    height: 1.5rem;
+    height: 1.8rem;
 }
 
 
@@ -97,22 +101,23 @@ header .nav_btn {
     }
 }
 
-@media only screen and (width: 820px) {
-    .logoContainer {
-        margin: 0.4rem 3rem 0 1rem;
-
-    }
-}
-
 
 @media only screen and (max-width: 900px) {
     header {
-        height: 60px;
+        height: 80px;
+        /* height: 100px; */
+
     }
 
     header .nav_btn {
         visibility: visible;
         opacity: 1;
+        /* background-color: yellow; */
+        position: absolute;
+        top: 2rem;
+        right: 1rem
+
+
     }
 
     header nav {
@@ -139,8 +144,8 @@ header .nav_btn {
 
     header .nav_close_btn {
         position: absolute;
-        top: 1rem;
-        right: 2rem
+        top: 2rem;
+        right: 1rem
     }
 
     nav a {
@@ -152,4 +157,19 @@ header .nav_btn {
         width: 4rem;
     }
 
+    .logoContainer {
+        margin: 1rem 0 0 0rem;
+        /* width: 6rem; */
+        /* background-color: red; */
+        height: 50%;
+    }
+
 }
+
+@media only screen and (width: 820px) {
+    .logoContainer {
+        margin: 0.4rem 3rem 0 1rem;
+    }
+}
+
+
