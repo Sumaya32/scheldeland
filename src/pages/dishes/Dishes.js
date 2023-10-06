@@ -50,9 +50,9 @@ export const Dishes = () => {
 
   if (sharingFoodLoading && !image && !forkAndKnife) return <Spinner />
   return (
-    <>
-      {
-        sharingFood && image ?
+    // <>
+    //   {
+    //     sharingFood && image ?
           <Layout>
             <div className={styles.container} >
              
@@ -224,9 +224,9 @@ export const Dishes = () => {
 
             </div>
           </Layout >
-          : <div style={{ backgroundColor: "black", width: "100%", height: "100%", position: "absolute", top: "0", zIndex: "1" }}><Spinner /> </div>}
+    //       : <div style={{ backgroundColor: "black", width: "100%", height: "100%", position: "absolute", top: "0", zIndex: "1" }}><Spinner /> </div>}
 
-    </>
+    // </>
   );
 }
 
