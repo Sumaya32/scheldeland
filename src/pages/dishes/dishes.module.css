@@ -304,7 +304,7 @@ body {
 
 @media only screen and (max-width: 450px) {
     ::-webkit-scrollbar {
-        width: 0.2px;
+        width: 1px;
         background-color: black;
         border: 1px solid transparent;
         background-clip: content-box;
@@ -313,7 +313,7 @@ body {
     ::-webkit-scrollbar-thumb {
         background-color: black;
         border-radius: 20px;
-        border: 0.2px solid transparent;
+        border: 1px solid transparent;
         background-clip: content-box;
     }
     /* ::-webkit-scrollbar-thumb:hover {
