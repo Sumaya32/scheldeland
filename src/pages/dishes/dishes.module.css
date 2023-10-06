@@ -57,7 +57,10 @@ overflow: scroll;
     background-repeat: no-repeat;
     background-position: center center;
     background-repeat: no-repeat;
+    background-size: 100% 100%;
     -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
     background-attachment: fixed;
 
 
@@ -67,10 +70,10 @@ overflow: scroll;
     -o-background-size: cover; */
     margin: 0;
     padding: 0;
-    top: 0;
+    /* top: 0;
     bottom: 0;
     left: 0;
-    right: 0;
+    right: 0; */
 
     /* margin: 0; */
     /* overflow: hidden; */
@@ -332,12 +335,7 @@ overflow: scroll;
 
 
 @media only screen and (max-width: 450px) {
-    body{
-        position: absolute;
-        top: 0.5px;
-    }
-    
-    .headTitle {
+    .headTitle, .kisdMenuTitle {
         font-size: 1.5rem;
     }
 
