@@ -339,6 +339,19 @@ body {
 
 
 @media only screen and (max-width: 450px) {
+    
+body {
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    background: 0 0;
+    -webkit-overflow-scrolling: touch;
+    /* overflow-x: auto;
+    overflow-y: scroll; */
+}
+
     .headTitle {
         font-size: 1.5rem;
     }
