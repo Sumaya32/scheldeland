@@ -303,10 +303,10 @@ body {
 
 
 @media only screen and (max-width: 450px) {
-    /* ::-webkit-scrollbar {
+    ::-webkit-scrollbar {
         width: 10px;
     }
-    ::-webkit-scrollbar-thumb {
+    /* ::-webkit-scrollbar-thumb {
         background-color: #d6dee1;
         border-radius: 20px;
         border: 3px solid transparent;
