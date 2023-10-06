@@ -3,9 +3,21 @@
 html,
 body {
     height: 100%;
-    width: 100%;
+    /* width: 100%;
+    margin: 0;
+    padding: 0; */
+}
+
+body {
+    /* position: fixed;
     margin: 0;
     padding: 0;
+    border: 0;
+    outline: 0;
+    background: 0 0;
+    -webkit-overflow-scrolling: touch;
+    overflow-x: auto;
+    overflow-y: scroll; */
 }
 
 
@@ -22,11 +34,11 @@ body {
     background-attachment: fixed;
     background-size: cover; */
     height: 100%;
-    padding: 10rem 0 5rem 0;
-
+    /* padding: 10rem 0 5rem 0; */
+    z-index: 2;
 }
 
-/* .miniSContainer {
+.miniSContainer {
     display: flex;
     flex-direction: column;
     justify-items: center;
@@ -34,28 +46,41 @@ body {
     width: 100%;
     height: 100%;
 }
-     */
+
 
 
 .mainFixedImage {
-    height: 100%;
+    /* height: 100%;
     width: 100%;
     position: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: cover;
+    -webkit-background-size: 100% 100%; */
+
+    /* background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
-    -o-background-size: cover;
-    margin: 0;
+    -o-background-size: cover; */
+    /* margin: 0;
     padding: 0;
     top: 0;
     bottom: 0;
     left: 0;
-    right: 0;
+    right: 0; */
 
+
+
+
+    position: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100%;
+    width: 100%;
+    /* margin: 0; */
+    /* overflow: hidden; */
 
 }
 
@@ -64,13 +89,12 @@ body {
     background-color: red;
     display: flex;
     flex-direction: column;
-    justify-items: center;
     align-items: center;
-  justify-content: center;
+    justify-content: center;
     padding: 1.3rem 0 3rem 0;
-    /* width: 50%; */
+    width: 50%;
     height: 100%;
-    margin: 1rem 0 2.5rem 0;
+    margin: 10rem 0 2.5rem 0;
     color: black;
     border-top-right-radius: 50%;
     border-top-left-radius: 50%;
@@ -251,30 +275,38 @@ body {
 @media only screen and (min-width: 820px) and (max-width: 1280px) {
     .container {
         /* margin-top: 13%; */
-        margin: 7rem 0 10rem 0;
+        padding: 7rem 0 10rem 0;
+        background-color: red;
     }
 
     .backgroundImageContainer {
         padding-top: 2rem;
         /* width: 70%; */
     }
+
+
+    .miniContainer {
+        display: flex;
+        flex-direction: column;
+    }
+
 }
 
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 900px) {
     .container {
         /* margin-top: 20%; */
         /* margin: 5rem 0 7rem 0; */
-        font-size: 0.5rem;
 
     }
 
-    .headTitle, .kisdMenuTitle {
-        font-size: 1.7rem;
+    .headTitle,
+    .kisdMenuTitle {
+        font-size: 2.5rem;
     }
 
     .dishTitle {
-        font-size: 1.4rem;
+        font-size: 2rem;
     }
 
     .miniContainer {
@@ -306,8 +338,12 @@ body {
 
 
 
-@media only screen and (max-width: 361px) {
+@media only screen and (max-width: 450px) {
     .headTitle {
-        font-size: 1.4rem;
+        font-size: 1.5rem;
+    }
+
+    .dishTitle {
+        font-size: 1.3rem;
     }
 }

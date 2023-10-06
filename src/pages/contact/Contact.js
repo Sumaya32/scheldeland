@@ -11,6 +11,7 @@ export const Contact = () => {
   if (isLoading && !url) return <Spinner />
   return (
     <Layout>
+      { url && data ?
       <div className={styles.contactContainer}>
 
         <div className={styles.iframeContainer} >
@@ -62,6 +63,7 @@ export const Contact = () => {
         </div>
 
       </div>
+      : <div style={{ backgroundColor: "black", width: "100%", height: "100%", position: "absolute", top: "0", zIndex: "2" }}><Spinner /> </div>}
     </Layout>
   );
 }

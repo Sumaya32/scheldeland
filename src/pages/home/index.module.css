@@ -103,7 +103,7 @@ backdrop-filter: blur(5px);
 }
 
 
-.contentOuter, .contentOuter2 {
+.CarouselContainerOne, .CarouselContainerTwo {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -117,8 +117,7 @@ backdrop-filter: blur(5px);
     /* -webkit-transform: translate(0, 970px); */
 }
 
-
-.contentOuter2{
+.CarouselContainerTwo{
     margin-top: 10rem;
 }
 
@@ -279,7 +278,7 @@ backdrop-filter: blur(5px);
         margin-bottom: 7rem;
     }
 
-    /* .contentOuter {
+    /* .CarouselContainerOne {
         transform: translate(0, 1800px);
         -webkit-transform: translate(0,1800px);
         -moz-transform:translate(0,1800px);

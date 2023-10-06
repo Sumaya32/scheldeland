@@ -10,8 +10,8 @@ footer {
   font-family: HelveticaNeue, Helvetica, Sans-ns-Serif;
   font-size: 1rem;
   z-index: 1;
-  position: sticky;
-  bottom: 0;
+  /* position: sticky;
+  bottom: 0; */
   text-transform: uppercase;
 }
 

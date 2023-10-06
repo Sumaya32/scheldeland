@@ -52,7 +52,7 @@ export const About = () => {
     ])
   }, [data]);
 
-  if (isLoading && !image) return <Spinner />
+  if (isLoading && image) return <Spinner />
   return (
     <Layout>
       { data && image ?
@@ -101,7 +101,7 @@ export const About = () => {
         </div>
       </div>
 
-      : <div style={{ backgroundColor: "black", width: "100%", height: "100%", position: "absolute", top: "0", zIndex: "2" }}><Spinner /> </div>}
+       : <div style={{ backgroundColor: "black", width: "100%", height: "100%", position: "absolute", top: "0", zIndex: "2" }}><Spinner /> </div>}
 
     </Layout>
   );

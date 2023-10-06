@@ -11,30 +11,45 @@ export const Home = () => {
   const { data, isLoading } = useGetHome();
   const [isImageText, setIsImageText] = useState(false)
 
-  if (image && isLoading) return <Spinner />
+  if (image && isLoading && !data) return <Spinner />
   return (
     <Layout>
-      <div className={styles.container}>
+      {data && image ?
+        <div className={styles.container}>
 
-        <div className={styles.mainFixedImageContainer}>
-          <div className={`${styles.mainImageContainer} ${styles.mainFixedImage}`} style={{ backgroundImage: `url(${image})` }}>
-            <div className={isImageText === true ? `${styles.imageInfoContainer}` : `${styles.hiddenText}`} > <div className={styles.imageInfotext} >Image rights - Krisje Vandegaer</div></div>
+          <div className={styles.mainFixedImageContainer}>
+            <div className={`${styles.mainImageContainer} ${styles.mainFixedImage}`} style={{ backgroundImage: `url(${image})` }}>
+              <div className={isImageText === true ? `${styles.imageInfoContainer}` : `${styles.hiddenText}`} > <div className={styles.imageInfotext} >Image rights - Krisje Vandegaer</div></div>
+            </div>
+            <div className={styles.descriptionContainer}>
+              <h2 className={`${styles.title} ${styles.title}`} >{data?.title}</h2>
+              <div className={styles.description}>{data?.description}</div>
+            </div>
           </div>
-          <div className={styles.descriptionContainer}>
-            <h2 className={`${styles.title} ${styles.title}`} >{data?.title}</h2>
-            <div className={styles.description}>{data?.description}</div>
+
+          <div className={styles.CarouselContainerOne}>
+            <div className={styles.middleContainer}>
+              <div > <h1 className={`${styles.topTitle}`}>Populaire gerechten</h1>     </div>
+              <Carousel items={data && data?.gerechten?.map((item) => item.gerechtmeta)} />
+            </div>
           </div>
+
+          <div className={styles.CarouselContainerTwo}>
+            <div className={`${styles.middleContainer} ${styles.secondMiddleContainer}`}>
+              <div > <h1 className={`${styles.topTitle}`}>Populaire Sharing food</h1>     </div>
+              <Carousel items={data && data?.sharingfood?.map((item) => item.sharingFoodmeta)} />
+            </div>
+          </div>
+
         </div>
+        : <div style={{ backgroundColor: "black", width: "100%", height: "100%", position: "absolute", top: "0", zIndex: "2" }}><Spinner /> </div>}
+    </Layout>
+  );
+}
 
 
-        <div className={styles.contentOuter}>
 
-          <div className={styles.middleContainer}>
-            <div > <h1 className={`${styles.topTitle}`}>Populaire gerechten</h1>     </div>
-
-            <Carousel items={data && data?.gerechten?.map((item) => item.gerechtmeta)} />
-
-            {/* <div className={`${styles.cardContainer}`}>
+{/* <div className={`${styles.cardContainer}`}>
 
               {data?.gerechten?.map((item) =>
                 <div key={item.slug} className={styles.card}>
@@ -46,25 +61,3 @@ export const Home = () => {
                 </div>
               )}
             </div> */}
-          </div>
-        </div>
-
-
-
-
-
-
-        <div className={styles.contentOuter2}>
-
-          <div className={`${styles.middleContainer} ${styles.secondMiddleContainer}`}>
-          <div > <h1 className={`${styles.topTitle}`}>Populaire Sharing food</h1>     </div>
-          <Carousel items={data && data?.sharingfood?.map((item) => item.sharingFoodmeta)} />
-          </div>
-        </div>
-
-
-
-      </div>
-    </Layout>
-  );
-}
