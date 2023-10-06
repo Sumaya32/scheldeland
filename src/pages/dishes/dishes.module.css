@@ -313,7 +313,7 @@ body {
         background-color: black;
         border-radius: 20px;
         border: 0.2px solid transparent;
-        background-clip: border-box;
+        background-clip: padding-box;
     }
     /* ::-webkit-scrollbar-thumb:hover {
         background-color: #bdbdbd;
