@@ -1,16 +1,17 @@
 html, body{
-    height: 100vh;
+    height: 100%;
     width: 100%;
     margin: 0;
     padding: 0;
-    /* background-image: linear-gradient(to right, #572d1d, #d08060 ,  #f9b292 ); */
-    background-color: rgb(245, 236, 225);
+    /* background-color: rgb(245, 236, 225); */
 
 }
 .contactContainer{
     font-family: Helvitica, "bradley Hand";
     /* background-image: linear-gradient(40deg, #361f16, #ae7964 ,  #f9b292 ); */
 height: 100%;
+background-color: rgb(245, 236, 225);
+
 }
 
 .iframeContainer {

@@ -57,7 +57,7 @@ export const Dishes = () => {
             <div className={styles.container} >
              
 
-                {/* <div className={`${styles.mainFixedImage}`} style={{ backgroundImage: `url(${image})` }}></div> */}
+                <div className={`${styles.mainFixedImage}`} style={{ backgroundImage: `url(${image})` }}></div>
                 <div className={styles.miniSContainer}>
                 <div className={`${styles.backgroundImageContainer} ${styles.sharingContainer}`} >
                   <h2 className={styles.headTitle} style={{ fontFamily: "Dancing Script, cursive" }}>Sharing food</h2>
@@ -221,7 +221,7 @@ export const Dishes = () => {
                 </div>
 
               </div>
-
+hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
             </div>
           </Layout >
     //       : <div style={{ backgroundColor: "black", width: "100%", height: "100%", position: "absolute", top: "0", zIndex: "1" }}><Spinner /> </div>}
