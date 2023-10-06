@@ -55,9 +55,11 @@ export const Dishes = () => {
     //     sharingFood && image ?
           <Layout>
             <div className={styles.container} >
+
+              
                 <div className={`${styles.mainFixedImage}`} style={{ backgroundImage: `url(${image})` }}></div>
 
-                
+
                 <div className={styles.miniSContainer}>
 
                 <div className={`${styles.backgroundImageContainer} ${styles.sharingContainer}`} >
@@ -100,7 +102,6 @@ export const Dishes = () => {
 
                 <div className={`${styles.backgroundImageContainer} ${styles.mainDishContainer}`}>
                   <h2 className={styles.headTitle}>Hoofdgerechten</h2>
-
                   <div className={styles.contentContainer}>
                     <div className={`${styles.miniContainer}`}>
 
@@ -121,11 +122,9 @@ export const Dishes = () => {
                     <div className={styles.extraInfo}><p>Alle steaks zijn te verkrijgen met Bearnaisesaus, pepersaus of Champignonsaus</p>  </div>
 
                   </div>
-
                 </div>
 
                 <div className={`${styles.backgroundImageContainer} ${styles.mainDishContainer}`}>
-
                   <h3 className={styles.supplementHeadTitle}>Supplementen</h3>
                   <div className={styles.supplementContainer}>
                     {supplementDescArray?.sort((a, b) => a?.node.SupplementMeta.title < b?.node.SupplementMeta.title ? -1 : 1).map((item) => {
@@ -160,7 +159,6 @@ export const Dishes = () => {
                 </div>
 
                 <div className={`${styles.backgroundImageContainer} ${styles.test3}`}>
-
                   <h2 className={`${styles.headTitle} ${styles.desertTitle}`} >Maandelijkse Menu's</h2>
                   <div className={styles.contentContainer}>
                     <div className={styles.miniContainer}>
@@ -180,7 +178,6 @@ export const Dishes = () => {
                 </div>
 
                 <div className={`${styles.backgroundImageContainer} ${styles.appetizerContainer}`}>
-
                   <h2 className={`${styles.headTitle} ${styles.desertTitle}`} >Dessert</h2>
                   <div className={styles.contentContainer} >
                     <div className={styles.miniContainer}>
@@ -196,8 +193,6 @@ export const Dishes = () => {
                       })}
                     </div>
                   </div>
-
-
                 </div>
 
 
@@ -218,7 +213,6 @@ export const Dishes = () => {
                       })}
                     </div>
                   </div>
-
                 </div>
 
               </div>
