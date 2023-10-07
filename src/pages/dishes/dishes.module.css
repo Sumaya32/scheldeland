@@ -22,6 +22,7 @@ body {
     flex-direction: column;
     justify-items: center;
     align-items: center;
+    margin:5rem 0 5rem 0;
 }
 
 
@@ -46,7 +47,7 @@ body {
     left: 0;
     right: 0;
     overflow-y: scroll;
-
+/* z-index: 1; */
     /* margin: 0; */
     /* overflow: hidden; */
 
@@ -62,7 +63,9 @@ body {
     padding: 1.3rem 0 3rem 0;
     width: 50%;
     height: 100%;
-    margin: 10rem 0 2.5rem 0;
+    /* margin: 10rem 0 2.5rem 0; */
+    margin: 5rem 0 2.5rem 0;
+
     color: black;
     border-top-right-radius: 50%;
     border-top-left-radius: 50%;

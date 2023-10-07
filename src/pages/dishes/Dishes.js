@@ -50,8 +50,8 @@ export const Dishes = () => {
   if (sharingFoodLoading && mainDishLoading && image) return <Spinner />
   return (
 
+<>
 
-    <Layout>
       {
         sharingFood && image ?
           // <div className={styles.container} >
@@ -59,7 +59,7 @@ export const Dishes = () => {
 
             {/* <div className={`${styles.mainFixedImage}`} style={{ backgroundImage: `url(${image})` }}></div> */}
 
-
+            <Layout>
             <div className={styles.miniSContainer}>
 
               <div className={`${styles.backgroundImageContainer} ${styles.sharingContainer}`} >
@@ -216,9 +216,10 @@ export const Dishes = () => {
               </div>
 
             </div>
+            </Layout >
           </div>
           : <div style={{ backgroundColor: "black", width: "100%", height: "100%", position: "absolute", top: "0", zIndex: "2" }}><Spinner /> </div>}
-    </Layout >
+</>
   );
 }
 
