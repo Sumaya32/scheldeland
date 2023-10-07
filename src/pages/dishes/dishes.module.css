@@ -6,16 +6,15 @@ body {
     width: 100%;
     margin: 0;
     padding: 0;
-  background-color: black;
-  /* position: fixed; */
+  /* background-color: rgb(191, 26, 26); */
 
 }
 
 
 .container {
     font-family: "Dancing Script", cursive;
-  /* background-color: rgba(0, 0, 0, 0.5); */
-
+    /* background-color: black; */
+    height: 100%;
 }
 
 .miniSContainer {
@@ -23,10 +22,74 @@ body {
     flex-direction: column;
     justify-items: center;
     align-items: center;
-    margin:5rem 0 5rem 0;
+    margin:5rem 0 0rem 0;
 }
 
 
+.test{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-attachment: fixed; 
+    width: 100%;
+
+    /* margin-bottom: 10rem; */
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+height: 100vh;
+}
+
+.betweenDivs{
+    background-color: black;
+    width: 100%;
+    height: 2px;
+}
+.test2{
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-attachment: fixed; 
+
+    /* margin-bottom: 5rem; */
+}
+
+
+.test4{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+min-height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-attachment: fixed; 
+}
 
 .mainFixedImage {
     height: 100%;
@@ -63,7 +126,7 @@ body {
     justify-content: center;
     padding: 1.3rem 0 3rem 0;
     width: 50%;
-    height: 100%;
+    /* height: 100%; */
     /* margin: 10rem 0 2.5rem 0; */
     margin: 5rem 0 2.5rem 0;
 

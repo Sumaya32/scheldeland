@@ -19,11 +19,11 @@ function App() {
         {/* <Route element={<Maintaince />} path="/" /> */}
         <Route element={<Home />} path="/" />
         <Route element={<Error />} path="/error" />
+        <Route element={<Contact />} path="/contact" />
         
         <Route element={ <Dishes/> } path="/menu" />
           {/* <Route element={<Suspense fallback={<Spinner />}> <Dishes/> </Suspense>} path="/menu" /> */}
         <Route element={<About />} path={`/${('over ons').replace(/\s+/g, '-')}`} />
-        <Route element={<Contact />} path="/contact" />
       </Routes>
     );
 }

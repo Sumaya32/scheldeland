@@ -11,7 +11,14 @@ import {
 } from './_query';
 import Layout from '../../components/layout';
 import { Spinner } from './../../components/shared/Spinner';
-import image from "../../assets/DishesBackgroundImage.jpg";
+import image from "../../assets/sharingfood2.jpg";
+import image2 from "../../assets/DishesBackgroundImage2.jpg";
+import image3 from "../../assets/hoofdgerecht2.jpg";
+import image4 from "../../assets/spaghtti.jpg";
+import image5 from "../../assets/dessert2.jpg";
+
+
+
 import styles from "./dishes.module.css"
 
 
@@ -46,23 +53,19 @@ export const Dishes = () => {
   }, [mainDish, mainDishLoading, sharingFood, dessert, appetizer,
     monthlyDish, kidsMenu, kidsDessert, supplement])
 
-  // console.log("test " + sharingFoodLoading)
-  if (sharingFoodLoading && mainDishLoading && image) return <Spinner />
+  if (sharingFoodLoading) return <Spinner />
   return (
-
-
     <Layout>
       {
         sharingFood && image ?
           <div className={styles.container} >
-
-
-            <div className={`${styles.mainFixedImage}`} style={{ backgroundImage: `url(${image})` }}></div>
-
-
+            {/* <div className={`${styles.mainFixedImage}`} style={{ backgroundImage: `url(${image})` }}></div> */}
             <div className={styles.miniSContainer}>
+              
+              <div className={styles.test} style={{ backgroundImage: `url(${image})` }}>
 
-              <div className={`${styles.backgroundImageContainer} ${styles.sharingContainer}`} >
+            
+              <div className={`${styles.backgroundImageContainer} ${styles.sharingContainer} `} >
                 <h2 className={styles.headTitle} style={{ fontFamily: "Dancing Script, cursive" }}>Sharing food</h2>
                 <div className={styles.contentContainer}>
                   <div className={styles.miniContainer}>
@@ -81,7 +84,10 @@ export const Dishes = () => {
                   </div>
                 </div>
               </div>
+              </div>
+<span className={styles.betweenDivs}></span>
 
+              <div className={styles.test2} style={{ backgroundImage: `url(${image2})` }}>
               <div className={`${styles.backgroundImageContainer} ${styles.appetizerContainer}`} >
                 <h2 className={styles.headTitle}>Kleine honger</h2>
                 <div className={styles.contentContainer}>
@@ -99,6 +105,11 @@ export const Dishes = () => {
                   </div>
                 </div>
               </div>
+</div>
+
+<span className={styles.betweenDivs}></span>
+
+<div className={styles.test4} style={{ backgroundImage: `url(${image3})` }}>
 
               <div className={`${styles.backgroundImageContainer} ${styles.mainDishContainer}`}>
                 <h2 className={styles.headTitle}>Hoofdgerechten</h2>
@@ -157,7 +168,11 @@ export const Dishes = () => {
                   })}
                 </div>
               </div>
+</div>
 
+<span className={styles.betweenDivs}></span>
+
+<div className={styles.test4} style={{ backgroundImage: `url(${image4})` }}>
               <div className={`${styles.backgroundImageContainer} ${styles.test3}`}>
                 <h2 className={`${styles.headTitle} ${styles.desertTitle}`} >Maandelijkse Menu's</h2>
                 <div className={styles.contentContainer}>
@@ -176,7 +191,11 @@ export const Dishes = () => {
                   </div>
                 </div>
               </div>
+              </div>
 
+              <span className={styles.betweenDivs}></span>
+
+<div className={styles.test4} style={{ backgroundImage: `url(${image5})` }}>
               <div className={`${styles.backgroundImageContainer} ${styles.appetizerContainer}`}>
                 <h2 className={`${styles.headTitle} ${styles.desertTitle}`} >Dessert</h2>
                 <div className={styles.contentContainer} >
@@ -194,6 +213,7 @@ export const Dishes = () => {
                   </div>
                 </div>
               </div>
+     
 
 
               <div className={`${styles.backgroundImageContainer} ${styles.appetizerContainer}`}>
@@ -214,7 +234,9 @@ export const Dishes = () => {
                   </div>
                 </div>
               </div>
+              </div>
 
+              
             </div>
           </div>
           : <div style={{ backgroundColor: "black", width: "100%", height: "100%", position: "absolute", top: "0", zIndex: "2" }}><Spinner /> </div>}
