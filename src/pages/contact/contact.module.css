@@ -253,6 +253,10 @@ h2 {
         height: 400px;
     }
 
+    .iframe {
+        padding-top: 5rem;
+    }
+
     .smallContainer {
         margin-top: 3rem;
         display: flex;
@@ -308,9 +312,6 @@ h2 {
         padding: 1rem 2rem 2rem 2rem
     }
 
-    .iframe {
-        padding-top: 3.5rem;
-    }
 
     .openingHoursTitle {
         margin-bottom: 0rem;
