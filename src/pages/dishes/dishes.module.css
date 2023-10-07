@@ -403,6 +403,14 @@ min-height: 100vh;
         overflow-y: auto;
     } */
 
+    html{
+        overflow: hidden;
+    }
+
+    body{
+        overflow-y: auto;
+    }
+
     .headTitle, .kisdMenuTitle {
         font-size: 1.5rem;
     }
