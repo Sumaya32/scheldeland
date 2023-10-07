@@ -54,10 +54,10 @@ export const Dishes = () => {
     <Layout>
       {
         sharingFood && image ?
-          <div className={styles.container} >
+          // <div className={styles.container} >
+<div className={`${styles.mainFixedImage}`} style={{ backgroundImage: `url(${image})` }}>
 
-
-            <div className={`${styles.mainFixedImage}`} style={{ backgroundImage: `url(${image})` }}></div>
+            {/* <div className={`${styles.mainFixedImage}`} style={{ backgroundImage: `url(${image})` }}></div> */}
 
 
             <div className={styles.miniSContainer}>
