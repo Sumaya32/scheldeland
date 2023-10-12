@@ -6,7 +6,7 @@ body {
     width: 100%;
     margin: 0;
     padding: 0;
-  /* background-color: rgb(191, 26, 26); */
+    /* background-color: rgb(191, 26, 26); */
 
 }
 
@@ -15,6 +15,7 @@ body {
     font-family: "Dancing Script", cursive;
     /* background-color: black; */
     height: 100%;
+
 }
 
 .miniSContainer {
@@ -22,73 +23,7 @@ body {
     flex-direction: column;
     justify-items: center;
     align-items: center;
-    margin:5rem 0 0rem 0;
-}
-
-
-.test{
-    background-position: center;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    -webkit-background-size: 100% 100%;
-    -moz-background-size: 100% 100%;
-    -o-background-size: 100% 100%;
-    background-attachment: fixed; 
-    width: 100%;
-
-    /* margin-bottom: 10rem; */
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    text-align: center;
-height: 100vh;
-}
-
-.betweenDivs{
-    background-color: black;
-    width: 100%;
-    height: 2px;
-}
-.test2{
-        display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    text-align: center;
-height: 100vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    -webkit-background-size: 100% 100%;
-    -moz-background-size: 100% 100%;
-    -o-background-size: 100% 100%;
-    background-attachment: fixed; 
-
-    /* margin-bottom: 5rem; */
-}
-
-
-.test4{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    text-align: center;
-min-height: 100vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    -webkit-background-size: 100% 100%;
-    -moz-background-size: 100% 100%;
-    -o-background-size: 100% 100%;
-    background-attachment: fixed; 
+    margin: 5rem 0 5rem 0;
 }
 
 .mainFixedImage {
@@ -110,30 +45,26 @@ min-height: 100vh;
     bottom: 0;
     left: 0;
     right: 0;
-    /* overflow-y: scroll; */
-/* z-index: 1; */
+    /* z-index: 1; */
     /* margin: 0; */
     /* overflow: hidden; */
-
 }
 
-
 .backgroundImageContainer {
-    background-color: red;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 1.3rem 0 3rem 0;
-    width: 50%;
+    padding: 2rem 0 2rem 0;
+    width: 800px;
     /* height: 100%; */
     /* margin: 10rem 0 2.5rem 0; */
-    margin: 5rem 0 2.5rem 0;
+    /* margin: 5rem 0 5rem 0; */
+    margin: 5rem 0 0 0;
 
-    color: black;
-    border-top-right-radius: 50%;
-    border-top-left-radius: 50%;
-    /* padding: 0 5rem 0 5rem; */
+    border-top-right-radius: 500px;
+    border-top-left-radius: 500px;
+    /* padding: 8rem  0  8rem 0; */
 }
 
 .sharingContainer {
@@ -146,7 +77,6 @@ min-height: 100vh;
 
 .appetizerContainer {
     background-color: #c1613a;
-
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(6px);
     /* width: 50%; */
@@ -172,23 +102,48 @@ min-height: 100vh;
     /* width: 50%; */
     /* min-width: fit-content; */
     /* padding: 2rem; */
+    /* width: 800px;
+    border-top-right-radius: 380px;
+    border-top-left-radius: 380px; */
+    /* margin: 5rem 0 0 0; */
+
 }
 
-.test3 {
+.monthlyContainer {
     background-color: rgb(14, 76, 14);
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(6px);
+    /* border-top-right-radius: 600px;
+    border-top-left-radius: 600px; */
+padding-bottom: 4rem; 
 }
 
 .contentContainer {
+    /* background-color: yellow; */
+
     height: auto;
     display: flex;
     flex-direction: column;
     justify-items: center;
     align-items: center;
+    z-index: 1;
+    /* width: 40%; */
+    padding-bottom: 3rem;
+
+}
+
+.contentContainerSharing {
+    /* background-color: rgba(255, 255, 255, 0.4);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px); */
+    /* margin-top: -25rem; */
+    /* border-radius: 30px; */
+   
+/* width: 800px; */
 }
 
 .miniContainer {
+
     width: 100%;
     /* background-color: yellow; */
     display: grid;
@@ -210,7 +165,6 @@ min-height: 100vh;
 } */
 
 .headTitle {
-    margin: 0;
     padding: 0;
     font-size: 2.7rem;
     font-weight: bolder;
@@ -261,6 +215,11 @@ min-height: 100vh;
     font-weight: lighter;
 }
 
+.monthlyTitle{
+    padding-top: 2.2rem;
+margin-bottom: 4.2rem;
+}
+
 .price {
     margin-top: 4%;
 }
@@ -279,25 +238,25 @@ min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 1.5rem;
 }
 
 .supplementMiniContainer {
-    padding: 0.1rem;
+    /* padding: 0.1rem; */
 }
 
 .supplementHeadTitle {
-    font-size: 2.2rem;
+    font-size: 2.5rem;
     margin: 0 0 0.5rem 0;
+    color: rgb(95, 93, 93);
 }
 
 .supplementTitle {
     font-size: 1.8rem;
-
-
 }
 
 .extraInfo {
-    margin: 2rem 0 2rem 0;
+    /* margin: 2rem 0 0 0; */
     text-align: center;
     overflow-wrap: break-word;
     font-size: 1.7rem;
@@ -307,119 +266,184 @@ min-height: 100vh;
 
 
 /*Medi queries*/
-@media only screen and (min-width: 820px) and (max-width: 1280px) {
-    .container {
-        /* margin-top: 13%; */
-        padding: 7rem 0 10rem 0;
-        background-color: red;
-    }
+/* @media only screen and (min-width: 820px) and (max-width: 1280px) {
 
-    .backgroundImageContainer {
-        padding-top: 2rem;
-        /* width: 70%; */
-    }
+} */
 
-
-    .miniContainer {
-        display: flex;
-        flex-direction: column;
-    }
-
-}
 
 
 @media only screen and (max-width: 900px) {
-    .container {
-        /* margin-top: 20%; */
-        /* margin: 5rem 0 7rem 0; */
-
+    .backgroundImageContainer {
+        width: 800px;
+        border-top-right-radius: 400px;
+        border-top-left-radius: 400px;
     }
 
-    .headTitle,
+    /* .headTitle,
     .kisdMenuTitle {
         font-size: 2.5rem;
     }
 
     .dishTitle {
         font-size: 2rem;
-    }
+    } */
 
-    .miniContainer {
+    /* .miniContainer {
         display: flex;
         flex-direction: column;
-    }
+    } */
 
-    .backgroundImageContainer {
-        padding-top: 2rem;
-        width: 95%;
 
-    }
-
-    /* .sharingContainer,
-    .test,
-    .mainDishContainer {
+    /* .mainDishContainer {
         width: 100%;
-    }
-
-    .menuLineImage {
-        width: 90%;
-    }
-
-    .forkAndKnife {
-        margin-bottom: 1.5rem;
     } */
 }
 
-
-
-
-@media only screen and (max-width: 450px) {
-    ::-webkit-scrollbar {
-        width: 1px;
-        background-color: black;
-        border: 1px solid transparent;
-        background-clip: border-box;
-        
-    }
-    ::-webkit-scrollbar-thumb {
-        background-color: black;
-        border-radius: 20px;
-        border: 1px solid transparent;
-        background-clip: border-box;
-    }
-    ::-webkit-scrollbar-thumb:hover {
-        background-color: #bdbdbd;
-    }
-    
-    html,
-    body {
-        height: 100%;
-        margin: 0;
-    }
-    html {
-        overflow: hidden;
-    }
-    body {
-        overflow-y: auto;
-    }
-
-
-    .headTitle, .kisdMenuTitle {
-        font-size: 1.5rem;
+@media only screen and (width > 755px) and (width < 880px) {
+       .headTitle,
+    .kisdMenuTitle {
+        font-size: 2.5rem;
     }
 
     .dishTitle {
-        font-size: 1.3rem;
+        font-size: 1.5rem;
+    }
+
+ }
+ 
+
+@media only screen and (width <=  750px) {
+   .miniContainer {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (min-width: 700px) and (max-width: 900px) {
+
+    .backgroundImageContainer {
+        width: 700px;
+        border-top-right-radius: 350px;
+        border-top-left-radius: 350px;
+        /* padding: 0 1rem 0 1rem; */
+    }
+
+}
+
+
+@media only screen and (max-width: 800px) {
+
+    .backgroundImageContainer {
+        width: 650px;
+        border-top-right-radius: 370px;
+        border-top-left-radius: 370px;
+    }
+
+}
+
+@media only screen and (min-width: 600px) and (max-width: 700px) {
+
+    .backgroundImageContainer {
+        width: 560px;
+        border-top-right-radius: 300px;
+        border-top-left-radius: 300px;
+    }
+
+}
+
+@media only screen and (min-width: 500px) and (max-width: 600px) {
+
+    .backgroundImageContainer {
+        width: 500px;
+        border-top-right-radius: 300px;
+        border-top-left-radius: 300px;
+    }
+
+
+
+}
+
+@media only screen and (min-width: 300px) and (max-width: 550px) {
+
+    .backgroundImageContainer {
+        width: 450px;
+        border-top-right-radius: 260px;
+        border-top-left-radius: 260px;
+    }
+
+}
+
+@media only screen and (max-width: 490px) {
+
+    .backgroundImageContainer {
+        width: 380px;
+        border-top-right-radius: 260px;
+        border-top-left-radius: 260px;
+    }
+
+    .supplementContainer {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }   
+
+}
+
+
+
+
+@media only screen and (min-width: 330px) and (max-width: 399px) {
+    .backgroundImageContainer {
+        width: 300px;
+        border-top-right-radius: 260px;
+        border-top-left-radius: 260px;
     }
 }
 
 
-@media only screen and (min-width: 100px)  and (max-width: 300px) {
-    .headTitle, .kisdMenuTitle {
-        font-size: 1rem;
+
+@media only screen and (min-width: 260px) and (max-width: 330px) {
+    .backgroundImageContainer {
+        width: 260px;
+        border-top-right-radius: 260px;
+        border-top-left-radius: 260px;
+    }
+}
+
+@media only screen and (min-width: 250px) and (max-width: 290px) {
+    .backgroundImageContainer {
+        width: 250px;
+        border-top-right-radius: 260px;
+        border-top-left-radius: 260px;
     }
 
-    .dishTitle, p{
-        font-size: 0.8rem;
+    .headTitle,
+    .kisdMenuTitle {
+        font-size: 1.8rem;
+    }
+
+    .dishTitle,
+    p {
+        font-size: 1.5rem;
+    }
+}
+
+
+
+@media only screen and (min-width: 100px) and (max-width: 260px) {
+    .backgroundImageContainer {
+        width: 200px;
+        border-top-right-radius: 260px;
+        border-top-left-radius: 260px;
+    }
+
+    .headTitle,
+    .kisdMenuTitle {
+        font-size: 1.8rem;
+    }
+
+    .dishTitle,
+    p {
+        font-size: 1.5rem;
     }
 }

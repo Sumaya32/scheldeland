@@ -11,11 +11,10 @@ import {
 } from './_query';
 import Layout from '../../components/layout';
 import { Spinner } from './../../components/shared/Spinner';
-import image from "../../assets/sharingfood2.jpg";
-import image2 from "../../assets/DishesBackgroundImage2.jpg";
-import image3 from "../../assets/hoofdgerecht2.jpg";
-import image4 from "../../assets/spaghtti.jpg";
-import image5 from "../../assets/dessert2.jpg";
+import image from "../../assets/DishesBackgroundImage2.jpg";
+import boog from "../../assets/boog1.png";
+
+
 
 
 
@@ -59,15 +58,18 @@ export const Dishes = () => {
       {
         sharingFood && image ?
           <div className={styles.container} >
-            {/* <div className={`${styles.mainFixedImage}`} style={{ backgroundImage: `url(${image})` }}></div> */}
+            <div className={`${styles.mainFixedImage}`} style={{ backgroundImage: `url(${image})` }}>            </div>
+
             <div className={styles.miniSContainer}>
               
-              <div className={styles.test} style={{ backgroundImage: `url(${image})` }}>
+     
 
             
               <div className={`${styles.backgroundImageContainer} ${styles.sharingContainer} `} >
                 <h2 className={styles.headTitle} style={{ fontFamily: "Dancing Script, cursive" }}>Sharing food</h2>
-                <div className={styles.contentContainer}>
+              
+                <div className={`${styles.contentContainer} ${styles.contentContainerSharing}`} >
+
                   <div className={styles.miniContainer}>
 
                     {sharingFoodDescArray?.sort((a, b) => a?.node.sharingFoodmeta.title < b?.node.sharingFoodmeta.title ? -1 : 1).map((item) => {
@@ -83,13 +85,13 @@ export const Dishes = () => {
 
                   </div>
                 </div>
-              </div>
-              </div>
-<span className={styles.betweenDivs}></span>
+                </div>
+    
 
-              <div className={styles.test2} style={{ backgroundImage: `url(${image2})` }}>
               <div className={`${styles.backgroundImageContainer} ${styles.appetizerContainer}`} >
                 <h2 className={styles.headTitle}>Kleine honger</h2>
+             
+                
                 <div className={styles.contentContainer}>
                   <div className={styles.miniContainer}>
                     {appetizerDescArray?.sort((a, b) => a?.node.kleinehongermeta.title < b?.node.kleinehongermeta.title ? -1 : 1).map((item) => {
@@ -104,12 +106,9 @@ export const Dishes = () => {
                     })}
                   </div>
                 </div>
-              </div>
-</div>
+                </div>
 
-<span className={styles.betweenDivs}></span>
 
-<div className={styles.test4} style={{ backgroundImage: `url(${image3})` }}>
 
               <div className={`${styles.backgroundImageContainer} ${styles.mainDishContainer}`}>
                 <h2 className={styles.headTitle}>Hoofdgerechten</h2>
@@ -130,12 +129,12 @@ export const Dishes = () => {
 
                   </div>
 
-                  <div className={styles.extraInfo}><p>Alle steaks zijn te verkrijgen met Bearnaisesaus, pepersaus of Champignonsaus</p>  </div>
+                  {/* <div className={styles.extraInfo}><p>Alle steaks zijn te verkrijgen met Bearnaisesaus, pepersaus of Champignonsaus</p>  </div> */}
 
                 </div>
-              </div>
+         
 
-              <div className={`${styles.backgroundImageContainer} ${styles.mainDishContainer}`}>
+              {/* <div className={`${styles.backgroundImageContainer} ${styles.mainDishContainer}`}> */}
                 <h3 className={styles.supplementHeadTitle}>Supplementen</h3>
                 <div className={styles.supplementContainer}>
                   {supplementDescArray?.sort((a, b) => a?.node.SupplementMeta.title < b?.node.SupplementMeta.title ? -1 : 1).map((item) => {
@@ -143,17 +142,17 @@ export const Dishes = () => {
                     const id = item?.node.id;
 
                     return <div className={styles.supplementMiniContainer}>
-                      {item !== supplement[supplement.length - 1] ?
+                      {item !== supplement[supplement.length-1] ?
                         <p key={id} className={styles?.supplementTitle}>{supplements.title},</p>
-                        : <p key={id} className={styles.supplementTitle} >of {supplements.title}</p>
+                         : <p key={id} className={styles?.supplementTitle} > of {supplements.title}</p>
                       }
                     </div>
                   })}
                 </div>
 
-              </div>
+              {/* </div> */}
 
-              <div className={`${styles.backgroundImageContainer} ${styles.mainDishContainer}`}>
+              {/* <div className={`${styles.backgroundImageContainer} ${styles.mainDishContainer}`}> */}
                 <h3 className={styles.kisdMenuTitle}>Voor de allerkleinsten</h3>
                 <div className={styles.miniContainer}>
                   {kidsMenuDescArray?.sort((a, b) => a?.node.kindermenumeta.title < b?.node.kindermenumeta.title ? -1 : 1).map((item) => {
@@ -168,13 +167,11 @@ export const Dishes = () => {
                   })}
                 </div>
               </div>
-</div>
 
-<span className={styles.betweenDivs}></span>
 
-<div className={styles.test4} style={{ backgroundImage: `url(${image4})` }}>
-              <div className={`${styles.backgroundImageContainer} ${styles.test3}`}>
-                <h2 className={`${styles.headTitle} ${styles.desertTitle}`} >Maandelijkse Menu's</h2>
+
+              <div className={`${styles.backgroundImageContainer} ${styles.monthlyContainer}`}>
+                <h2 className={`${styles.headTitle} ${styles.monthlyTitle}`} >Maandelijkse Menu's</h2>
                 <div className={styles.contentContainer}>
                   <div className={styles.miniContainer}>
                     {monthlyDishDescArray?.sort((a, b) => a?.node.maandelijkseMenuMeta.title < b?.node.maandelijkseMenuMeta.title ? -1 : 1).map((item) => {
@@ -191,11 +188,9 @@ export const Dishes = () => {
                   </div>
                 </div>
               </div>
-              </div>
 
-              <span className={styles.betweenDivs}></span>
+ 
 
-<div className={styles.test4} style={{ backgroundImage: `url(${image5})` }}>
               <div className={`${styles.backgroundImageContainer} ${styles.appetizerContainer}`}>
                 <h2 className={`${styles.headTitle} ${styles.desertTitle}`} >Dessert</h2>
                 <div className={styles.contentContainer} >
@@ -212,11 +207,10 @@ export const Dishes = () => {
                     })}
                   </div>
                 </div>
-              </div>
      
 
 
-              <div className={`${styles.backgroundImageContainer} ${styles.appetizerContainer}`}>
+              {/* <div className={`${styles.backgroundImageContainer} ${styles.appetizerContainer}`}> */}
                 <h3 className={styles.kisdMenuTitle}>Voor de allerkleinsten</h3>
                 <div className={styles.contentContainer} >
                   <div className={styles.miniContainer}>
@@ -234,9 +228,6 @@ export const Dishes = () => {
                   </div>
                 </div>
               </div>
-              </div>
-
-              
             </div>
           </div>
           : <div style={{ backgroundColor: "black", width: "100%", height: "100%", position: "absolute", top: "0", zIndex: "2" }}><Spinner /> </div>}
