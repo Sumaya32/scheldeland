@@ -29,13 +29,12 @@ body {
     height: 100%;
     width: 100%;
     position: fixed;
-    background-position: center center;
+    background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    /* background-attachment: scroll; */
+    background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
     margin: 0;
     padding: 0;
     top: 0;
@@ -258,7 +257,6 @@ backdrop-filter: blur(5px);
 }
 
 
-
 @media only screen and (min-width: 769px) and (max-width: 1000px) {
     .cardContainer {
         grid-template-columns: repeat(2, 20rem);
@@ -326,8 +324,12 @@ backdrop-filter: blur(5px);
 
 @media only screen and (width: 1024px) {
     .descriptionContainer {
-           /* margin-bottom: 95rem; */
            margin-bottom: 120rem;
+           transform: translate(0, 650px);
+           -webkit-transform: translate(0, 650px);
+           -moz-transform: translate(0, 650px);
+           -o-transform: translate(0, 650px);
+           -ms-transform: translate(0, 650px);
     }
 
     .cardContainer{
@@ -455,5 +457,4 @@ backdrop-filter: blur(5px);
 
 
 }
-
 

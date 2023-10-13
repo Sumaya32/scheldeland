@@ -101,6 +101,12 @@ header .nav_btn {
     }
 }
 
+@media only screen and (width: 912px) {
+.logoContainer{
+    margin: 0.4rem 0 0 1rem;
+
+}
+}
 
 @media only screen and (max-width: 900px) {
     header {
