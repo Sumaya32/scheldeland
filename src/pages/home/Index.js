@@ -22,19 +22,19 @@ export const Home = () => {
               <div className={isImageText === true ? `${styles.imageInfoContainer}` : `${styles.hiddenText}`} > <div className={styles.imageInfotext} >Image rights - Krisje Vandegaer</div></div>
             </div>
             <div className={styles.descriptionContainer}>
-              <h2 className={`${styles.title} ${styles.title}`} >{data?.title}</h2>
+              <h2 className={`${styles.title} ${styles.descriptionTitle}`} >{data?.title}</h2>
               <div className={styles.description}>{data?.description}</div>
             </div>
           </div>
 
-          <div className={styles.CarouselContainerOne}>
+          <div className={styles.CarouselFirstContainer}>
             <div className={styles.middleContainer}>
               <div > <h1 className={`${styles.topTitle}`}>Populaire gerechten</h1>     </div>
               <Carousel items={data && data?.gerechten?.map((item) => item.gerechtmeta)} />
             </div>
           </div>
 
-          <div className={styles.CarouselContainerTwo}>
+          <div className={styles.CarouselSecondContainer}>
             <div className={`${styles.middleContainer} ${styles.secondMiddleContainer}`}>
               <div > <h1 className={`${styles.topTitle}`}>Populaire Sharing food</h1>     </div>
               <Carousel items={data && data?.sharingfood?.map((item) => item.sharingFoodmeta)} />

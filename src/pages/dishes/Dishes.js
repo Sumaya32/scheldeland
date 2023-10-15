@@ -12,12 +12,6 @@ import {
 import Layout from '../../components/layout';
 import { Spinner } from './../../components/shared/Spinner';
 import image from "../../assets/DishesBackgroundImage3.jpg";
-import boog from "../../assets/boog1.png";
-
-
-
-
-
 import styles from "./dishes.module.css"
 
 

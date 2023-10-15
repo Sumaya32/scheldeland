@@ -10,7 +10,7 @@ import image from "../../assets/bloemen1.jpg"
 export const About = () => {
   const { data, isLoading } = useGetAbout()
   const [employeePictures, setEmployeePicture] = useState([])
-  const [imagesIndex, setImagesIndex] = useState(data)
+  // const [imagesIndex, setImagesIndex] = useState(data)
   const [customersPictures, setCustomersPictures] = useState([])
   const [visiblePicture, setVisiblePicture] = useState([])
   const [modalIsOpen, setIsOpen] = React.useState(false)
@@ -22,7 +22,7 @@ export const About = () => {
 
   useEffect(() => {
     data && Object.entries(data)?.map(([item,index])=>{
-      setEmployeePicture([
+    return  setEmployeePicture([
         {picture: `${item?.groupAImage}${index?.sourceUrl}`}
       ])
     })
