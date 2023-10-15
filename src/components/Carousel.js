@@ -29,7 +29,7 @@ export const Carousel = ({ items }) => {
             )}
             <BsArrowRightCircleFill className={`${styles.arrow} ${styles.arrowRight}`} onClick={prevSlide} />
             <span className={styles.indicators}>
-         <div className={styles.test}>
+         <div className={styles.indicatorsMiddleContainer}>
          {data?.map((_, index) => 
                     <div className={styles.slideAndTextContainer}>
                          <button className={slide === index ? `${styles.indicator}` : `${styles.indicator} ${styles.indicatorInactive}`} key={index} onClick={() => setSlide(index)}></button>

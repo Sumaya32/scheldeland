@@ -113,6 +113,7 @@ body {
     -o-transform: translate(0, 1600px);
     -ms-transform: translate(0, 1600px); */
     /* -webkit-transform: translate(0, 970px); */
+    
 }
 
 .CarouselFirstContainer {
@@ -146,6 +147,7 @@ body {
     -o-transform: translateY(-100vh);
     -ms-transform: translateY(-100vh); */
     padding: 2rem 0 2rem 0;
+    height: auto;
 }
 
 /* .cardContainer {
@@ -337,11 +339,11 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
-    .middleContainer {
-        /* margin-bottom: 250% */
+    /* .middleContainer {
+        margin-bottom: 250%;
         padding: 2rem 0 -50rem 0;
 
-    }
+    } */
 
     /* .cardContainer {
         grid-template-columns: repeat(1, 60%);
@@ -373,7 +375,7 @@ body {
     .topTitle {
         font-size: 3rem;
         padding: 0 0 0.2rem 0;
-        margin-bottom: 1rem;
+        /* margin-bottom: 0.5rem; */
     }
 
 
@@ -400,9 +402,9 @@ body {
 
 
 @media only screen and (min-width: 280px) and (max-width: 540px) {
-    .cardContainer {
+    /* .cardContainer {
         grid-template-columns: repeat(1, 80%);
-    }
+    } */
 
     .descriptionContainer {
         /* margin-bottom: 470px; */
@@ -452,9 +454,12 @@ body {
 
 
 @media only screen and (max-width: 280px) {
-    .dishesTitle {
+    /* .dishesTitle {
         font-size: 1rem;
-    }
+    } */
 
+    .topTitle{
+        margin-bottom: 1rem;
+    }
 
 }
