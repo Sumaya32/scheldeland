@@ -408,6 +408,10 @@ body {
     .CarouselSecondContainer {
         margin-bottom: 5rem;
     }
+
+    .CarouselFirstContainer {
+        margin-bottom: 15rem;
+    }
 }
 
 
