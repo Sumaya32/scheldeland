@@ -59,7 +59,7 @@ body {
     -moz-transform: translate(0, 970px);
     -o-transform: translate(0, 970px);
     -ms-transform: translate(0, 970px);
-    margin-bottom: 95%;
+    /* margin-bottom: 95%; */
     padding: 3rem 0 3rem 0;
     background-color: rgba(255, 255, 255, 0.5);
     -webkit-backdrop-filter: blur(5px);
@@ -113,11 +113,11 @@ body {
     -o-transform: translate(0, 1600px);
     -ms-transform: translate(0, 1600px); */
     /* -webkit-transform: translate(0, 970px); */
-    
+
 }
 
 .CarouselFirstContainer {
-    margin-bottom: 10rem;
+    margin-bottom: 20rem;
 }
 
 
@@ -253,7 +253,7 @@ body {
 
 @media only screen and (min-width: 1000px) {
     .descriptionContainer {
-        margin-bottom: 105rem;
+        margin-bottom: 76rem;
     }
 }
 
@@ -270,23 +270,12 @@ body {
         -o-transform: translate(0, 1220px);
         -ms-transform: translate(0, 1220px);
         /* margin-bottom: 1350px; */
-        margin-bottom: 140rem;
-        /* margin-bottom: 160rem */
-
-
+        margin-bottom: 100rem
     }
 
-    /* .cardContainer {
-        margin-bottom: 7rem;
-    } */
-
-    /* .CarouselFirstContainer {
-        transform: translate(0, 1800px);
-        -webkit-transform: translate(0,1800px);
-        -moz-transform:translate(0,1800px);
-        -o-transform: translate(0,1800px);
-        -ms-transform: translate(0,1800px);
-    } */
+    .CarouselFirstContainer {
+        margin-bottom: 25rem;
+    }
 }
 
 
@@ -298,33 +287,29 @@ body {
         -moz-transform: translate(0, 1410px);
         -o-transform: translate(0, 1410px);
         -ms-transform: translate(0, 1410px);
-        margin-bottom: 160rem
-    }
+        /* margin-bottom: 115rem */
+        margin-bottom: 110rem
 
-    .cardContainer {
-        margin-bottom: 7rem;
     }
-
 }
 
-@media only screen and (min-width: 1000px) and (max-width: 1300px) {
-    .cardContainer {
-        grid-template-columns: repeat(3, 25%);
-        width: 90%;
-    }
+@media only screen and (min-width: 1200px) {
+ .descriptionContainer{
+    margin-bottom: 80rem;
+ }
 }
 
 
 @media only screen and (min-width: 1301px) and (max-width: 1700px) {
-    .cardContainer {
+    /* .cardContainer {
         grid-template-columns: repeat(3, 20%);
         width: 90%;
-    }
+    } */
 }
 
 @media only screen and (width: 1024px) {
     .descriptionContainer {
-        margin-bottom: 120rem;
+        margin-bottom: 55rem;
         transform: translate(0, 650px);
         -webkit-transform: translate(0, 650px);
         -moz-transform: translate(0, 650px);
@@ -332,10 +317,10 @@ body {
         -ms-transform: translate(0, 650px);
     }
 
-    .cardContainer {
+    /* .cardContainer {
         grid-template-columns: repeat(3, 30%);
         width: 90%;
-    }
+    } */
 }
 
 @media only screen and (max-width: 768px) {
@@ -358,8 +343,12 @@ body {
         -moz-transform: translate(0, 920px);
         -o-transform: translate(0, 920px);
         -ms-transform: translate(0, 920px);
-        margin-bottom: 120rem;
+        margin-bottom: 76rem;
 
+    }
+
+    .CarouselFirstContainer{
+        margin-bottom: 20rem;
     }
 
     .description {
@@ -408,7 +397,7 @@ body {
 
     .descriptionContainer {
         /* margin-bottom: 470px; */
-        margin-bottom: 70rem;
+        margin-bottom: 73rem;
         transform: translate(0, 920px);
         -webkit-transform: translate(0, 920px);
         -moz-transform: translate(0, 920px);
@@ -425,8 +414,12 @@ body {
 
 @media only screen and (width: 540px) {
     .descriptionContainer {
-        margin-bottom: 95rem;
+        /* margin-bottom: rem; */
 
+    }
+
+    .CarouselFirstContainer{
+        margin-bottom: 16rem;
     }
 }
 
@@ -443,11 +436,13 @@ body {
     .descriptionContainer {
         /* margin-bottom: 470px; */
         margin-bottom: 80rem;
-        /* transform: translate(0, 900px); */
+        margin-bottom: 60rem;
+
+        transform: translate(0, 738px);
         -webkit-transform: translate(0, 738px);
-        /* -moz-transform: translate(0, 920px);
-        -o-transform: translate(0, 920px);
-        -ms-transform: translate(0, 920px); */
+        -moz-transform: translate(0, 738px);
+        -o-transform: translate(0, 738px);
+        -ms-transform: translate(0, 738px);
     }
 
 }
@@ -458,8 +453,12 @@ body {
         font-size: 1rem;
     } */
 
-    .topTitle{
+    .topTitle {
         margin-bottom: 1rem;
+    }
+
+    .CarouselFirstContainer{
+        margin-bottom: 13rem;
     }
 
 }
