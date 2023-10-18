@@ -117,12 +117,10 @@
     justify-content: space-evenly;
     width: 100%;
     height: auto;
-    margin-top: 40%;
+    margin-top: 20%;
     background-color: rgb(247, 244, 239, 0.4);
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(6px);
-
-
 }
 
 .groupBImageContainer {
@@ -245,7 +243,7 @@
     }
 
     .groupAContainer {
-        margin-bottom: 50rem;
+        margin-bottom: 20rem;
     }
 }
 
@@ -310,6 +308,8 @@
         margin-right: 0;
     }
 
+    
+
     .groupAImage {
         height: 40vh;
     }
@@ -339,7 +339,10 @@
         flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
+        margin-top: 5%;
+
     }
+
 
     .groupBImageContainer {
         width: 90%;
