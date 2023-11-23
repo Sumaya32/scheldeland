@@ -13,7 +13,7 @@
 }
 
 .miniContainer {
-    background-color: rgba(255, 255, 255, .1);
+    /* background-color: rgba(255, 255, 255, .1); */
     box-shadow: 10px 10px 20px 10px;
     width: 45%;
     height: auto;

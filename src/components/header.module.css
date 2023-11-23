@@ -2,18 +2,23 @@
     /* --mainColor: rgba(0, 0, 0, 0.5); */
     --mainColor: rgba(0, 0, 0, 0.5);
     --responsive-mainColor: rgba(0, 0, 0, 0.8);
-    --menubar-color: #fda58a;
+    --menubar-color: #fa7f4e;
     --text-color: white;
-    --ancer-hover-color: #f9baa1;
+    --ancer-hover-color: #f58254; 
     --responsive-header-background-color: black;
-    --is-active-color: #fbc1ab;
+    --is-active-color: #c1613a;
     --header-font-family: HelveticaNeue, Helvetica, Sans-ns-Serif;
 }
 
 .logoContainer {
     margin: 0.4rem 0 0 4rem;
-    width: 2.5rem;
-    height: 48%;
+    width: 6rem;
+    height: 60%;
+    /* background-color: rgba(255, 255, 255, 0.5); */
+    background-color: rgba(250, 174, 142, 0.5);
+    -webkit-backdrop-filter: blur(5px);
+backdrop-filter: blur(5px);
+border-radius: 10px;
 }
 
 .logo {
@@ -40,7 +45,7 @@ nav a {
     margin: 0 1rem;
     color: var(--textColor);
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-weight: bolder;
     border: 2px solid white;
     border-radius: 100px;
@@ -49,11 +54,15 @@ nav a {
 
 nav a:hover {
     background-color: var(--ancer-hover-color);
+    border: 2px solid white;
+
     color: #000;
 }
 
 .active {
-    color: var(--is-active-color);
+    background-color: var(--is-active-color);
+    /* color: var(--is-active-color); */
+    /* border: 2px solid var(--is-active-color); */
     pointer-events: inherit;
 }
 
@@ -77,11 +86,11 @@ header .nav_btn {
 .faTimes,
 .faBars {
     color: var(--menubar-color);
-    margin-bottom: -5px;
+    /* margin-bottom: -5px; */
 }
 
 .faBars {
-    height: 1.5rem;
+    height: 1.8rem;
 }
 
 
@@ -93,22 +102,29 @@ header .nav_btn {
     }
 }
 
-@media only screen and (width: 820px) {
-    .logoContainer {
-        margin: 0.4rem 3rem 0 1rem;
+@media only screen and (width: 912px) {
+.logoContainer{
+    margin: 0.4rem 0 0 1rem;
 
-    }
+}
 }
 
-
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 900px) {
     header {
-        height: 60px;
+        height: 80px;
+        /* height: 100px; */
+
     }
 
     header .nav_btn {
         visibility: visible;
         opacity: 1;
+        /* background-color: yellow; */
+        position: absolute;
+        top: 2rem;
+        right: 1.5rem
+
+
     }
 
     header nav {
@@ -124,7 +140,7 @@ header .nav_btn {
         background-color: var(--mainColor);
         transition: 1s;
         transform: translateY(-110vh);
-        z-index: 1;
+        z-index: 2;
         flex-direction: column;
     }
 
@@ -135,8 +151,8 @@ header .nav_btn {
 
     header .nav_close_btn {
         position: absolute;
-        top: 1rem;
-        right: 2rem
+        top: 2rem;
+        right: 1.5rem
     }
 
     nav a {
@@ -145,7 +161,22 @@ header .nav_btn {
 
     .logoContainer {
         margin-left: 0;
-        width: 2.2rem;
+        width: 4rem;
+    }
+
+    .logoContainer {
+        margin: 1rem 0 0 0rem;
+        /* width: 6rem; */
+        /* background-color: red; */
+        height: 50%;
     }
 
 }
+
+@media only screen and (width: 820px) {
+    .logoContainer {
+        margin: 0.4rem 3rem 0 1rem;
+    }
+}
+
+

@@ -4,12 +4,13 @@ import Layout from '../../components/layout';
 import { Spinner } from './../../components/shared/Spinner';
 import styles from './about.module.css'
 import { Modal2 } from '../../components/Modal'
+import image from "../../assets/bloemen1.jpg"
 
 
 export const About = () => {
   const { data, isLoading } = useGetAbout()
   const [employeePictures, setEmployeePicture] = useState([])
-  const [imagesIndex, setImagesIndex] = useState(data)
+  // const [imagesIndex, setImagesIndex] = useState(data)
   const [customersPictures, setCustomersPictures] = useState([])
   const [visiblePicture, setVisiblePicture] = useState([])
   const [modalIsOpen, setIsOpen] = React.useState(false)
@@ -21,7 +22,7 @@ export const About = () => {
 
   useEffect(() => {
     data && Object.entries(data)?.map(([item,index])=>{
-      setEmployeePicture([
+    return  setEmployeePicture([
         {picture: `${item?.groupAImage}${index?.sourceUrl}`}
       ])
     })
@@ -51,10 +52,12 @@ export const About = () => {
     ])
   }, [data]);
 
-  if (isLoading) return <Spinner />
+  if (isLoading && image) return <Spinner />
   return (
     <Layout>
+      { data && image ?
       <div className={styles.container}>
+      <div className={`${styles.mainImageContainer} ${styles.mainFixedImage}`} style={{ backgroundImage: `url(${image})` }}></div>
         <div className={styles.miniContainer}>
           <div className={styles.groupAContainer}>
             <div key={data?.goalDescription} className={styles.groupADescription}>
@@ -97,6 +100,9 @@ export const About = () => {
           </Modal2>}
         </div>
       </div>
+
+       : <div style={{ backgroundColor: "black", width: "100%", height: "100%", position: "absolute", top: "0", zIndex: "2" }}><Spinner /> </div>}
+
     </Layout>
   );
 }

@@ -1,16 +1,28 @@
-.contactContainer{
+html,
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(245, 236, 225);
+
+}
+
+
+
+.contactContainer {
     font-family: Helvitica, "bradley Hand";
+    height: 100%;
 }
 
 .iframeContainer {
-    background-color:  #D5D8DB;
     width: 100%;
     overflow: hidden;
     height: 500px;
-    
+
 }
 
-.iframe{
+.iframe {
     width: 100vw;
     height: 100%;
     border: 0;
@@ -19,14 +31,14 @@
 }
 
 .smallContainer {
-    /* background-color: red; */
     display: flex;
     justify-content: center;
     align-items: flex-end;
     width: 100vw;
     margin: 5rem 0 2rem 0;
-     font-size: 1.3rem;
-     text-align: center;
+    font-size: 1.3rem;
+    text-align: center;
+    height: 100%;
 }
 
 .adressContainer {
@@ -40,9 +52,9 @@
 .adressMiniContainer {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     height: 30%;
-    width: 100%;
+    width: 50%;
     margin-top: 1.2rem;
     font-weight: lighter;
 }
@@ -51,28 +63,31 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 60%;
+    width: 40%;
 }
 
 .phone {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 60%;
+    width: 40%;
 }
 
-.email {
+/* .email {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 50%;
     overflow-wrap: break-word;
-}
+} */
 
-.email:hover,
+/*Backround color have to be changed to dark orang*/
+
+/* .email:hover, */
 .phone:hover,
 .address:hover {
-    filter: invert(85%) sepia(44%) saturate(5203%) hue-rotate(309deg) brightness(97%) contrast(93%);
+    filter: invert(78%) sepia(61%) saturate(3923%) hue-rotate(324deg) brightness(99%) contrast(94%);
+    filter: invert(44%) sepia(72%) saturate(466%) hue-rotate(333deg) brightness(89%) contrast(92%);
 }
 
 a {
@@ -88,8 +103,8 @@ h2 {
     /* margin-bottom: 3%; */
 }
 
-.openingHoursTitle{
-margin-bottom: 1rem;
+.openingHoursTitle {
+    margin-bottom: 1rem;
 }
 
 .openingHours {
@@ -105,6 +120,7 @@ margin-bottom: 1rem;
     width: 50%;
     display: flex;
     margin-bottom: 0.4rem;
+
 }
 
 .days {
@@ -120,7 +136,7 @@ margin-bottom: 1rem;
 
 
 /*Media queries*/
- /* @media only screen and (width: 1280px) {
+/* @media only screen and (width: 1280px) {
     .smallContainer {
         margin-top: 8rem;
         height: 250px;
@@ -147,10 +163,10 @@ margin-bottom: 1rem;
 
 
 @media only screen and (min-width: 770px) and (max-width: 1350px) {
-    .contactContainer{
+    .contactContainer {
         margin-bottom: 10rem;
     }
-    
+
     .smallContainer {
         display: flex;
         flex-direction: column;
@@ -192,54 +208,62 @@ margin-bottom: 1rem;
     }
 
     .hours {
-        padding-bottom: 5%;
+        /* padding-bottom: 5%; */
         width: 100%;
         text-align: center;
     }
 
-    .email {
-        padding: 2% 2% 5% 2%;
-    }
-
     .phone {
-        padding: 2% 2% 5% 2%;
+        padding: 0% 2% 7% 2%;
+        padding: 1rem 2rem 2rem 2rem
     }
 
     .address {
-        padding: 2% 2% 5% 2%;
+        padding: 1rem 2rem 2rem 2rem
     }
+
 
     .iframeContainer {
         height: 500px;
     }
+
+
 }
 
 
 
-@media only screen and (width: 1024px)  {
- .iframeContainer{
-    height: 300px;
- }
- .smallContainer{
-    margin-top: 3rem;
- }
+@media only screen and (width: 1024px) {
+    .iframeContainer {
+        height: 300px;
+    }
+
+    .smallContainer {
+        margin-top: 3rem;
+    }
 }
 
 
 @media only screen and (max-width: 768px) {
-    .contactContainer{
+    .contactContainer {
         margin-bottom: 10rem;
-    }
- 
+        margin-bottom: 5rem;
 
-    .iframeContainer{
+    }
+
+
+    .iframeContainer {
         height: 400px;
-     }
-     .smallContainer{
+    }
+
+    .iframe {
+        padding-top: 5rem;
+    }
+
+    .smallContainer {
         margin-top: 3rem;
         display: flex;
         flex-direction: column;
-     }
+    }
 
     .adressContainer {
         width: 100%;
@@ -276,32 +300,30 @@ margin-bottom: 1rem;
     }
 
     .hours {
-        padding-bottom: 5%;
+        padding-bottom: 2%;
         width: 100%;
         text-align: center;
     }
 
-    .email {
-        padding: 2% 2% 7% 2%;
-    }
-
     .phone {
         padding: 0% 2% 7% 2%;
+        padding: 1rem 2rem 2rem 2rem
     }
 
     .address {
-        padding: 2% 2% 7% 2%;
+        padding: 1rem 2rem 2rem 2rem
     }
-    
-    .iframe{
-        padding-top: 3.5rem;
+
+
+    .openingHoursTitle {
+        margin-bottom: 0rem;
     }
 }
 
 
 
-@media only screen and (min-width: 280px)  and (max-width: 375px){
-    .iframeContainer{
-       height: 300px;
+@media only screen and (min-width: 280px) and (max-width: 375px) {
+    .iframeContainer {
+        height: 300px;
     }
-   }
+}

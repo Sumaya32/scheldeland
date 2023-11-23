@@ -1,4 +1,4 @@
-import {gql} from "@apollo/client"
+import { gql } from "@apollo/client"
 
 export const GetContact = gql`
 query {
@@ -11,6 +11,17 @@ query {
       phoneNumber
      
       openingHours{
+        monday{
+          day
+          openingTime
+          closingTime
+        }
+        tuesday{
+          day
+          openingTime
+          closingTime
+        }
+
         wednesday{
           day
           openingTime
