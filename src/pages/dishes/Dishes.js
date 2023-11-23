@@ -164,7 +164,7 @@ export const Dishes = () => {
 
 
 
-              <div className={`${styles.backgroundImageContainer} ${styles.monthlyContainer}`}>
+              {/* <div className={`${styles.backgroundImageContainer} ${styles.monthlyContainer}`}>
                 <h2 className={`${styles.headTitle} ${styles.monthlyTitle}`} >Maandelijkse Menu's</h2>
                 <div className={styles.contentContainer}>
                   <div className={styles.miniContainer}>
@@ -181,11 +181,11 @@ export const Dishes = () => {
                     })}
                   </div>
                 </div>
-              </div>
+              </div> */}
 
  
 
-              <div className={`${styles.backgroundImageContainer} ${styles.appetizerContainer}`}>
+              <div className={`${styles.backgroundImageContainer} ${styles.deserContainer}`}>
                 <h2 className={`${styles.headTitle} ${styles.desertTitle}`} >Dessert</h2>
                 <div className={styles.contentContainer} >
                   <div className={styles.miniContainer}>
