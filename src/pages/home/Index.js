@@ -3,7 +3,8 @@ import React, { useState } from 'react';
 import { useGetHome } from './_query';
 import Layout from '../../components/layout';
 import { Spinner } from './../../components/shared/Spinner';
-import { Carousel } from '../../components/Carousel'
+import { Carousel } from '../../components/Carousel';
+import { Error } from '../../components/Error';
 import image from "../../assets/mainImage.jpg"
 import styles from "./index.module.css";
 
@@ -43,7 +44,9 @@ export const Home = () => {
           </div>
 
         </div>
-        : <div style={{ backgroundColor: "black", width: "100%", height: "100%", position: "absolute", top: "0", zIndex: "2" }}><Spinner /> </div>}
+        // : <div style={{ backgroundColor: "black", width: "100%", height: "100%", position: "absolute", top: "0", zIndex: "2" }}><Spinner /> </div>
+        : <Error/>    
+      }
     </Layout>
   );
 }
