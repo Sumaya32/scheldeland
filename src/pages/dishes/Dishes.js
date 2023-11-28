@@ -11,6 +11,7 @@ import {
 } from './_query';
 import Layout from '../../components/layout';
 import { Spinner } from './../../components/shared/Spinner';
+import { Error } from '../../components/Error';
 // import image from "../../assets/DishesBackgroundImage3.jpg";
 import image from "../../assets/menuBackgroundImage.jpg";
 
@@ -227,7 +228,9 @@ export const Dishes = () => {
               </div>
             </div>
           </div>
-          : <div style={{ backgroundColor: "black", width: "100%", height: "100%", position: "absolute", top: "0", zIndex: "2" }}><Spinner /> </div>}
+          // : <div style={{ backgroundColor: "black", width: "100%", height: "100%", position: "absolute", top: "0", zIndex: "2" }}><Spinner /> </div>
+       : <Error/>  
+        }
     </Layout >
   );
 }
