@@ -11,7 +11,6 @@ import { Spinner } from './components/shared/Spinner'
 
 
 function App() {
-  const Preview_API_Key = process.env.REACT_APP_GRAPHQL_API_URL 
     return (
       <Routes>
         <Route exact element={<Dish/>} path="menu/:id" />
