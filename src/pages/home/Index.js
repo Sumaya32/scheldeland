@@ -22,6 +22,7 @@ export const Home = () => {
               <div className={isImageText === true ? `${styles.imageInfoContainer}` : `${styles.hiddenText}`} > <div className={styles.imageInfotext} >Image rights - Krisje Vandegaer</div></div>
             </div>
             <div className={styles.descriptionContainer}>
+ 
               <h2 className={`${styles.title} ${styles.descriptionTitle}`} >{data?.title}</h2>
               <div className={styles.description}>{data?.description}</div>
             </div>

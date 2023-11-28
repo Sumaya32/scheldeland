@@ -4,7 +4,7 @@ import Layout from '../../components/layout';
 import { Spinner } from './../../components/shared/Spinner';
 import styles from './about.module.css'
 import { Modal2 } from '../../components/Modal'
-import image from "../../assets/bloemen1.jpg"
+import image from "../../assets/bloemen1.jpg";
 
 
 export const About = () => {

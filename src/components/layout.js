@@ -9,7 +9,7 @@ const Layout = ({ pageTitle, children }) => {
   return (
     <div className={style.container}>
       <Header />
-      <main>
+      <main key={pageTitle}>
         <h1 className={style.heading}>{pageTitle}</h1>
         {children}
       </main>
