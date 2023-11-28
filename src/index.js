@@ -9,7 +9,8 @@ import { Config } from './config';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-const Preview_API_Key = process.env.REACT_APP_GRAPHQL_API_URL 
+const Preview_API_Key = process.env.REACT_APP_GRAPHQL_API_URL
+ 
 root.render(
   
 <BrowserRouter>
