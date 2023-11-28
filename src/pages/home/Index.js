@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 // import { NavLink } from 'react-router-dom';
 import { useGetHome } from './_query';
 import Layout from '../../components/layout';
