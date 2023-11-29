@@ -20,7 +20,6 @@ function App() {
         <Route element={<Contact />} path="/contact" />
         
         <Route element={ <Dishes/> } path="/menu" />
-          {/* <Route element={<Suspense fallback={<Spinner />}> <Dishes/> </Suspense>} path="/menu" /> */}
         <Route element={<About />} path={`/${('over ons').replace(/\s+/g, '-')}`} />
       </Routes>
     );
