@@ -20,7 +20,7 @@ const Footer = () => {
             
             <span className={style.footerUnderline}></span>
 
-            <li className={style.copyright}><div>© 2023 SCHELDELAND - CREATED BY SUMAYA MA</div></li>
+            <div className={style.copyright}>© 2023 SCHELDELAND - <a href='https://sumaya.be' target='_blank'>CREATED BY SUMAYA MA</a></div>
           </div>
         </footer>
     )

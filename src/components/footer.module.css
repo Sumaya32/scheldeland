@@ -47,7 +47,7 @@ footer {
   margin-top: 0.8rem;
 }
 
-.copyright {
+.copyright, .copyright a {
   text-align: center;
   list-style: none;
   /* color: rgb(96, 98, 99); */
@@ -55,6 +55,13 @@ footer {
   margin-top: 0.5rem;
 }
 
+.copyright a {
+cursor: pointer;
+}
+
+.copyright a:hover {
+ color: #dcdcdc;
+  }
 .FooterLinkText {
   display: flex;
   justify-content: center;
