@@ -12,8 +12,12 @@ import {
 import Layout from '../../components/layout';
 import { Spinner } from './../../components/shared/Spinner';
 import { Error } from '../../components/Error';
+// import image from "../../assets/DishesBackgroundImage3.jpg";
 import image from "../../assets/menuBackgroundImage.jpg";
+
+
 import styles from "./dishes.module.css"
+
 
 export const Dishes = () => {
   const { mainDish, mainDishLoading } = useGetMainDish();
@@ -38,7 +42,6 @@ export const Dishes = () => {
     if (dessert) { setDessertDescArray([...dessert]) }
     if (sharingFood) { setSharingFoodDescArray([...sharingFood]) }
     if (appetizer) { setAppetizerDescArray([...appetizer]) }
-    if (monthlyDish) { setMonthlyDishDescArray([...monthlyDish]) }
     if (kidsMenu) { setKidsMenuDescArray([...kidsMenu]) }
     if (kidsDessert) { setKidsDessertDescArray([...kidsDessert]) }
     if (supplement) { setSupplementDescArray([...supplement]) }
