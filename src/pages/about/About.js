@@ -54,57 +54,60 @@ export const About = () => {
 
   if (isLoading && image) return <Spinner />
   return (
-    <Layout>
-      {data && image ?
-        <div className={styles.container}>
-          <div className={`${styles.mainImageContainer} ${styles.mainFixedImage}`} style={{ backgroundImage: `url(${image})` }}></div>
-          <div className={styles.miniContainer}>
-            <div className={styles.groupAContainer}>
-              <div key={data?.goalDescription} className={styles.groupADescription}>
-                <h2 className={styles.title}>{data?.groupaTitle}</h2>
-                <p className={styles.discriptionParagraph}>
-                  {data?.groupaDescription}
-                </p>
-              </div>
-              <div className={styles.groupAImageContainer}>
-                <div className={styles.groupASmallImageContainer}>
-                  {employeePictures && employeePictures?.map((item) =>
-                    <div key={item.altText} onClick={() => { setIsOpen(true); setVisiblePicture((prev) => ({ ...prev, picture: item.picture, altText: item.altText })) }} styles={{ cursor: "pointer" }} className={styles.imageMiniContainer}>
-                      <img key={item?.altText} src={item?.picture} alt={item?.altText} className={styles.groupAImage} />
+    <>
+      {
+        data && image ?
+          <Layout>
+            <div className={styles.container}>
+              <div className={`${styles.mainImageContainer} ${styles.mainFixedImage}`} style={{ backgroundImage: `url(${image})` }}></div>
+              <div className={styles.miniContainer}>
+                
+                <div className={styles.groupAContainer}>
+                  <div key={data?.goalDescription} className={styles.groupADescription}>
+                    <h2 className={styles.title}>{data?.groupaTitle}</h2>
+                    <p className={styles.discriptionParagraph}>
+                      {data?.groupaDescription}
+                    </p>
+                  </div>
+                  <div className={styles.groupAImageContainer}>
+                    <div className={styles.groupASmallImageContainer}>
+                      {employeePictures && employeePictures?.map((item) =>
+                        <div key={item.altText} onClick={() => { setIsOpen(true); setVisiblePicture((prev) => ({ ...prev, picture: item.picture, altText: item.altText })) }} styles={{ cursor: "pointer" }} className={styles.imageMiniContainer}>
+                          <img key={item?.altText} src={item?.picture} alt={item?.altText} className={styles.groupAImage} />
+                        </div>
+                      )}
+
                     </div>
-                  )}
+                  </div>
+                </div>
+
+
+                <div className={styles.groupBContainer}>
+                  <div className={styles.groupBImageContainer}>
+                    <div className={styles.groupBSmallImageContainer}>
+                      {customersPictures && customersPictures?.map((item) =>
+                        <div key={item.altText} onClick={() => { setIsOpen(true); setVisiblePicture((prev) => ({ ...prev, picture: item.picture, altText: item.altText })) }} styles={{ cursor: "pointer" }} className={styles.imageMiniContainer}>
+                          <img key={item.altText} src={item.picture} alt={item.altText} className={styles.groupBImage} />
+                        </div>
+                      )}
+                    </div>
+                  </div>
+                  <div className={styles.groupBDescription}>
+                    <h2 className={styles.title}>{data?.groupbTitle}</h2>
+                    <p className={styles.discriptionParagraph}>{data?.groupbDescription}</p>
+                  </div>
 
                 </div>
+                {modalIsOpen && <Modal2 handelclick={handleChild}>
+                  <img src={visiblePicture?.picture} alt={visiblePicture?.altText} className={styles.modalImage} />
+                </Modal2>}
+
               </div>
             </div>
-
-
-            <div className={styles.groupBContainer}>
-              <div className={styles.groupBImageContainer}>
-                <div className={styles.groupBSmallImageContainer}>
-                  {customersPictures && customersPictures?.map((item) =>
-                    <div key={item.altText} onClick={() => { setIsOpen(true); setVisiblePicture((prev) => ({ ...prev, picture: item.picture, altText: item.altText })) }} styles={{ cursor: "pointer" }} className={styles.imageMiniContainer}>
-                      <img key={item.altText} src={item.picture} alt={item.altText} className={styles.groupBImage} />
-                    </div>
-                  )}
-                </div>
-              </div>
-              <div className={styles.groupBDescription}>
-                <h2 className={styles.title}>{data?.groupbTitle}</h2>
-                <p className={styles.discriptionParagraph}>{data?.groupbDescription}</p>
-              </div>
-
-            </div>
-            {modalIsOpen && <Modal2 handelclick={handleChild}>
-              <img src={visiblePicture?.picture} alt={visiblePicture?.altText} className={styles.modalImage} />
-            </Modal2>}
-          </div>
-        </div>
-
-        //  : <div style={{ backgroundColor: "black", width: "100%", height: "100%", position: "absolute", top: "0", zIndex: "2" }}><Spinner /> </div>
-        : <Error />
+          </Layout>
+          : <Spinner /> || <Error />
       }
-    </Layout>
+    </>
   );
 }
 
