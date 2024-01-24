@@ -8,6 +8,7 @@ import { Error } from '../../components/Error';
 import image from "../../assets/mainImage.jpg"
 import styles from "./index.module.css";
 
+
 export const Home = () => {
   const { data, isLoading } = useGetHome();
   const [isImageText, setIsImageText] = useState(false)
@@ -15,7 +16,9 @@ export const Home = () => {
   if (image && isLoading && !data) return <Spinner />
   return (
     <>
-      {data && image ?
+      { 
+      data && image ?
+     
         <Layout>
           <div className={styles.container}>
 
