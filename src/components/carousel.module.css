@@ -42,12 +42,12 @@
 
 .arrowLeft {
   left: 1.7rem;
-  top: 40%;
+  top: 35%;
 }
 
 .arrowRight {
   right: 1.7rem;
-  top: 40%;
+  top: 35%;
 }
 
 .indicators {
@@ -158,7 +158,7 @@
 
   .arrowLeft {
     left: 0.5rem;
-    top: 35%;
+    top: 30%;
   }
   .indicatorsMiddleContainer {
     top: 60%;
@@ -167,7 +167,7 @@
 
   .arrowRight {
     right: 0.5rem;
-    top: 35%;
+    top: 30%;
   }
 
   .indicators {
