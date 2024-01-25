@@ -101,13 +101,11 @@ body {
     background-color: rgba(255, 255, 255, 0.5);
     -webkit-backdrop-filter: blur(4px);
     backdrop-filter: blur(4px);
-    width: 1000%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    padding: 2rem 0 2rem 0;
-    height: auto;
+    height: 800px;
 }
 
 .dishesImage {
@@ -122,21 +120,22 @@ body {
     list-style: none;
     font-size: 1.4rem;
     font-family: "Dancing Script", cursive;
+    background-color: red;
 }
 
 .price {
     color: rgb(112, 115, 119);
     padding-top: 0.2rem;
     font-size: 1.2rem;
-
 }
 
 .topTitle,
 .sharingTopTitle {
     font-size: 3rem;
-    padding: 0 0 3rem 0;
     font-family: "Dancing Script", cursive;
     text-align: center;
+    margin-bottom: 6rem;
+    padding-top: 0.5rem;
 }
 
 .containerImage,
@@ -231,6 +230,10 @@ body {
         margin-bottom: 20rem;
     }
 
+    .middleContainer {
+        height: 500px;
+    }
+
     .description {
         margin-left: 0;
     }
@@ -244,6 +247,7 @@ body {
     .topTitle {
         font-size: 3rem;
         padding: 0 0 0.2rem 0;
+        margin-bottom: 0;
     }
 }
 
@@ -256,8 +260,10 @@ body {
         -o-transform: translate(0, 1025px);
         -ms-transform: translate(0, 1025px);
     }
+    .middleContainer {
+        height: 650px;
+    }
 }
-
 
 @media only screen and (min-width: 280px) and (max-width: 540px) {
     .descriptionContainer {

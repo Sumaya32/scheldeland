@@ -1,136 +1,114 @@
 :root {
-    --main-color: white;
-    --title-color: black;
-    --background-color: rgb(248, 243, 243);
-    --title-font-family:  "Dancing Script", cursive ;
-    --indicator-is-active: gray;
+  --main-color: white;
+  --title-color: black;
+  --background-color: rgb(248, 243, 243);
+  --title-font-family: "Dancing Script", cursive;
+  --indicator-is-active: gray;
 }
 
 .carousel {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* width: 650px; */
-    /* width: 700px; */
-    /* width: 900px; */
-    /* height: 450px; */
-    /* height: 500px; */
-    height: 540px;
-
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 540px;
 }
 
 .contentContainer {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-
 .slide {
-    border-radius: 0.5rem;
-    box-shadow: 4px 4px 10px #666;
-    text-align: center;
-    width: 700px;
-    width: 650px;
-
-    /* width: 900px; */
-
-    /* height: 70%; */
-    height: 80%;
-
-    padding: 0;
+  border-radius: 0.5rem;
+  box-shadow: 4px 4px 10px #666;
+  text-align: center;
+  width: 600px;
+  height: 600px;
+  padding: 0;
 }
 
 .arrow {
-    position: absolute;
-    width: 2.5rem;
-    height: 2.5rem;
-    /* color: #f09c7b; */
-    color: #666;
-    color: white;
-    filter: drop-shadow(0px 0px 5px #555555);
+  position: absolute;
+  width: 2.5rem;
+  height: 2.5rem;
+  color: #666;
+  color: white;
+  filter: drop-shadow(0px 0px 5px #555555);
 }
 
 .arrowLeft {
-    left: 1.7rem;
-    top: 40%
+  left: 1.7rem;
+  top: 40%;
 }
 
 .arrowRight {
-    right: 1.7rem;
-    top: 40%
+  right: 1.7rem;
+  top: 40%;
 }
 
-
-    
 .indicators {
-    /* background-color: red; */
-    position: absolute;
-    width: 10rem;
-    height: 7rem;
-  top: 60%; 
+  position: absolute;
+  width: 10rem;
+  height: 7rem;
+  top: 60%;
 }
 
-.indicatorsMiddleContainer{
-    /* background-color: yellow; */
-    display: flex;
-
-    /* height: 5rem; */
-    position: absolute;
-    top: 60%;
-    left: 30%;
+.indicatorsMiddleContainer {
+  display: flex;
+  position: absolute;
+  top: 90%;
+  left: 30%;
 }
 
 .indicator {
-    background-color: #f09c7b;
-    width: 1rem;
-    height: 1rem;
-    border-radius: 100%;
-    border: none;
-    outline: none;
-    box-shadow: 0px 0px 5px #202020;
-    margin: 0 0.2rem;
-    cursor: pointer; 
+  background-color: #f09c7b;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 100%;
+  border: none;
+  outline: none;
+  box-shadow: 0px 0px 5px #202020;
+  margin: 0 0.2rem;
+  cursor: pointer;
 }
 
 .slideHidden {
-    display: none;
+  display: none;
 }
 
 .indicatorInactive {
-    background-color: var(--indicator-is-active);
+  background-color: var(--indicator-is-active);
 }
 
 .dishesTitle {
-    background-color: var(--main-color);
+  background-color: var(--main-color);
 }
 
 .titleHidden {
-    display: none;
+  display: none;
 }
 
 .title {
-    color: var(--title-color);
-    font-size: 2rem;
-    font-weight: bolder;
-    font-family: var( --title-font-family);
-    height: 15%;
-    border-radius: 10px;
-    width: 100%;
-    text-align: center;
-    margin-top: 1rem;
+  color: var(--title-color);
+  font-size: 2rem;
+  font-weight: bolder;
+  font-family: var(--title-font-family);
+  min-height: 100px;
+  border-radius: 10px;
+  width: 100%;
+  text-align: center;
+  margin-top: 1rem;
 }
 
-.price{
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #4f4e4e;
-
+.price {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #4f4e4e;
 }
-
 
 /* @media only screen and (width: 1024px) {
 
@@ -160,129 +138,126 @@
   }
 } */
 
-
-
 @media only screen and (max-width: 768px) {
-    .title {
+  .title {
     margin: 0.5rem 0 0 0;
     padding-bottom: auto;
-}
+  }
 
-.carousel {
-
+  .carousel {
     height: 400px;
 
     width: 500px;
+  }
 
-
-}
-
-.slide {
+  .slide {
     border-radius: 0;
     height: 70%;
     width: 400px;
-
-}
-
-.arrowLeft {
-    left: 0.5rem;
-    top: 35%
-}
-
-.arrowRight {
-    right: 0.5rem;
-    top: 35%
-}
-
-
-
-.indicators {
-
-  top: 45%; 
-}
-}
-
-
-@media only screen and (width: 768px) {
-    .carousel {
-        height: 600px;
-    }
-
-    .arrowLeft {
-        left: -3rem;
-        top: 38%
-    }
-    
-    .arrowRight {
-        right: -3rem;
-        top: 38%
-    }
-
-    .indicators {
-        top: 55%; 
-      }
-
-      .slide {
-        border-radius: 0;
-        height: 70%;
-        width: 650px;    
-    }
-    
-}
-
-
-@media only screen and (width: 540px) {
-    
-    .slide {
-        width: 500px;
-    }
-
-    .arrowLeft {
-        left: 0.5rem;
-        top: 35%
-    }
-    
-    .arrowRight {
-        right: 0.5rem;
-        top: 35%
-    }
-
-    .indicators {
-
-        top: 50%; 
-      }
-}
-
-
-@media only screen and (min-width: 412px) and (max-width: 430px) {
-    .arrowLeft {
-        left: 1.2rem;
-    }
-    
-    .arrowRight {
-        right: 1.2rem;
-    }
-}
-
-
-@media only screen and (width: 280px) {
-    .title {
-    margin-bottom: 2.8rem
-}
-.carousel {
-    height: 300px;
-}
-
-.indicators {
-
-    top: 35%; 
   }
 
   .arrowLeft {
-    top: 25%
+    left: 0.5rem;
+    top: 35%;
+  }
+  .indicatorsMiddleContainer {
+    top: 60%;
+    left: 30%;
+  }
+
+  .arrowRight {
+    right: 0.5rem;
+    top: 35%;
+  }
+
+  .indicators {
+    top: 45%;
+  }
 }
 
-.arrowRight {
-    top: 25%
+@media only screen and (width: 768px) {
+  .carousel {
+    height: 600px;
+  }
+
+  .arrowLeft {
+    left: -3rem;
+    top: 38%;
+  }
+
+  .arrowRight {
+    right: -3rem;
+    top: 38%;
+  }
+
+  .indicators {
+    top: 55%;
+  }
+
+  .slide {
+    border-radius: 0;
+    height: 70%;
+    width: 650px;
+  }
 }
+
+@media only screen and (min-width: 423px) and (max-width: 767px) {
+  .arrowLeft {
+    left: 4rem;
+  }
+
+  .arrowRight {
+    right: 4rem;
+  }
+}
+
+@media only screen and (width: 540px) {
+  .slide {
+    width: 500px;
+  }
+
+  .arrowLeft {
+    left: 0.5rem;
+    top: 35%;
+  }
+
+  .arrowRight {
+    right: 0.5rem;
+    top: 35%;
+  }
+
+  .indicators {
+    top: 50%;
+  }
+}
+
+@media only screen and (min-width: 412px) and (max-width: 430px) {
+  .arrowLeft {
+    left: 1.2rem;
+  }
+
+  .arrowRight {
+    right: 1.2rem;
+  }
+}
+
+@media only screen and (width: 280px) {
+  .title {
+    margin-bottom: 2.8rem;
+  }
+  .carousel {
+    height: 300px;
+  }
+
+  .indicators {
+    top: 35%;
+  }
+
+  .arrowLeft {
+    top: 25%;
+  }
+
+  .arrowRight {
+    top: 25%;
+  }
 }
