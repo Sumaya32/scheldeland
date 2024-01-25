@@ -13,7 +13,7 @@
     align-items: center;
     /* width: 650px; */
     /* width: 700px; */
-    width: 900px;
+    /* width: 900px; */
     /* height: 450px; */
     /* height: 500px; */
     height: 540px;
@@ -33,11 +33,14 @@
     border-radius: 0.5rem;
     box-shadow: 4px 4px 10px #666;
     text-align: center;
-    /* width: 700px; */
-    width: 900px;
+    width: 700px;
+    width: 650px;
+
+    /* width: 900px; */
 
     /* height: 70%; */
-    height: 90%;
+    height: 80%;
+
     padding: 0;
 }
 
@@ -68,7 +71,7 @@
     position: absolute;
     width: 10rem;
     height: 7rem;
-  top: 65%; 
+  top: 60%; 
 }
 
 .indicatorsMiddleContainer{
@@ -129,7 +132,7 @@
 }
 
 
-@media only screen and (width: 1024px) {
+/* @media only screen and (width: 1024px) {
 
 .carousel {
     width: 800px;
@@ -155,9 +158,7 @@
 
     top: 58%; 
   }
-
-
-}
+} */
 
 
 
@@ -169,7 +170,6 @@
 
 .carousel {
 
-    /* height: 450px; */
     height: 400px;
 
     width: 500px;
@@ -180,6 +180,7 @@
 .slide {
     border-radius: 0;
     height: 70%;
+    width: 400px;
 
 }
 
@@ -208,20 +209,59 @@
     }
 
     .arrowLeft {
-        left: -7rem;
+        left: -3rem;
+        top: 38%
+    }
+    
+    .arrowRight {
+        right: -3rem;
+        top: 38%
+    }
+
+    .indicators {
+        top: 55%; 
+      }
+
+      .slide {
+        border-radius: 0;
+        height: 70%;
+        width: 650px;    
+    }
+    
+}
+
+
+@media only screen and (width: 540px) {
+    
+    .slide {
+        width: 500px;
+    }
+
+    .arrowLeft {
+        left: 0.5rem;
         top: 35%
     }
     
     .arrowRight {
-        right: -7rem;
+        right: 0.5rem;
         top: 35%
     }
 
     .indicators {
 
-        top: 55%; 
+        top: 50%; 
       }
+}
+
+
+@media only screen and (min-width: 412px) and (max-width: 430px) {
+    .arrowLeft {
+        left: 1.2rem;
+    }
     
+    .arrowRight {
+        right: 1.2rem;
+    }
 }
 
 
@@ -239,12 +279,10 @@
   }
 
   .arrowLeft {
-    /* left: -7rem; */
     top: 25%
 }
 
 .arrowRight {
-    /* right: -7rem; */
     top: 25%
 }
 }
