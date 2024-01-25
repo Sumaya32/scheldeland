@@ -48,7 +48,7 @@ export const Dishes = () => {
   }, [mainDish, mainDishLoading, sharingFood, dessert, appetizer,
     monthlyDish, kidsMenu, kidsDessert, supplement])
 
-  if (sharingFoodLoading) return <Spinner />
+    if (sharingFoodLoading) return <Spinner />
   return (
     <>
       {
@@ -101,15 +101,20 @@ export const Dishes = () => {
                   <div className={styles.contentContainer}>
                     <div className={`${styles.miniContainer}`}>
 
-                      {mainDishDescArray?.sort((a, b) => a?.node.gerechtmeta.title < b?.node.gerechtmeta.title ? -1 : 1).map((item) => {
+                      {mainDishDescArray && mainDishDescArray?.sort((a, b) => a?.node.gerechtmeta.title < b?.node.gerechtmeta.title ? -1 : 1).map((item, index) => {
                         const gerecht = item.node.gerechtmeta;
                         const id = item.node.id;
+                        const visible = gerecht.visible[0]
                         return <div className={styles.allMenus}>
+                          {visible === "Visible" &&
                           <div key={id} className={styles.menuNavLink}>
 
                             <div className={styles.dishTitle}>{gerecht.title}</div>
                             <div className={styles.dishDescription}>{gerecht.menudescription}</div>
+                            <div className={styles.dishDescription}>{visible}</div>
+
                           </div>
+                            } 
                         </div>
                       })}
                     </div>

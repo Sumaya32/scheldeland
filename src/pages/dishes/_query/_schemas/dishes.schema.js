@@ -10,6 +10,7 @@ query {
           origin
           price
           menudescription
+          visible
         }
         id
         slug
