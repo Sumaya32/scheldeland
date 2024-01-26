@@ -32,7 +32,7 @@ const Footer = () => {
             
             <span className={style.footerUnderline}></span>
 
-            <div className={style.copyright}>© 2023 SCHELDELAND - <a href='https://sumaya.be' target='_blank'>CREATED BY SUMAYA MA</a></div>
+            <div className={style.copyright}>© 2024 SCHELDELAND - <a href='https://sumaya.be' target='_blank'>CREATED BY SUMAYA MA</a></div>
           </div>
         </footer>
     )
