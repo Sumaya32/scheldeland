@@ -7,16 +7,28 @@ const Footer = () => {
         <footer>
           <div className={style.footerContainer}>
        
-            <ul className={style.footerNavLinks}>
+  <div className={style.ulContainer}>
+  <ul className={style.footerNavLinks}>
+              <li> 
+              <p className={style.flowUs}> Volg ons op </p>
+
+              </li>
                 <li className={style.footerNavLinkItem}>
                     <a href="https://m.facebook.com/profile.php?id=1555690324520158&__tn__=C-R" className={style.FooterLinkText} target="_blank" >
-              <p className={style.fbIconText}> Volg ons op </p>
-              <img className={style.fbIcon} src='/facebook.png' />
+              <img className={`${style.icons} ${style.fbIcon}`} src='/facebook.png' />
+
                        
                     </a>
                 </li>
+                <li>
+                                      <a href="https://www.instagram.com/tavernescheldeland?igsh=MWx0YmR4MG9zdjVvYg%3D%3D&utm_source=qr" className={style.FooterLinkText} target="_blank" >
+
+                <img className={`${style.icons} ${style.InstaIcon}`} src='/instagram.png' />
+</a>
+                </li>
             </ul>
 
+  </div>
             
             <span className={style.footerUnderline}></span>
 
