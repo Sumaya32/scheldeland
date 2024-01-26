@@ -81,7 +81,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center; 
 }
 
 .CarouselFirstContainer {
@@ -105,7 +105,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 800px;
+    max-height: 100%;
+    padding: 3% 0 5% 0;
 }
 
 .dishesImage {
@@ -113,7 +114,7 @@ body {
     height: 160px;
 }
 
-.dishesTitle {
+/* .dishesTitle {
     margin-top: 1rem;
     text-align: center;
     text-decoration: none;
@@ -121,7 +122,7 @@ body {
     font-size: 1.4rem;
     font-family: "Dancing Script", cursive;
     background-color: red;
-}
+} */
 
 .price {
     color: rgb(112, 115, 119);
@@ -134,7 +135,7 @@ body {
     font-size: 3rem;
     font-family: "Dancing Script", cursive;
     text-align: center;
-    margin-bottom: 6rem;
+    margin-bottom: 3rem;
     padding-top: 0.5rem;
 }
 
@@ -203,6 +204,7 @@ body {
  }
 }
 
+
 @media only screen and (width: 1024px) {
     .descriptionContainer {
         margin-bottom: 55rem;
@@ -213,6 +215,7 @@ body {
         -ms-transform: translate(0, 650px);
     }
 }
+
 
 @media only screen and (max-width: 768px) {
     .descriptionContainer {
@@ -230,10 +233,6 @@ body {
         margin-bottom: 20rem;
     }
 
-    .middleContainer {
-        height: 500px;
-    }
-
     .description {
         margin-left: 0;
     }
@@ -247,7 +246,6 @@ body {
     .topTitle {
         font-size: 3rem;
         padding: 0 0 0.2rem 0;
-        margin-bottom: 0;
     }
 }
 
@@ -259,9 +257,6 @@ body {
         -moz-transform: translate(0, 1025px);
         -o-transform: translate(0, 1025px);
         -ms-transform: translate(0, 1025px);
-    }
-    .middleContainer {
-        height: 800px;
     }
 }
 
@@ -302,20 +297,21 @@ body {
         -o-transform: translate(0, 738px);
         -ms-transform: translate(0, 738px);
     }
-
-    .sharingTopTitle,
-    .topTitle { 
-        margin-bottom: 1;
-    }
+    .middleContainer {
+        padding: 3% 0 7% 0;
+    }    
 
 }
 
+@media only screen and (min-width: 240px) and (max-width: 430px) {
+
+    .middleContainer {
+        padding: 3% 0 7% 0;
+    }    
+
+}
 
 @media only screen and (max-width: 280px) {
-    .topTitle {
-        margin-bottom: 1rem;
-    }
-
     .CarouselFirstContainer{
         margin-bottom: 13rem;
     }
