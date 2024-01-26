@@ -31,6 +31,11 @@
   padding: 0;
 }
 
+
+.img{
+  position: relative;
+
+}
 .arrow {
   position: absolute;
   width: 2.5rem;
@@ -41,12 +46,12 @@
 }
 
 .arrowLeft {
-  left: 1.7rem;
+  left: 0.2rem;
   top: 35%;
 }
 
 .arrowRight {
-  right: 1.7rem;
+  right: 0.2rem;
   top: 35%;
 }
 
@@ -143,10 +148,9 @@
     margin: 0.5rem 0 0 0;
     padding-bottom: auto;
   }
-
   .carousel {
-    height: 1500px; 
-     width: 500px;
+    /* height: 1500px;  */
+     /* width: 500px; */
   }
 
   .slide {
@@ -156,18 +160,18 @@
   }
 
   .arrowLeft {
-    left: 2.8rem;
+    left: 0.1rem;
     top: 32%;
   }
  
   .arrowRight {
-    right: 2.8rem;
+    right: 0.1rem;
     top: 32%;
   }
 
   .indicatorsMiddleContainer {
     top: 60%;
-    left: 30%;
+    /* left: 30%; */
   }
 
   .indicators {
@@ -181,12 +185,12 @@
   }
 
   .arrowLeft {
-    left: -3rem;
+    left: 1rem;
     top: 38%;
   }
 
   .arrowRight {
-    right: -3rem;
+    right: 1rem;
     top: 38%;
   }
 
@@ -195,71 +199,14 @@
   }
 
   .slide {
-    /* border-radius: 0; */
     height: 600px;
     width: 600px;
   }
 }
 
-/* @media only screen and (min-width: 423px) and (max-width: 767px) {
-  .arrowLeft {
-    left: 4rem;
-  }
-
-  .arrowRight {
-    right: 4rem;
-  }
-} */
 
 @media only screen and (width: 540px) {
-  /* .slide {
-    width: 500px;
-  } */
-
-  .arrowLeft {
-    left: 6.2rem;
-    top: 35%;
-  }
-
-  .arrowRight {
-    right: 6.2rem;
-    top: 35%;
-  }
-
   .indicators {
-    top: 50%;
-  }
-}
-
-@media only screen and (min-width: 412px) and (max-width: 430px) {
-  .arrowLeft {
-    left: 4rem;
-  }
-
-  .arrowRight {
-    right: 4rem;
-  }
-}
-
-@media only screen and (max-width: 320px) {
-  .title {
-    margin-bottom: 2.8rem;
-  }
-  .carousel {
-    height: 300px;
-  }
-
-  .indicators {
-    top: 35%;
-  }
-
-  .arrowLeft {
-    top: 20%;
-    left: 0.5rem;
-  }
-
-  .arrowRight {
-    top: 20%;
-    right: 0.5rem;
+    top: 45%;
   }
 }

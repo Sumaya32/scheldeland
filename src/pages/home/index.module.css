@@ -303,6 +303,11 @@ body {
         -ms-transform: translate(0, 738px);
     }
 
+    .sharingTopTitle,
+    .topTitle { 
+        margin-bottom: 1;
+    }
+
 }
 
 
