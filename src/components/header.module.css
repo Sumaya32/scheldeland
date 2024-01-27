@@ -35,6 +35,8 @@ header {
     height: 80px;
     padding: 0 2rem;
     background-color: var(--mainColor);
+    /* background-color: var(--responsive-mainColor); */
+
     color: var(--text-color);
     z-index: 1;
     /* font-family: 'Titillium Web', sans-serif; */
@@ -87,10 +89,12 @@ header .nav_btn {
 .faBars {
     color: var(--menubar-color);
     /* margin-bottom: -5px; */
+    height: 1.8rem;
+
 }
 
 .faBars {
-    height: 1.8rem;
+    /* height: 1.8rem; */
 }
 
 
@@ -98,7 +102,7 @@ header .nav_btn {
 
 @media only screen and (max-width: 1280px) {
     header {
-        background-color: var(--responsive-mainColor);
+        background-color: var(--mainColor);
     }
 }
 
@@ -122,9 +126,7 @@ header .nav_btn {
         /* background-color: yellow; */
         position: absolute;
         top: 2rem;
-        right: 1.5rem
-
-
+        right: 2.5rem
     }
 
     header nav {
@@ -146,7 +148,10 @@ header .nav_btn {
 
     header .responsive_nav {
         transform: none;
-        background-color: var( --responsive-header-background-color)
+        background-color: var( --responsive-header-background-color);
+    background-color: var(--mainColor);
+
+        
     }
 
     header .nav_close_btn {
