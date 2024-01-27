@@ -31,10 +31,10 @@ export const Carousel = ({ items }) => {
 
             )}
             <BsArrowRightCircleFill className={`${styles.arrow} ${styles.arrowRight}`} onClick={prevSlide} />
-            <span className={styles.indicators}>
+            <span className={styles.indicators}> 
          <div className={styles.indicatorsMiddleContainer}>
          {data?.map((_, index) => 
-                    <div className={styles.slideAndTextContainer}>
+                    <div className={styles.slideAndTextContainer} key={index}>
                          <button className={slide === index ? `${styles.indicator}` : `${styles.indicator} ${styles.indicatorInactive}`} key={index} onClick={() => setSlide(index)}></button>
                     </div>
                 )}

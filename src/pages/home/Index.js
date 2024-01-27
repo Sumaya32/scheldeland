@@ -35,15 +35,23 @@ export const Home = () => {
 
             <div className={styles.CarouselFirstContainer}>
               <div className={styles.middleContainer}>
-                <div > <h1 className={`${styles.topTitle}`}>Populaire gerechten</h1>     </div>
+                <div > <h1 className={`${styles.topTitle}`}>Populaire Hoofdgerechten</h1>     </div>
                 <Carousel items={data && data?.gerechten?.map((item) => item.gerechtmeta)} />
+              </div>
+            </div>
+
+            <div className={styles.CarouselFirstContainer}>
+              <div className={styles.middleContainer}>
+                <div > <h1 className={`${styles.topTitle}`}>Populaire kleine honger</h1>     </div>
+                <Carousel 
+                items={data && data?.kleinehonger?.map((item) => item.kleinehongermeta)}/>
               </div>
             </div>
 
             <div className={styles.CarouselSecondContainer}>
               <div className={`${styles.middleContainer} ${styles.secondMiddleContainer}`}>
                 <div > <h1 className={`${styles.topTitle}`}>Populaire Sharing food</h1>     </div>
-                <Carousel items={data && data?.sharingfood?.map((item) => item.sharingFoodmeta)} />
+                <Carousel items={data && data?.sharingfood?.map((item) => item.sharingFoodmeta)}/>
               </div>
             </div>
 

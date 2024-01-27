@@ -46,7 +46,7 @@ export const Dishes = () => {
     if (kidsDessert) { setKidsDessertDescArray([...kidsDessert]) }
     if (supplement) { setSupplementDescArray([...supplement]) }
   }, [mainDish, mainDishLoading, sharingFood, dessert, appetizer,
-    monthlyDish, kidsMenu, kidsDessert, supplement])
+    monthlyDish, kidsMenu, kidsDessert, supplement]);
 
     if (sharingFoodLoading) return <Spinner />
   return (
@@ -100,23 +100,20 @@ export const Dishes = () => {
                   <h2 className={styles.headTitle}>Hoofdgerechten</h2>
                   <div className={styles.contentContainer}>
                     <div className={`${styles.miniContainer}`}>
-
-                      {mainDishDescArray && mainDishDescArray?.sort((a, b) => a?.node.gerechtmeta.title < b?.node.gerechtmeta.title ? -1 : 1).map((item, index) => {
+                      { mainDishDescArray && mainDishDescArray
+                      .filter((item) => item.node.gerechtmeta.visible !== null)
+                      .sort((a, b) => a?.node.gerechtmeta.title < b?.node.gerechtmeta.title ? -1 : 1)
+                      .map((item, index) => {
                         const gerecht = item.node.gerechtmeta;
                         const id = item.node.id;
-                        const visible = gerecht.visible[0]
+     
                         return <div className={styles.allMenus}>
-                          {visible === "Visible" &&
                           <div key={id} className={styles.menuNavLink}>
-
                             <div className={styles.dishTitle}>{gerecht.title}</div>
                             <div className={styles.dishDescription}>{gerecht.menudescription}</div>
-                            <div className={styles.dishDescription}>{visible}</div>
-
-                          </div>
-                            } 
+                          </div>       
                         </div>
-                      })}
+                      })}                      
                     </div>
                     <div className={styles.extraInfo}><p>Alle steaks zijn te verkrijgen met Bearnaisesaus, pepersaus of Champignonsaus</p>  </div>
                   </div>

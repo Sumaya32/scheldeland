@@ -119,17 +119,13 @@ padding-bottom: 4rem;
 }
 
 .contentContainer {
-    /* background-color: yellow; */
-
     height: auto;
     display: flex;
     flex-direction: column;
     justify-items: center;
     align-items: center;
     z-index: 1;
-    /* width: 40%; */
     padding-bottom: 3rem;
-
 }
 
 .contentContainerSharing {
@@ -143,9 +139,7 @@ padding-bottom: 4rem;
 }
 
 .miniContainer {
-
     width: 100%;
-    /* background-color: yellow; */
     display: grid;
     grid-template-columns: 300px 300px;
     row-gap: 17px;
@@ -153,7 +147,6 @@ padding-bottom: 4rem;
     justify-content: center;
     column-count: 2;
     align-items: flex-start;
-    /* margin-bottom: 1rem; */
     width: auto;
 }
 
@@ -198,6 +191,7 @@ padding-bottom: 4rem;
     justify-content: center;
     align-items: center;
 }
+
 
 .dishTitle {
     font-weight: bold;

@@ -62,8 +62,8 @@
 }
 
 .groupAImageContainer {
-    background-color: image-container-background-color;
-    background-color: rgb(247, 244, 239);
+    /* background-color: image-container-background-color;
+    background-color: rgb(247, 244, 239); */
     width: 40%;
     height: auto;
     padding: 1.7rem 0 1.7rem 0;
@@ -184,7 +184,17 @@
 }
 
 /*Media queris*/
-@media only screen and (min-width: 769px) and (max-width: 1350px) {
+
+@media only screen and (min-width: 1200px) and (max-width: 1700px) {
+    .groupAImageContainer,
+    .groupBImageContainer {
+        width: 50%;
+    } 
+}
+
+/* @media only screen and (min-width: 769px) and (max-width: 1350px) { */
+@media only screen and (min-width: 769px) and (max-width: 1200px) {
+
 
     .mainFixedImage{
         background-size: cover;
@@ -208,7 +218,7 @@
 
     .groupADescription,
     .groupBDescription {
-        width: 70%;
+        width: 75%;
         height: auto;
         margin-bottom: 3%;
     }
@@ -223,29 +233,29 @@
 
     .groupAImageContainer,
     .groupBImageContainer {
-        width: 70%;
+        width: 75%;
     }
 
-    .groupAImage {
-        height: 35vh;
+    .groupAImage, .groupBImage {
+        /* height: 25vh; */
     }
 }
 
 
-@media only screen and (min-width: 820px) and (max-width: 1024px) {
+/* @media only screen and (min-width: 820px) and (max-width: 1024px) {
     .container {
         margin-top: 9rem;
     }
 
     .groupAImageContainer,
     .groupBImageContainer {
-        width: 90%;
+        width: 80%;
     }
 
     .groupAContainer {
         margin-bottom: 20rem;
     }
-}
+} */
 
 @media only screen and (width: 1024px) {
     .groupAContainer {
@@ -254,12 +264,12 @@
 
     .groupAImageContainer,
     .groupBImageContainer {
-        width: 70%;
+        width: 75%;
     }
 
     .groupBImage,
     .groupAImage {
-        height: 40vh;
+        /* height: 45vh; */
     }
 
     .groupADescription,
@@ -270,6 +280,17 @@
     .discriptionParagraph {
         width: 100%;
     }
+}
+
+
+@media only screen and (width: 820px) {
+    .groupAImageContainer , .groupBImageContainer, .groupADescription, .groupBDescription{
+        width: 95%;
+    }
+    .groupAImage, .groupBImage {
+        height: 25vh;
+    }
+
 }
 
 
@@ -302,16 +323,10 @@
     }
 
     .groupAImageContainer {
-        width: 90%;
+        width: 60%;
         height: auto;
         margin-bottom: 10%;
         margin-right: 0;
-    }
-
-    
-
-    .groupAImage {
-        height: 40vh;
     }
 
     .groupASmallImageContainer {
@@ -322,7 +337,7 @@
 
     .groupADescription {
         text-align: center;
-        width: 90%;
+        width: 60%;
         margin-right: 0;
         height: auto;
         margin-bottom: 5%;
@@ -343,16 +358,15 @@
 
     }
 
-
     .groupBImageContainer {
-        width: 90%;
+        width: 60%;
         height: auto;
         margin-bottom: 2%;
         margin-right: 0;
     }
 
-    .groupBImage {
-        height: 40vh;
+    .groupBImage, .groupAImage {
+        /* height: 40vh; */
     }
 
     .groupBSmallImageContainer {
@@ -362,7 +376,7 @@
     }
 
     .groupBDescription {
-        width: 90%;
+        width: 60%;
         margin-bottom: 3%;
         margin-right: 0;
         height: auto;
@@ -388,19 +402,24 @@
     .groupBDescription {
         width: 70%;
     }
+
+    .groupAImage {
+        height: 40vh;
+
+    }
 }
 
 
-@media only screen and (width: 540px) {
+@media only screen and (max-width: 500px) {
 
     .groupBImage,
     .groupAImage {
-        height: 37vh;
+        height: 27vh;
     }
 
     .groupBImageContainer,
-    .groupAImageContainer {
-        width: 70%;
+    .groupAImageContainer, .groupADescription, .groupBDescription {
+        width: 85%;
     }
 
 }
