@@ -255,11 +255,6 @@ align-self: center;
         width: 75%;
     }
 
-    .groupBImage,
-    .groupAImage {
-        /* height: 45vh; */
-    }
-
     .groupADescription,
     .groupBDescription {
         width: 70%;
