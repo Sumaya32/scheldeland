@@ -157,7 +157,8 @@ header .nav_btn {
     header .nav_close_btn {
         position: absolute;
         top: 2rem;
-        right: 1.5rem
+        /* right: 1.5rem */
+        right: 2.5rem;
     }
 
     nav a {
@@ -183,5 +184,7 @@ header .nav_btn {
         margin: 0.4rem 3rem 0 1rem;
     }
 }
+
+
 
 

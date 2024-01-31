@@ -252,12 +252,12 @@ align-self: center;
 
     .groupAImageContainer,
     .groupBImageContainer {
-        width: 75%;
+        width: 60%;
     }
 
     .groupADescription,
     .groupBDescription {
-        width: 70%;
+        width: 60%;
     }
 
     .discriptionParagraph {
@@ -407,7 +407,7 @@ align-self: center;
 
     .groupBImage,
     .groupAImage {
-        height: 27vh;
+        height: 30vh;
     }
 
     .groupBImageContainer,
