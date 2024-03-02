@@ -94,6 +94,7 @@ align-items: center;
   flex-wrap: wrap;
   justify-content: center;
   gap: 10px;
+  width: 95%;
 }
 
 .imageMiniContainer {
@@ -101,6 +102,7 @@ align-items: center;
   padding: 1px;
   text-align: center;
   height: 250px;
+  /* background-color: green; */
 }
 
 .groupAImage, .groupBImage {
