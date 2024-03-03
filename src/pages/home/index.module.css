@@ -1,117 +1,117 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
 
 html,
 body {
-    height: 100%;
-    width: 100%;
-    margin: 0;
-    padding: 0;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
-    font-family: "Helvitica en bradley Hand";
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100vw;
+  font-family: "Helvitica en bradley Hand";
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
 }
 
 /*Fixed Image section*/
 .mainFixedImageContainer {
-    height: 100%;
-    width: 100vw;
+  height: 100%;
+  width: 100vw;
 }
 
 .mainFixedImage {
-    height: 100%;
-    width: 100%;
-    position: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    margin: 0;
-    padding: 0;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 .descriptionContainer {
-    width: 100%;
-    height: auto;
-    white-space: pre-line;
-    color: white;
-    color: black;
-    font-size: 1.5rem;
-    background-color: rgba(255, 255, 255, 0.6);
-    -webkit-backdrop-filter: blur(5px);
-    backdrop-filter: blur(6px);
-    transform: translate(0, 970px);
-    -webkit-transform: translate(0, 970px);
-    -moz-transform: translate(0, 970px);
-    -o-transform: translate(0, 970px);
-    -ms-transform: translate(0, 970px);
-    padding: 3rem 0 3rem 0;
-    background-color: rgba(255, 255, 255, 0.5);
-    -webkit-backdrop-filter: blur(5px);
-    backdrop-filter: blur(5px);
+  width: 100%;
+  height: auto;
+  white-space: pre-line;
+  color: white;
+  color: black;
+  font-size: 1.5rem;
+  background-color: rgba(255, 255, 255, 0.6);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(6px);
+  transform: translate(0, 970px);
+  -webkit-transform: translate(0, 970px);
+  -moz-transform: translate(0, 970px);
+  -o-transform: translate(0, 970px);
+  -ms-transform: translate(0, 970px);
+  padding: 3rem 0 3rem 0;
+  background-color: rgba(255, 255, 255, 0.5);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
 }
 
 .descriptionTitle {
-    margin-bottom: 2rem;
+  margin-bottom: 2rem;
 }
 
 .description {
-    margin-left: 2rem;
-    width: 100%;
+  margin-left: 2rem;
+  width: 100%;
 }
 
 .hiddenText {
-    display: none;
+  display: none;
 }
 
 .CarouselFirstContainer,
 .CarouselSecondContainer {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; 
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .CarouselFirstContainer {
-    margin-bottom: 20rem;
+  margin-bottom: 20rem;
 }
 
-
 .CarouselSecondContainer {
-    margin-bottom: 10rem;
+  margin-bottom: 10rem;
 }
 
 .title {
-    margin-left: 2rem;
+  margin-left: 2rem;
 }
 
 .middleContainer {
-    background-color: rgba(255, 255, 255, 0.5);
-    -webkit-backdrop-filter: blur(4px);
-    backdrop-filter: blur(4px);
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-height: 100%;
-    padding: 3% 0 5% 0;
+  background-color: rgba(255, 255, 255, 0.5);
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* max-height: 100%; */
+  height: auto;
+  /* padding: 3% 0 5% 0; */
 }
 
 .dishesImage {
-    width: 100%;
-    height: 160px;
+  width: 100%;
+  height: 160px;
 }
 
 /* .dishesTitle {
@@ -125,195 +125,187 @@ body {
 } */
 
 .price {
-    color: rgb(112, 115, 119);
-    padding-top: 0.2rem;
-    font-size: 1.2rem;
+  color: rgb(112, 115, 119);
+  padding-top: 0.2rem;
+  font-size: 1.2rem;
 }
 
 .topTitle,
 .sharingTopTitle {
-    font-size: 3rem;
-    font-family: "Dancing Script", cursive;
-    text-align: center;
-    margin-bottom: 3rem;
-    padding-top: 0.5rem;
+  font-size: 3rem;
+  font-family: "Dancing Script", cursive;
+  text-align: center;
+  /* margin-bottom: 3rem; */
+  margin-bottom: 1.5rem;
+
+  /* padding-top: 0.5rem; */
 }
 
 .containerImage,
 .containerSharingFoodImage {
-    background-image: linear-gradient(rgb(234, 232, 232), rgb(0, 0, 0));
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    text-align: center;
+  background-image: linear-gradient(rgb(234, 232, 232), rgb(0, 0, 0));
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  text-align: center;
 }
-
 
 /*Media queries*/
 @media only screen and (max-width: 1300px) {
-    .mainFixedImage {
-        background-size: 100% 100%;
-        -webkit-background-size: 100% 100%;
-        -moz-background-size: 100% 100%;
-        -o-background-size: 100% 100%;
-    }
+  .mainFixedImage {
+    background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+  }
 }
 
 @media only screen and (min-width: 1000px) {
-    .descriptionContainer {
-        margin-bottom: 76rem;
-    }
+  .descriptionContainer {
+    margin-bottom: 76rem;
+  }
 }
-
 
 @media only screen and (min-width: 769px) and (max-width: 1000px) {
-    .cardContainer {
-        grid-template-columns: repeat(2, 20rem);
-    }
+  .cardContainer {
+    grid-template-columns: repeat(2, 20rem);
+  }
 
-    .descriptionContainer {
-        transform: translate(0, 1220px);
-        -webkit-transform: translate(0, 1220px);
-        -moz-transform: translate(0, 1220px);
-        -o-transform: translate(0, 1220px);
-        -ms-transform: translate(0, 1220px);
-        margin-bottom: 100rem
-    }
+  .descriptionContainer {
+    transform: translate(0, 1220px);
+    -webkit-transform: translate(0, 1220px);
+    -moz-transform: translate(0, 1220px);
+    -o-transform: translate(0, 1220px);
+    -ms-transform: translate(0, 1220px);
+    margin-bottom: 100rem;
+  }
 
-    .CarouselFirstContainer {
-        margin-bottom: 25rem;
-    }
+  .CarouselFirstContainer {
+    margin-bottom: 25rem;
+  }
 }
-
 
 @media only screen and (min-width: 900px) and (max-width: 1200px) {
-
-    .descriptionContainer {
-        transform: translate(0, 1410px);
-        -webkit-transform: translate(0, 1410px);
-        -moz-transform: translate(0, 1410px);
-        -o-transform: translate(0, 1410px);
-        -ms-transform: translate(0, 1410px);
-        margin-bottom: 110rem
-    }
+  .descriptionContainer {
+    transform: translate(0, 1410px);
+    -webkit-transform: translate(0, 1410px);
+    -moz-transform: translate(0, 1410px);
+    -o-transform: translate(0, 1410px);
+    -ms-transform: translate(0, 1410px);
+    margin-bottom: 110rem;
+  }
 }
-
 
 @media only screen and (min-width: 1200px) {
- .descriptionContainer{
+  .descriptionContainer {
     margin-bottom: 80rem;
- }
+  }
 }
 
-
 @media only screen and (width: 1024px) {
-    .descriptionContainer {
-        margin-bottom: 55rem;
-        transform: translate(0, 650px);
-        -webkit-transform: translate(0, 650px);
-        -moz-transform: translate(0, 650px);
-        -o-transform: translate(0, 650px);
-        -ms-transform: translate(0, 650px);
-    }
+  .descriptionContainer {
+    margin-bottom: 55rem;
+    transform: translate(0, 650px);
+    -webkit-transform: translate(0, 650px);
+    -moz-transform: translate(0, 650px);
+    -o-transform: translate(0, 650px);
+    -ms-transform: translate(0, 650px);
+  }
 }
 
 
 @media only screen and (max-width: 768px) {
-    .descriptionContainer {
-        text-align: center;
-        margin-left: 0;
-        transform: translate(0, 925px);
-        -webkit-transform: translate(0, 920px);
-        -moz-transform: translate(0, 920px);
-        -o-transform: translate(0, 920px);
-        -ms-transform: translate(0, 920px);
-        margin-bottom: 76rem;
-    }
+  .descriptionContainer {
+    text-align: center;
+    margin-left: 0;
+    transform: translate(0, 925px);
+    -webkit-transform: translate(0, 920px);
+    -moz-transform: translate(0, 920px);
+    -o-transform: translate(0, 920px);
+    -ms-transform: translate(0, 920px);
+    margin-bottom: 76rem;
+  }
 
-    .CarouselFirstContainer{
-        margin-bottom: 20rem;
-    }
+  .CarouselFirstContainer {
+    margin-bottom: 20rem;
+  }
 
-    .description {
-        margin-left: 0;
-    }
+  .description {
+    margin-left: 0;
+  }
 
-    .title {
-        text-align: center;
-        margin-left: 0;
-    }
+  .title {
+    text-align: center;
+    margin-left: 0;
+  }
 
-    .sharingTopTitle,
-    .topTitle {
-        font-size: 3rem;
-        padding: 0 0 0.2rem 0;
-    }
+  .topTitle,
+  .sharingTopTitle {
+    margin-bottom: 4rem;
+  }
+
+  .middleContainer {
+    padding: 0 0 3rem 0;
+  }
 }
 
-
 @media only screen and (width: 768px) {
-    .descriptionContainer {
-        transform: translate(0, 1025px);
-        -webkit-transform: translate(0, 1025px);
-        -moz-transform: translate(0, 1025px);
-        -o-transform: translate(0, 1025px);
-        -ms-transform: translate(0, 1025px);
-    }
+  .descriptionContainer {
+    transform: translate(0, 1025px);
+    -webkit-transform: translate(0, 1025px);
+    -moz-transform: translate(0, 1025px);
+    -o-transform: translate(0, 1025px);
+    -ms-transform: translate(0, 1025px);
+  }
 }
 
 @media only screen and (min-width: 280px) and (max-width: 540px) {
-    .descriptionContainer {
-        margin-bottom: 73rem;
-        transform: translate(0, 920px);
-        -webkit-transform: translate(0, 920px);
-        -moz-transform: translate(0, 920px);
-        -o-transform: translate(0, 920px);
-        -ms-transform: translate(0, 920px);
-    }
+  .descriptionContainer {
+    margin-bottom: 73rem;
+    transform: translate(0, 920px);
+    -webkit-transform: translate(0, 920px);
+    -moz-transform: translate(0, 920px);
+    -o-transform: translate(0, 920px);
+    -ms-transform: translate(0, 920px);
+  }
 
-    .CarouselSecondContainer {
-        margin-bottom: 5rem;
-    }
+  .CarouselSecondContainer {
+    margin-bottom: 5rem;
+  }
 
-    .CarouselFirstContainer {
-        margin-bottom: 15rem;
-    }
+  .CarouselFirstContainer {
+    margin-bottom: 15rem;
+  }
 }
-
 
 @media only screen and (width: 540px) {
-    .CarouselFirstContainer{
-        margin-bottom: 16rem;
-    }
+  .CarouselFirstContainer {
+    margin-bottom: 16rem;
+  }
 }
 
-
 @media only screen and (min-width: 240px) and (max-width: 376px) {
-    .descriptionContainer {
-        margin-bottom: 80rem;
-        margin-bottom: 60rem;
-        transform: translate(0, 738px);
-        -webkit-transform: translate(0, 738px);
-        -moz-transform: translate(0, 738px);
-        -o-transform: translate(0, 738px);
-        -ms-transform: translate(0, 738px);
-    }
-    .middleContainer {
-        padding: 3% 0 7% 0;
-    }    
-
+  .descriptionContainer {
+    margin-bottom: 80rem;
+    margin-bottom: 60rem;
+    transform: translate(0, 738px);
+    -webkit-transform: translate(0, 738px);
+    -moz-transform: translate(0, 738px);
+    -o-transform: translate(0, 738px);
+    -ms-transform: translate(0, 738px);
+  }
+  .middleContainer {
+    padding: 3% 0 7% 0;
+  }
 }
 
 @media only screen and (min-width: 240px) and (max-width: 430px) {
-
-    .middleContainer {
-        padding: 3% 0 7% 0;
-    }    
-
+  .middleContainer {
+    padding: 3% 0 7% 0;
+  }
 }
 
 @media only screen and (max-width: 280px) {
-    .CarouselFirstContainer{
-        margin-bottom: 13rem;
-    }
-
+  .CarouselFirstContainer {
+    margin-bottom: 13rem;
+  }
 }

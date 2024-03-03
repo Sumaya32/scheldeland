@@ -170,17 +170,13 @@
   }
 
   .indicators {
-    top: 45%;
+    top: 63%;
   }
 }
 
 @media only screen and (width: 768px) {
   .carousel {
     margin: 1.5rem 0 1rem 0;
-  }
-
-  .indicators {
-    top: 60%;
   }
 }
 
@@ -194,11 +190,14 @@
     width: 400px;
     margin: 2rem 0 2rem 0;
   }
+    .indicators {
+    top: 55%;
+  }
 }
 
 @media only screen and (max-width: 430px) {
   .title {
-    margin: 0.5rem 0 0 0;
+    /* margin: 0.5rem 0 0 0; */
     padding-bottom: auto;
   }
 
@@ -213,6 +212,9 @@
 
   .arrowRight {
     top: 25%;
+  }
+  .indicators {
+    top: 45%;
   }
 }
 
