@@ -14,8 +14,6 @@ import { Spinner } from './../../components/shared/Spinner';
 import { Error } from '../../components/Error';
 // import image from "../../assets/DishesBackgroundImage3.jpg";
 import image from "../../assets/menuBackgroundImage.jpg";
-
-
 import styles from "./dishes.module.css"
 
 
@@ -47,7 +45,7 @@ export const Dishes = () => {
     if (supplement) { setSupplementDescArray([...supplement]) }
   }, [mainDish, mainDishLoading, sharingFood, dessert, appetizer,
     monthlyDish, kidsMenu, kidsDessert, supplement]);
-
+   
     if (sharingFoodLoading) return <Spinner />
   return (
     <>
@@ -63,11 +61,15 @@ export const Dishes = () => {
                   <h2 className={styles.headTitle} style={{ fontFamily: "Dancing Script, cursive" }}>Sharing food</h2>
                   <div className={`${styles.contentContainer} ${styles.contentContainerSharing}`} >
                     <div className={styles.miniContainer}>
-                      {sharingFoodDescArray?.sort((a, b) => a?.node.sharingFoodmeta.title < b?.node.sharingFoodmeta.title ? -1 : 1).map((item) => {
+                      {sharingFoodDescArray && sharingFoodDescArray
+                      // sharingFoodDescArray?.sort((a, b) => a?.node.sharingFoodmeta.title < b?.node.sharingFoodmeta.title ? -1 : 1).map((item) => {
+                        .filter((item) => item.node.sharingFoodmeta.visible !== null && item.node.sharingFoodmeta.visible[0] !== "Invisible")
+                        .sort((a, b) => a?.node.sharingFoodmeta.title < b?.node.sharingFoodmeta.title ? -1 : 1)
+                        .map((item, index) => {
                         const sharingFoods = item.node.sharingFoodmeta;
                         const id = item.node.id;
-                        return <div className={styles.allMenus}>
-                          <div key={id} className={styles.menuNavLink}>
+                        return <div className={styles.allMenus} key={id}>
+                          <div  className={styles.menuNavLink}>
                             <div className={styles.dishTitle}>{sharingFoods.title}</div>
                             <div className={styles.dishDescription}>{sharingFoods.menudescription}</div>
                           </div>
@@ -82,11 +84,15 @@ export const Dishes = () => {
                   <h2 className={styles.headTitle}>Kleine honger</h2>
                   <div className={styles.contentContainer}>
                     <div className={styles.miniContainer}>
-                      {appetizerDescArray?.sort((a, b) => a?.node.kleinehongermeta.title < b?.node.kleinehongermeta.title ? -1 : 1).map((item) => {
+                      {/* {appetizerDescArray?.sort((a, b) => a?.node.kleinehongermeta.title < b?.node.kleinehongermeta.title ? -1 : 1).map((item) => { */}
+                      {appetizerDescArray && appetizerDescArray
+                      .filter((item) => item.node.kleinehongermeta.visible !== null && item.node.kleinehongermeta.visible[0] !== "Invisible")
+                      .sort((a, b) => a?.node.kleinehongermeta.title < b?.node.kleinehongermeta.title ? -1 : 1)
+                      .map((item, index) => {
                         const appetizers = item.node.kleinehongermeta;
                         const id = item.node.id;
-                        return <div className={styles.allMenus}>
-                          <div key={id} className={styles.menuNavLink}>
+                        return <div className={styles.allMenus} key={id}>
+                          <div className={styles.menuNavLink}>
                             <div className={styles.dishTitle}>{appetizers.title}</div>
                             <div className={styles.dishDescription}>{appetizers.menudescription}</div>
                           </div>
@@ -101,14 +107,14 @@ export const Dishes = () => {
                   <div className={styles.contentContainer}>
                     <div className={`${styles.miniContainer}`}>
                       { mainDishDescArray && mainDishDescArray
-                      .filter((item) => item.node.gerechtmeta.visible !== null)
+                      .filter((item) => item.node.gerechtmeta.visible !== null && item.node.gerechtmeta.visible[0] !== "Invisible")
                       .sort((a, b) => a?.node.gerechtmeta.title < b?.node.gerechtmeta.title ? -1 : 1)
                       .map((item, index) => {
                         const gerecht = item.node.gerechtmeta;
                         const id = item.node.id;
      
-                        return <div className={styles.allMenus}>
-                          <div key={id} className={styles.menuNavLink}>
+                        return <div className={styles.allMenus} key={id}>
+                          <div className={styles.menuNavLink}>
                             <div className={styles.dishTitle}>{gerecht.title}</div>
                             <div className={styles.dishDescription}>{gerecht.menudescription}</div>
                           </div>       
@@ -124,7 +130,7 @@ export const Dishes = () => {
                       const supplements = item?.node.SupplementMeta;
                       const id = item?.node.id;
 
-                      return <div className={styles.supplementMiniContainer}>
+                      return <div className={styles.supplementMiniContainer} key={id}>
                         {item !== supplementDescArray[supplementDescArray.length - 1] ?                   
                           <p key={id} className={styles?.supplementTitle}>{supplements.title},</p>
                           : <p key={id} className={styles?.supplementTitle} > of {supplements.title}</p>
@@ -138,8 +144,8 @@ export const Dishes = () => {
                     {kidsMenuDescArray?.sort((a, b) => a?.node.kindermenumeta.title < b?.node.kindermenumeta.title ? -1 : 1).map((item) => {
                       const kisdMenus = item.node?.kindermenumeta;
                       const id = item?.node.id;
-                      return <div className={styles.allMenus}>
-                        <div key={id} className={styles.menuNavLink}>
+                      return <div className={styles.allMenus}  key={id}>
+                        <div className={styles.menuNavLink}>
                           <div className={styles.dishTitle}>{kisdMenus?.title}</div>
                           <div className={styles.dishDescription} >{kisdMenus?.description}</div>
                         </div>
@@ -155,8 +161,8 @@ export const Dishes = () => {
                       {dessertDescArray?.sort((a, b) => a?.node.dessertmeta.title < b?.node.dessertmeta.title ? -1 : 1).map((item) => {
                         const desserts = item.node.dessertmeta;
                         const id = item?.node.id;
-                        return <div className={styles.allMenus}>
-                          <div key={id} className={styles.menuNavLink} >
+                        return <div className={styles.allMenus} key={id}>
+                          <div  className={styles.menuNavLink} >
                             <div className={`${styles.dishTitle}`}>{desserts.title}</div>
                             <div className={styles.dishDescription} >{desserts.minidescription}</div>
                           </div>
@@ -171,8 +177,8 @@ export const Dishes = () => {
                       {kidsDessertDescArray?.sort((a, b) => a?.node.kindeDessertMeta.title < b?.node.kindeDessertMeta.title ? -1 : 1).map((item) => {
                         const kidsDesserts = item.node?.kindeDessertMeta;
                         const id = item?.node.id;
-                        return <div className={styles.allMenus}>
-                          <div key={id} className={styles.menuNavLink}>
+                        return <div className={styles.allMenus} key={id}>
+                          <div className={styles.menuNavLink}>
                             <div className={styles.dishTitle}>{kidsDesserts?.title}</div>
                             <div className={styles.dishDescription}>{kidsDesserts?.description}</div>
                           </div>

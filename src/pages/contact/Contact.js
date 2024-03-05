@@ -9,6 +9,7 @@ export const Contact = () => {
   const [url] = useState('https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2977.8498601498263!2d4.285960943380119!3d51.12574092945093!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3f2ed903fa9b9%3A0xa6f5bc488e105b17!2sScheldeland!5e0!3m2!1snl!2sbe!4v1670838055770!5m2!1snl!2sbe')
 
   if (isLoading && url) return <Spinner />
+  //allowfullscreen="" 
   return (
     <>
       {url && data ?
@@ -18,7 +19,7 @@ export const Contact = () => {
             <div className={styles.iframeContainer} >
               <iframe src={url && url}
                 className={styles.iframe}
-                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" frameborder="0"
+                loading="lazy" referrerpolicy="no-referrer-when-downgrade" frameborder="0"
                 onScroll="no" >
               </iframe>
             </div>
