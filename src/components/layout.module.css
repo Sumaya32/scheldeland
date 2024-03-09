@@ -9,9 +9,7 @@
     width: 100vw;
     /* overflow-x: hidden; */
 
-    overflow: hidden;
     overflow-x: hidden;
-    overflow-y: hidden;
     position: fixed;
     top: 0;
     bottom: 0;
