@@ -7,8 +7,16 @@
 
   body {
     width: 100vw;
+    /* overflow-x: hidden; */
+
+    overflow: hidden;
     overflow-x: hidden;
-    position: relative;
+    overflow-y: hidden;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
   }
 
   .container {
