@@ -10,11 +10,11 @@
     --header-font-family: HelveticaNeue, Helvetica, Sans-ns-Serif;
 }
 
-.hideHumburger{
+.hideHamburger{
 display: none;
 }
 
-.showHumburger{
+.showHamburger{
     display:inline;
     }
 

@@ -51,7 +51,7 @@ const Header = () => {
                 </button>
             </nav>
             <button className={style.nav_btn} onClick={showNavbar}>
-                <FaBars className={`${style.faBars}  ${hamburgerIsvisible !== true ? style.hideHumburger : style.showHumburger}`} onClick={()=> {hamburgerAndX(); setHamburgerIsvisible(false)}}/>
+                <FaBars className={`${style.faBars}  ${hamburgerIsvisible !== true ? style.hideHamburger : style.showHamburger}`} onClick={()=> {hamburgerAndX(); setHamburgerIsvisible(false)}}/>
             </button>
         </header>
     )
