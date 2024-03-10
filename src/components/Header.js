@@ -1,5 +1,5 @@
 import * as React from "react"
-import { createRef, useRef, useState } from "react"
+import {useRef, useState, useEffect } from "react"
 import { FaBars, FaTimes } from "react-icons/fa"
 import style from './header.module.css'
 import { NavLink } from "react-router-dom"
@@ -7,11 +7,24 @@ import { NavLink } from "react-router-dom"
 
 const Header = () => {
     const [toggled, setToggled] = useState(false);
+    const [xIsVisible, setXIsVisible] = useState(false);
+    const [hamburgerIsvisible, setHamburgerIsvisible] = useState(true);
+
+
     const navRef = useRef();
 
     const showNavbar = () => {
         setToggled(!toggled)
     }
+
+    const hamburgerAndX = () => {
+       if(xIsVisible === true){setHamburgerIsvisible(true);}
+       setXIsVisible(false)
+    }
+
+    useEffect(()=>{
+        hamburgerAndX()
+    },[xIsVisible, hamburgerIsvisible])
 
     const handleClick = ()=> {
         window.scrollTo({ top: 0 });
@@ -34,12 +47,11 @@ const Header = () => {
                     Contact
                 </NavLink>
                 <button className={`${style.nav_btn} ${style.nav_close_btn}`} onClick={showNavbar}>
-                    <FaTimes className={style.faTimes} />
+                    <FaTimes className={style.faTimes} onClick={()=> { hamburgerAndX(); setXIsVisible(true)}}/>
                 </button>
             </nav>
-
             <button className={style.nav_btn} onClick={showNavbar}>
-                <FaBars className={style.faBars}/>
+                <FaBars className={`${style.faBars}  ${hamburgerIsvisible !== true ? style.hideHumburger : style.showHumburger}`} onClick={()=> {hamburgerAndX(); setHamburgerIsvisible(false)}}/>
             </button>
         </header>
     )

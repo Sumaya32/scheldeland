@@ -10,6 +10,14 @@
     --header-font-family: HelveticaNeue, Helvetica, Sans-ns-Serif;
 }
 
+.hideHumburger{
+display: none;
+}
+
+.showHumburger{
+    display:inline;
+    }
+
 .logoContainer {
     margin: 0.4rem 0 0 4rem;
     width: 6rem;
