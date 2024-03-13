@@ -280,6 +280,10 @@ body {
   .CarouselFirstContainer {
     margin-bottom: 15rem;
   }
+  .topTitle,
+  .sharingTopTitle {
+    margin-bottom: 2rem;
+  }
 }
 
 @media only screen and (width: 540px) {
@@ -312,5 +316,9 @@ body {
 @media only screen and (max-width: 280px) {
   .CarouselFirstContainer {
     margin-bottom: 13rem;
+  }
+  .topTitle,
+  .sharingTopTitle {
+    margin-bottom: 1rem;
   }
 }
