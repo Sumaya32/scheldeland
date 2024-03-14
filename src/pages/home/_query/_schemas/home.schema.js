@@ -52,9 +52,6 @@ export const GetHome = gql`
       homefiled {
         title
         description
-        mainimage {
-          sourceUrl
-        }
         gerechten {
           ... on Hoofdgerecht {
             gerechtmeta {
