@@ -12,7 +12,7 @@ import styles from "./index.module.css";
 export const Home = () => {
   const { data, isLoading } = useGetHome();
   const [isImageText, setIsImageText] = useState(false)
-console.log("image" + image && image)
+  
   if (image && isLoading && !data) return <Spinner />
   return (
     <>
