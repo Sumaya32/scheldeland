@@ -29,14 +29,14 @@ body {
   position: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  /* background-size: cover;
+  background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
-  -o-background-size: cover; */
-  background-size: 100% 100%;
+  -o-background-size: cover;
+  /* background-size: 100% 100%;
   -webkit-background-size: 100% 100%;
   -moz-background-size: 100% 100%;
-  -o-background-size: 100% 100%;
+  -o-background-size: 100% 100%; */
   margin: 0;
   padding: 0;
   top: 0;
@@ -160,12 +160,12 @@ body {
 
 /*Media queries*/
 @media only screen and (max-width: 1300px) {
-  .mainFixedImage {
+  /* .mainFixedImage {
     background-size: 100% 100%;
     -webkit-background-size: 100% 100%;
     -moz-background-size: 100% 100%;
     -o-background-size: 100% 100%;
-  }
+  } */
 }
 
 @media only screen and (min-width: 1000px) {
@@ -223,6 +223,13 @@ body {
 
 
 @media only screen and (max-width: 768px) {
+  .mainFixedImage {
+  /* background-size: 100% 100%;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%; */
+  }
+
   .descriptionContainer {
     text-align: center;
     margin-left: 0;
@@ -276,7 +283,12 @@ body {
     -o-transform: translate(0, 920px);
     -ms-transform: translate(0, 920px);
   }
-
+/* .mainFixedImage{
+  background-size: 100% 100%;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+} */
   .CarouselSecondContainer {
     margin-bottom: 5rem;
   }

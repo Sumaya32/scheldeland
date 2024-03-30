@@ -5,9 +5,8 @@ import Layout from '../../components/layout';
 import { Spinner } from './../../components/shared/Spinner';
 import { Carousel } from '../../components/Carousel';
 import { Error } from '../../components/Error';
-import image from "../../assets/mainImage2.jpg"
+import image from "../../assets/homeBackgroundImage2.jpg"
 import styles from "./index.module.css";
-
 
 export const Home = () => {
   const { data, isLoading } = useGetHome();
