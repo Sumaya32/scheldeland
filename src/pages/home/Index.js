@@ -8,6 +8,7 @@ import { Error } from '../../components/Error';
 import image from "../../assets/background-image4.jpg"
 import styles from "./index.module.css";
 
+
 export const Home = () => {
   const { data, isLoading } = useGetHome();
   const [isImageText, setIsImageText] = useState(false)
