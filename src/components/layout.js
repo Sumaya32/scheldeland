@@ -4,9 +4,7 @@ import style from './layout.module.css'
 import Header from "./Header"
 import Footer from "./footer"
 
-const Layout = ({ pageTitle, children }) => {
-  window.scrollTo(0,0)
-  
+const Layout = ({ pageTitle, children }) => {  
   return (
     <div className={style.container}>
       <Header />

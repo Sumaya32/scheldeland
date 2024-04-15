@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { lazy,Suspense } from 'react';
 import { Route, Routes } from 'react-router-dom'
 import {  Dish, Dishes } from './pages/dishes';
@@ -11,6 +11,9 @@ import { Spinner } from './components/shared/Spinner'
 
 
 function App() {
+  useEffect(()=>{
+    // window.scrollTo(0,0)
+  },[])
     return (
       <Routes>
         <Route exact element={<Dish/>} path="menu/:id" />
