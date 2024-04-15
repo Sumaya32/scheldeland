@@ -16,3 +16,10 @@
     min-height: 100vh;
   }
 
+
+  @media (display-mode: fullscreen) {
+    body {
+      width: 100vw;
+      height: auto;
+    }
+  }
