@@ -5,6 +5,7 @@ import Header from "./Header"
 import Footer from "./footer"
 
 const Layout = ({ pageTitle, children }) => {
+  window.scrollTo(0,1)
   return (
     <div className={style.container}>
       <Header />
