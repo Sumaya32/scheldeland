@@ -14,6 +14,8 @@ export const Home = () => {
   const [isImageText, setIsImageText] = useState(false)
   
   if (image && isLoading && !data) return <Spinner />
+//  <div className={`${styles.mainImageContainer} ${styles.mainFixedImage}`} style={{ backgroundImage: `url(${image})` }}>
+
   return (
     <>
       { 
@@ -23,7 +25,7 @@ export const Home = () => {
           <div className={styles.container}>
 
             <div className={styles.mainFixedImageContainer}>
-              <div className={`${styles.mainImageContainer} ${styles.mainFixedImage}`} style={{ backgroundImage: `url(${image})` }}>
+              <div className={`${styles.mainImageContainer} ${styles.mainFixedImage}`}>
                 <div className={isImageText === true ? `${styles.imageInfoContainer}` : `${styles.hiddenText}`} > <div className={styles.imageInfotext} >Image rights - Krisje Vandegaer</div></div>
               </div>
               <div className={styles.descriptionContainer}>
