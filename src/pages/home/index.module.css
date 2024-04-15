@@ -14,17 +14,17 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100vw;
+  /* width: 100vw; */
 }
 
 /*Fixed Image section*/
 .mainFixedImageContainer {
-  height: 100%;
+  /* height: 100%; */
   width: 100vw;
 }
 
 .mainFixedImage {
-  height: 100%;
+  /* height: 100%; */
   width: 100%;
   position: fixed;
   background-position: center;
