@@ -12,7 +12,7 @@ import { Spinner } from './components/shared/Spinner'
 
 function App() {
   useEffect(()=>{
-    // window.scrollTo(0,0)
+    window.scrollTo(0, 1);
   },[])
     return (
       <Routes>
