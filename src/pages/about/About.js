@@ -10,10 +10,9 @@ import { Error } from '../../components/Error';
 export const About = () => {
   const { data, isLoading } = useGetAbout()
   const [employeePictures, setEmployeePicture] = useState([])
-  // const [imagesIndex, setImagesIndex] = useState(data)
   const [customersPictures, setCustomersPictures] = useState([])
   const [visiblePicture, setVisiblePicture] = useState([])
-  const [modalIsOpen, setIsOpen] = React.useState(false)
+  const [modalIsOpen, setIsOpen] = useState(false)
 
 
   const handleChild = () => {

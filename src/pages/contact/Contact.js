@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import Layout from '../../components/layout';
 import { Spinner } from './../../components/shared/Spinner';
 import { Error } from '../../components/Error';
@@ -19,7 +19,7 @@ export const Contact = () => {
               <iframe src={url && url}
                 className={styles.iframe}
                 allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" frameborder="0"
-                onScroll="no" >
+                onScroll="no" title='Google map'>
               </iframe>
             </div>
 
@@ -29,15 +29,15 @@ export const Contact = () => {
 
                 <div className={styles.adressMiniContainer}>
                   <div className={styles.address}>
-                    <img style={{ width: "25px", height: "30px" }} src='./location.png' />
-                    <a href="https://goo.gl/maps/HchfKAeoESF69L5p7" target="_blank">
+                    <img style={{ width: "25px", height: "30px" }} src='./location.png' alt='Location'/>
+                    <a href="https://goo.gl/maps/HchfKAeoESF69L5p7" target="_blank" rel="noreferrer">
                       <div> {data?.address}</div>
                       <div> {data?.city}</div>
                     </a>
                   </div>
 
                   <div className={styles.phone}>
-                    <img style={{ width: "25px", height: "30px" }} src='./mobile.png' />
+                    <img style={{ width: "25px", height: "30px" }} src='./mobile.png' alt='Phone'/>
                     <a href="tel:+476989330" >Reserveren via<br />{data?.phoneNumber}</a>
                   </div>
 

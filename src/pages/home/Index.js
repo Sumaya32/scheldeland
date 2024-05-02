@@ -1,5 +1,4 @@
-import React, { useState } from 'react';
-// import { NavLink } from 'react-router-dom';
+import React from 'react';
 import { useGetHome } from './_query';
 import Layout from '../../components/layout';
 import { Spinner } from './../../components/shared/Spinner';
@@ -11,10 +10,8 @@ import styles from "./index.module.css";
 
 export const Home = () => {
   const { data, isLoading } = useGetHome();
-  const [isImageText, setIsImageText] = useState(false)
   
   if (image && isLoading && !data) return <Spinner />
-//  <div className={`${styles.mainImageContainer} ${styles.mainFixedImage}`} style={{ backgroundImage: `url(${image})` }}>
 
   return (
     <>
@@ -26,10 +23,10 @@ export const Home = () => {
 
             <div className={styles.mainFixedImageContainer}>
               <div className={`${styles.mainImageContainer} ${styles.mainFixedImage}`}>
-                <div className={isImageText === true ? `${styles.imageInfoContainer}` : `${styles.hiddenText}`} > <div className={styles.imageInfotext} >Image rights - Krisje Vandegaer</div></div>
+              <div className={`${styles.mainFixedImage}`} style={{ backgroundImage: `url(${image})` }}>  </div>
               </div>
-              <div className={styles.descriptionContainer}>
 
+              <div className={styles.descriptionContainer}>
                 <h2 className={`${styles.title} ${styles.descriptionTitle}`} >{data?.title}</h2>
                 <div className={styles.description}>{data?.description}</div>
               </div>
@@ -64,18 +61,3 @@ export const Home = () => {
     </>
   );
 }
-
-
-
-{/* <div className={`${styles.cardContainer}`}>
-
-              {data?.gerechten?.map((item) =>
-                <div key={item.slug} className={styles.card}>
-                  <NavLink to={`${"menu"}/${item.slug}`} className={styles.link}>
-                    <img src={item.gerechtmeta?.menuimage?.sourceUrl} className={styles.dishesImage} />
-                    <div className={styles.dishesTitle}>{item.gerechtmeta?.title}</div>
-                    <p className={styles.price}>{item.gerechtmeta?.price}</p>
-                  </NavLink>
-                </div>
-              )}
-            </div> */}

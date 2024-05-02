@@ -12,7 +12,6 @@ import {
 import Layout from '../../components/layout';
 import { Spinner } from './../../components/shared/Spinner';
 import { Error } from '../../components/Error';
-// import image from "../../assets/DishesBackgroundImage3.jpg";
 import image from "../../assets/menuBackgroundImage.jpg";
 import styles from "./dishes.module.css"
 
@@ -62,7 +61,6 @@ export const Dishes = () => {
                   <div className={`${styles.contentContainer} ${styles.contentContainerSharing}`} >
                     <div className={styles.miniContainer}>
                       {sharingFoodDescArray && sharingFoodDescArray
-                      // sharingFoodDescArray?.sort((a, b) => a?.node.sharingFoodmeta.title < b?.node.sharingFoodmeta.title ? -1 : 1).map((item) => {
                         .filter((item) => item.node.sharingFoodmeta.visible !== null && item.node.sharingFoodmeta.visible[0] !== "Invisible")
                         .sort((a, b) => a?.node.sharingFoodmeta.title < b?.node.sharingFoodmeta.title ? -1 : 1)
                         .map((item, index) => {
@@ -84,7 +82,6 @@ export const Dishes = () => {
                   <h2 className={styles.headTitle}>Kleine honger</h2>
                   <div className={styles.contentContainer}>
                     <div className={styles.miniContainer}>
-                      {/* {appetizerDescArray?.sort((a, b) => a?.node.kleinehongermeta.title < b?.node.kleinehongermeta.title ? -1 : 1).map((item) => { */}
                       {appetizerDescArray && appetizerDescArray
                       .filter((item) => item.node.kleinehongermeta.visible !== null && item.node.kleinehongermeta.visible[0] !== "Invisible")
                       .sort((a, b) => a?.node.kleinehongermeta.title < b?.node.kleinehongermeta.title ? -1 : 1)

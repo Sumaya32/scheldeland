@@ -1,32 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
 
-/* html,
-body {
-  height: 100%;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-} */
-
 .container {
   font-family: "Helvitica en bradley Hand";
-  /* height: 100%; */
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* width: 100vw; */
 }
 
 /*Fixed Image section*/
 .mainFixedImageContainer {
-  /* height: 100%; */
   width: 100vw;
 }
 
 .mainFixedImage {
-  background-image: url("/public/background-image4.jpg");
   height: 100vh;
-  /* width: 100%; */
   position: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -34,10 +21,6 @@ body {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  /* background-size: 100% 100%;
-  -webkit-background-size: 100% 100%;
-  -moz-background-size: 100% 100%;
-  -o-background-size: 100% 100%; */
   margin: 0;
   padding: 0;
   top: 0;
@@ -54,7 +37,6 @@ body {
   color: white;
   color: black;
   font-size: 1.5rem;
-  /* background-color: rgba(255, 255, 255, 0.6); */
   -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(6px);
   transform: translate(0, 970px);
@@ -63,9 +45,7 @@ body {
   -o-transform: translate(0, 970px);
   -ms-transform: translate(0, 970px);
   padding: 3rem 0 3rem 0;
-  /* background-color: rgba(255, 255, 255, 0.5); */
   background-color: rgb(247, 244, 239, 0.3);
-
   -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
 }
@@ -106,34 +86,20 @@ body {
 
 .middleContainer {
   background-color: rgba(255, 255, 255, 0.5);
-  /* background-color: rgba(249, 235, 221, 0.4); */
   background-color: rgb(247, 244, 239, 0.3);
- 
   -webkit-backdrop-filter: blur(4px);
   backdrop-filter: blur(4px);
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* max-height: 100%; */
   height: auto;
-  /* padding: 3% 0 5% 0; */
 }
 
 .dishesImage {
   width: 100%;
   height: 160px;
 }
-
-/* .dishesTitle {
-    margin-top: 1rem;
-    text-align: center;
-    text-decoration: none;
-    list-style: none;
-    font-size: 1.4rem;
-    font-family: "Dancing Script", cursive;
-    background-color: red;
-} */
 
 .price {
   color: rgb(112, 115, 119);
@@ -146,10 +112,7 @@ body {
   font-size: 3rem;
   font-family: "Dancing Script", cursive;
   text-align: center;
-  /* margin-bottom: 3rem; */
   margin-bottom: 1.5rem;
-
-  /* padding-top: 0.5rem; */
 }
 
 .containerImage,
@@ -161,16 +124,6 @@ body {
 }
 
 /*Media queries*/
-@media only screen and (max-width: 1300px) {
-  /* .mainFixedImage {
-    background-image: url("/public/homeBackgroundImage2.jpg");
-    background-size: 100% 100%;
-    -webkit-background-size: 100% 100%;
-    -moz-background-size: 100% 100%;
-    -o-background-size: 100% 100%;
-  } */
-}
-
 @media only screen and (min-width: 1000px) {
   .descriptionContainer {
     margin-bottom: 76rem;
@@ -226,15 +179,6 @@ body {
 
 
 @media only screen and (max-width: 768px) {
-  /* .mainFixedImage {
-
-      background-image: url("/public/homeBackgroundImage2.jpg");
-      background-position: fixed;
-      background-size: cover;
-  
-
-  } */
-
   .descriptionContainer {
     text-align: center;
     margin-left: 0;
@@ -288,12 +232,7 @@ body {
     -o-transform: translate(0, 920px);
     -ms-transform: translate(0, 920px);
   }
-/* .mainFixedImage{
-  background-size: 100% 100%;
-  -webkit-background-size: 100% 100%;
-  -moz-background-size: 100% 100%;
-  -o-background-size: 100% 100%;
-} */
+
   .CarouselSecondContainer {
     margin-bottom: 5rem;
   }

@@ -13,7 +13,6 @@
   align-items: center;
   height: auto;
   width: 600px;
-  /* height: 600px; */
 }
 
 .contentContainer {
@@ -28,8 +27,6 @@
   border-radius: 0.5rem;
   box-shadow: 4px 4px 10px #666;
   text-align: center;
-  /* width: 100%;
-  height: 100%; */
   padding: 0;
   height: 550px;
   width: 600px;
@@ -116,34 +113,8 @@
   color: #4f4e4e;
 }
 
-/* @media only screen and (width: 1024px) {
 
-.carousel {
-    width: 800px;
-    height: 450px;
-}
-
-.slide{
-    width: 800px;
-
-}
-
-.arrowLeft {
-    left: 2rem;
-    top: 35%
-}
-
-.arrowRight {
-    right: 2rem;
-    top: 35%
-}
-
-.indicators {
-
-    top: 58%; 
-  }
-} */
-
+/*Medie queries*/
 @media only screen and (max-width: 768px) {
   .title {
     margin: 0.5rem 0 0 0;

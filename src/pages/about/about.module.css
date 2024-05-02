@@ -6,14 +6,9 @@
 .container {
   margin: 12rem 0 7rem 0;
   font-family: text-font-family;
-  /* height: 100%; */
-  /* background-color: rebeccapurple; */
 }
 
 .mainFixedImage {
-  /* min-height: 100%; */
-  /* height: 100%; */
-  /* width: 100%; */
   position: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -21,21 +16,13 @@
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  /* background-position: center;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  -webkit-background-size: 100% 100%;
-  -moz-background-size: 100% 100%;
-  -o-background-size: 100% 100%; */
   margin: 0;
   padding: 0;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  /* width: 100vw; */
   height: 100vh;
-
 }
 
 .title {
@@ -56,7 +43,6 @@
   justify-content: space-evenly;
   width: 100%;
   height: 100%;
-  /* white-space: pre-wrap; */
   white-space: pre-line;
   margin-bottom: 5rem;
   -webkit-backdrop-filter: blur(5px);
@@ -71,31 +57,8 @@
   align-items: center;
   justify-content: center;
   border-radius: 5px;
-  /* background-color: rgba(255, 255, 255, 0.1);
-  -webkit-backdrop-filter: blur(1px);
-  backdrop-filter: blur(1px); */
   align-self: center;
 }
-
-/* .groupASmallImageContainer {
-    background-color: aqua;
-    width: 95%;
-    display: grid;
-    grid-template-columns: 48% 48%;
-    row-gap: 10px;
-    column-gap: 10px; 
-    justify-content: center;
-align-items: center;
-
-}
-
-.groupAImage {
-    width: 100%;
-    height: 30vh;
-
-    border: 2px solid black;
-    border-radius: 5px;
-} */
 
 .groupASmallImageContainer, .groupBSmallImageContainer {
   display: flex;
@@ -110,7 +73,6 @@ align-items: center;
   padding: 1px;
   text-align: center;
   height: 250px;
-  /* background-color: green; */
 }
 
 .groupAImage, .groupBImage {
@@ -123,14 +85,6 @@ align-items: center;
   border: 2px solid black;
   border-radius: 5px;
 }
-
-/* .groupAImage {
-width: 350px;
-height: 321px;
-object-fit: cover;
-object-position: center;
-padding: 1px;
-} */
 
 .groupAImage:hover, .groupBImage:hover {
   cursor: pointer;
@@ -158,37 +112,6 @@ padding: 1px;
   backdrop-filter: blur(6px);
 }
 
-/* .groupBImageContainer {
-  width: 40%;
-  height: auto;
-  padding: 1.7rem 0 1.7rem 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 5px;
-  background-color: rgba(255, 255, 255, 0.1);
-  -webkit-backdrop-filter: blur(1px);
-  backdrop-filter: blur(1px);
-  align-self: center;
-} */
-
-/* .groupBSmallImageContainer {
-  width: 95%;
-  display: grid;
-  grid-template-columns: 48% 48%;
-  row-gap: 10px;
-  column-gap: 10px;
-  justify-content: center;
-  align-items: center;
-} */
-
-/* .groupBImage {
-  width: 100%;
-  height: 30vh;
-  border: 2px solid black;
-  border-radius: 5px;
-} */
-
 .groupBImage:hover {
   cursor: pointer;
 }
@@ -215,12 +138,9 @@ padding: 1px;
   border: 3px solid black;
 }
 
+
 /*Media queris*/
 @media only screen and (max-width: 1300px) {
-  /* .mainFixedImage {
-    background-size: cover;
-  } */
-
   .groupAContainer,
   .groupBContainer {
     display: flex;
@@ -258,253 +178,3 @@ padding: 1px;
   }
 }
 
-@media only screen and (max-width: 430px) {
-  /* .imageMiniContainer {
-    height: 220px;
-  } */
-}
-/* @media only screen and (min-width: 1518px) and (max-width: 2000px) {
-    .groupAImageContainer{
-        background-color: red;
-    }
-
-    .groupAImage {
-        width: 300px;
-        height: 275px;
-        object-fit: cover;
-        object-position: center;
-        padding: 1px;
-        }
-}
- */
-
-/* @media only screen and (min-width: 1200px) and (max-width: 1700px) {
-    .groupAImageContainer,
-    .groupBImageContainer {
-        width: 50%;
-    } 
-} */
-
-/* @media only screen and (min-width: 769px) and (max-width: 1350px) { */
-/* @media only screen and (min-width: 769px) and (max-width: 1200px) {
-    .mainFixedImage{
-        background-size: cover;
-    }
-
-    .groupAContainer,
-    .groupBContainer {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background-color: yellow;
-    }
-
-    .groupAContainer {
-        margin-bottom: 3rem;
-    }
-
-    .groupBContainer {
-        flex-direction: column-reverse;
-    }
-
-    .groupADescription,
-    .groupBDescription {
-        width: 75%;
-        height: auto;
-        margin-bottom: 3%;
-    }
-
-    .groupBDescription {
-        margin-top: 2rem;
-    }
-
-    .discriptionParagraph {
-        width: 100%;
-    }
-
-    .groupAImageContainer,
-    .groupBImageContainer {
-        width: 75%;
-    }
-
-} */
-
-/* @media only screen and (min-width: 820px) and (max-width: 1024px) {
-    .container {
-        margin-top: 9rem;
-    }
-
-    .groupAImageContainer,
-    .groupBImageContainer {
-        width: 80%;
-    }
-
-    .groupAContainer {
-        margin-bottom: 20rem;
-    }
-} */
-
-/* @media only screen and (width: 1024px) {
-    .groupAContainer {
-        margin-bottom: 20rem;
-    }
-
-    .groupAImageContainer,
-    .groupBImageContainer {
-        width: 60%;
-    }
-
-    .groupADescription,
-    .groupBDescription {
-        width: 60%;
-    }
-
-    .discriptionParagraph {
-        width: 100%;
-    }
-} */
-
-/* @media only screen and (width: 820px) {
-    .groupAImageContainer , .groupBImageContainer, .groupADescription, .groupBDescription{
-        width: 95%;
-    }
-    .groupAImage, .groupBImage {
-        height: 25vh;
-    }
-
-} */
-
-/* @media only screen and (max-width: 768px) {
-    .container {
-        margin: 9rem 0 10rem 0;
-        font-family: text-font-family
-    }
-
-    .miniContainer {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .imageMiniContainer {
-        text-align: center;
-        width: 100%;
-    }
-
-    .groupAContainer {
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 10rem;
-    }
-
-    .groupAImageContainer {
-        width: 60%;
-        height: auto;
-        margin-bottom: 10%;
-        margin-right: 0;
-    }
-
-    .groupASmallImageContainer {
-        display: flex;
-        flex-direction: column;
-        width: 95%;
-    }
-
-    .groupADescription {
-        text-align: center;
-        width: 60%;
-        margin-right: 0;
-        height: auto;
-        margin-bottom: 5%;
-    }
-
-    .discriptionParagraph {
-        width: 100%;
-    }
-
-
-
-
-    .groupBContainer {
-        height: auto;
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: center;
-        align-items: center;
-        margin-top: 5%;
-
-    }
-
-    .groupBImageContainer {
-        width: 60%;
-        height: auto;
-        margin-bottom: 2%;
-        margin-right: 0;
-    }
-
-    .groupBSmallImageContainer {
-        display: flex;
-        flex-direction: column;
-        width: 95%;
-    }
-
-    .groupBDescription {
-        width: 60%;
-        margin-bottom: 3%;
-        margin-right: 0;
-        height: auto;
-        text-align: center;
-        margin-bottom: 5%;
-
-    }
-
-    .groupBImage {
-        width: 100%;
-    }
-} */
-
-/* @media only screen and (width: 768px) {
-
-    .groupBImageContainer,
-    .groupAImageContainer {
-        width: 70%;
-    }
-
-    .groupADescription,
-    .groupBDescription {
-        width: 70%;
-    }
-
-    .groupAImage {
-        height: 40vh;
-
-    }
-} */
-
-/* @media only screen and (max-width: 700px) {
-
- 
-    .groupBImageContainer,
-    .groupAImageContainer, .groupADescription, .groupBDescription {
-        width: 70%;
-    }
-} */
-
-/* @media only screen and (max-width: 500px) {
-
-    .groupBImage,
-    .groupAImage {
-        height: 30vh;
-    }
-
-    .groupBImageContainer,
-    .groupAImageContainer, .groupADescription, .groupBDescription {
-        width: 85%;
-    }
-
-} */

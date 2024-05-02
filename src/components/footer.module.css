@@ -1,6 +1,5 @@
 footer {
   background-color: rgba(0, 0, 0, 0.5);
-  /* background-color: rgba(0, 0, 0, 0.8);; */
   margin-top: auto;
   display: flex;
   flex-direction: column;
@@ -11,8 +10,6 @@ footer {
   font-family: HelveticaNeue, Helvetica, Sans-ns-Serif;
   font-size: 1rem;
   z-index: 1;
-  /* position: sticky;
-  bottom: 0; */
   text-transform: uppercase;
 }
 
@@ -111,7 +108,7 @@ cursor: pointer;
   background-color: #FFA07A;
 }
 
-/*Media queries*/
+/*Medie queries*/
 @media screen and (max-width: 768px) {
   footer {
     z-index: 0;

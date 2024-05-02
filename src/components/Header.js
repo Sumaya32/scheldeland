@@ -9,8 +9,7 @@ const Header = () => {
     const [toggled, setToggled] = useState(false);
     const [xIsVisible, setXIsVisible] = useState(false);
     const [hamburgerIsvisible, setHamburgerIsvisible] = useState(true);
-
-
+    
     const navRef = useRef();
 
     const showNavbar = () => {
@@ -23,7 +22,8 @@ const Header = () => {
     }
 
     useEffect(()=>{
-        hamburgerAndX()
+        hamburgerAndX();
+        // eslint-disable-next-line
     },[xIsVisible, hamburgerIsvisible])
 
     const handleClick = ()=> {
@@ -32,7 +32,7 @@ const Header = () => {
       
     return (
         <header>
-            <a href="/" className={style.logoContainer}><img src="/logo2.png" className={style.logo}/></a>
+            <a href="/" className={style.logoContainer}><img src="/logo.png" className={style.logo} alt="Logo"/></a>
             <nav ref={navRef} className={toggled ? style.responsive_nav : ""} >
                 <NavLink to="/" className={({ isActive }) => (isActive ? `${style.active} ${style.navlink}` : `${style.inactive}`)} onClick={()=> {handleClick(); setToggled(false)}}>
                     Home
