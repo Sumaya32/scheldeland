@@ -30,7 +30,6 @@ export const Dish = () => {
              <img src={data?.menuimage?.sourceUrl} alt={data?.menuimage?.altText} className={styles.image} />
               <div className={styles.descriptionContainer}>
                 <p className={styles.description}>{data?.description}</p>
-                {/* <div className={styles.origin}><span style={{ fontWeight: "bold"}} >origin: </span> {data?.origin}</div> */}
               </div>
              </div>
             </div>

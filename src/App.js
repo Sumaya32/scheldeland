@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { lazy,Suspense } from 'react';
 import { Route, Routes } from 'react-router-dom'
 import {  Dish, Dishes } from './pages/dishes';
@@ -11,8 +11,9 @@ import { Spinner } from './components/shared/Spinner'
 
 
 function App() {
-  // const Dishes = lazy(() => import('./pages/dishes/Dishes'));
-
+  useEffect(()=>{
+    window.scrollTo(0, 1);
+  },[])
     return (
       <Routes>
         <Route exact element={<Dish/>} path="menu/:id" />
@@ -22,7 +23,6 @@ function App() {
         <Route element={<Contact />} path="/contact" />
         
         <Route element={ <Dishes/> } path="/menu" />
-          {/* <Route element={<Suspense fallback={<Spinner />}> <Dishes/> </Suspense>} path="/menu" /> */}
         <Route element={<About />} path={`/${('over ons').replace(/\s+/g, '-')}`} />
       </Routes>
     );

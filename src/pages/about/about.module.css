@@ -1,404 +1,180 @@
 :root {
-    --image-container-background-color: rgb(248, 243, 243);
-    --text-font-family: Helvitica, "bradley Hand";
+  --image-container-background-color: rgb(248, 243, 243);
+  --text-font-family: Helvitica, "bradley Hand";
 }
 
-
 .container {
-    margin: 12rem 0 7rem 0;
-    font-family: text-font-family;
-    height: 100%;
+  margin: 12rem 0 7rem 0;
+  font-family: text-font-family;
 }
 
 .mainFixedImage {
-    /* min-height: 100%; */
-    height: 100%;
-    width: 100%;
-    position: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    /* background-size: cover; */
-    -webkit-background-size: 100% 100%;
-    /* -moz-background-size: cover;
-    -o-background-size: cover;  */
-    margin: 0;
-    padding: 0;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: 100vw;
-
+  position: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100vh;
 }
 
 .title {
-    font-weight: bold;
-    font-size: 1.8rem;
-    padding-bottom: 1rem;
+  font-weight: bold;
+  font-size: 1.8rem;
+  padding-bottom: 1rem;
 }
 
 .discriptionParagraph {
-    width: 80%;
-    /* line-height: 1.5rem; */
-    font-size: 1.6rem;
-    /* font-weight: lighter; */
+  width: 80%;
+  font-size: 1.6rem;
 }
 
 /*Group A*/
 .groupAContainer {
-    background-color: rgb(247, 244, 239, 0.3);
-    display: flex;
-    justify-content: space-evenly;
-    align-items: flex-start;
-    width: 100%;
-    height: 100%;
-    /* white-space: pre-wrap; */
-    white-space: pre-line;
-    margin-bottom: 5rem;
-    -webkit-backdrop-filter: blur(5px);
-    backdrop-filter: blur(6px);
+  background-color: rgb(247, 244, 239, 0.3);
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 100%;
+  white-space: pre-line;
+  margin-bottom: 5rem;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(6px);
 }
 
-.groupAImageContainer {
-    background-color: image-container-background-color;
-    background-color: rgb(247, 244, 239);
-    width: 40%;
-    height: auto;
-    padding: 1.7rem 0 1.7rem 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* box-shadow: 2px 3px 3px 1px rgb(151, 152, 156), 2px 3px 3px 1px rgb(151, 152, 156), -2px 0 3px 1px rgb(151, 152, 156); */
-    border-radius: 5px;
-    background-color: rgba(255, 255, 255, 0.1);
-    -webkit-backdrop-filter: blur(1px);
-    backdrop-filter: blur(1px);
-
+.groupAImageContainer, .groupBImageContainer {
+  width: 50%;
+  height: auto;
+  padding: 1.7rem 0 1.7rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  align-self: center;
 }
 
-.groupASmallImageContainer {
-    width: 95%;
-    display: grid;
-    grid-template-columns: 48% 48%;
-    row-gap: 10px;
-    column-gap: 10px;
-    justify-content: center;
-    align-items: center;
+.groupASmallImageContainer, .groupBSmallImageContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  width: 95%;
 }
 
-.groupAImage {
-    width: 100%;
-    height: 30vh;
-    border: 2px solid black;
-    border-radius: 5px;
+.imageMiniContainer {
+  flex-basis: 300px;
+  padding: 1px;
+  text-align: center;
+  height: 250px;
 }
 
-.groupAImage:hover {
-    cursor: pointer;
+.groupAImage, .groupBImage {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  vertical-align: middle;
+  border-radius: 5px;
+  height: 100%;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+.groupAImage:hover, .groupBImage:hover {
+  cursor: pointer;
 }
 
 .groupADescription {
-    width: 45%;
-    height: auto;
-    padding: 0.5rem 0rem 0.5rem 0rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    white-space: pre-line;
-
+  width: 45%;
+  height: auto;
+  padding: 0.5rem 0rem 0.5rem 0rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  white-space: pre-line;
 }
-
 
 /*Group B*/
 .groupBContainer {
-    display: flex;
-    justify-content: space-evenly;
-    width: 100%;
-    height: auto;
-    margin-top: 20%;
-    background-color: rgb(247, 244, 239, 0.4);
-    -webkit-backdrop-filter: blur(5px);
-    backdrop-filter: blur(6px);
-}
-
-.groupBImageContainer {
-    /* background-color: image-container-background-color; */
-    /* background-color: rgb(247, 244, 239); */
-    width: 40%;
-    height: auto;
-    padding: 1.7rem 0 1.7rem 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* box-shadow: 2px 3px 3px 1px rgb(151, 152, 156), 2px 3px 3px 1px rgb(151, 152, 156), -2px 0 3px 1px rgb(151, 152, 156); */
-    border-radius: 5px;
-    background-color: rgba(255, 255, 255, 0.1);
-    -webkit-backdrop-filter: blur(1px);
-    backdrop-filter: blur(1px);
-
-}
-
-.groupBSmallImageContainer {
-    width: 95%;
-    display: grid;
-    grid-template-columns: 48% 48%;
-    row-gap: 10px;
-    column-gap: 10px;
-    justify-content: center;
-    align-items: center;
-}
-
-.groupBImage {
-    width: 100%;
-    height: 30vh;
-    border: 2px solid black;
-    border-radius: 5px;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  height: auto;
+  margin-top: 20%;
+  background-color: rgb(247, 244, 239, 0.4);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(6px);
 }
 
 .groupBImage:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .groupBDescription {
-    width: 45%;
-    height: auto;
-    padding: 0.5rem 0rem 0.5rem 0rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    white-space: pre-line;
-
+  width: 45%;
+  height: auto;
+  padding: 0.5rem 0rem 0.5rem 0rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  white-space: pre-line;
 }
 
+/*Modal*/
 .modalImageContainer {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .modalImage {
-    width: 90%;
-    height: 85%;
-    border: 3px solid black;
+  width: 90%;
+  height: 80%;
+  border: 3px solid black;
 }
+
 
 /*Media queris*/
-@media only screen and (min-width: 769px) and (max-width: 1350px) {
+@media only screen and (max-width: 1300px) {
+  .groupAContainer,
+  .groupBContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
-    .mainFixedImage{
-        background-size: cover;
-    }
+  .groupAContainer {
+    margin-bottom: 3rem;
+  }
 
-    .groupAContainer,
-    .groupBContainer {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
+  .groupBContainer {
+    flex-direction: column-reverse;
+  }
 
-    .groupAContainer {
-        margin-bottom: 3rem;
-    }
+  .groupADescription,
+  .groupBDescription {
+    width: 75%;
+    height: auto;
+    margin-bottom: 3%;
+  }
 
-    .groupBContainer {
-        flex-direction: column-reverse;
-    }
+  .groupBDescription {
+    margin-top: 2rem;
+  }
 
-    .groupADescription,
-    .groupBDescription {
-        width: 70%;
-        height: auto;
-        margin-bottom: 3%;
-    }
+  .discriptionParagraph {
+    width: 100%;
+  }
 
-    .groupBDescription {
-        margin-top: 2rem;
-    }
-
-    .discriptionParagraph {
-        width: 100%;
-    }
-
-    .groupAImageContainer,
-    .groupBImageContainer {
-        width: 70%;
-    }
-
-    .groupAImage {
-        height: 35vh;
-    }
+  .groupAImageContainer,
+  .groupBImageContainer {
+    width: 75%;
+  }
 }
 
-
-@media only screen and (min-width: 820px) and (max-width: 1024px) {
-    .container {
-        margin-top: 9rem;
-    }
-
-    .groupAImageContainer,
-    .groupBImageContainer {
-        width: 90%;
-    }
-
-    .groupAContainer {
-        margin-bottom: 20rem;
-    }
-}
-
-@media only screen and (width: 1024px) {
-    .groupAContainer {
-        margin-bottom: 20rem;
-    }
-
-    .groupAImageContainer,
-    .groupBImageContainer {
-        width: 70%;
-    }
-
-    .groupBImage,
-    .groupAImage {
-        height: 40vh;
-    }
-
-    .groupADescription,
-    .groupBDescription {
-        width: 70%;
-    }
-
-    .discriptionParagraph {
-        width: 100%;
-    }
-}
-
-
-@media only screen and (max-width: 768px) {
-    .container {
-        margin: 9rem 0 10rem 0;
-        font-family: text-font-family
-    }
-
-    .miniContainer {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .imageMiniContainer {
-        text-align: center;
-        width: 100%;
-    }
-
-    /*Group A*/
-    .groupAContainer {
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 10rem;
-    }
-
-    .groupAImageContainer {
-        width: 90%;
-        height: auto;
-        margin-bottom: 10%;
-        margin-right: 0;
-    }
-
-    
-
-    .groupAImage {
-        height: 40vh;
-    }
-
-    .groupASmallImageContainer {
-        display: flex;
-        flex-direction: column;
-        width: 95%;
-    }
-
-    .groupADescription {
-        text-align: center;
-        width: 90%;
-        margin-right: 0;
-        height: auto;
-        margin-bottom: 5%;
-    }
-
-    .discriptionParagraph {
-        width: 100%;
-    }
-
-    /*Group B*/
-    .groupBContainer {
-        height: auto;
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: center;
-        align-items: center;
-        margin-top: 5%;
-
-    }
-
-
-    .groupBImageContainer {
-        width: 90%;
-        height: auto;
-        margin-bottom: 2%;
-        margin-right: 0;
-    }
-
-    .groupBImage {
-        height: 40vh;
-    }
-
-    .groupBSmallImageContainer {
-        display: flex;
-        flex-direction: column;
-        width: 95%;
-    }
-
-    .groupBDescription {
-        width: 90%;
-        margin-bottom: 3%;
-        margin-right: 0;
-        height: auto;
-        text-align: center;
-        margin-bottom: 5%;
-
-    }
-
-    .groupBImage {
-        width: 100%;
-    }
-}
-
-
-@media only screen and (width: 768px) {
-
-    .groupBImageContainer,
-    .groupAImageContainer {
-        width: 70%;
-    }
-
-    .groupADescription,
-    .groupBDescription {
-        width: 70%;
-    }
-}
-
-
-@media only screen and (width: 540px) {
-
-    .groupBImage,
-    .groupAImage {
-        height: 37vh;
-    }
-
-    .groupBImageContainer,
-    .groupAImageContainer {
-        width: 70%;
-    }
-
-}

@@ -92,24 +92,18 @@
 
 
 @media only screen and (max-width: 539px) {
-    /* .miniContainer {
-        margin-top: 35%;
-        width: 90%;
-         } */
-
     .miniContainer {
         margin-top: 35%;
         width: 90%;
     height: 50%;
 
     }
+    
     .modalBtn{
         font-size: 1rem;
         height: 8%;
         margin-top: 0.5rem;
         text-align: center;
-
-
     }
 }
 

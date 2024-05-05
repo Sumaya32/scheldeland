@@ -10,8 +10,6 @@ footer {
   font-family: HelveticaNeue, Helvetica, Sans-ns-Serif;
   font-size: 1rem;
   z-index: 1;
-  /* position: sticky;
-  bottom: 0; */
   text-transform: uppercase;
 }
 
@@ -32,28 +30,54 @@ footer {
 
 .footerNavLinkItem a {
   font-weight: bold;
-  /* color: rgb(56, 54, 54); */
   color: white;
 }
 
 .footerUnderline {
   align-self: center;
-  /* border-top: 3px solid #474545; */
   border-top: 3px solid #727070;
   border-top: 3px solid #cacaca;
-
-
   width: 50%;
-  margin-top: 0.8rem;
+  margin-top: 0.4rem;
 }
 
-.copyright {
+.ulContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul{
+  display: flex;
+  width: auto;
+}
+
+ul li{
+  margin: 0.5rem;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img{
+  width: 30px;
+}
+
+.copyright, .copyright a {
   text-align: center;
   list-style: none;
-  /* color: rgb(96, 98, 99); */
   color: white;
   margin-top: 0.5rem;
 }
+
+.copyright a {
+cursor: pointer;
+}
+
+.copyright a:hover {
+ color: #dcdcdc;
+  }
 
 .FooterLinkText {
   display: flex;
@@ -61,34 +85,50 @@ footer {
   align-items: center;
 }
 
-.fbIconText {
-  padding-right: 10px;
+.flowUs {
+  text-align: center;
+  color: white;
 }
 
-.fbIconText:hover {
+.flowUs:hover {
   color: #fa7f4e; ;
 }
 
-.fbIcon {
-  width: 8%;
+.icons {
   background-color: white;
   border-top-left-radius: 32px;
   border-top-right-radius: 32px;
   border-bottom-left-radius: 32px;
   border-bottom-right-radius: 32px;
+  margin: 0;
+  padding: 0;
 }
 
-.fbIcon:hover {
+.icons:hover {
   background-color: #FFA07A;
 }
 
+/*Medie queries*/
 @media screen and (max-width: 768px) {
   footer {
     z-index: 0;
   }
+}
 
-  .footerUnderline {
-    margin-top: 0.6rem;
+
+@media screen and (max-width: 540px) {
+img{
+  width: 30px;
+}
+}
+
+
+@media screen and (max-width: 400px) {
+  .flowUs{
+    font-size: 1rem;
   }
 
-}
+  img{
+    width: 25px;
+  }
+  }

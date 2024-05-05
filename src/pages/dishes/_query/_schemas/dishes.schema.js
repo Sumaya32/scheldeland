@@ -10,6 +10,7 @@ query {
           origin
           price
           menudescription
+          visible
         }
         id
         slug
@@ -33,6 +34,7 @@ query {
             altText
             sourceUrl
           }
+          visible
         }
         id
         slug
@@ -78,6 +80,7 @@ query {
             altText
             sourceUrl
           }
+          visible
         }
         id
         slug
