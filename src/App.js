@@ -7,8 +7,6 @@ import { Home } from './pages/home/Index'
 import { Contact } from './pages/contact/Contact'
 import { Error } from './components/Error'
 import { Maintaince } from './Maintaince';
-import { Spinner } from './components/shared/Spinner'
-
 
 function App() {
   useEffect(()=>{
@@ -21,7 +19,6 @@ function App() {
         <Route element={<Home />} path="/" />
         <Route element={<Error />} path="/error" />
         <Route element={<Contact />} path="/contact" />
-        
         <Route element={ <Dishes/> } path="/menu" />
         <Route element={<About />} path={`/${('over ons').replace(/\s+/g, '-')}`} />
       </Routes>
