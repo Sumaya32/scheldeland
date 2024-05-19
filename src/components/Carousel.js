@@ -23,10 +23,10 @@ export const Carousel = ({ items }) => {
             <img src={item?.menuimage?.sourceUrl} className={slide === index ? `${styles.slide}` : `${styles.slide} ${styles.slideHidden}`}/>
 
                 </div>                    
-                <div className={slide === index ? `${styles.title}` : `${styles.title} ${styles.titleHidden}`}>
-                        <p>{item?.title}</p>
-                        <p className={styles.price}>{item?.price}</p>
-                        </div>                   
+                    <div className={slide === index ? `${styles.title}` : `${styles.title} ${styles.titleHidden}`}>
+                            <p>{item?.title}</p>
+                            <p className={styles.price}>{item?.price}</p>
+                    </div>                   
                 </div>
 
             )}

@@ -35,7 +35,7 @@ export const Home = () => {
             <div className={styles.CarouselFirstContainer}>
               <div className={styles.middleContainer}>
                 <div > <h1 className={`${styles.topTitle}`}>Populaire Hoofdgerechten</h1>     </div>
-                <Carousel items={data && data?.gerechten?.map((item) => item.gerechtmeta)} />
+                <Carousel items={data && data?.gerechten?.map((item) => item.gerechtmeta)}/>
               </div>
             </div>
 

@@ -25,7 +25,8 @@ export const Dishes = () => {
   const { kidsMenu } = useGetKidsMenu();
   const { kidsDessert } = useGetKidsDessert();
   const { supplement } = useGetSupplement();
-  /*Usestate arrays*/
+
+  /*Usestates arrays*/
   const [mainDishDescArray, setMainDishDescArray] = useState();
   const [dessertDescArray, setDessertDescArray] = useState();
   const [sharingFoodDescArray, setSharingFoodDescArray] = useState();

@@ -18,12 +18,12 @@ function App() {
         <Route element={<Home />} path="/" />
         <Route element={<Error />} path="/error" />
         <Route element={<Contact />} path="/contact" />
-
         <Route element={<Dishes />} path="/menu" />
         <Route
           element={<About />}
-          path={`/${"over ons".replace(/\s+/g, "-")}`}
-        />
+          path={`/${"over ons".replace(/\s+/g, "-")}`}>
+            
+          </Route>
       </Routes>
     </>
   );
