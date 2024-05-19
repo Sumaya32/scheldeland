@@ -18,8 +18,8 @@ export const Contact = () => {
             <div className={styles.iframeContainer} >
               <iframe src={url && url}
                 className={styles.iframe}
-                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" frameborder="0"
-                onScroll="no" title='Google map'>
+                allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade" frameBorder="0"
+                 title='Google map'>
               </iframe>
             </div>
 
