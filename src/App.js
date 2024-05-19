@@ -21,7 +21,9 @@ function App() {
         <Route element={<Dishes />} path="/menu" />
         <Route
           element={<About />}
-          path={`/${"over ons".replace(/\s+/g, "-")}`}
+          path={`/${"over ons".replace(/\s+/g, "-")}`}>
+            
+          </Route>
       </Routes>
     </>
   );
