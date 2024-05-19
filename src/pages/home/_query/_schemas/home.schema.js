@@ -78,6 +78,8 @@ export const GetHome = gql`
                 sourceUrl
               }
             }
+            id
+            slug
           }
         }
         kleinehonger {
@@ -92,6 +94,8 @@ export const GetHome = gql`
                 sourceUrl
               }
             }
+            id
+            slug
           }
         }
       }
