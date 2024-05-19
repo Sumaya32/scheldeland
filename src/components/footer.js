@@ -41,9 +41,9 @@ const Footer = () => {
 
         <div className={style.copyright}>
           © 2024 SCHELDELAND -{" "}
-          <a href="https://sumaya.be" target="_blank">
+          {/* <a href="https://sumaya.be" target="_blank"> */}
             CREATED BY SUMAYA MA
-          </a>
+          {/* </a> */}
         </div>
       </div>
     </footer>
