@@ -18,8 +18,7 @@ export const Contact = () => {
             <div className={styles.iframeContainer} >
               <iframe src={url && url}
                 className={styles.iframe}
-                allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade" frameBorder="0"
-                 title='Google map'>
+                allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade" title='Google map'>
               </iframe>
             </div>
 
@@ -38,7 +37,7 @@ export const Contact = () => {
 
                   <div className={styles.phone}>
                     <img style={{ width: "25px", height: "30px" }} src='./mobile.png' alt='Phone'/>
-                    <a href="tel:+476989330" >Reserveren via<br />{data?.phoneNumber}</a>
+                    <a type='tel' href="tel:0476989330" >Reserveren via<br />{data?.phoneNumber}</a>
                   </div>
 
                 </div>
