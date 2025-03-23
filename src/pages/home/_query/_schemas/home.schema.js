@@ -54,6 +54,7 @@ export const GetHome = gql`
         description
         gerechten {
           ... on Hoofdgerecht {
+            id
             gerechtmeta {
               title
               description
@@ -69,6 +70,7 @@ export const GetHome = gql`
         }
         sharingfood {
           ... on Sharing_food {
+            id
             sharingFoodmeta {
               title
               description
@@ -78,6 +80,8 @@ export const GetHome = gql`
                 sourceUrl
               }
             }
+            id
+            slug
           }
         }
         kleinehonger {
@@ -92,6 +96,8 @@ export const GetHome = gql`
                 sourceUrl
               }
             }
+            id
+            slug
           }
         }
       }

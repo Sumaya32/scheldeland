@@ -15,7 +15,6 @@ export const About = () => {
   const [visiblePicture, setVisiblePicture] = useState([])
   const [modalIsOpen, setIsOpen] = useState(false)
 
-
   const handleChild = () => {
     setIsOpen(false)
   };
@@ -26,8 +25,6 @@ export const About = () => {
         { picture: `${item?.groupAImage}${index?.sourceUrl}` }
       ])
     })
-
-
 
     setEmployeePicture([
       data !== null &&
@@ -46,9 +43,6 @@ export const About = () => {
       // { picture: data?.groupbImage4.sourceUrl, altText: data?.groupbImage4.altText },
       // { picture: data?.groupbImage5.sourceUrl, altText: data?.groupbImage5.altText },
       { picture: data?.groupbImage6.sourceUrl, altText: data?.groupbImage6.altText }
-
-
-
     ])
   }, [data]);
 
@@ -71,9 +65,9 @@ export const About = () => {
                   </div>
                   <div className={styles.groupAImageContainer}>
                     <div className={styles.groupASmallImageContainer}>
-                      {employeePictures && employeePictures?.map((item) =>
-                        <div key={item.altText} onClick={() => { setIsOpen(true); setVisiblePicture((prev) => ({ ...prev, picture: item.picture, altText: item.altText })) }} styles={{ cursor: "pointer" }} className={styles.imageMiniContainer}>
-                          <img key={item?.altText} src={item?.picture} alt={item?.altText} className={styles.groupAImage} />
+                      {employeePictures && employeePictures?.map((item, index) =>
+                        <div key={index} onClick={() => { setIsOpen(true); setVisiblePicture((prev) => ({ ...prev, picture: item.picture, altText: item.altText })) }} styles={{ cursor: "pointer" }} className={styles.imageMiniContainer}>
+                          <img src={item?.picture} alt={item?.altText} className={styles.groupAImage} />
                         </div>
                       )}
 
@@ -85,9 +79,9 @@ export const About = () => {
                 <div className={styles.groupBContainer}>
                   <div className={styles.groupBImageContainer}>
                     <div className={styles.groupBSmallImageContainer}>
-                      {customersPictures && customersPictures?.map((item) =>
-                        <div key={item.altText} onClick={() => { setIsOpen(true); setVisiblePicture((prev) => ({ ...prev, picture: item.picture, altText: item.altText })) }} styles={{ cursor: "pointer" }} className={styles.imageMiniContainer}>
-                          <img key={item.altText} src={item.picture} alt={item.altText} className={styles.groupBImage} />
+                      {customersPictures && customersPictures?.map((item, index) =>
+                        <div key={index} onClick={() => { setIsOpen(true); setVisiblePicture((prev) => ({ ...prev, picture: item.picture, altText: item.altText })) }} styles={{ cursor: "pointer" }} className={styles.imageMiniContainer}>
+                          <img src={item.picture} alt={item.altText} className={styles.groupBImage} />
                         </div>
                       )}
                     </div>
